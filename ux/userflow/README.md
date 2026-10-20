@@ -1,0 +1,12 @@
+# Ảnh sơ đồ user flow (từ Figma Page 01)
+
+Tài liệu giải thích: [`../user-flow.md`](../user-flow.md). Mỗi flow có dải **INPUT → OUTPUT**.
+
+| File | Nội dung |
+|---|---|
+| `flows-core-io.png` | Ba flow bắt buộc F1–F3 kèm Input/Output |
+| `flow-1.png` · `flow-2.png` · `flow-3.png` | Chuỗi bước của từng flow lõi, cắt để chèn slide |
+| `user-flow.png` | Bản chụp cũ của ba flow lõi (trước khi thêm Input/Output) |
+| `flows-F4-F7.png` | Flow mở rộng F4–F7 (Phase 2) |
+| `flows-F8-F11.png` | Flow mở rộng F8–F11 (Phase 2) |
+| `IA-mo-rong.png` | Sơ đồ điều hướng mở rộng: 4 tab + màn con |

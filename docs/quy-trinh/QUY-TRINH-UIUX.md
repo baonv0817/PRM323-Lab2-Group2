@@ -140,6 +140,8 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Hoạt động:** Usability Test Plan (mục tiêu, task, tiêu chí thành công, đối tượng) · cho người dùng làm task **không hướng dẫn từng bước**; ghi success, thời gian, chỗ vướng, lỗi · phân loại P0 blocker / P1 major / P2 minor, sửa và test lại · bàn giao Figma inspect, token, spec component, tương tác, copy, asset, responsive, acceptance criteria.
 
+**Kiểm thử tự động prototype (bước bổ sung):** dùng Playwright mở prototype Figma, bấm theo từng flow và so ảnh từng bước với ảnh chuẩn; kiểm đồ thị flow (không màn cụt, không màn mồ côi, số chạm tới đích). Mã ở `tests/`, báo cáo ở `docs/test-reports/`. Bước này **không thay** usability test với người thật.
+
 **Deliverable:** Test Plan & log người tham gia/task · Usability Findings + Issue List theo mức độ · bằng chứng sửa và retest · gói Handoff + ghi chú accessibility/QA · Release Record.
 
 | Gate check | FtaCode hiện tại |
@@ -206,6 +208,7 @@ Kịch bản đã soạn: `slides/kich-ban-theo-google-slides.md`, câu hỏi ph
 | 2 | Tạo **2 hướng visual** trên một key screen (ví dụ Home), so sánh và ghi lý do chọn | G3 | ✅ | Bạn (Stitch) + mình viết bảng so sánh |
 | 3 | Khảo sát Google Form ≥ 30 sinh viên (`ux/survey/`), đổi nhãn Assumed → Reported | G1 | ✅ (hoặc giữ giải trình) | Bạn |
 | 4 | Usability test Flow 1 với 3–5 người, ghi thời gian, số chạm, lỗi | G5 | ✅ (hoặc ghi lý do ngoại lệ) | Bạn |
+| 4b | Chạy test Playwright trên prototype (`tests/`) sau mỗi lần sửa Figma | G4, G5 | — | Đã làm lần đầu 20/10 (13/13 đạt); chạy lại sau khi sửa Figma |
 | 5 | Chụp lại ảnh trước/sau 3 vòng Stitch | Rubric Lab 2 | — | Bạn |
 | 6 | Viết user stories, nối Insight → Need → Story → Flow | G2 | — | Mình làm được |
 | 7 | Đổi mã định danh theo C7 (E01, P01, F01, S01, I01, D01, T01) | C7 | — | Mình làm được |

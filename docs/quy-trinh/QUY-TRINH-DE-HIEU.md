@@ -146,6 +146,7 @@ Có 6 chặng, tổng cộng 45 bước. Gợi ý: mỗi chặng làm trong mộ
 ## Chặng 6 — Thử với người dùng, bàn giao, bảo vệ (1 ngày)
 
 43. **Thử với 3–5 người:** giao việc, ví dụ "đặt một combo và chọn giờ nhận", và **không chỉ từng bước**. Ghi lại: làm được không, mất bao lâu, bao nhiêu lần chạm, vướng ở đâu. Sửa lỗi nặng rồi thử lại. So kết quả với chỉ số thành công ở bước 22. Điền cột **Kết quả kiểm chứng** vào bảng truy vết (đạt / không đạt).
+43b. **Chạy test tự động trên prototype (Playwright):** vào thư mục `tests/`, chạy `npm install` rồi `npm test`. Máy mở prototype Figma, bấm theo từng flow, so ảnh từng bước và kiểm không có màn cụt hay màn mồ côi. Ảnh nào lệch thì xem có đúng là lỗi không; nếu thay đổi là chủ ý thì `npm run update` và xem lại ảnh. Bước này kiểm prototype đi đúng đường đã thiết kế, **không thay** bước 43 (thử với người thật). Báo cáo mẫu: `docs/test-reports/`.
 44. **Viết `handoff/flutter-handoff.md`:** mỗi màn đủ 6 mục:
     - bố cục từ trên xuống, phần nào cuộn;
     - component dùng ở đâu;

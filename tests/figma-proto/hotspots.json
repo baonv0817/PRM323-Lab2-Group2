@@ -1,0 +1,515 @@
+{
+ "_note": "Đọc từ Figma Page 06 (20/10/2026) bằng Figma Plugin API. Toạ độ tính theo khung màn hình 360 × 800 dp. 'overlay' = mở lớp phủ; 'close' = đóng lớp phủ; 'timeout' = tự chuyển sau 1,2 giây.",
+ "startingPoints": {
+  "F1": "S01",
+  "F2": "S03",
+  "F3": "S06"
+ },
+ "frames": {
+  "S01": {
+   "nodeId": "5:2361",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "CTA_Bắt_Đầu",
+     "x": 20,
+     "y": 680,
+     "w": 320,
+     "h": 52,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    }
+   ]
+  },
+  "S02": {
+   "nodeId": "5:2390",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Card_Tacos_Bo",
+     "x": 16,
+     "y": 340,
+     "w": 260,
+     "h": 90,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "name": "Quick_Add_Tacos",
+     "x": 288,
+     "y": 385,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "name": "Top_Cart_Icon",
+     "x": 295,
+     "y": 40,
+     "w": 50,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "name": "Nav_Menu",
+     "x": 105,
+     "y": 736,
+     "w": 75,
+     "h": 64,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "name": "Nav_Orders",
+     "x": 195,
+     "y": 736,
+     "w": 75,
+     "h": 64,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    }
+   ]
+  },
+  "S03": {
+   "nodeId": "5:2462",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Menu_Item_Detail",
+     "x": 16,
+     "y": 180,
+     "w": 260,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "name": "Menu_Cart_Icon",
+     "x": 295,
+     "y": 40,
+     "w": 50,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "name": "Menu_Nav_Home",
+     "x": 15,
+     "y": 736,
+     "w": 75,
+     "h": 64,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    }
+   ]
+  },
+  "S04": {
+   "nodeId": "5:2532",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Detail_Back",
+     "x": 18,
+     "y": 30,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Add_To_Cart_CTA",
+     "x": 118,
+     "y": 720,
+     "w": 226,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S05": {
+   "nodeId": "5:2577",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Cart_Back",
+     "x": 10,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Cart_Confirm_Checkout",
+     "x": 16,
+     "y": 720,
+     "w": 328,
+     "h": 52,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    },
+    {
+     "name": "Trash_Empty_Cart",
+     "x": 300,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05-EMPTY"
+    },
+    {
+     "name": "Voucher",
+     "x": 16,
+     "y": 348,
+     "w": 328,
+     "h": 44,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05-VOUCHER-ERR"
+    }
+   ]
+  },
+  "S06": {
+   "nodeId": "5:2640",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Checkout_Back",
+     "x": 10,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "name": "Pay_MoMo_Success",
+     "x": 16,
+     "y": 720,
+     "w": 328,
+     "h": 52,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-LOADING"
+    },
+    {
+     "name": "MoMo_Error_Trigger",
+     "x": 16,
+     "y": 210,
+     "w": 328,
+     "h": 60,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-ERR"
+    }
+   ]
+  },
+  "S07": {
+   "nodeId": "5:2686",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Tracking_Home",
+     "x": 16,
+     "y": 708,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Tracking_Map_History",
+     "x": 16,
+     "y": 650,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "name": "Cancel_Dialog_Trigger",
+     "x": 16,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "overlay",
+     "dest": "S07-DIALOG"
+    }
+   ]
+  },
+  "S08": {
+   "nodeId": "5:2740",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "History_View_QR",
+     "x": 16,
+     "y": 234,
+     "w": 296,
+     "h": 40,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07"
+    },
+    {
+     "name": "History_Reorder",
+     "x": 16,
+     "y": 396,
+     "w": 140,
+     "h": 32,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "name": "History_Nav_Home",
+     "x": 15,
+     "y": 736,
+     "w": 75,
+     "h": 64,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    }
+   ]
+  },
+  "S05-EMPTY": {
+   "nodeId": "5:2787",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Empty_Back",
+     "x": 10,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Empty_Explore_Menu",
+     "x": 50,
+     "y": 440,
+     "w": 260,
+     "h": 50,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    }
+   ]
+  },
+  "S06-ERR": {
+   "nodeId": "5:2819",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Retry_VNPAY_Cash",
+     "x": 16,
+     "y": 680,
+     "w": 328,
+     "h": 52,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07-CASH"
+    },
+    {
+     "name": "Back_To_Cart",
+     "x": 60,
+     "y": 740,
+     "w": 240,
+     "h": 35,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S07-DIALOG": {
+   "nodeId": "5:2866",
+   "width": 320,
+   "height": 180,
+   "hotspots": [
+    {
+     "name": "Dialog_Keep_Order",
+     "x": 24,
+     "y": 115,
+     "w": 125,
+     "h": 42,
+     "trigger": "click",
+     "type": "close",
+     "dest": null
+    },
+    {
+     "name": "Dialog_Confirm_Cancel",
+     "x": 165,
+     "y": 115,
+     "w": 130,
+     "h": 42,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    }
+   ]
+  },
+  "S05-VOUCHER-ERR": {
+   "nodeId": "2009:5",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Cart_Back",
+     "x": 10,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Cart_Confirm_Checkout",
+     "x": 16,
+     "y": 720,
+     "w": 328,
+     "h": 52,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    },
+    {
+     "name": "Trash_Empty_Cart",
+     "x": 300,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05-EMPTY"
+    },
+    {
+     "name": "Voucher",
+     "x": 16,
+     "y": 348,
+     "w": 328,
+     "h": 44,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S06-LOADING": {
+   "nodeId": "2009:72",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "(frame)",
+     "x": 0,
+     "y": 0,
+     "w": 360,
+     "h": 800,
+     "trigger": "timeout",
+     "type": "nav",
+     "dest": "S07"
+    }
+   ]
+  },
+  "S07-CASH": {
+   "nodeId": "2009:126",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "Tracking_Home",
+     "x": 16,
+     "y": 708,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Tracking_Map_History",
+     "x": 16,
+     "y": 650,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "name": "Cancel_Dialog_Trigger",
+     "x": 16,
+     "y": 40,
+     "w": 45,
+     "h": 45,
+     "trigger": "click",
+     "type": "overlay",
+     "dest": "S07-DIALOG"
+    }
+   ]
+  },
+  "S08-EMPTY": {
+   "nodeId": "2009:183",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "name": "History_Nav_Home",
+     "x": 15,
+     "y": 736,
+     "w": 75,
+     "h": 64,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "name": "Button/Primary",
+     "x": 111,
+     "y": 387,
+     "w": 138,
+     "h": 47,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    }
+   ]
+  }
+ }
+}

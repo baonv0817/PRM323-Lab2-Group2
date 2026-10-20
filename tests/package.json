@@ -1,0 +1,16 @@
+{
+  "name": "prm323-lab2-figma-proto-tests",
+  "private": true,
+  "description": "Playwright tests that click through the Figma prototype of FtaCode Mobile and check its flow graph",
+  "scripts": {
+    "test": "playwright test",
+    "test:graph": "playwright test graph.spec.js",
+    "test:flows": "playwright test flows.spec.js",
+    "update": "playwright test flows.spec.js --update-snapshots",
+    "report": "playwright show-report playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "pngjs": "^7.0.0"
+  }
+}

@@ -69,12 +69,16 @@ PRM323-Lab2-Group2/
 │       └── design-system/        │  token và component
 ├── handoff/
 │   └── flutter-handoff.md        ← BÀN GIAO CHO LẬP TRÌNH VIÊN FLUTTER
+├── tests/                        ← TEST TỰ ĐỘNG PROTOTYPE (Playwright, P4/P5)
+│   ├── figma-proto/              │  test bấm prototype Figma + test đồ thị flow, ảnh chuẩn
+│   └── README.md                 │  cách cài và chạy
 ├── slides/                       ← TRÌNH BÀY
 │   ├── FtaCode_Lab2_Presentation.pptx   (38 trang, bản hiện hành)
 │   └── kich-ban-*.md · phan-bien-hoi-dap.md
 ├── docs/                         ← QUY TRÌNH & THEO DÕI TIẾN ĐỘ (không phải sản phẩm nộp)
 │   ├── quy-trinh/                │  quy trình UI/UX, hướng dẫn, bảng mẫu
-│   └── tien-do/                  │  TIEN-DO, checklist sửa
+│   ├── tien-do/                  │  TIEN-DO, checklist sửa
+│   └── test-reports/             │  báo cáo test Playwright
 └── archive/                      ← BẢN CŨ, giữ làm lịch sử
     ├── slides-cu/
     └── anh-cu-giong-stitch/
@@ -91,7 +95,7 @@ PRM323-Lab2-Group2/
 | P2 · UX Design | G2 | [`ux/p2-ux-design.md`](ux/p2-ux-design.md) · [`ux/persona.md`](ux/persona.md) · [`ux/user-flow.md`](ux/user-flow.md) | ⚠️ 5/6: chưa walkthrough với người thật |
 | P3 · UI Concept & Style Guide | G3 | [`design/p3-ui-concept-style-guide.md`](design/p3-ui-concept-style-guide.md) · [`assets/concepts/`](assets/concepts/) | ❌ chưa qua: còn nút −/+ 48 dp, chữ ≥ 14 sp, màn 412 dp |
 | P4 · UI chi tiết & Prototype | G4 | [`design/p4-detailed-ui-prototype.md`](design/p4-detailed-ui-prototype.md) | ❌ chưa qua: chưa chạy thử Present, màn chưa dùng instance |
-| P5 · Kiểm thử & bàn giao | G5 | [`handoff/flutter-handoff.md`](handoff/flutter-handoff.md) | ⚠️ có handoff; chưa usability test |
+| P5 · Kiểm thử & bàn giao | G5 | [`handoff/flutter-handoff.md`](handoff/flutter-handoff.md) · [`tests/`](tests/) · [`docs/test-reports/`](docs/test-reports/) | ⚠️ có handoff và test tự động prototype (13/13 đạt); chưa usability test với người |
 
 Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluation-log.xlsx`](ai/ai-evaluation-log.xlsx). Trình bày: [`slides/`](slides/).
 
@@ -105,7 +109,8 @@ Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluatio
 | Component | 5 component set có variant; **màn chưa thay bằng instance** | `assets/figma/design-system/` |
 | Màn 412 dp | **Chưa dựng** | — |
 | Nghiên cứu người dùng | Khảo sát Google Form đã soạn; **kết quả hiện có là mô phỏng** (nhãn Assumed) | `ux/survey/` |
-| Usability test | **Chưa làm** | — |
+| Test tự động prototype | 13/13 đạt (Playwright, 20/10); còn 2 điểm lệch giữa prototype và tài liệu | `tests/` · `docs/test-reports/playwright-prototype-2026-10-20.md` |
+| Usability test với người thật | **Chưa làm** | — |
 | Màn mở rộng S09–S25 | Đã thiết kế, **backlog**, chưa nối prototype | `design/extended-screens.md` |
 | Code Flutter | Không có (đề không yêu cầu) | — |
 
@@ -118,7 +123,7 @@ Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluatio
 | **Google Stitch** | Sinh giao diện ban đầu từ `design/DESIGN.md` | `assets/stitch/` · `ai/ai-design-log.md` |
 | **Gemini** | Phản biện UI theo 10 heuristics của Nielsen và WCAG | `ai/ai-design-log.md` |
 | **Claude Opus 5.5** (Claude Code) | Phỏng vấn mô phỏng; các vòng phản biện (có nguyên văn); soạn và sửa tài liệu; khảo sát mô phỏng | `ai/ai-persona-interviews.md` · `ai/ai-design-log.md` Phụ lục A–G |
-| **Claude Code + Figma MCP** | Sửa file Figma: màu, Variables, component set, wireframe, sơ đồ flow, biến thể màn | `design/p4-detailed-ui-prototype.md` · `docs/tien-do/figma-fix-checklist.md` |
+| **Claude Code + Figma MCP + Playwright** | Sửa file Figma: màu, Variables, component set, wireframe, sơ đồ flow, biến thể màn; viết và chạy test Playwright trên prototype | `design/p4-detailed-ui-prototype.md` · `docs/tien-do/figma-fix-checklist.md` |
 | **Claude / Antigravity** | Phân tích IA, kịch bản Flutter handoff, plugin Design System | `ux/`, `design/`, `handoff/` |
 
 Mọi quyết định thiết kế đều ghi Accept / Modify / Reject trong `ai/ai-design-log.md`; sinh viên tự đo lại các con số AI đưa ra (ví dụ tương phản chữ trắng trên cam là 2,14:1, không phải mức AI nêu).

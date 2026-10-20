@@ -11,3 +11,4 @@
 | [`tien-do/`](tien-do/) | `TIEN-DO.md` | Đối chiếu 45 bước: xong, chưa đạt, chưa làm |
 | | `FIX-CHECKLIST.md` | Việc sửa trước khi nộp (GitHub, Figma, slide) |
 | | `figma-fix-checklist.md` | Sửa Figma theo từng page và frame; ☑ = đã làm |
+| [`test-reports/`](test-reports/) | `playwright-prototype-2026-10-20.md` | Kết quả test Playwright trên prototype, phát hiện và giới hạn |

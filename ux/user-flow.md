@@ -279,6 +279,7 @@ Mọi màn đều thuộc ít nhất một flow, không có màn mồ côi. ● 
 ## 5. Chưa khớp và giới hạn
 
 - **Prototype F4–F11 chưa nối.** Chỉ F1–F3 có liên kết trong Figma Page 06; chưa chạy thử bằng Present.
+- **F3 trong prototype:** lỗi được kích hoạt khi chạm vào *thẻ MoMo* ở S06, còn nút "Tiến hành thanh toán" đi tới thành công (phát hiện bằng test Playwright, `docs/test-reports/playwright-prototype-2026-10-20.md`). Sơ đồ F3 ở mục 2 mô tả luồng thiết kế (loading rồi lỗi); cần sửa prototype hoặc tài liệu cho khớp.
 - **Dialog xác nhận đặt hàng:** sơ đồ Page 01 (Flow 1) vẫn ghi "Mở Overlay Dialog xác nhận", nhưng prototype hiện đi thẳng S06 → S06-LOADING → S07. Dialog duy nhất là S07-DIALOG (huỷ đơn). Cần chọn một: thêm dialog vào prototype hoặc bỏ dòng này khỏi sơ đồ.
 - **Số chạm và thời gian** (3 / 5 chạm, < 35 giây) là suy ra từ liên kết, chưa test với người dùng.
 - **Điểm vào S19:** S02 lõi chỉ có biểu tượng giỏ hàng; cần thêm chuông thông báo thì F8 mới đi được.

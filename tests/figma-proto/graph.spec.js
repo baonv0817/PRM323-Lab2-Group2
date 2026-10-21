@@ -1,6 +1,8 @@
 // Kiểm đồ thị flow từ hotspots.json (không mở trình duyệt, chạy trong vài giây).
 const { test, expect } = require('@playwright/test');
-const data = require('./hotspots.json');
+// PROTO=v2 kiểm prototype Final UI v2 (hotspots-v2.json); mặc định kiểm bản cũ (hotspots.json)
+const V2 = process.env.PROTO === 'v2';
+const data = require(V2 ? './hotspots-v2.json' : './hotspots.json');
 
 const frames = Object.keys(data.frames);
 // cạnh: [từ, đến, số chạm]; 'timeout' tự chuyển (0 chạm); 'close' không đi đâu
@@ -25,7 +27,7 @@ test('không có màn hình cụt: mọi màn đều có đường đi tiếp', 
 });
 
 // Màn đã biết là chưa có lối vào trong prototype. Khi nối xong thì xoá khỏi danh sách (test sẽ nhắc).
-const KNOWN_UNREACHABLE = {
+const KNOWN_UNREACHABLE = V2 ? {} : {
   'S08-EMPTY': 'Trạng thái "chưa có đơn" của S08: chưa có liên kết nào dẫn tới, chỉ xem được bằng cách mở trực tiếp.',
 };
 

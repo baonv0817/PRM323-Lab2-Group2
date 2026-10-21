@@ -100,21 +100,26 @@ S02 và S21 có chuông thông báo dẫn tới S19. S23 dùng thang số 1–5 
 
 ### Số đo sau khi vẽ lại
 
-Figma Plugin API trên 30 khung v2.
+Ảnh v2 xuất từ Figma: [`assets/figma/final-ui-v2/`](../../assets/figma/final-ui-v2/) (tổng quan: `contact-sheet-s01-s08.png`, `contact-sheet-s09-s25.png`). Đo bằng `python tests/audit/measure.py v2` và Figma Plugin API.
 
 | Chỉ số | Bản cũ | v2 |
 |---|---|---|
+| Cam đậm (trung bình S01–S08) | 5,9% | 4,3% |
+| Họ cam–be (nền, thẻ đào, chip đào) | 55,3% | 4,4% (nền chuyển sang `#FAF8F5`, thẻ trắng) |
 | Ký tự emoji | 98/366 chữ | 0 |
 | Chữ dưới 14 sp | 86 dòng ở 8 màn | 0, trừ nhãn thanh dưới 12 sp |
 | Chữ thiếu tương phản | 8 chỗ | 0 |
-| Vùng bấm dưới 48 dp | 20/39 | 0 |
+| Vùng bấm dưới 48 dp | 20/39 | 0/120 |
 | Chữ tràn khỏi khung 360 × 800 | — | 0 |
+
+### Prototype và màn 412 dp
+
+- Prototype v2 nối ngay trên Page 03: 119 liên kết giữa 32 khung (gồm S06-LOADING tự chuyển sau 1,2 giây và S07-DIALOG dạng overlay), 9 điểm bắt đầu F1–F10. Vùng bấm đọc ra `tests/figma-proto/hotspots-v2.json`.
+- Kiểm đồ thị flow v2: `PROTO=v2 npx playwright test graph.spec.js` đạt 7/7 (không màn cụt, không màn mồ côi, đặt đơn S02 → S07 mất 3 chạm, F3 có lối về S07-CASH và S05).
+- 14 màn S01–S08 và biến thể có bản 412 dp (khung " v2 · 412", dùng constraints). Ảnh S02, S05, S06, S07 ở `assets/figma/final-ui-v2/412/`.
 
 ## 5. Việc còn lại
 
 1. Chạy phản biện bằng AI khác, ghi nguyên văn vào `ai/ai-design-log.md`, rồi điền bảng ở mục 3.
-2. Vẽ S06-LOADING và S07-DIALOG bản v2.
-3. Xuất PNG 2× các màn v2 vào `assets/figma/final-ui-v2/`, chạy lại `tests/audit/measure.py` để có tỉ lệ cam bản mới.
-4. Nối prototype v2, cập nhật `tests/figma-proto/hotspots.json`, chạy `npm test`.
-5. Cập nhật `handoff/flutter-handoff.md`: token mới, component mới, mã màn S01–S25.
-6. Kiểm thử với người dùng thật (G5).
+2. Chạy Present trong Figma cho từng flow v2 và cập nhật ảnh chuẩn Playwright (`flows.spec.js`) cho prototype v2.
+3. Usability test với 3–5 sinh viên, ghi vào [`docs/test-reports/usability-test-mau.md`](../../docs/test-reports/usability-test-mau.md).

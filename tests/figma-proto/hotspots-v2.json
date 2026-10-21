@@ -1,0 +1,1329 @@
+{
+ "_note": "Vùng bấm của prototype Final UI v2 (Figma Page 03, khung có hậu tố ' v2'), đọc từ Figma Plugin API ngày 21/10/2026. Toạ độ tính từ góc trên trái của khung.",
+ "startingPoints": {
+  "F1": "S01",
+  "F2": "S03",
+  "F3": "S06-ERR",
+  "F4": "S07",
+  "F5": "S08",
+  "F6": "S15",
+  "F8": "S02",
+  "F9": "S21",
+  "F10": "S20"
+ },
+ "frames": {
+  "S01": {
+   "nodeId": "2104:166",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 252,
+     "y": 12,
+     "w": 94,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 68,
+     "y": 712,
+     "w": 277,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    }
+   ]
+  },
+  "S02": {
+   "nodeId": "2104:192",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 20,
+     "y": 178,
+     "w": 108,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 16,
+     "y": 340,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 283,
+     "y": 374,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 463,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 283,
+     "y": 497,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 586,
+     "w": 328,
+     "h": 98,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 283,
+     "y": 611,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    },
+    {
+     "x": 256,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S19"
+    },
+    {
+     "x": 16,
+     "y": 688,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S14"
+    }
+   ]
+  },
+  "S03": {
+   "nodeId": "2104:300",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 192,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 283,
+     "y": 226,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 315,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 283,
+     "y": 349,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 438,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 283,
+     "y": 472,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 561,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S22"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S04": {
+   "nodeId": "2105:339",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 148,
+     "y": 704,
+     "w": 196,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S05": {
+   "nodeId": "2105:388",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05-EMPTY"
+    },
+    {
+     "x": 16,
+     "y": 420,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05-VOUCHER-ERR"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    }
+   ]
+  },
+  "S05-VOUCHER-ERR": {
+   "nodeId": "2105:451",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    }
+   ]
+  },
+  "S05-EMPTY": {
+   "nodeId": "2105:515",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 340,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    }
+   ]
+  },
+  "S06": {
+   "nodeId": "2107:431",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-LOADING"
+    }
+   ]
+  },
+  "S06-LOADING": {
+   "nodeId": "4013:777",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 360,
+     "h": 800,
+     "trigger": "timeout",
+     "type": "nav",
+     "dest": "S07"
+    }
+   ]
+  },
+  "S06-ERR": {
+   "nodeId": "2107:475",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 480,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07-CASH"
+    },
+    {
+     "x": 16,
+     "y": 636,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-LOADING"
+    },
+    {
+     "x": 96,
+     "y": 708,
+     "w": 162,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S07": {
+   "nodeId": "2106:540",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 240,
+     "y": 704,
+     "w": 131,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 704,
+     "w": 102,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S09"
+    },
+    {
+     "x": 128,
+     "y": 704,
+     "w": 103,
+     "h": 48,
+     "trigger": "click",
+     "type": "overlay",
+     "dest": "S07-DIALOG"
+    }
+   ]
+  },
+  "S07-CASH": {
+   "nodeId": "2106:579",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 240,
+     "y": 704,
+     "w": 131,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 704,
+     "w": 102,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S09"
+    },
+    {
+     "x": 128,
+     "y": 704,
+     "w": 103,
+     "h": 48,
+     "trigger": "click",
+     "type": "overlay",
+     "dest": "S07-DIALOG"
+    }
+   ]
+  },
+  "S07-DIALOG": {
+   "nodeId": "4013:822",
+   "width": 320,
+   "height": 208,
+   "hotspots": [
+    {
+     "x": 24,
+     "y": 136,
+     "w": 128,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": null
+    },
+    {
+     "x": 168,
+     "y": 136,
+     "w": 128,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S10"
+    }
+   ]
+  },
+  "S08": {
+   "nodeId": "2107:519",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 32,
+     "y": 268,
+     "w": 296,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07"
+    },
+    {
+     "x": 16,
+     "y": 380,
+     "w": 328,
+     "h": 148,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S08-EMPTY": {
+   "nodeId": "2107:582",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 16,
+     "y": 392,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S09": {
+   "nodeId": "4002:496",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07"
+    },
+    {
+     "x": 116,
+     "y": 712,
+     "w": 150,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07"
+    }
+   ]
+  },
+  "S10": {
+   "nodeId": "4002:539",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08-EMPTY"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 116,
+     "y": 712,
+     "w": 147,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S11": {
+   "nodeId": "4002:557",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "x": 16,
+     "y": 388,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S12"
+    },
+    {
+     "x": 16,
+     "y": 468,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S12"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S12": {
+   "nodeId": "4002:616",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S11"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 130,
+     "y": 712,
+     "w": 111,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S24"
+    }
+   ]
+  },
+  "S13": {
+   "nodeId": "4002:645",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    },
+    {
+     "x": 283,
+     "y": 166,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 283,
+     "y": 289,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 283,
+     "y": 403,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    }
+   ]
+  },
+  "S14": {
+   "nodeId": "4002:727",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 360,
+     "h": 800,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 536,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 108,
+     "y": 608,
+     "w": 160,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    }
+   ]
+  },
+  "S15": {
+   "nodeId": "4003:618",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 16,
+     "y": 176,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S16"
+    },
+    {
+     "x": 16,
+     "y": 232,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S17"
+    },
+    {
+     "x": 16,
+     "y": 288,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S18"
+    },
+    {
+     "x": 16,
+     "y": 344,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S13"
+    },
+    {
+     "x": 16,
+     "y": 400,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S11"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    }
+   ]
+  },
+  "S16": {
+   "nodeId": "4003:679",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S17": {
+   "nodeId": "4003:701",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S18": {
+   "nodeId": "4003:739",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S19": {
+   "nodeId": "4003:771",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 32,
+     "y": 168,
+     "w": 296,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S20"
+    }
+   ]
+  },
+  "S20": {
+   "nodeId": "4003:791",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S19"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S23"
+    }
+   ]
+  },
+  "S21": {
+   "nodeId": "4004:665",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 256,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S19"
+    },
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 32,
+     "y": 176,
+     "w": 296,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S25"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    }
+   ]
+  },
+  "S22": {
+   "nodeId": "4004:733",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 283,
+     "y": 309,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 283,
+     "y": 415,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S23": {
+   "nodeId": "4004:787",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 146,
+     "y": 712,
+     "w": 94,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    }
+   ]
+  },
+  "S24": {
+   "nodeId": "4004:826",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S12"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S12"
+    }
+   ]
+  },
+  "S25": {
+   "nodeId": "4004:852",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  }
+ }
+}

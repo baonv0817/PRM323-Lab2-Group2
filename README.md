@@ -6,8 +6,8 @@
 | | |
 |---|---|
 | **Nhóm** | Group 2 |
-| **Thành viên** | Nguyễn Viết Bảo — SE183398 · `[Điền các thành viên còn lại]` |
-| **Lớp** | `[Điền mã lớp]` |
+| **Thành viên** | Nguyễn Viết Bảo — SE183398 · Đỗ Hoàng Gia Bảo — SE193119 · Nguyễn Quốc Hoàng Pháp — SE190175 · Nguyễn Hoàng An — SE193905 · Nguyễn Thành Danh — SE193274 |
+| **Lớp** | SE1919 |
 | **Học kỳ** | Fall 2026 |
 | **Tên repo** | `PRM323-Lab2-Group2` |
 | **Cập nhật** | 21/10/2026 |
@@ -66,6 +66,7 @@ PRM323-Lab2-Group2/
 │   ├── concepts/                 │  3 hướng visual cho P3
 │   └── figma/
 │       ├── final-ui/             │  S01–S08 và biến thể (bản cũ)
+│       ├── final-ui-v2/          │  Final UI v2: 30 khung, ảnh 412 dp, ảnh tổng quan
 │       ├── final-ui-s09-s25/     │  S09–S25 (bản cũ) và ảnh tổng quan
 │       └── design-system/        │  token và component
 ├── handoff/
@@ -73,7 +74,7 @@ PRM323-Lab2-Group2/
 ├── tests/                        ← TEST TỰ ĐỘNG PROTOTYPE (Playwright, P4/P5)
 │   ├── figma-proto/              │  test bấm prototype Figma + test đồ thị flow, ảnh chuẩn
 │   ├── audit/                    │  chụp màn hình và đo lỗi thiết kế
-│   └── README.md                 │  cách cài và chạy
+│   └── README.md                 │  cách cài và chạy (có chế độ PROTO=v2)
 ├── slides/                       ← TRÌNH BÀY
 │   ├── FtaCode_Lab2_Presentation.pptx   (38 trang)
 │   └── kich-ban-*.md · phan-bien-hoi-dap.md
@@ -95,8 +96,8 @@ Thư mục nào có README riêng thì xem README đó để biết từng file 
 | P0 · Xác định vấn đề | G0 | [`ux/p0-problem-framing.md`](ux/p0-problem-framing.md) | ✅ 6/6 |
 | P1 · Nghiên cứu | G1 | [`ux/p1-research.md`](ux/p1-research.md) · [`ux/survey/`](ux/survey/) | ⚠️ chưa có phản hồi khảo sát thật |
 | P2 · UX Design | G2 | [`ux/p2-ux-design.md`](ux/p2-ux-design.md) · [`ux/persona.md`](ux/persona.md) · [`ux/user-flow.md`](ux/user-flow.md) | ⚠️ 5/6: chưa walkthrough với người thật |
-| P3 · UI Concept & Style Guide | G3 | [`design/p3-ui-concept-style-guide.md`](design/p3-ui-concept-style-guide.md) · [`assets/concepts/`](assets/concepts/) | ⚠️ còn màn 412 dp |
-| P4 · UI chi tiết & Prototype | G4 | [`design/p4-detailed-ui-prototype.md`](design/p4-detailed-ui-prototype.md) | ⚠️ prototype chưa nối bản v2 |
+| P3 · UI Concept & Style Guide | G3 | [`design/p3-ui-concept-style-guide.md`](design/p3-ui-concept-style-guide.md) · [`assets/concepts/`](assets/concepts/) | ✅ có bản 412 dp |
+| P4 · UI chi tiết & Prototype | G4 | [`design/p4-detailed-ui-prototype.md`](design/p4-detailed-ui-prototype.md) | ⚠️ prototype v2 đã nối, chưa chạy Present |
 | P5 · Kiểm thử & bàn giao | G5 | [`handoff/flutter-handoff.md`](handoff/flutter-handoff.md) · [`tests/`](tests/) · [`docs/test-reports/`](docs/test-reports/) | ⚠️ có handoff và test tự động; chưa usability test với người |
 
 Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluation-log.xlsx`](ai/ai-evaluation-log.xlsx). Trình bày: [`slides/`](slides/).
@@ -105,15 +106,15 @@ Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluatio
 
 | Hạng mục | Trạng thái | Bằng chứng |
 |---|---|---|
-| Final UI v2 | 30 khung trong Figma (25 màn và biến thể), không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp | [`ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md`](ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
+| Final UI v2 | 32 khung trong Figma (25 màn và biến thể), có bản 412 dp; không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp; ảnh ở `assets/figma/final-ui-v2/` | [`ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md`](ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
 | Phản biện giao diện | Báo cáo đo A01–A15 và bảng quyết định; phản biện của AI khác chờ chạy | [`ai/phan-bien-giao-dien/`](ai/phan-bien-giao-dien/) |
 | 11 flow | Đã vẽ, có Input/Output; Flow 1–3 đã nối prototype | `ux/user-flow.md` · `ux/userflow/` |
 | Wireframe | Đủ các màn và biến thể | `ux/wireframe/` |
 | Component | Bộ cũ 5 component set; bộ v2 thêm Chip, NavBar, Card/Food, IconButton, Button | Figma Page 05 |
-| Màn 412 dp | Chưa dựng | — |
+| Màn 412 dp | Đã dựng cho S01–S08 và biến thể | `assets/figma/final-ui-v2/412/` |
 | Nghiên cứu người dùng | Khảo sát Google Form đã soạn; kết quả hiện có là dữ liệu mô phỏng | `ux/survey/` |
-| Test tự động prototype | 13/13 đạt (Playwright, 20/10) | `tests/` · `docs/test-reports/playwright-prototype-2026-10-20.md` |
-| Usability test với người thật | Chưa làm | — |
+| Test tự động prototype | Bản cũ 13/13 đạt (Playwright, 20/10); đồ thị flow v2 7/7 đạt | `tests/` · `docs/test-reports/playwright-prototype-2026-10-20.md` |
+| Usability test với người thật | Chưa làm; có mẫu ghi kết quả | `docs/test-reports/usability-test-mau.md` |
 | Code Flutter | Không có (đề không yêu cầu) | — |
 
 Phỏng vấn SIM-A1…A5 và 20 phản hồi khảo sát SIM-S01…S20 do AI tạo để thử bộ câu hỏi và sheet phân tích; file kết quả đặt tên `…-MO-PHONG.xlsx`.
@@ -135,8 +136,7 @@ Mọi quyết định thiết kế ghi Accept / Modify / Reject trong `ai/ai-des
 Danh sách đầy đủ: [`docs/tien-do/TIEN-DO.md`](docs/tien-do/TIEN-DO.md) và [`docs/tien-do/FIX-CHECKLIST.md`](docs/tien-do/FIX-CHECKLIST.md). Ưu tiên:
 
 1. Chạy phản biện bằng AI khác ([`prompt`](ai/phan-bien-giao-dien/02-prompt-cho-ai-khac.md)), ghi nguyên văn vào `ai/ai-design-log.md`, chốt bảng quyết định.
-2. Xuất ảnh Final UI v2 (PNG 2×) vào `assets/figma/`, đo lại tỉ lệ màu.
-3. Vẽ nốt S06-LOADING và S07-DIALOG bản v2; nối prototype v2; cập nhật handoff Flutter.
+2. Chạy Present cả 3 flow trên prototype v2 và cập nhật ảnh chuẩn Playwright.
+3. Usability test 3–5 sinh viên ([`mẫu ghi kết quả`](docs/test-reports/usability-test-mau.md)).
 4. Thu phản hồi khảo sát thật (Google Form) và viết lại mục kết quả ở P1.
-5. Dựng màn 412 dp, chạy Present cả 3 flow.
-6. Điền họ tên và MSSV các thành viên, mã lớp; mở link Figma bằng tab ẩn danh để chắc quyền xem công khai.
+5. Mở link Figma bằng tab ẩn danh để chắc quyền xem công khai.

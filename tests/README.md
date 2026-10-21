@@ -53,9 +53,19 @@ Rồi nhờ agent: "Dùng playwright-cli mở prototype Figma của FtaCode và 
 
 Ngoài test flow, `audit/` phục vụ bước phản biện giao diện: `capture.js` chụp từng màn từ prototype, `figma-audit.js` đọc chữ/màu từ Figma, `measure.py` tính tỉ lệ màu và vùng bấm. Kết quả và cách dùng: [`../ai/phan-bien-giao-dien/`](../ai/phan-bien-giao-dien/).
 
+## Prototype v2
+
+`figma-proto/hotspots-v2.json` là vùng bấm của prototype Final UI v2 (Page 03, đọc từ Figma Plugin API). Kiểm đồ thị flow v2:
+
+```bash
+PROTO=v2 npx playwright test graph.spec.js          # bash
+$env:PROTO='v2'; npx playwright test graph.spec.js  # PowerShell
+python audit/measure.py v2                          # tỉ lệ màu và vùng bấm trên ảnh v2
+```
+
 ## Giới hạn
 
-- Chỉ kiểm F1–F3 và dialog huỷ. S09–S25 chưa nối prototype nên chưa test.
+- Bấm prototype bằng trình duyệt (`flows.spec.js`) mới chạy trên bản cũ F1–F3 và dialog huỷ; bản v2 mới kiểm đồ thị flow.
 - Không đo thời gian dưới 35 giây; số chạm tính từ đồ thị liên kết.
 - Không kiểm màn loading ở giữa (S06-LOADING tự chuyển sau 1,2 giây); test chỉ kiểm màn đích.
 - Phụ thuộc mạng và giao diện viewer của Figma; viewer đổi giao diện có thể làm ảnh chuẩn lệch.

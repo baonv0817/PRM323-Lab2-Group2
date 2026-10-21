@@ -66,7 +66,9 @@
 
 ---
 
-## 2. Đặc tả chi tiết 8 Màn hình (Per-Screen Specification - Đủ 6 mục bắt buộc)
+## 2. Đặc tả chi tiết S01–S08 (Per-Screen Specification - Đủ 6 mục bắt buộc)
+
+> Bản cũ của S01–S08. Giao diện hiện hành xem mục 5.
 
 ---
 
@@ -317,3 +319,69 @@ Theo yêu cầu mục 6 và mục 8 của đề bài, dưới đây là đặc t
 * Tải lỗi: khối màu `#FFE8CC` hiện tên món (`type-title-medium`, tối đa 2 dòng, ellipsis); không để ô trống.
 * Món **Tạm hết** (D30): ảnh mờ 40%, nhãn "Tạm hết" có icon, nút + bị tắt.
 
+---
+
+## 5. Cập nhật Final UI v2 (S01–S25)
+
+Final UI v2 thay các màn cũ ở mục 2. Mã màn dùng `S01…S25`; bảng dưới ánh xạ từ mã `SCR-xx` cũ. Vị trí khung: Figma Page 03, khung có hậu tố " v2"; số đo và quyết định: [`ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md`](../ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md).
+
+| SCR cũ | Màn v2 | Thay đổi so với mục 2 |
+|---|---|---|
+| SCR-01 | S01 Onboarding | Hero là ô icon 120 dp thay emoji; ba lợi ích dùng icon vector; một nút chính "Bắt đầu đặt món" |
+| SCR-02 | S02 Trang chủ | Thanh trên có địa điểm, trạng thái quán, chuông thông báo, giỏ; chip một kiểu; thẻ món dùng `Card/Food` v2 |
+| SCR-03 | S03 Thực đơn | Chip lọc chữ thuần; thẻ món có icon theo loại; món hết dùng badge "Tạm hết" |
+| SCR-04 | S04 Chi tiết món | Thanh dưới cố định: bước số lượng 48 dp và nút "Thêm vào giỏ · giá" |
+| SCR-05 | S05 Giỏ hàng | Chỉ còn giỏ hàng, giờ nhận, mã giảm giá, tổng tiền; nút "Tiếp tục thanh toán" |
+| SCR-06 | S06 Thanh toán | Chọn phương thức tại đây (MoMo mặc định) và nút "Xác nhận đặt đơn · giá" |
+| SCR-07 | S07 Theo dõi đơn | Nút chính "Chỉ đường tới Kiosk"; "Về trang chủ" là nút chữ; bước trạng thái dùng nhãn 14 sp |
+| SCR-08 | S08 Đơn hàng | Hai tab (Đang xử lý, Lịch sử); thẻ đơn đang làm có nút phụ "Xem mã QR nhận món" |
+
+### 5.1 Token bổ sung
+
+| Token Figma | Hex | Flutter | Dùng cho |
+|---|---|---|---|
+| `color/v2-background` | `#FAF8F5` | `ColorScheme.surface` (nền màn) | Nền mọi màn |
+| `color/v2-surface-variant` | `#F3F0EA` | `surfaceContainerHighest` | Ô ảnh món, ô illustration |
+| `color/v2-border` | `#E4DFD8` | `outlineVariant` | Viền thẻ, đường chia |
+| `color/v2-selected` | `#FFF1DE` | `secondaryContainer` | Chip và hàng đang chọn |
+| `color/v2-muted` | `#6B5F55` | `onSurfaceVariant` | Chữ phụ, icon |
+
+Quy tắc màu: cam `#F69D39` chỉ cho một `FilledButton` chính mỗi màn và trạng thái đang chọn; chữ cam dùng `#B45309`; viền ô nhập `#8A7A70`.
+
+### 5.2 Component bổ sung
+
+| Component Figma | Flutter | Ghi chú |
+|---|---|---|
+| `v2/Chip` (Default, Selected) | `ChoiceChip`, cao 48 dp | Chọn: nền `#FFF1DE`, viền cam |
+| `v2/NavBar` (4 tab) | `NavigationBar`, cao 64 dp | Nhãn 12 sp; tab chọn có pill `#FFF1DE` |
+| `v2/Card/Food` (Food/Drink × Default/OutOfStock) | `Card` + `ListTile` tuỳ biến, 328 × 96 | Nút + 48 dp; hết hàng hiện badge, không có nút + |
+| `v2/IconButton` | `IconButton`, `minimumSize: Size(48, 48)` | Thuộc tính Icon đổi icon |
+| `v2/Button/Secondary` | `OutlinedButton`, cao 48 dp | Viền `#8A7A70` |
+| `v2/Button/Text` | `TextButton`, cao 48 dp | Chữ `#B45309` |
+| `Icon/*` (27 icon) | `Icon(Icons.*_rounded)` hoặc `flutter_svg` | Một nét, 24 dp, màu `onSurfaceVariant` |
+
+Danh sách icon: home, restaurant, receipt, person, search, cart, back, close, add, remove, check, chevron, location, schedule, delete, bell, replay, error, offer, card, cash, wallet, qr, cafe, navigate, heart, checkCircle.
+
+### 5.3 Đặc tả S09–S25 (6 mục)
+
+Khung 360 × 800 dp, lề 16 dp, thanh trên cao 56 dp, nút chính cao 56 dp ở dưới cùng.
+
+| Màn | Layout | Component | State | Tương tác | Điều hướng | Ràng buộc |
+|---|---|---|---|---|---|---|
+| S09 Sửa đơn | Banner hạn sửa, chip giờ nhận, hai dòng số lượng, ô ghi chú, nút lưu | `v2/Chip`, `v2/IconButton`, TextField | Chỉ sửa được khi bếp chưa làm (hạn 10:12) | Đổi giờ, số lượng, ghi chú; Lưu | Lưu → S07; Giữ nguyên → S07 | Không đổi món (D04) |
+| S10 Đơn đã huỷ | Illustration thành công, tóm tắt hoàn tiền | Button | Thành công | Về trang chủ; Đặt lại đơn này | → S02; → S05 | Hoàn 54.000đ về ví gốc trong khoảng 30 giây |
+| S11 Lịch sử | Hai tab Tuần/Tháng, thẻ chi tiêu với biểu đồ 7 cột, danh sách đơn | NavBar | Tuần, Tháng | Đổi tab; chạm đơn | Đơn → S12 | Cột cao nhất tô cam; trục có nhãn chữ |
+| S12 Chi tiết đơn | Hoá đơn, tổng tiền, trạng thái, phương thức thanh toán | Button | Đã nhận | Đặt lại đơn này; Báo sự cố | → S05; → S24 | Tiền dạng `54.000đ` |
+| S13 Món yêu thích | Chip lọc, danh sách thẻ món kèm số lần đã đặt | `v2/Card/Food`, `v2/Chip` | Mặc định | Chạm + thêm vào giỏ | + → S05 | Tab Cá nhân đang chọn |
+| S14 Đặt lại nhanh | Bottom sheet 540 dp trên lớp phủ 45% | Button, radio | Chọn đơn | Chọn đơn; Thêm vào giỏ | → S05; Chọn từ thực đơn → S03 | Lớp phủ chặn thao tác phía sau |
+| S15 Cá nhân | Thẻ hồ sơ, danh sách 5 mục, link xoá dữ liệu | NavBar | Mặc định | Chạm từng mục | → S16, S17, S18, S13, S11 | Xoá dữ liệu cần xác nhận |
+| S16 Hồ sơ | Ghi chú không bắt buộc, 4 ô nhập, nút lưu | TextField, Button | Trống, đã điền | Nhập; Lưu | Back → S15 | Không bắt buộc đăng nhập (D12) |
+| S17 Thanh toán | Bốn phương thức dạng radio | Button | Một mục được chọn | Chọn mặc định; Lưu | Back → S15 | Mặc định MoMo |
+| S18 Cài đặt thông báo | Bốn công tắc kèm mô tả | Switch tuỳ biến 52 × 32 | Bật (có dấu tích), tắt | Bật/tắt | Back → S15 | Trạng thái bật có icon, không chỉ màu |
+| S19 Thông báo | Nhóm Hôm nay, Trước đó; thẻ chưa đọc có chấm và nút | Button/Secondary | Chưa đọc, đã đọc | Xem mã nhận món | → S20 | Nút ≥ 48 dp |
+| S20 Nhận món | Thẻ QR lớn 189 dp, mã đơn, giờ giữ món | Button | Sẵn sàng | Tôi đã nhận món | → S23 | QR cần độ sáng tối đa |
+| S21 Quán đóng | Thanh trạng thái màu lỗi kèm icon, thẻ hẹn nhận, xem trước thực đơn | `v2/Card/Food` (hết), Button | Đóng cửa | Hẹn nhận; Nhắc tôi | → S25 | Thẻ món không có nút + |
+| S22 Món hết | Thẻ món hết, ghi chú giờ có lại, hai món thay thế | `v2/Card/Food` | Hết hàng | Thêm món thay thế; Báo khi có lại | + → S05 | Gợi ý chỉ món còn hàng |
+| S23 Đánh giá | Thang 1–5, chip lý do, ghi chú | Chip, TextField, Button | Đã chọn điểm | Chọn điểm, chip; Gửi; Bỏ qua | → S02 | Mỗi điểm có nhãn chữ |
+| S24 Báo sự cố | Chip lý do, ô mô tả, thêm ảnh, ghi chú hoàn tiền | Chip, TextField, Button | Mặc định | Chọn lý do; Gửi báo cáo | → S12 | Ảnh tuỳ chọn |
+| S25 Hẹn giờ | Thẻ lịch học nhập tay, chip gợi ý giờ nhận | Chip, Button | Mặc định | Chọn giờ; Tiếp tục | → S05 | Lịch học do người dùng nhập |

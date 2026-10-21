@@ -13,7 +13,7 @@ Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút 
 ## Phần 1 — Trình bày slide (10 phút)
 
 **Slide 01 · Tổng quan (40 giây)**
-> "Em là [tên], MSSV [..]. Đề tài của em là FtaCode Mobile, app đặt món trước và nhận tại quầy Kiosk trong trường. Vấn đề em giải quyết: sinh viên chỉ có 15 phút giải lao nhưng xếp hàng căn tin mất 12–18 phút. Link GitHub và Figma ở cuối slide."
+> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài của nhóm là FtaCode Mobile, app đặt món trước và nhận tại quầy Kiosk trong trường. Vấn đề em giải quyết: sinh viên chỉ có 15 phút giải lao nhưng xếp hàng căn tin mất 12–18 phút. Link GitHub và Figma ở cuối slide."
 
 **Slide 02 · Persona (50 giây)**
 > "Persona chính là Minh Quân, 20 tuổi, sinh viên năm 2. Bạn ấy đi bộ giữa các tòa nhà, cầm máy một tay, mạng chập chờn và hay dùng ngoài nắng. Từ đó em có ba yêu cầu thiết kế: nút chính ở nửa dưới màn hình, vùng chạm 48 dp, tương phản cao. Chỉ số thành công là đặt xong một đơn dưới 35 giây, tối đa 8 lần chạm, đếm theo Flow 1."

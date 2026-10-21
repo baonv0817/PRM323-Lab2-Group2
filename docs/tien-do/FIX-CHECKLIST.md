@@ -4,7 +4,7 @@ Các file tài liệu trong repo đã được sửa. Những việc dưới đ�
 
 ## 1. GitHub
 - [x] Tên repo: `PRM323-Lab2-Group2` (nhóm đặt; đề gốc gợi ý `prm323-lab2-<MSSV>`, hỏi lại giảng viên nếu cần).
-- [ ] Điền họ tên, MSSV các thành viên và mã lớp vào README.
+- [x] Điền họ tên, MSSV các thành viên và mã lớp vào README.
 - [ ] Repo này tạo lại với **một commit khởi tạo**; lịch sử commit cũ nằm ở repo `prm393-lab2` ngoài. Từ nay commit đều theo từng phase để có lịch sử làm việc.
 
 ## 2. Figma — đổi token màu (Page 04 Variables, Page 05 Components)
@@ -30,7 +30,7 @@ Giá trị mới lấy từ `design/DESIGN.md` mục 2.5.
 - [ ] Sau khi sửa: chấm lại UI Checklist cho S02, S04, S05, S06 (mục tiêu ≥ 80) — D42.
 - [ ] S02: dựng lại theo concept đã chọn (D33) — khối trạng thái quán ở đầu, banner nhỏ, thấy ≥ 3 món không cần cuộn.
 - [ ] Ảnh món thật, tỉ lệ 1:1, fallback tên món khi lỗi (D14, D37).
-- [ ] Kiểm S02 với tên món dài 2 dòng và ở 412 dp; chụp lưu `assets/figma/final-ui/` (điều kiện G3).
+- [x] Kiểm S02 ở 412 dp: `assets/figma/final-ui-v2/412/S02.png`.
 - [ ] Thêm biến thể Card **"Tạm hết"** (thẻ mờ, nhãn, không bấm được) — D30.
 - [ ] S07: thêm badge **"Đã thanh toán" / "Trả tại quầy"** cạnh mã nhận đồ — D31.
 - [ ] S05: giờ nhận mặc định **"Lấy ngay"** — D28.
@@ -45,7 +45,7 @@ Giá trị mới lấy từ `design/DESIGN.md` mục 2.5.
 ## 4. Minh chứng phải chụp lại (không được dựng lại bằng tay)
 - [ ] `assets/stitch/iteration{1,2,3}_{before,after}_*.png`: hiện đang trùng file với ảnh Stitch ban đầu. Mở lịch sử phiên bản trong Stitch và chụp đúng màn trước và sau mỗi prompt tinh chỉnh.
 - [ ] `assets/figma/final-ui/*.png`: xuất lại từ Figma Page 03 (chọn frame → Export PNG 2x). Hiện S03, S04, S05-EMPTY, S06-ERR chỉ là ảnh chụp độ phân giải thấp (≈ 180 × 400).
-- [ ] Ảnh kiểm tra bố cục ở 360 dp và 412 dp, lưu vào `assets/figma/final-ui/` và chèn vào slide 32.
+- [x] Ảnh bố cục 412 dp: `assets/figma/final-ui-v2/412/` (chưa chèn vào slide 32).
 - [ ] Dán nguyên văn câu trả lời AI critique vào `ai/ai-design-log.md` Phụ lục A.
 
 ## 5. Slide (`slides/FtaCode_Lab2_Presentation.pptx`, 38 trang)

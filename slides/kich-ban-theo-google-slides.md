@@ -34,7 +34,7 @@ Thời lượng: **10 phút slide → 5 phút demo → 5 phút hỏi đáp**.
 ## Phần 1 — Lời thoại theo từng slide (10 phút)
 
 **Slide 01 · Thiết Kế UI/UX Có Hỗ Trợ AI (40 giây)**
-> "Em là [tên], MSSV [..]. Đề tài là FtaCode Mobile, app đặt đồ ăn nhanh trong khuôn viên trường. Bài có 8 màn hình trên Figma, 3 luồng tương tác và bản đặc tả handoff cho Flutter. Link repo và Figma ở dưới."
+> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài là FtaCode Mobile, app đặt đồ ăn nhanh trong khuôn viên trường. Bài có 25 màn hình trên Figma, 3 luồng tương tác và bản đặc tả handoff cho Flutter. Link repo và Figma ở dưới."
 
 **Slide 02 · Vấn đề & Chân dung người dùng (60 giây)**
 > "Persona chính là Minh Quân, 20 tuổi, sinh viên năm 2. Giữa hai ca học bạn ấy chỉ có 15 phút, mà xếp hàng ở căn tin đã mất gần hết thời gian đó. Bạn ấy vừa đi vừa cầm máy một tay, mạng chập chờn, hay dùng ngoài nắng. Mục tiêu là đặt trước rồi ghé quầy lấy luôn. Tiêu chí thành công: đặt xong một đơn dưới 35 giây, tối đa 8 lần chạm từ Trang chủ."

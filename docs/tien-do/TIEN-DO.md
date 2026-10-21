@@ -1,6 +1,6 @@
 # Tiến độ theo quy trình — FtaCode Mobile
 
-Cập nhật: 20/10/2026. Đối chiếu repo `PRM323-Lab2-Group2` (bản cục bộ, **chưa push**) với 45 bước trong `QUY-TRINH-DE-HIEU.md`.
+Cập nhật: 21/10/2026. Đối chiếu repo `PRM323-Lab2-Group2` (đã push lên GitHub) với 45 bước trong `QUY-TRINH-DE-HIEU.md`.
 
 **Ký hiệu**
 - ✅ **Xong**
@@ -94,8 +94,8 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 | # | Bước | Tình trạng | Ghi chú | Ai làm tiếp |
 |---|---|---|---|---|
 | 39 | ≥ 8 màn Final UI dùng instance | 🟡 | Page 03 có 25 màn và biến thể; bản v2 dùng component v2 | **Bạn** |
-| 40 | Kiểm 360 / 412 dp | ❌ | Chưa có ảnh | **Bạn** |
-| 41 | Prototype 3 flow, overlay, loading, Back | 🟡 | Page 06 có; chưa chạy thử được (cần đăng nhập) | **Bạn** |
+| 40 | Kiểm 360 / 412 dp | ✅ | Bản 412 dp trong Figma (`v2 · 412`), ảnh ở `assets/figma/final-ui-v2/412/` | — |
+| 41 | Prototype 3 flow, overlay, loading, Back | 🟡 | Page 06 (bản cũ) và Page 03 (v2, 119 liên kết, overlay, loading tự chuyển); chưa chạy Present | **Bạn** |
 | 42 | UI checklist 20 tiêu chí, 3 bài test | 🟡 🔵 | Mức nền trên ảnh Stitch (S02 55 · S04 70 · S05 65 · S07 85 · S06-ERR 75); chấm lại trên Figma (D42) | Bạn |
 | 42b | `design-decisions.md`, `screen-spec.md` | ✅ | Có, số tương phản đã sửa | — |
 | 42c | Xuất PNG từ Figma vào `assets/figma/final-ui/` | 🟡 | Đã xuất từ file Figma PRM323 ngày 20/10 (1×); S03, S04, S05-EMPTY, S06-ERR là ảnh chụp độ phân giải thấp; bản sao Stitch cũ chuyển vào `archive/anh-cu-giong-stitch/` | **Bạn** (xuất 2×) |
@@ -104,14 +104,14 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 
 | # | Bước | Tình trạng | Ghi chú | Ai làm tiếp |
 |---|---|---|---|---|
-| 43 | **Usability test 3–5 người** | ❌ | **Critical của G5** (hoặc ghi lý do ngoại lệ) | **Bạn** |
-| 43a | Phản biện giao diện, vẽ lại Final UI v2 | 🟡 | Báo cáo đo A01–A15, v2 30 khung; chờ phản biện của AI khác · `ai/phan-bien-giao-dien/` | **Bạn** |
+| 43 | **Usability test 3–5 người** | ❌ | **Critical của G5**; mẫu ghi kết quả: `docs/test-reports/usability-test-mau.md` | **Bạn** |
+| 43a | Phản biện giao diện, vẽ lại Final UI v2 | 🟡 | Báo cáo đo A01–A15, v2 đủ 25 màn và biến thể, ảnh và số đo; chờ phản biện của AI khác · `ai/phan-bien-giao-dien/` | **Bạn** |
 | 43b | Test tự động prototype bằng Playwright | ✅ | 13/13 đạt (20/10); bắt được lỗi vùng bấm Figma đang màu cam (đã sửa); còn 2 điểm lệch tài liệu · `tests/` · `docs/test-reports/` | Chạy lại sau khi sửa Figma |
-| 44 | Handoff 6 mục/màn + 2 bảng mapping | ✅ | `handoff/flutter-handoff.md` | — |
-| 45a | README đủ | 🟡 | Thiếu họ tên, MSSV | Bạn |
+| 44 | Handoff 6 mục/màn + 2 bảng mapping | ✅ | `handoff/flutter-handoff.md` (mục 5: v2, S01–S25) | — |
+| 45a | README đủ | ✅ | Có 5 thành viên, lớp SE1919 | — |
 | 45b | Link mở được ở cửa sổ ẩn danh | ❓ | Chưa kiểm | Bạn |
 | 45c | Slide + kịch bản + câu hỏi phản biện | ✅ | `slides/FtaCode_Lab2_Presentation.pptx` (38 trang) · `kich-ban-*.md` · `phan-bien-hoi-dap.md` | — |
-| 45d | Push lên GitHub | ❌ | 13 commit đang ở máy, chưa push | Bạn quyết |
+| 45d | Push lên GitHub | ✅ | `main` đã push | — |
 
 ---
 

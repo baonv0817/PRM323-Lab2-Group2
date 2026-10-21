@@ -12,7 +12,7 @@ function protoUrl(screen) {
   const id = data.frames[screen].nodeId;
   return `https://www.figma.com/proto/${FILE}/PRM323?page-id=${encodeURIComponent(PAGE_ID)}` +
     `&node-id=${id.replace(':', '-')}&starting-point-node-id=${encodeURIComponent(id)}` +
-    `&scaling=scale-down&hide-ui=1&hotspot-hints=0`; // tắt lớp cam gợi ý vùng bấm của Figma viewer
+    `&scaling=${process.env.PROTO_SCALING || 'scale-down'}&hide-ui=1&hotspot-hints=0`; // tắt lớp cam gợi ý vùng bấm của Figma viewer
 }
 
 // Tìm hình chữ nhật của khung màn hình (khác màu nền viewer) trên ảnh chụp.

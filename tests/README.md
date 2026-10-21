@@ -49,6 +49,10 @@ playwright-cli install --skills -g    # cài skill vào thư mục home, không 
 
 Rồi nhờ agent: "Dùng playwright-cli mở prototype Figma của FtaCode và đi Flow 1". Vì Figma vẽ bằng canvas, snapshot của CLI không thấy nút; agent phải bấm theo toạ độ trong `hotspots.json`. Script trong thư mục này vẫn là bằng chứng lặp lại được.
 
+## Đo lỗi thiết kế (`audit/`)
+
+Ngoài test flow, `audit/` phục vụ bước phản biện giao diện: `capture.js` chụp từng màn từ prototype, `figma-audit.js` đọc chữ/màu từ Figma, `measure.py` tính tỉ lệ màu và vùng bấm. Kết quả và cách dùng: [`../ai/phan-bien-giao-dien/`](../ai/phan-bien-giao-dien/).
+
 ## Giới hạn
 
 - Chỉ kiểm F1–F3 và dialog huỷ. Màn mở rộng S09–S25 chưa nối prototype nên chưa test.

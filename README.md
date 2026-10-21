@@ -59,6 +59,7 @@ PRM323-Lab2-Group2/
 ├── ai/                           ← NHẬT KÝ AI & PHẢN BIỆN
 │   ├── ai-design-log.md          │  prompt nguyên văn, vòng lặp, phản biện, quyết định D01–D42
 │   ├── ai-evaluation-log.xlsx
+│   ├── phan-bien-giao-dien/      │  phản biện giao diện trước Final UI: báo cáo đo, prompt cho AI khác, ảnh
 │   └── ai-persona-interviews.md  │  phỏng vấn mô phỏng (Assumed)
 ├── assets/                       ← ẢNH BẰNG CHỨNG
 │   ├── stitch/                   │  ảnh Google Stitch ban đầu + 3 vòng trước/sau

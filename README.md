@@ -76,11 +76,13 @@ PRM323-Lab2-Group2/
 │   ├── figma-proto/              │  test bấm prototype Figma + test đồ thị flow, ảnh chuẩn
 │   ├── audit/                    │  chụp màn hình và đo lỗi thiết kế
 │   └── README.md                 │  cách cài và chạy (có chế độ PROTO=v2)
+├── skills/                       ← BỘ SKILL CHẤM UX/UI THEO QUALITY GATES G0–G5
 ├── slides/                       ← TRÌNH BÀY
 │   ├── FtaCode_Lab2_Presentation.pptx   (38 trang)
 │   └── kich-ban-*.md · phan-bien-hoi-dap.md
 ├── docs/                         ← QUY TRÌNH & THEO DÕI TIẾN ĐỘ
 │   ├── quy-trinh/                │  quy trình UI/UX, hướng dẫn, bảng mẫu
+│   ├── quy-chuan-ux-ui.md        │  quy chuẩn UX/UI dùng để chấm, nguồn và mức độ chuẩn
 │   ├── tien-do/                  │  TIEN-DO, checklist sửa
 │   └── test-reports/             │  báo cáo test Playwright
 └── archive/                      ← BẢN CŨ, giữ làm lịch sử

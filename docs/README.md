@@ -8,6 +8,7 @@
 | | `QUY-TRINH-DE-HIEU.md` | 45 bước viết dễ hiểu |
 | | `HUONG-DAN-LAM-TU-DAU.md` | Hướng dẫn làm từ đầu, kèm prompt mẫu |
 | | `BANG-MAU.md` | Bảng mẫu ghi chép (phỏng vấn, persona, quyết định) |
+| | `../quy-chuan-ux-ui.md` | Quy chuẩn UX/UI dùng để chấm, nguồn và mức độ chuẩn (bộ skill ở [`../skills/`](../skills/)) |
 | [`tien-do/`](tien-do/) | `TIEN-DO.md` | Đối chiếu 45 bước: xong, chưa đạt, chưa làm |
 | | `FIX-CHECKLIST.md` | Việc sửa trước khi nộp (GitHub, Figma, slide) |
 | | `figma-fix-checklist.md` | Sửa Figma theo từng page và frame; ☑ = đã làm |

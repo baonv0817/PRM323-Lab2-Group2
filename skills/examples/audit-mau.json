@@ -1,0 +1,21 @@
+{
+  "system": "Hệ thống mẫu",
+  "gates": {
+    "G0": {"criteria": [
+      {"id": "G0-1", "critical": true, "status": "pass", "evidence": "problem statement đủ ai, vấn đề, bối cảnh, tác động"},
+      {"id": "G0-2", "critical": true, "status": "pass", "evidence": "bảng Fact/Hypothesis/Unknown"},
+      {"id": "G0-3", "critical": false, "status": "pass", "evidence": "4 hướng, có Impact x Feasibility"},
+      {"id": "G0-4", "critical": false, "status": "pass", "evidence": "user map"},
+      {"id": "G0-5", "critical": false, "status": "partial", "evidence": "có MVP, thiếu mục tiêu đo"},
+      {"id": "G0-6", "critical": true, "status": "pass", "evidence": "research backlog"}
+    ]},
+    "G1": {"criteria": [
+      {"id": "G1-1", "critical": true, "status": "fail", "evidence": "chỉ có dữ liệu mô phỏng"},
+      {"id": "G1-2", "critical": true, "status": "partial", "evidence": "insight có ID nhưng nguồn là mô phỏng"},
+      {"id": "G1-3", "critical": false, "status": "pass", "evidence": "research plan"},
+      {"id": "G1-4", "critical": false, "status": "pass", "evidence": "affinity map"},
+      {"id": "G1-5", "critical": true, "status": "partial", "evidence": "cập nhật giả định nhưng chưa có dữ liệu thật"},
+      {"id": "G1-6", "critical": false, "status": "pass", "evidence": "findings"}
+    ]}
+  }
+}

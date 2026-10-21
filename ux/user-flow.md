@@ -1,6 +1,6 @@
 # Kiến trúc thông tin và User Flow
 
-> FtaCode Mobile · PRM323 Lab 2 · Ngày cập nhật: 20/10/2026
+> BreakBite · PRM323 Lab 2 · Ngày cập nhật: 20/10/2026
 > Figma: [PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) · Sơ đồ flow: Page 01 · Wireframe: Page 02 · Màn hi-fi: Page 03 · Prototype: Page 06
 
 ## 0. Cách đọc
@@ -129,10 +129,10 @@ flowchart TD
 flowchart TD
     A([S03 Thực đơn]) -->|Chạm một món| B[S04 Chi tiết món · mức cay + topping]
     B -->|Thêm vào giỏ| C[S05 Giỏ hàng]
-    C -->|Chạm ô mã giảm giá · nhập FTASV20| D{Mã hợp lệ?}
+    C -->|Chạm ô mã giảm giá · nhập BB20| D{Mã hợp lệ?}
     D -->|Hết hạn / không áp dụng| E[S05-VOUCHER-ERR · viền đỏ + lý do]
     E -->|Nhập lại| C
-    D -->|FTASTUDENT hợp lệ| F[S05 · giảm 10.000đ, tổng 54.000đ]
+    D -->|BBSTUDENT hợp lệ| F[S05 · giảm 10.000đ, tổng 54.000đ]
     F -->|Xác nhận thanh toán| G[S06 Thanh toán]
     G --> H([S06-LOADING → S07 Theo dõi đơn])
 ```

@@ -1,6 +1,6 @@
 # Quy trình thiết kế UI/UX — theo PRM393 UI/UX Material
 
-Tổng hợp từ toàn bộ [prm393-material.web.app](https://prm393-material.web.app/) (v1.0, 10/2026): trang chủ và Chuẩn chung, [Quy trình & Quality Gates](https://prm393-material.web.app/quality-gates.html), [Persona Guideline](https://prm393-material.web.app/persona-guideline.html), [UI Checklist](https://prm393-material.web.app/ui-checklist.html), [Lab 2 · Trình bày](https://prm393-material.web.app/lab2-presentation.html). Cột **"FtaCode hiện tại"** là đánh giá của repo này tại ngày 17/10/2026.
+Tổng hợp từ toàn bộ [prm393-material.web.app](https://prm393-material.web.app/) (v1.0, 10/2026): trang chủ và Chuẩn chung, [Quy trình & Quality Gates](https://prm393-material.web.app/quality-gates.html), [Persona Guideline](https://prm393-material.web.app/persona-guideline.html), [UI Checklist](https://prm393-material.web.app/ui-checklist.html), [Lab 2 · Trình bày](https://prm393-material.web.app/lab2-presentation.html). Cột **"BreakBite hiện tại"** là đánh giá của repo này tại ngày 17/10/2026.
 
 Ký hiệu: ✅ có · ⚠️ có một phần hoặc chưa kiểm chứng · ❌ chưa có · **[C]** điều kiện **Critical** (chưa đạt thì gate bị chặn dù tổng điểm cao).
 
@@ -50,7 +50,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Deliverable:** Idea Board · Problem Statement + Opportunity Brief (1 trang) · Stakeholder & User Group Map · Assumption/Risk Log và MVP Scope.
 
-| Gate check | FtaCode hiện tại |
+| Gate check | BreakBite hiện tại |
 |---|---|
 | **[C]** Problem statement cụ thể: ai – vấn đề – bối cảnh – tác động | ✅ đã sửa bỏ giải pháp trá hình (D18) |
 | **[C]** Phân biệt dữ kiện, giả thuyết, ý kiến | ✅ nhãn bằng chứng + backlog H1–H6 (`ux/research.md` mục 6) |
@@ -70,7 +70,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Mức đề xuất:** khoảng 5 người cho mỗi nhóm chính (Persona Guideline: 6–12 buổi cho lớp học).
 
-| Gate check | FtaCode hiện tại |
+| Gate check | BreakBite hiện tại |
 |---|---|
 | **[C]** Nghiên cứu trực tiếp với người dùng phù hợp, **hoặc giải trình hợp lý** khi chưa thể | ⚠️ đạt theo nhánh giải trình: kế hoạch, protocol, consent đầy đủ, trạng thái "chưa thực hiện" (`ux/p1-research.md` mục 1, 8) |
 | **[C]** Insight quan trọng liên kết tới ghi chép nguồn | ✅ INS-01…06 có mã E…/SIM… và mức tin cậy (`ux/p1-research.md` mục 2–3) |
@@ -88,7 +88,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Deliverable:** Persona Set + Evidence Matrix · JTBD / Problem-to-Requirement Matrix · Journey, IA/Sitemap, User Flow · wireframe low-fi · prototype low-fi + ghi chú walkthrough.
 
-| Gate check | FtaCode hiện tại |
+| Gate check | BreakBite hiện tại |
 |---|---|
 | **[C]** Persona/JTBD khác nhau về hành vi và truy về evidence | ✅ P01–P03, JTBD, nhãn (`ux/persona.md`, `ux/persona-mapping.xlsx`) |
 | **[C]** Mọi tác vụ ưu tiên có flow rõ bắt đầu, kết thúc, lỗi | ✅ F1–F3 (`ux/user-flow.md`) |
@@ -106,7 +106,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Deliverable:** Concept Exploration Board (≥ 2 phương án) + lý do chọn · Visual Direction được duyệt / 2–3 key screen · App Style Guide · thư viện component / Figma styles · bằng chứng accessibility và contrast.
 
-| Gate check | FtaCode hiện tại |
+| Gate check | BreakBite hiện tại |
 |---|---|
 | **[C]** Có **≥ 2 visual direction** để so sánh; chọn có lý do dựa trên persona/task | ✅ 3 concept + chấm điểm (`design/p3-ui-concept-style-guide.md` mục 1) |
 | **[C]** Style Guide có color roles, type scale, spacing, grid, density, component states | ✅ `design/DESIGN.md`, Figma Page 04/05 (chưa có mục grid/density riêng) |
@@ -124,7 +124,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Deliverable:** hi-fi screens + responsive variant · Component Library + spec state/tương tác · prototype hi-fi · Screen/State Coverage Matrix · UI QA Checklist + Design Change Log.
 
-| Gate check | FtaCode hiện tại |
+| Gate check | BreakBite hiện tại |
 |---|---|
 | **[C]** Mọi flow MVP có đủ màn hi-fi và prototype đi hết tác vụ | ⚠️ Figma Page 03/06 có; chưa chạy thử được (Figma bắt đăng nhập) |
 | **[C]** Màn hình dùng đúng Style Guide/component, không hard-code | ⚠️ chưa kiểm được Variables/instance |
@@ -144,7 +144,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 
 **Deliverable:** Test Plan & log người tham gia/task · Usability Findings + Issue List theo mức độ · bằng chứng sửa và retest · gói Handoff + ghi chú accessibility/QA · Release Record.
 
-| Gate check | FtaCode hiện tại |
+| Gate check | BreakBite hiện tại |
 |---|---|
 | **[C]** Có usability test với người đại diện, hoặc lý do ngoại lệ được ghi | ❌ chưa test; đã có kế hoạch (`ux/research.md` mục 7) |
 | **[C]** Không còn blocker trong tác vụ MVP | ⚠️ chưa test nên chưa biết |
@@ -167,7 +167,7 @@ P0 Ideas → P1 UX Research → P2 UX Design → P3 UI Concept → P4 UI Design 
 - **Rubric 10 tiêu chí × 10 điểm:** phạm vi · user map + nhóm dễ bỏ sót · số persona hợp lý · khác biệt thật · đủ 12 trường · nhu cầu theo kết quả (không ngụy trang tính năng) · có bằng chứng hoặc nhãn giả định · có affinity · scenario + success criteria · ≥ 1 quyết định UI và cách kiểm chứng nối với persona.
 - **Nộp:** Milestone A (Discovery) và Milestone B (Validation & Design, gồm **ma trận Persona → Need → UI Decision → Test**).
 
-FtaCode: ✅ 12 trường, 3 persona, user map, coverage matrix, backlog, scenario, ma trận Excel · ⚠️ toàn bộ nhãn Assumed · ❌ chưa có ảnh workshop/affinity board.
+BreakBite: ✅ 12 trường, 3 persona, user map, coverage matrix, backlog, scenario, ma trận Excel · ⚠️ toàn bộ nhãn Assumed · ❌ chưa có ảnh workshop/affinity board.
 
 ---
 
@@ -185,7 +185,7 @@ FtaCode: ✅ 12 trường, 3 persona, user map, coverage matrix, backlog, scenar
 
 **3 bài test thêm:** **5-second test** (nhìn 5 giây có nói được chức năng và hành động chính không) · **Grayscale test** (xem ở thang xám, phát hiện phụ thuộc màu) · **Reduction test** (bỏ chữ, card, màu trang trí mà không mất thông tin).
 
-FtaCode: ❌ chưa chấm màn nào. Dự đoán trượt ở tiêu chí 12 và 18 cho tới khi Figma đổi màu chữ nút và tăng cỡ chữ phụ.
+BreakBite: ❌ chưa chấm màn nào. Dự đoán trượt ở tiêu chí 12 và 18 cho tới khi Figma đổi màu chữ nút và tăng cỡ chữ phụ.
 
 ---
 
@@ -200,7 +200,7 @@ Kịch bản đã soạn: `slides/kich-ban-theo-google-slides.md`, câu hỏi ph
 
 ---
 
-## 6. Việc cần làm để FtaCode qua đủ gate (theo mức ưu tiên)
+## 6. Việc cần làm để BreakBite qua đủ gate (theo mức ưu tiên)
 
 | # | Việc | Gate | Critical? | Ai làm được |
 |---|---|---|---|---|

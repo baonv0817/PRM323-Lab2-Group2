@@ -1,9 +1,9 @@
 # Design Decisions & Accessibility Checklist
 
 > **Tài liệu:** `design/design-decisions.md`  
-> **Dự án:** FtaCode Mobile App — Campus Quick Food Ordering  
+> **Dự án:** BreakBite App — Campus Quick Food Ordering  
 > **Môn học:** PRM323 — Lab 2  
-> **Figma Design Link:** [FtaCode Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*
+> **Figma Design Link:** [BreakBite Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*
 
 ---
 
@@ -26,7 +26,7 @@ Toàn bộ các quyết định thiết kế dưới đây đều được xây 
 
 ## 2. Kết quả kiểm chứng Accessibility & Responsive Checklist
 
-Dưới đây là kết quả kiểm tra thực tế trên hệ thống Design Tokens và màn hình của FtaCode:
+Dưới đây là kết quả kiểm tra thực tế trên hệ thống Design Tokens và màn hình của BreakBite:
 
 ```mermaid
 graph LR

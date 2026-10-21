@@ -1,9 +1,9 @@
 # Flutter Handoff Specification
 
 > **Tài liệu:** `handoff/flutter-handoff.md`  
-> **Dự án:** FtaCode Mobile App — Campus Quick Food Ordering  
+> **Dự án:** BreakBite App — Campus Quick Food Ordering  
 > **Môn học:** PRM323 — Lab 2  
-> **Figma Design Link:** [FtaCode Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*  
+> **Figma Design Link:** [BreakBite Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*  
 > **Mục tiêu:** Cung cấp đặc tả kỹ thuật chi tiết để lập trình viên Flutter có thể lập trình hoàn chỉnh toàn bộ giao diện và các trạng thái mà không cần phải hỏi lại Designer bất kỳ câu hỏi nào.
 
 ---
@@ -75,8 +75,8 @@
 ### Màn hình 1: SCR-01 — Splash & Onboarding
 1. **Layout Hierarchy:**
    * `Scaffold` (Background: `#FFF5E5`) $\to$ `SafeArea` $\to$ `Padding(spacing-md)` $\to$ `Column`:
-     * Phần trên (Flex 6): Hình minh họa món ăn Kiosk FtaCode (`Image.asset` hoặc SVG).
-     * Phần giữa (Flex 3): Tiêu đề `type-display-large` ("FtaCode - Ăn nhanh giải lao"), nội dung mô tả `type-body-large`.
+     * Phần trên (Flex 6): Hình minh họa món ăn Kiosk BreakBite (`Image.asset` hoặc SVG).
+     * Phần giữa (Flex 3): Tiêu đề `type-display-large` ("BreakBite - Ăn nhanh giải lao"), nội dung mô tả `type-body-large`.
      * Phần dưới (Ghim đáy): Nút Button Primary `Bắt đầu ngay` và dòng liên kết Đăng nhập email sinh viên.
    * *Phần cuộn:* Không cuộn (Màn hình cố định 800dp).
 2. **Components & Variants:**
@@ -201,7 +201,7 @@
    * `Error`: Ô voucher hiển thị viền đỏ và text lỗi khi nhập sai mã.
 4. **User Interactions:**
    * Bấm dấu "-" khi số lượng = 1 $\to$ Bật popup Dialog xác nhận "Xóa món này khỏi giỏ hàng?".
-   * Nhập mã `FTASV20` và bấm "Áp dụng" $\to$ Giảm giá 20% vào dòng Tổng tiền, hiện tick xanh.
+   * Nhập mã `BB20` và bấm "Áp dụng" $\to$ Giảm giá 20% vào dòng Tổng tiền, hiện tick xanh.
    * Bấm "Tiến hành thanh toán" $\to$ Chuyển sang `SCR-06`.
 5. **Navigation:**
    * Đến từ: Icon giỏ hàng trên App bar hoặc sau khi bấm thêm món ở `SCR-04`.

@@ -47,7 +47,7 @@ npm install -g @playwright/cli@latest
 playwright-cli install --skills -g    # cài skill vào thư mục home, không thêm gì vào repo
 ```
 
-Rồi nhờ agent: "Dùng playwright-cli mở prototype Figma của FtaCode và đi Flow 1". Vì Figma vẽ bằng canvas, snapshot của CLI không thấy nút; agent phải bấm theo toạ độ trong `hotspots.json`. Script trong thư mục này vẫn là bằng chứng lặp lại được.
+Rồi nhờ agent: "Dùng playwright-cli mở prototype Figma của BreakBite và đi Flow 1". Vì Figma vẽ bằng canvas, snapshot của CLI không thấy nút; agent phải bấm theo toạ độ trong `hotspots.json`. Script trong thư mục này vẫn là bằng chứng lặp lại được.
 
 ## Đo lỗi thiết kế (`audit/`)
 

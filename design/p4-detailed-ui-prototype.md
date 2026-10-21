@@ -1,6 +1,6 @@
 # P4 · Detailed UI Design & Prototyping
 
-> FtaCode Mobile · PRM323 Lab 2 · Gate G4 · Ngày lập: 20/10/2026
+> BreakBite · PRM323 Lab 2 · Gate G4 · Ngày lập: 20/10/2026
 > Figma: [PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6). Ngày 20/10/2026 đã rà và sửa qua Figma MCP (màu, Variables, mã màn, biến thể, component, liên kết prototype). Chưa chạy thử Present. Điểm UI Checklist ở mục 4 chấm trên ảnh Stitch, là **mức nền**.
 > Việc sửa theo từng frame: `docs/tien-do/figma-fix-checklist.md`.
 
@@ -137,7 +137,7 @@ Chấm 20 tiêu chí × 5 điểm trên ảnh trong `assets/stitch/`.
 | QA12 | Mã giảm giá đặt ở Flow 1 thay vì Flow 2 | Page 01 | Minor | ✅ Đã sửa sơ đồ |
 | QA13 | Thẻ Spacing và Typography bị cắt nội dung | Page 04 | Minor | ✅ |
 | QA14 | Màn là vector phẳng, không dùng instance | Page 03 | Major | Thay dần bằng instance |
-| QA15 | Hai bộ biến trùng (`FtaCode Tokens`, `FtaCode Design Tokens`) | Variables | Minor | Xoá bộ cũ |
+| QA15 | Hai bộ biến trùng (`BreakBite Tokens`, `BreakBite Design Tokens`) | Variables | Minor | Xoá bộ cũ |
 
 ## 8. AI phản biện và quyết định
 

@@ -76,14 +76,14 @@ flowchart LR
   end
   subgraph Support[Người hỗ trợ]
     P03[P03 Nhân viên quầy Kiosk — Supporting]
-    Owner[Chủ quán FtaCode]
+    Owner[Chủ quán BreakBite]
   end
   subgraph Out[Có liên quan nhưng ngoài phạm vi]
     X1[SV ít lên trường / mang cơm — A3, A4]
     X2[Giảng viên, cán bộ trường]
     X3[Cổng thanh toán, ngân hàng]
   end
-  P01 -- đặt đơn --> App((FtaCode Mobile))
+  P01 -- đặt đơn --> App((BreakBite))
   P02 -- đặt đơn --> App
   App -- đơn + giờ nhận --> P03
   Owner -- menu, giờ mở --> App

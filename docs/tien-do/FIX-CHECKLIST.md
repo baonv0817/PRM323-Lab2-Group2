@@ -39,7 +39,7 @@ Giá trị mới lấy từ `design/DESIGN.md` mục 2.5.
 - [ ] **Page 01:** đổi tên 3 flow theo `ux/user-flow.md`: F1 Đặt nhanh nhận tại quầy · F2 Tuỳ chỉnh món & voucher · F3 Lỗi thanh toán & phục hồi.
 - [ ] **Page 01:** nối mỗi bước trong sơ đồ tới frame màn hình tương ứng.
 - [ ] **Bottom nav:** tab thứ 4 trong Figma là "Cá nhân", nhưng repo coi tab 4 là SCR-08 Lịch sử. Đổi nhãn tab thành "Lịch sử".
-- [ ] Đổi tên file "Untitled" thành `PRM323 Lab2 – FtaCode – <MSSV>`.
+- [ ] Đổi tên file "Untitled" thành `PRM323 Lab2 – BreakBite – <MSSV>`.
 - [ ] Đặt 3 flow starting point ở Page 06 trùng tên F1/F2/F3, rồi bấm Present chạy thử từng flow.
 
 ## 4. Minh chứng phải chụp lại (không được dựng lại bằng tay)
@@ -48,7 +48,7 @@ Giá trị mới lấy từ `design/DESIGN.md` mục 2.5.
 - [x] Ảnh bố cục 412 dp: `assets/figma/final-ui-v2/412/` (chưa chèn vào slide 32).
 - [ ] Dán nguyên văn câu trả lời AI critique vào `ai/ai-design-log.md` Phụ lục A.
 
-## 5. Slide (`slides/FtaCode_Lab2_Presentation.pptx`, 38 trang)
+## 5. Slide (`slides/BreakBite_Lab2_Presentation.pptx`, 38 trang)
 Bộ slide hiện hành đã dựng theo bài mẫu và dùng ảnh Figma thật. Bản 12 trang và 37 trang cũ nằm ở `archive/slides-cu/`.
 - [ ] Điền họ tên, MSSV (slide 1) và phần "Tồn tại" (slide 36).
 - [ ] Slide 18–20: chụp lại ảnh Stitch trước/sau từ lịch sử phiên bản Stitch (đang là khung trống).

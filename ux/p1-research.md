@@ -1,6 +1,6 @@
 # P1 · UX Research
 
-> FtaCode Mobile · PRM323 Lab 2 · Gate G1 · Ngày lập: 19/10/2026
+> BreakBite · PRM323 Lab 2 · Gate G1 · Ngày lập: 19/10/2026
 > Dữ liệu người dùng hiện có là **phỏng vấn mô phỏng bằng AI** (mã SIM-A1…A5). Theo chuẩn của môn, đây không phải bằng chứng nghiên cứu: mọi ý từ nguồn này gắn nhãn **Assumed**.
 > Phương pháp nghiên cứu chính là **khảo sát Google Form** (`ux/survey/`). Form đã chạy thử bằng dữ liệu mô phỏng; đang thu phản hồi thật.
 

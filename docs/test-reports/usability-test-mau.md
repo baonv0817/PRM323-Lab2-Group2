@@ -19,7 +19,7 @@ Mở đầu: "Mình đang test giao diện, không phải test bạn. Bạn vừ
 | Mã | Nhiệm vụ (đọc cho người thử) | Điểm bắt đầu | Thành công khi | Mục tiêu |
 |---|---|---|---|---|
 | T1 | "Bạn có 15 phút giải lao. Hãy đặt một Combo Tacos Bò Phô Mai, lấy sau 10 phút." | S02 | Tới S07 có mã nhận món | Dưới 35 giây, tối đa 8 chạm |
-| T2 | "Thêm món, chọn cay vừa và thêm phô mai, rồi nhập mã giảm giá FTASV20." | S03 | Thấy lỗi mã, nhập lại hoặc bỏ mã, tiếp tục được | Tự phục hồi không cần gợi ý |
+| T2 | "Thêm món, chọn cay vừa và thêm phô mai, rồi nhập mã giảm giá BB20." | S03 | Thấy lỗi mã, nhập lại hoặc bỏ mã, tiếp tục được | Tự phục hồi không cần gợi ý |
 | T3 | "Thanh toán MoMo bị lỗi. Hãy hoàn tất đơn bằng cách khác." | S06-ERR | Đơn được tạo, giỏ không mất | Không phải thêm lại món |
 | T4 | "Tìm lại đơn cũ và đặt lại." | S08 | Món vào giỏ (S05) | Tối đa 4 chạm |
 | T5 | "Đổi giờ nhận của đơn đang làm." | S07 | Lưu ở S09 | Tự tìm thấy S09 |

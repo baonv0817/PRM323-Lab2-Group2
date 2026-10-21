@@ -1,6 +1,6 @@
 # P2 · UX Design & Interaction Architecture
 
-> FtaCode Mobile · PRM323 Lab 2 · Gate G2 · Ngày lập: 20/10/2026
+> BreakBite · PRM323 Lab 2 · Gate G2 · Ngày lập: 20/10/2026
 > Persona chi tiết: `ux/persona.md` · IA và flow: `ux/user-flow.md` · Ma trận: `ux/persona-mapping.xlsx`
 
 ## 1. Persona và mức ưu tiên
@@ -48,7 +48,7 @@
 | US11 | P03 | khách chỉ huỷ được trong 60 giây đầu | không lỗ món đã nấu | S | Sau 60 giây ẩn nút Huỷ; trước đó có dialog xác nhận |
 | US12 | P01 | đặt lại đơn cũ từ lịch sử | đặt món quen nhanh | C | S08 → "Đặt lại" đưa đủ món vào S05; món đã hết được bỏ qua kèm thông báo |
 
-## 4. Hành trình tương lai — P01 với FtaCode Mobile
+## 4. Hành trình tương lai — P01 với BreakBite
 
 | Giai đoạn | Cuối slot | Mở app | Chọn món | Thanh toán | Chờ món | Lấy món |
 |---|---|---|---|---|---|---|

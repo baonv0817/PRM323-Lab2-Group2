@@ -1,4 +1,4 @@
-# FtaCode Mobile — Đặt món trước, nhận tại quầy
+# BreakBite — Đặt món trước, nhận tại quầy
 ### PRM323 — Lab 2: Thiết kế UI/UX có hỗ trợ AI (Google Stitch → Figma)
 
 > **Ăn kịp trong giờ nghỉ, không phải xếp hàng.**
@@ -11,11 +11,13 @@
 | **Học kỳ** | Fall 2026 |
 | **Tên repo** | `PRM323-Lab2-Group2` |
 | **Cập nhật** | 21/10/2026 |
-| **Figma** | [PRM323 (bản đầy đủ)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) · [PRM323 (bản gốc)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) |
+| **Figma** | [PRM323 (bản đầy đủ)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) · [PRM323 (bản gốc)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) (chưa đổi tên trong file này) |
+
+> **Đổi tên:** dự án tên cũ là FtaCode, đổi thành **BreakBite** ngày 21/10/2026. Nhật ký AI nguyên văn (`ai/ai-design-log.md`, `ai/ai-persona-interviews.md`), `archive/` và ảnh concept giữ tên cũ vì là bản ghi tại thời điểm đó.
 
 ## 1. Đề tài
 
-**FtaCode Mobile** là app đặt món trước cho quán trong trường: sinh viên đặt và trả tiền từ lớp, hẹn giờ, tới quầy lấy món theo mã, không xếp hàng trong giờ nghỉ chỉ khoảng 15 phút.
+**BreakBite** là app đặt món trước cho quán trong trường: sinh viên đặt và trả tiền từ lớp, hẹn giờ, tới quầy lấy món theo mã, không xếp hàng trong giờ nghỉ chỉ khoảng 15 phút.
 
 - **Persona chính:** Nguyễn Minh Quân, 20 tuổi, sinh viên năm 2 ở ký túc xá, có khoảng 15 phút giữa hai slot, dùng điện thoại một tay khi đi bộ.
 - **Tiêu chí thành công:** đặt xong một đơn dưới 35 giây, tối đa 8 chạm từ Trang chủ.
@@ -78,7 +80,7 @@ PRM323-Lab2-Group2/
 │   └── README.md                 │  cách cài và chạy (có chế độ PROTO=v2)
 ├── skills/                       ← BỘ SKILL CHẤM UX/UI THEO QUALITY GATES G0–G5
 ├── slides/                       ← TRÌNH BÀY
-│   ├── FtaCode_Lab2_Presentation.pptx   (38 trang)
+│   ├── BreakBite_Lab2_Presentation.pptx   (38 trang)
 │   └── kich-ban-*.md · phan-bien-hoi-dap.md
 ├── docs/                         ← QUY TRÌNH & THEO DÕI TIẾN ĐỘ
 │   ├── quy-trinh/                │  quy trình UI/UX, hướng dẫn, bảng mẫu

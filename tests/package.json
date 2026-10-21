@@ -1,7 +1,7 @@
 {
   "name": "prm323-lab2-figma-proto-tests",
   "private": true,
-  "description": "Playwright tests that click through the Figma prototype of FtaCode Mobile and check its flow graph",
+  "description": "Playwright tests that click through the Figma prototype of BreakBite and check its flow graph",
   "scripts": {
     "test": "playwright test",
     "test:graph": "playwright test graph.spec.js",

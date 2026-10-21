@@ -1,6 +1,6 @@
 # Checklist sửa Figma — theo từng page và frame
 
-> File: [FtaCode Figma — PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) (bản clone, có quyền sửa).
+> File: [BreakBite Figma — PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) (bản clone, có quyền sửa).
 > Rà lần đầu 20/10/2026 ở chế độ xem; **sửa qua Figma MCP cùng ngày**. ☑ = đã sửa trong Figma, ☐ = còn phải làm tay.
 > Mã quyết định (Dxx) tra ở `ai/ai-design-log.md`.
 
@@ -59,7 +59,7 @@ Thứ tự page đã sắp lại: 01 → 02 → 03 → 04 → 05 → 06.
 | S06-ERR | Màu đúng token | Rút lời giải thích còn 2 dòng (D39) |
 
 **Biến thể mới (hàng cuối Page 03 và 06):**
-- [x] `S05-VOUCHER-ERR` — mã FTASV20 hết hạn, viền và chữ đỏ, tổng tiền không giảm.
+- [x] `S05-VOUCHER-ERR` — mã BB20 hết hạn, viền và chữ đỏ, tổng tiền không giảm.
 - [x] `S06-LOADING` — lớp phủ mờ + spinner "Đang kết nối cổng MoMo…", "Giỏ hàng của bạn vẫn được giữ".
 - [x] `S07-CASH` — badge "Trả tại quầy", dòng "💵 Trả tại quầy khi nhận: 54.000đ" (D31).
 - [x] `S08-EMPTY` — "Chưa có đơn nào" + nút "Xem thực đơn".
@@ -83,7 +83,7 @@ Thứ tự page đã sắp lại: 01 → 02 → 03 → 04 → 05 → 06.
 - [x] Scope của biến: màu chữ chỉ hiện ở Text fill, viền ở Stroke, spacing ở Gap, radius ở Corner radius.
 - [x] Nhãn hex trên bảng màu đã sửa; "Nunito/Inter" → "Nunito".
 - [x] Khung "Spacing & Typography Specs" hết bị cắt.
-- [ ] File có 2 bộ biến trùng nhau: `FtaCode Tokens` (cũ) và `FtaCode Design Tokens` (đang dùng). Xoá bộ cũ trong Local variables.
+- [ ] File có 2 bộ biến trùng nhau: `BreakBite Tokens` (cũ) và `BreakBite Design Tokens` (đang dùng). Xoá bộ cũ trong Local variables.
 
 ## 6. Page 05 · Components
 

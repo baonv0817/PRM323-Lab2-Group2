@@ -1,9 +1,9 @@
 # Design Specification: Screen Inventory & Intent
 
 > **Tài liệu:** `design/screen-spec.md`  
-> **Dự án:** FtaCode Mobile App — Campus Quick Food Ordering  
+> **Dự án:** BreakBite App — Campus Quick Food Ordering  
 > **Môn học:** PRM323 — Lab 2  
-> **Figma Design Link:** [FtaCode Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*  
+> **Figma Design Link:** [BreakBite Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*  
 > **Khung kích thước chuẩn di động:** $360 \times 800\text{ dp}$ (Tỷ lệ khung 9:20 phổ biến trên Android & iOS)
 
 ---
@@ -16,7 +16,7 @@
 * **Mục đích thiết kế (Design Intent):** Tạo ấn tượng thị giác đầu tiên chuyên nghiệp, ấm cúng; truyền tải tức thì 3 lợi ích cốt lõi cho sinh viên ("Đặt món trước - Không chờ đợi - Lấy đồ tại Kiosk trong 30 giây").
 * **Thuộc luồng (Flow Association):** Điểm khởi đầu của ứng dụng khi người dùng lần đầu cài đặt.
 * **Nội dung hiển thị (Content Structure):**
-  * **Header/Logo:** Logo FtaCode với biểu tượng bánh Tacos cách điệu và chiếc thìa/dĩa năng động.
+  * **Header/Logo:** Logo BreakBite với biểu tượng bánh Tacos cách điệu và chiếc thìa/dĩa năng động.
   * **Hero Image:** Hình ảnh minh họa sinh viên nhận món ăn tại quầy Kiosk hiện đại.
   * **Tiêu đề & Khẩu hiệu:** Tiêu đề lớn `type-display-large`: "Ăn ngon - Học tốt - Không chờ đợi". Mô tả ngắn về việc tiết kiệm 15 phút giải lao.
   * **Hành động chính (Primary CTA):** Nút Button lớn `variant=Primary`: "Bắt đầu đặt món ngay" (chiều cao 52dp, ghim đáy).
@@ -41,7 +41,7 @@
 * **Mục đích thiết kế (Design Intent):** Giúp sinh viên duyệt toàn bộ thực đơn phong phú của căn tin, lọc món theo ngân sách sinh viên và nhóm sở thích ăn uống.
 * **Thuộc luồng (Flow Association):** Điểm bắt đầu (Start) của **Flow 2 (Customize & Voucher)**.
 * **Nội dung hiển thị (Content Structure):**
-  * **App Bar:** Tiêu đề "Thực đơn FtaCode" + Nút mở bộ lọc (Filter icon).
+  * **App Bar:** Tiêu đề "Thực đơn BreakBite" + Nút mở bộ lọc (Filter icon).
   * **Bộ lọc phân loại (Filter Section):** Tab điều hướng phân loại món (Tacos / Mì Trộn / Đồ Uống) và chip lọc giá ("< 30k", "30k - 50k", "Ăn kèm").
   * **Danh sách món ăn:** Danh sách 2 cột (Staggered Grid) hiển thị ảnh sắc nét, tag "Best Seller", tên món, nguyên liệu tóm tắt và giá bán.
   * **Floating Cart Button:** Nút nổi ở góc dưới hiển thị tổng số món trong giỏ và tổng tiền tạm tính, bấm vào chuyển ngay tới giỏ hàng.
@@ -68,7 +68,7 @@
   * **App Bar:** Nút Back + Tiêu đề "Giỏ hàng của bạn" + Nút "Xóa tất cả".
   * **Danh sách món đã đặt:** Card từng món gồm ảnh thu nhỏ, tên món kèm ghi chú topping đã chọn, đơn giá và cụm nút (+/-) điều chỉnh số lượng.
   * **Khung hẹn giờ nhận món (Campus Pickup Slot):** Tùy chọn: "Lấy ngay khi xong (~7 phút)" (**mặc định**, quyết định D28) hoặc "Hẹn giờ: 09:20 (Giờ giải lao ca 1)".
-  * **Ô nhập mã giảm giá (`CouponInput`):** TextField nhập code kèm nút "Áp dụng", hiển thị badge xanh lá khi mã `FTASV20` được duyệt.
+  * **Ô nhập mã giảm giá (`CouponInput`):** TextField nhập code kèm nút "Áp dụng", hiển thị badge xanh lá khi mã `BB20` được duyệt.
   * **Bảng chi tiết thanh toán:** Tạm tính, Giảm giá sinh viên, Phí đóng gói mang đi (0đ), Tổng thanh toán cuối cùng.
   * **Nút CTA ghim đáy:** "Tiến hành thanh toán • 45.000đ".
   * **Trạng thái rỗng (Empty State Variant):** Nếu giỏ hàng trống, hiển thị hình vẽ đĩa ăn rỗng, dòng chữ "Giỏ hàng đang trống" và nút "Khám phá món ngay".
@@ -79,7 +79,7 @@
 * **Mục đích thiết kế (Design Intent):** Cung cấp các phương thức thanh toán quen thuộc nhất với sinh viên, hiển thị rõ ràng chính sách hoàn tiền/giữ đơn nếu giao dịch gặp sự cố.
 * **Thuộc luồng (Flow Association):** Màn hình then chốt trong **Flow 1, Flow 2** và là nơi phát sinh **Flow 3 (Error & Recovery)**.
 * **Nội dung hiển thị (Content Structure):**
-  * **Thông tin nhận đồ:** Tên người nhận (Quân - 0987xxx), Điểm nhận (Kiosk FtaCode - Tòa Alpha).
+  * **Thông tin nhận đồ:** Tên người nhận (Quân - 0987xxx), Điểm nhận (Kiosk BreakBite - Tòa Alpha).
   * **Danh sách phương thức thanh toán (Radio Selection Cards):**
     1. Ví MoMo (Biểu tượng logo ví điện tử).
     2. Chuyển khoản VietQR sinh viên (Tự động mở app ngân hàng).

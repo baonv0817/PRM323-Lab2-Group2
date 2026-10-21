@@ -1,6 +1,6 @@
 # Màn hình S09–S30
 
-> FtaCode Mobile · Figma [PRM323](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260), Page 03 (khung có hậu tố " v2" là bản Final UI)
+> BreakBite · Figma [PRM323](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260), Page 03 (khung có hậu tố " v2" là bản Final UI)
 > Ảnh bản cũ: `assets/figma/ext/` · Tổng quan: `assets/figma/final-ui-s09-s25/contact-sheet.png`
 
 ![S09–S25](../assets/figma/final-ui-s09-s25/contact-sheet.png)

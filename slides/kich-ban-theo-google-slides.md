@@ -34,7 +34,7 @@ Thời lượng: **10 phút slide → 5 phút demo → 5 phút hỏi đáp**.
 ## Phần 1 — Lời thoại theo từng slide (10 phút)
 
 **Slide 01 · Thiết Kế UI/UX Có Hỗ Trợ AI (40 giây)**
-> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài là FtaCode Mobile, app đặt đồ ăn nhanh trong khuôn viên trường. Bài có 25 màn hình trên Figma, 3 luồng tương tác và bản đặc tả handoff cho Flutter. Link repo và Figma ở dưới."
+> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài là BreakBite, app đặt đồ ăn nhanh trong khuôn viên trường. Bài có 25 màn hình trên Figma, 3 luồng tương tác và bản đặc tả handoff cho Flutter. Link repo và Figma ở dưới."
 
 **Slide 02 · Vấn đề & Chân dung người dùng (60 giây)**
 > "Persona chính là Minh Quân, 20 tuổi, sinh viên năm 2. Giữa hai ca học bạn ấy chỉ có 15 phút, mà xếp hàng ở căn tin đã mất gần hết thời gian đó. Bạn ấy vừa đi vừa cầm máy một tay, mạng chập chờn, hay dùng ngoài nắng. Mục tiêu là đặt trước rồi ghé quầy lấy luôn. Tiêu chí thành công: đặt xong một đơn dưới 35 giây, tối đa 8 lần chạm từ Trang chủ."
@@ -85,7 +85,7 @@ Chuẩn bị: đăng nhập Figma, mở sẵn file và tab GitHub, phóng to mà
 | 2 | Page 03, chỉ từng frame SCR-01 → SCR-08 | "8 màn khác nhau. Giỏ trống, lỗi thanh toán và dialog là biến thể." | 20 giây |
 | 3 | Page 06 → **Present** → chọn flow **F1** | Đi theo: Home → thẻ Combo Tacos → tick topping (*"giá trên nút tự cộng"*) → Thêm vào giỏ → chọn giờ nhận → Tiến hành thanh toán → Tiền mặt → Xác nhận → **dialog overlay** → Đồng ý → **loading** → mã #A-204 | 70 giây |
 | 4 | Bấm **Back** | "Back về đúng màn trước, không có ngõ cụt." | 10 giây |
-| 5 | Chọn flow **F2** | Thực đơn → món mì → chọn mức cay và topping → giỏ → nhập mã sai (*"báo lỗi có icon và lý do"*) → nhập `FTASV20` → giảm giá → thanh toán | 45 giây |
+| 5 | Chọn flow **F2** | Thực đơn → món mì → chọn mức cay và topping → giỏ → nhập mã sai (*"báo lỗi có icon và lý do"*) → nhập `BB20` → giảm giá → thanh toán | 45 giây |
 | 6 | Chọn flow **F3** | Checkout → MoMo → loading → **màn lỗi** (*"giỏ hàng vẫn được giữ"*) → Chuyển tiền mặt → Theo dõi đơn | 45 giây |
 | 7 | Thoát Present → Page 05, chọn Button | Cho xem variant default / pressed / disabled / loading và Auto Layout | 25 giây |
 | 8 | Mở Variables, đổi `color-primary` → xem Page 03 → Ctrl+Z | "Đổi một biến, mọi màn dùng instance tự đổi." | 25 giây |

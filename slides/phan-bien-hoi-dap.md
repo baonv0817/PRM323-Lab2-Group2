@@ -22,7 +22,7 @@ Sửa hoặc chuẩn bị câu trả lời trước khi lên trình bày.
 | 5 | Chỉ số thành công **dưới 35 giây** | Vì sao là 35 mà không phải 60? | Lập luận: 15 phút nghỉ, 5–7 phút đi lại, còn lại ~1 phút để đặt món. 35 giây là mục tiêu có dư. Tốt nhất là bấm giờ thử trên prototype |
 | 6 | Có màn **Onboarding** (SCR-01) dù persona luôn vội | Onboarding thêm bước, đi ngược mục tiêu "nhanh" | Nói rõ: chỉ hiện ở lần mở đầu tiên, có nút "Bỏ qua" (Stitch có nút này); từ lần sau vào thẳng Home |
 | 7 | App **không có giao hàng** | "Sao không giao tận nơi như Grab?" | Persona ở trong trường, không cần giao; shipper không vào được tòa nhà/phòng lab (SIM-A1, A5). Đây là quyết định **thu hẹp phạm vi** có chủ đích (MVP, `ux/p0-problem-framing.md` mục 5) |
-| 8 | "Kiosk FtaCode **Tòa Alpha** trong trường" | Thầy có thể hỏi quán có thật không | Nói thẳng: "Em giả định quán mở kiosk trong trường; tên món, giá và topping là dữ liệu mẫu" |
+| 8 | "Kiosk BreakBite **Tòa Alpha** trong trường" | Thầy có thể hỏi quán có thật không | Nói thẳng: "Em giả định quán mở kiosk trong trường; tên món, giá và topping là dữ liệu mẫu" |
 | 9 | Bảng quyết định **chưa có đề xuất nào bị Từ chối** | Hướng dẫn chấm có câu "một đề xuất AI nào bị từ chối, vì sao?" | Nếu thực tế có từ chối thì thêm vào log; nếu không có, nói thật là đã chỉnh sửa thay vì từ chối và giải thích vì sao |
 
 ---

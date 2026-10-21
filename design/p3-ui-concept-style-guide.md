@@ -1,6 +1,6 @@
 # P3 · UI Concept & App Style Guide
 
-> FtaCode Mobile · PRM323 Lab 2 · Gate G3 · Ngày lập: 20/10/2026
+> BreakBite · PRM323 Lab 2 · Gate G3 · Ngày lập: 20/10/2026
 > Token chi tiết: `design/DESIGN.md` · Prompt, vòng lặp, critique: `ai/ai-design-log.md`
 
 ## 1. Concept Exploration — 3 hướng trên màn S02 Trang chủ
@@ -10,7 +10,7 @@
 | | A · Ấm, thẻ ảnh | B · Tối giản, danh sách | C · Tối, banner lớn |
 |---|---|---|---|
 | Nguồn | Google Stitch | Claude (HTML) | Claude (HTML) |
-| Ý tưởng | Màu thương hiệu FtaCode, thẻ món có ảnh, banner ưu đãi | Nền trắng, 1 màu nhấn, danh sách chữ, khối trạng thái quán | Nền nâu đen, banner cam lớn, lưới 2 cột |
+| Ý tưởng | Màu thương hiệu BreakBite, thẻ món có ảnh, banner ưu đãi | Nền trắng, 1 màu nhấn, danh sách chữ, khối trạng thái quán | Nền nâu đen, banner cam lớn, lưới 2 cột |
 | Thấy được (không cuộn) | ~2,5 món | 4 món | 2 món |
 | Tương phản chữ chính | 10,37:1 | 17,4:1 | 16,85:1 |
 
@@ -22,7 +22,7 @@
 | Quét nhanh, thấy nhiều món | 3 | 5 | 2 | Persona có 15 phút |
 | Chọn món bằng ảnh | 5 | 1 | 4 | P01 chọn bằng mắt khi vội |
 | Thấy trạng thái quán trước | 3 | 5 | 3 | US03 |
-| Nhận diện thương hiệu | 5 | 2 | 3 | Bảng màu thương hiệu FtaCode (cam, nâu, kem) |
+| Nhận diện thương hiệu | 5 | 2 | 3 | Bảng màu thương hiệu BreakBite (cam, nâu, kem) |
 | Ràng buộc đề (light theme) | 5 | 5 | 1 | Đề bắt buộc light theme |
 | **Tổng** | **25** | 23 | 15 | |
 
@@ -55,7 +55,7 @@ Bảng token và component trong Figma: `assets/figma/design-system/design-syste
 | Chữ phụ | `#8A5D48` | Đã đổi (trước: `#966A55` 4,33:1) | ✅ |
 | Success / Error | `#15803D` / `#B91C1C` | Đã đổi | ✅ |
 | on-primary, primary-text, border-input | Có token | Đã thêm | ✅ |
-| Token là Variables | `color/`, `spacing/`, `radius/` | Collection `FtaCode Design Tokens`; màu trên màn đã gắn biến | ✅ |
+| Token là Variables | `color/`, `spacing/`, `radius/` | Collection `BreakBite Design Tokens`; màu trên màn đã gắn biến | ✅ |
 | Component đặt tên dùng lại | `Button/Primary`, `State=…` | 5 Component Set có Variant ở Page 05 | ✅ |
 | Màn dùng instance của component | — | Màn vẫn là vector phẳng | ❌ |
 | Chữ nội dung ≥ 14 sp | ≥ 14 sp | ~150 text cỡ 9–13 sp | ❌ |

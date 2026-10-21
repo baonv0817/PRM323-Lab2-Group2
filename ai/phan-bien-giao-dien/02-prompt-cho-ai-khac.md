@@ -14,7 +14,7 @@ Mục đích theo đề Lab 2: **một AI khác với AI đã thiết kế** soi
 ## Prompt (dán nguyên văn)
 
 ```text
-Bạn là chuyên gia UI/UX khó tính, đóng vai người kiểm tra độc lập. Tôi đính kèm ảnh các màn hình của một app di động tên FtaCode Mobile (đặt món ăn trước, nhận tại quầy trong trường đại học), khung 360 × 800 dp. Đây là bài Lab 2 của một môn học; giao diện do AI sinh ra rồi được chỉnh, và tôi cần bạn tìm lỗi thật, không khen cho có.
+Bạn là chuyên gia UI/UX khó tính, đóng vai người kiểm tra độc lập. Tôi đính kèm ảnh các màn hình của một app di động tên BreakBite (đặt món ăn trước, nhận tại quầy trong trường đại học), khung 360 × 800 dp. Đây là bài Lab 2 của một môn học; giao diện do AI sinh ra rồi được chỉnh, và tôi cần bạn tìm lỗi thật, không khen cho có.
 
 BỐI CẢNH
 - Người dùng chính: sinh viên 20 tuổi, chỉ có khoảng 15 phút giữa hai tiết học, cầm điện thoại một tay khi đi bộ.

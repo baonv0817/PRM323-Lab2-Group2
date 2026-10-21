@@ -1,4 +1,4 @@
-# Kịch bản trình bày Lab 2 — FtaCode Mobile
+# Kịch bản trình bày Lab 2 — BreakBite
 
 Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút demo + 5 phút hỏi đáp**. Mỗi slide khoảng 45–50 giây. Lời thoại chỉ là gợi ý, hãy nói bằng lời của bạn và chỉ khẳng định những gì bạn đã thật sự làm.
 
@@ -13,7 +13,7 @@ Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút 
 ## Phần 1 — Trình bày slide (10 phút)
 
 **Slide 01 · Tổng quan (40 giây)**
-> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài của nhóm là FtaCode Mobile, app đặt món trước và nhận tại quầy Kiosk trong trường. Vấn đề em giải quyết: sinh viên chỉ có 15 phút giải lao nhưng xếp hàng căn tin mất 12–18 phút. Link GitHub và Figma ở cuối slide."
+> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài của nhóm là BreakBite, app đặt món trước và nhận tại quầy Kiosk trong trường. Vấn đề em giải quyết: sinh viên chỉ có 15 phút giải lao nhưng xếp hàng căn tin mất 12–18 phút. Link GitHub và Figma ở cuối slide."
 
 **Slide 02 · Persona (50 giây)**
 > "Persona chính là Minh Quân, 20 tuổi, sinh viên năm 2. Bạn ấy đi bộ giữa các tòa nhà, cầm máy một tay, mạng chập chờn và hay dùng ngoài nắng. Từ đó em có ba yêu cầu thiết kế: nút chính ở nửa dưới màn hình, vùng chạm 48 dp, tương phản cao. Chỉ số thành công là đặt xong một đơn dưới 35 giây, tối đa 8 lần chạm, đếm theo Flow 1."
@@ -64,7 +64,7 @@ Làm theo thứ tự trong hướng dẫn chấm.
    Sau đó bấm **Back** để cho thấy quay về đúng màn trước.
 
    **F2 — Tuỳ chỉnh & voucher (khoảng 45 giây)**
-   SCR-03 Menu → chọn món mì trộn → SCR-04 chọn mức cay và 2 topping → *Thêm vào giỏ* → SCR-05 nhập mã sai → **báo lỗi có icon và lý do** → nhập `FTASV20` → giảm giá thành công → thanh toán QR → SCR-07.
+   SCR-03 Menu → chọn món mì trộn → SCR-04 chọn mức cay và 2 topping → *Thêm vào giỏ* → SCR-05 nhập mã sai → **báo lỗi có icon và lý do** → nhập `BB20` → giảm giá thành công → thanh toán QR → SCR-07.
 
    **F3 — Lỗi thanh toán & phục hồi (khoảng 45 giây)**
    SCR-06 chọn MoMo → *Xác nhận thanh toán* → loading → **SCR-06-ERR** ("giỏ hàng vẫn được giữ") → bấm *Chuyển sang trả tiền mặt* → SCR-07. Nói thêm: nút *Thử lại* đưa về bước loading.

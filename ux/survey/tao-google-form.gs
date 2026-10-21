@@ -1,5 +1,5 @@
 /**
- * Tạo Google Form khảo sát cho P1 · UX Research (FtaCode Mobile).
+ * Tạo Google Form khảo sát cho P1 · UX Research (BreakBite).
  * Cách dùng: dán vào https://script.google.com → Run → cho phép quyền → xem Execution log.
  * Câu hỏi và cách đọc kết quả: ux/survey/khao-sat-cau-hoi.md
  */

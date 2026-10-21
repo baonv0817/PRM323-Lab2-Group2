@@ -1,4 +1,4 @@
-# App người bán (FtaCode Kiosk)
+# App người bán (BreakBite Kiosk)
 
 > Figma [PRM323](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260), Page 03, phần "APP NGƯỜI BÁN" (y ≥ 11000), khung có hậu tố " v2" và bản 412 dp " v2 · 412"
 > Ảnh: `assets/figma/final-ui-v2/kitchen/` · Tổng quan: `assets/figma/final-ui-v2/contact-sheet-kitchen.png`

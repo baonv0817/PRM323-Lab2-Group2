@@ -1,16 +1,16 @@
 # Design Brief & Token System
 
 > **Tài liệu:** `design/DESIGN.md`  
-> **Dự án:** FtaCode Mobile App — Campus Quick Food Ordering  
+> **Dự án:** BreakBite App — Campus Quick Food Ordering  
 > **Môn học:** PRM323 — Lab 2  
-> **Figma Design Link:** [FtaCode Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*  
+> **Figma Design Link:** [BreakBite Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*  
 > **Mục đích:** Bản mô tả thiết kế quy chuẩn định nghĩa toàn bộ Tokens (Màu sắc, Typography, Spacing, Bo góc, Elevation) và quy tắc Component làm tài liệu cơ sở gửi cho Google Stitch và thiết lập Figma Variables.
 
 ---
 
 ## 1. Phong cách thiết kế & Giọng điệu thương hiệu (Design Tone & Aesthetics)
 
-* **Tên ứng dụng:** FtaCode Mobile (Trực thuộc hệ sinh thái ẩm thực nhanh FtaCode).
+* **Tên ứng dụng:** BreakBite (Trực thuộc hệ sinh thái ẩm thực nhanh BreakBite).
 * **Định vị & Cảm xúc:** Trẻ trung, tràn đầy năng lượng, ấm áp và thân thiện với đời sống sinh viên năng động.
 * **Nguyên tắc thẩm mỹ (Visual Principles):**
   1. **Ấm cúng & Kích thích vị giác:** Sử dụng tông màu cam ấm `#F69D39` kết hợp màu nâu cacao trầm `#622B14` và nền kem sữa `#FFF5E5`.

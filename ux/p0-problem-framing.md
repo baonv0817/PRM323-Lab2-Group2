@@ -1,6 +1,6 @@
 # P0 · Problem Framing
 
-> FtaCode Mobile · PRM323 Lab 2 · Gate G0 · Ngày lập: 19/10/2026
+> BreakBite · PRM323 Lab 2 · Gate G0 · Ngày lập: 19/10/2026
 
 ## 1. Problem statement
 

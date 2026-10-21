@@ -1,10 +1,10 @@
 # UX Analysis: Persona & Problem Statement
 
 > **Tài liệu:** `ux/persona.md`
-> **Dự án:** FtaCode Mobile App — Campus Quick Food Ordering
+> **Dự án:** BreakBite App — Campus Quick Food Ordering
 > **Môn học:** PRM323 — Lab 2
 > **Chuẩn áp dụng:** [Persona Guideline của môn](https://prm393-material.web.app/persona-guideline) — 12 trường lõi, nhãn bằng chứng, số lượng persona theo phạm vi.
-> **Figma Design Link:** [FtaCode Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6)
+> **Figma Design Link:** [BreakBite Figma Project (View Access)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6)
 
 ---
 
@@ -19,7 +19,7 @@
 | **Inferred** | Nhóm suy luận từ pattern trong các nguồn trên (ghi rõ lý do) |
 | **Assumed** | Chưa có bằng chứng từ người thật. Bao gồm mọi ý từ **5 nhân vật giả lập bằng AI** (mã A1–A5, `ai/ai-persona-interviews.md`) |
 
-**Số lượng:** 1 Primary + 1 Secondary + 1 Supporting. FtaCode là ứng dụng nhỏ với một tác vụ chính (đặt món và lấy tại quầy), nên dùng mức 2–3 persona của guideline. Ba persona khác nhau ở **hành vi và ràng buộc**, không chỉ ở tên hay tuổi:
+**Số lượng:** 1 Primary + 1 Secondary + 1 Supporting. BreakBite là ứng dụng nhỏ với một tác vụ chính (đặt món và lấy tại quầy), nên dùng mức 2–3 persona của guideline. Ba persona khác nhau ở **hành vi và ràng buộc**, không chỉ ở tên hay tuổi:
 
 | | P01 Quân (Primary) | P02 Linh (Secondary) | P03 Cô Hạnh (Supporting) |
 |---|---|---|---|
@@ -75,7 +75,7 @@
 
 | # | Trường | Nội dung | Nhãn & nguồn |
 |---|---|---|---|
-| 1 | Identity & Archetype | Khoảng 40 tuổi, nhân viên quầy Kiosk FtaCode. *Archetype: "Người giữ nhịp quầy".* | Assumed |
+| 1 | Identity & Archetype | Khoảng 40 tuổi, nhân viên quầy Kiosk BreakBite. *Archetype: "Người giữ nhịp quầy".* | Assumed |
 | 2 | Persona Priority | **Supporting** — không dùng app khách, nhưng quyết định món có sẵn đúng giờ hay không | Inferred |
 | 3 | Usage Context | Đứng quầy giờ nghỉ chung, vừa nấu vừa trả món, xem đơn trên màn hình quán | Assumed |
 | 4 | Goals | (1) Biết trước số đơn và giờ nhận để chuẩn bị. (2) Trả đúng món cho đúng người. | Assumed |

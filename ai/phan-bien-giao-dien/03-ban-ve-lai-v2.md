@@ -1,6 +1,6 @@
 # Bản vẽ lại v2 trên Figma (sau phản biện)
 
-Vẽ lại 13 màn theo [báo cáo A01–A15](01-bao-cao-do-tu-dong.md). **Bản cũ không bị xoá hay sửa** để đối chiếu; bản mới nằm cùng hàng, lệch phải 2000 px.
+Vẽ lại 30 màn (13 màn lõi và biến thể, 17 màn mở rộng S09–S25) theo [báo cáo A01–A15](01-bao-cao-do-tu-dong.md). **Bản cũ không bị xoá hay sửa** để đối chiếu; bản mới nằm cùng hàng, lệch phải 2000 px.
 
 > Đây là **bản nháp của Claude chưa qua quyết định của bạn**. Bảng quyết định ở mục 4 của báo cáo vẫn do bạn điền; muốn bỏ điểm nào thì Reject và sửa lại Figma.
 
@@ -14,7 +14,9 @@ Vẽ lại 13 màn theo [báo cáo A01–A15](01-bao-cao-do-tu-dong.md). **Bản
 | Component v2: Chip, NavBar, Card/Food, IconButton, Button/Secondary, Button/Text | Page 05, board "Components v2 · Components" |
 | Token mới `color/v2-*` (5 biến) | Collection "FtaCode Design Tokens" |
 
-13 màn: S01, S02, S03, S04, S05, S05-EMPTY, S05-VOUCHER-ERR, S06, S06-ERR, S07, S07-CASH, S08, S08-EMPTY. **Chưa nối prototype** cho v2 (prototype Page 06 và `npm test` vẫn chạy trên bản cũ).
+**Bản đầy đủ 30 màn nằm trong bản sao Figma** [PRM323 (Copy)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) vì file gốc bị khoá hạn mức MCP; file gốc chỉ có 13 màn lõi. Muốn gộp, dùng bản sao làm file chính.
+
+13 màn lõi: S01, S02, S03, S04, S05, S05-EMPTY, S05-VOUCHER-ERR, S06, S06-ERR, S07, S07-CASH, S08, S08-EMPTY. **Chưa nối prototype** cho v2 (prototype Page 06 và `npm test` vẫn chạy trên bản cũ).
 
 ## Mỗi lỗi được xử lý thế nào
 
@@ -36,14 +38,16 @@ Vẽ lại 13 màn theo [báo cáo A01–A15](01-bao-cao-do-tu-dong.md). **Bản
 | A14 thanh trạng thái giả | Bỏ |
 | A15 tên món | Thống nhất "Trà Đào Chanh Sả" |
 
+17 màn mở rộng v2 (Page 03, x + 2000, cùng y với bản cũ): S09–S25. Thêm chuông thông báo ở S02 v2 và S21 v2 để có đường vào S19. Màn S23 thay 5 mặt cười bằng thang số 1–5 (không dùng emoji). Nội dung các màn này là **giả định** (Assumed), xem [`design/extended-screens.md`](../../design/extended-screens.md).
+
 ## Số đo sau sửa (Figma Plugin API, 21/10/2026, chỉ đọc)
 
 | Chỉ số | Bản cũ (báo cáo) | v2 |
 |---|---|---|
-| Ký tự emoji | xem báo cáo mục 1 | **0** |
-| Chữ < 14 sp | xem báo cáo mục 2 | chỉ 4 nhãn thanh dưới 12 sp trên các màn có thanh dưới (ngoại lệ D36) |
-| Chữ thiếu tương phản (4,5:1 / 3:1 chữ lớn) | xem báo cáo mục 2 | **0** |
-| Nút, chip, nút icon < 48 dp (các instance component v2) | xem báo cáo mục 2 | **0** |
+| Ký tự emoji | xem báo cáo mục 1 | **0** (30 màn) |
+| Chữ < 14 sp | xem báo cáo mục 2 | chỉ nhãn thanh dưới 12 sp (ngoại lệ D36) |
+| Chữ thiếu tương phản (4,5:1 / 3:1 chữ lớn) | xem báo cáo mục 2 | **0** (một cảnh báo giả ở S14: tiêu đề nằm dưới lớp phủ tối của bottom sheet) |
+| Nút, chip, nút icon < 48 dp và nút tự dựng | xem báo cáo mục 2 | **0**; không chữ tràn khỏi khung |
 
 ## Chưa làm / giới hạn
 

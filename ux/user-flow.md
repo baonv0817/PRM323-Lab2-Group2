@@ -11,9 +11,9 @@ Mỗi flow gồm:
 - **Đường đi** — các màn theo thứ tự, và **nhánh lỗi / nhánh phụ**.
 - **Căn cứ** — insight hoặc quyết định thiết kế đứng sau.
 
-App có 11 flow: **F1–F3** là ba flow bắt buộc của Lab 2 (có nhánh lỗi, đã nối prototype); **F4–F11** mô tả các màn S09–S25 (xem `design/screens-s09-s25.md`).
+App có 13 flow của khách và các flow của người bán. **F1–F3** là ba flow bắt buộc của Lab 2 (có nhánh lỗi, đã nối prototype); **F4–F11** mô tả S09–S25; **F12–F13** là mất kết nối và đang tải ([`design/screens-s09-s30.md`](../design/screens-s09-s30.md)); flow người bán nằm ở [`design/kitchen-app.md`](../design/kitchen-app.md).
 
-Mã màn: **S01–S25**; biến thể gắn hậu tố (`S06-ERR`, `S05-EMPTY`…).
+Mã màn: **S01–S30** (khách) và **K01–K13** (người bán); biến thể gắn hậu tố (`S06-ERR`, `S05-EMPTY`…).
 
 ![3 flow lõi có Input/Output](userflow/flows-core-io.png)
 
@@ -159,7 +159,9 @@ flowchart TD
 
 ---
 
-## 3. Flow F4–F11
+## 3. Flow F4–F13
+
+F12 Mất kết nối: S30 → Thử lại → S02, hoặc Xem giỏ hàng → S05. F13 Đang tải: S02-LOADING → S02 sau 1,2 giây. Nhánh phụ của F1: S01 → S26 → S26-OTP → S02 (đăng nhập, không bắt buộc); S02 → S27 (chọn kiosk); S02, S03 → S28 (tìm kiếm); S05 → S29 (mã giảm giá).
 
 ![F4–F7](userflow/flows-F4-F7.png)
 ![F8–F11](userflow/flows-F8-F11.png)

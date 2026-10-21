@@ -114,7 +114,7 @@ Thêm khung **"Components · Variants"** ngay dưới bảng cũ. Mọi màu, pa
 
 ## 7b. Màn S09–S25
 
-- 17 màn S09–S25 và sơ đồ IA nằm ở **cuối Page 03** (gói Figma Starter chỉ cho 3 page nên không tạo được page 07). Chi tiết: `design/screens-s09-s25.md`.
+- 17 màn S09–S25 và sơ đồ IA nằm ở **cuối Page 03** (gói Figma Starter chỉ cho 3 page nên không tạo được page 07). Chi tiết: `design/screens-s09-s30.md`.
 - [ ] Nối prototype cho S09–S25; thêm chuông thông báo vào app bar S02.
 
 ## 8. Sau khi làm xong phần còn lại

@@ -1,11 +1,11 @@
-# Màn hình S09–S25
+# Màn hình S09–S30
 
 > FtaCode Mobile · Figma [PRM323](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260), Page 03 (khung có hậu tố " v2" là bản Final UI)
 > Ảnh bản cũ: `assets/figma/ext/` · Tổng quan: `assets/figma/final-ui-s09-s25/contact-sheet.png`
 
 ![S09–S25](../assets/figma/final-ui-s09-s25/contact-sheet.png)
 
-Cùng S01–S08 ([`screen-spec.md`](screen-spec.md)), S09–S25 tạo thành bộ 25 màn của app, đủ vòng đời một đơn hàng. Wireframe nằm ở Page 02 (`ux/wireframe/`), user flow F4–F11 ở Page 01 (`ux/userflow/`).
+Cùng S01–S08 ([`screen-spec.md`](screen-spec.md)), S09–S30 tạo thành bộ 30 màn của app khách, đủ vòng đời một đơn hàng. Phía quầy có app riêng: [`kitchen-app.md`](kitchen-app.md). Wireframe nằm ở Page 02 (`ux/wireframe/`), user flow F4–F11 ở Page 01 (`ux/userflow/`).
 
 ## 1. Vì sao có các màn này
 
@@ -68,10 +68,38 @@ Mỗi flow trong Figma có dải **INPUT → OUTPUT** ở đầu.
 | S24 | Báo sự cố | Lý do, mô tả, ảnh tuỳ chọn, hoàn tiền trong 24 giờ | Mặc định | Chip, TextField, Button |
 | S25 | Hẹn giờ theo slot | Lịch học, giờ nghỉ 15 phút, gợi ý giờ nhận | Mặc định | Chip, Button |
 
-## 5. Quyết định thiết kế
+### Màn bổ sung S26–S30
+
+| Mã | Màn | Nội dung chính | Trạng thái | Vào từ |
+|---|---|---|---|---|
+| S26 | Đăng nhập email trường | Email, gửi mã; vẫn dùng được không cần tài khoản | Mặc định | S01 |
+| S26-OTP | Nhập mã xác nhận | 6 ô số, gửi lại sau 00:45 | Mặc định | S26 |
+| S27 | Chọn Kiosk | Danh sách kiosk, trạng thái mở/đóng, khoảng cách | Một kiosk được chọn | S02 (địa điểm) |
+| S28 | Kết quả tìm kiếm | Thanh tìm, chip lọc, số kết quả, thẻ món | Có kết quả | S02, S03 (ô tìm) |
+| S28-EMPTY | Không có kết quả | Gợi ý từ khoá | Trống | S28 |
+| S29 | Chọn mã giảm giá | Ô nhập mã, danh sách mã, mã hết hạn | Một mã được chọn | S05-VOUCHER-ERR |
+| S30 | Mất kết nối | Thông báo giữ giỏ hàng, Thử lại | Lỗi mạng | Điểm bắt đầu F12 |
+| S02-LOADING | Đang tải trang chủ | Khối xám giữ chỗ (skeleton), tự chuyển sau 1,2 giây | Đang tải | Điểm bắt đầu F13 |
+
+## 5. Rà soát màn còn thiếu (21/10/2026)
+
+| Khoảng trống | Xử lý |
+|---|---|
+| Phía quầy: không có màn nào cho người bán | App người bán K01–K13 ([`kitchen-app.md`](kitchen-app.md)) |
+| Link đăng nhập ở S01 không dẫn tới đâu | S26, S26-OTP |
+| Địa điểm ở S02 không bấm được | S27 |
+| Ô tìm kiếm ở S02, S03 không dẫn tới đâu | S28, S28-EMPTY |
+| Mã giảm giá ở S05 không có danh sách | S29 |
+| Trạng thái tải và mất mạng | S02-LOADING, S30 |
+
+Chưa có màn riêng cho: chat với quầy, tích hợp liên kết ví (MoMo, VNPAY), đổi ngôn ngữ, tablet. Hai cái đầu cần dịch vụ bên ngoài; hai cái sau ngoài phạm vi (D12, thiết kế tablet).
+
+## 6. Quyết định thiết kế
 
 - **S16 không bắt buộc đăng nhập** (D12): xem menu và đặt món không cần tài khoản.
 - **Không có điểm tích luỹ hay thẻ thành viên** (D12, Reject).
 - **S09 chỉ cho sửa giờ, số lượng, ghi chú**, không đổi món, vì bếp bắt đầu làm là phải cố định (D04).
 - **S25 cần người dùng tự nhập lịch học**, vì app không có dữ liệu thời khoá biểu của trường.
 - **S02 và S21 có chuông thông báo** dẫn tới S19.
+- **S26 không bắt buộc**: nút "Tiếp tục không cần tài khoản" luôn có (D12).
+- **S30 giữ giỏ hàng** trên máy khi mất mạng (DP5).

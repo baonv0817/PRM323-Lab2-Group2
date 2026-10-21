@@ -105,7 +105,7 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 | # | Bước | Tình trạng | Ghi chú | Ai làm tiếp |
 |---|---|---|---|---|
 | 43 | **Usability test 3–5 người** | ❌ | **Critical của G5**; mẫu ghi kết quả: `docs/test-reports/usability-test-mau.md` | **Bạn** |
-| 43a | Phản biện giao diện, vẽ lại Final UI v2 | 🟡 | Báo cáo đo A01–A15, v2 đủ 25 màn và biến thể, ảnh và số đo; chờ phản biện của AI khác · `ai/phan-bien-giao-dien/` | **Bạn** |
+| 43a | Phản biện giao diện, vẽ lại Final UI v2 | 🟡 | Báo cáo đo A01–A15, v2 đủ S01–S30 và app người bán K01–K13, ảnh, số đo, bản 412 dp; chờ phản biện của AI khác · `ai/phan-bien-giao-dien/` | **Bạn** |
 | 43b | Test tự động prototype bằng Playwright | ✅ | 13/13 đạt (20/10); bắt được lỗi vùng bấm Figma đang màu cam (đã sửa); còn 2 điểm lệch tài liệu · `tests/` · `docs/test-reports/` | Chạy lại sau khi sửa Figma |
 | 44 | Handoff 6 mục/màn + 2 bảng mapping | ✅ | `handoff/flutter-handoff.md` (mục 5: v2, S01–S25) | — |
 | 45a | README đủ | ✅ | Có 5 thành viên, lớp SE1919 | — |

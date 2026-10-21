@@ -28,7 +28,7 @@ Figma có 6 page: 01 User Flow · 02 Wireframe · 03 Final UI · 04 Design Syste
 |:---:|:---:|:---:|:---:|
 | <img src="../assets/figma/final-ui/S05-VOUCHER-ERR.png" width="150"> | <img src="../assets/figma/final-ui/S06-LOADING.png" width="150"> | <img src="../assets/figma/final-ui/S07-CASH.png" width="150"> | <img src="../assets/figma/final-ui/S08-EMPTY.png" width="150"> |
 
-S09–S25: xem `design/screens-s09-s25.md`.
+S09–S25: xem `design/screens-s09-s30.md`.
 
 ## 2. Screen / State Coverage Matrix
 

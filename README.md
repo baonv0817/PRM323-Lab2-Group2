@@ -19,15 +19,15 @@
 
 - **Persona chính:** Nguyễn Minh Quân, 20 tuổi, sinh viên năm 2 ở ký túc xá, có khoảng 15 phút giữa hai slot, dùng điện thoại một tay khi đi bộ.
 - **Tiêu chí thành công:** đặt xong một đơn dưới 35 giây, tối đa 8 chạm từ Trang chủ.
-- **Phạm vi:** 25 màn 360 × 800 dp (S01–S25) cùng các biến thể, 11 user flow có nhánh lỗi, Design System bằng Figma Variables, component có variant, prototype Figma. Không có mã nguồn Flutter (đề: `Coding: None`).
+- **Phạm vi:** app khách 30 màn 360 × 800 dp (S01–S30) và app người bán 13 màn (K01–K13) cùng các biến thể, user flow có nhánh lỗi, Design System bằng Figma Variables, component có variant, prototype Figma. Không có mã nguồn Flutter (đề: `Coding: None`).
 
 ## 2. Link thiết kế
 
 | Page Figma | Nội dung | Node |
 |---|---|---|
-| 01 User Flow | Sơ đồ 11 flow, mỗi flow có **Input → Output** | `1:6` |
+| 01 User Flow | Sơ đồ flow F1–F11, mỗi flow có **Input → Output** | `1:6` |
 | 02 Wireframe | Wireframe xám của toàn bộ màn và biến thể | `1:259` |
-| 03 Final UI | 25 màn và biến thể. Bản cũ ở bên trái giữ để đối chiếu; **bản v2 (Final UI) lệch phải 2000 px**, tên khung có hậu tố " v2" | `1:260` |
+| 03 Final UI | Bản cũ ở bên trái giữ để đối chiếu; **bản v2 (Final UI) lệch phải 2000 px**, tên khung có hậu tố " v2"; bản 412 dp lệch thêm 2400 px (" v2 · 412"); app người bán ở phía dưới (y ≥ 11000) | `1:260` |
 | 04 Design System | Token màu, chữ, khoảng cách (Figma Variables) | `1:261` |
 | 05 Components | Component set có variant (Button, TextField, Card/Food, NavBar, Dialog) và bộ v2 (Chip, NavBar, Card/Food, IconButton, Button) cùng 27 icon | `1:262` |
 | 06 Prototype | Flow 1 bắt đầu tại S01, Flow 2 tại S03, Flow 3 tại S06 | `1:263` |
@@ -45,7 +45,7 @@ PRM323-Lab2-Group2/
 │   ├── p2-ux-design.md           │  P2 · user story, journey, độ phủ màn hình
 │   ├── persona.md · persona-mapping.xlsx
 │   ├── research.md · ai-interview-kit.md
-│   ├── user-flow.md              │  IA + 11 flow (Input / Output)
+│   ├── user-flow.md              │  IA + flow (Input / Output)
 │   ├── survey/                   │  câu hỏi khảo sát, script tạo Google Form, dữ liệu mô phỏng
 │   ├── userflow/                 │  ảnh sơ đồ flow xuất từ Figma Page 01
 │   └── wireframe/                │  ảnh wireframe xuất từ Figma Page 02
@@ -54,7 +54,8 @@ PRM323-Lab2-Group2/
 │   ├── p3-ui-concept-style-guide.md
 │   ├── p4-detailed-ui-prototype.md
 │   ├── screen-spec.md            │  đặc tả S01–S08
-│   ├── screens-s09-s25.md        │  đặc tả S09–S25
+│   ├── screens-s09-s30.md        │  đặc tả S09–S30
+│   ├── kitchen-app.md            │  đặc tả app người bán K01–K13
 │   └── design-decisions.md
 ├── ai/                           ← NHẬT KÝ AI & PHẢN BIỆN
 │   ├── ai-design-log.md          │  prompt nguyên văn, vòng lặp, phản biện, quyết định D01–D42
@@ -66,7 +67,7 @@ PRM323-Lab2-Group2/
 │   ├── concepts/                 │  3 hướng visual cho P3
 │   └── figma/
 │       ├── final-ui/             │  S01–S08 và biến thể (bản cũ)
-│       ├── final-ui-v2/          │  Final UI v2: 30 khung, ảnh 412 dp, ảnh tổng quan
+│       ├── final-ui-v2/          │  Final UI v2: S01–S30, K01–K13, ảnh 412 dp, ảnh tổng quan
 │       ├── final-ui-s09-s25/     │  S09–S25 (bản cũ) và ảnh tổng quan
 │       └── design-system/        │  token và component
 ├── handoff/
@@ -106,12 +107,12 @@ Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluatio
 
 | Hạng mục | Trạng thái | Bằng chứng |
 |---|---|---|
-| Final UI v2 | 32 khung trong Figma (25 màn và biến thể), có bản 412 dp; không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp; ảnh ở `assets/figma/final-ui-v2/` | [`ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md`](ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
+| Final UI v2 | 55 khung 360 dp (30 màn khách, 13 màn người bán và biến thể) và 53 khung 412 dp; không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp; ảnh ở `assets/figma/final-ui-v2/` | [`ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md`](ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
 | Phản biện giao diện | Báo cáo đo A01–A15 và bảng quyết định; phản biện của AI khác chờ chạy | [`ai/phan-bien-giao-dien/`](ai/phan-bien-giao-dien/) |
-| 11 flow | Đã vẽ, có Input/Output; Flow 1–3 đã nối prototype | `ux/user-flow.md` · `ux/userflow/` |
+| Flow | F1–F11 đã vẽ, có Input/Output; Flow 1–3 đã nối prototype | `ux/user-flow.md` · `ux/userflow/` |
 | Wireframe | Đủ các màn và biến thể | `ux/wireframe/` |
 | Component | Bộ cũ 5 component set; bộ v2 thêm Chip, NavBar, Card/Food, IconButton, Button | Figma Page 05 |
-| Màn 412 dp | Đã dựng cho S01–S08 và biến thể | `assets/figma/final-ui-v2/412/` |
+| Màn 412 dp | Đã dựng cho toàn bộ màn (trừ hai dialog) | Figma Page 03 (" v2 · 412"); ảnh mẫu ở `assets/figma/final-ui-v2/412/` |
 | Nghiên cứu người dùng | Khảo sát Google Form đã soạn; kết quả hiện có là dữ liệu mô phỏng | `ux/survey/` |
 | Test tự động prototype | Bản cũ 13/13 đạt (Playwright, 20/10); đồ thị flow v2 7/7 đạt | `tests/` · `docs/test-reports/playwright-prototype-2026-10-20.md` |
 | Usability test với người thật | Chưa làm; có mẫu ghi kết quả | `docs/test-reports/usability-test-mau.md` |

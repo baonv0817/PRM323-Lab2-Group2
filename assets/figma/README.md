@@ -6,7 +6,7 @@ Nguồn: file Figma [PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL
 |---|---|---|
 | [`final-ui/`](final-ui/) | S01–S08 và 7 biến thể (bản cũ) (S05-EMPTY, S05-VOUCHER-ERR, S06-LOADING, S06-ERR, S07-CASH, S07-DIALOG, S08-EMPTY) | 15 |
 | [`final-ui-s09-s25/`](final-ui-s09-s25/) | S09–S25 (bản cũ) và `contact-sheet.png` | 18 |
-| [`final-ui-v2/`](final-ui-v2/) | Final UI v2: S01–S25, S06-LOADING, S07-DIALOG, thư mục `412/` (S02, S05, S06, S07 ở 412 dp), `contact-sheet-s01-s08.png`, `contact-sheet-s09-s25.png` | 38 |
+| [`final-ui-v2/`](final-ui-v2/) | Final UI v2: S01–S30, S06-LOADING, S07-DIALOG, thư mục `kitchen/` (K01–K12), thư mục `412/` (S02, S05, S06, S07 ở 412 dp) và các `contact-sheet-*.png` | 63 |
 | [`design-system/`](design-system/) | `design-system.png` (token, Page 04) · `components.png` (Page 05) | 2 |
 
 Ảnh flow và wireframe nằm ở `ux/userflow/` và `ux/wireframe/`.

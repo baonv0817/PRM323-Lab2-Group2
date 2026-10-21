@@ -385,3 +385,38 @@ Khung 360 × 800 dp, lề 16 dp, thanh trên cao 56 dp, nút chính cao 56 dp �
 | S23 Đánh giá | Thang 1–5, chip lý do, ghi chú | Chip, TextField, Button | Đã chọn điểm | Chọn điểm, chip; Gửi; Bỏ qua | → S02 | Mỗi điểm có nhãn chữ |
 | S24 Báo sự cố | Chip lý do, ô mô tả, thêm ảnh, ghi chú hoàn tiền | Chip, TextField, Button | Mặc định | Chọn lý do; Gửi báo cáo | → S12 | Ảnh tuỳ chọn |
 | S25 Hẹn giờ | Thẻ lịch học nhập tay, chip gợi ý giờ nhận | Chip, Button | Mặc định | Chọn giờ; Tiếp tục | → S05 | Lịch học do người dùng nhập |
+
+### 5.4 Màn bổ sung S26–S30
+
+| Màn | Layout | Component | State | Tương tác | Điều hướng | Ràng buộc |
+|---|---|---|---|---|---|---|
+| S26 Đăng nhập | Illustration, tiêu đề, ô email, nút gửi mã | TextField, Button | Trống | Nhập email; Gửi mã; Tiếp tục không cần tài khoản | → S26-OTP; → S02 | Không bắt buộc (D12) |
+| S26-OTP | 6 ô số, đếm ngược gửi lại | TextField ×6, Button | Đang nhập | Nhập số; Xác nhận | → S02 | Mã hiệu lực 5 phút |
+| S27 Chọn Kiosk | Ô tìm, danh sách thẻ kiosk kèm radio | Card, radio, Button | Chọn một | Chọn kiosk | → S02 | Kiosk đóng hiện chữ và icon, không chỉ màu |
+| S28 Kết quả tìm kiếm | Thanh tìm trong app bar, chip lọc, thẻ món | `v2/Card/Food`, `v2/Chip` | Có kết quả | Chạm món; + | → S04; → S05 | Số kết quả hiện bằng chữ |
+| S28-EMPTY | Illustration, gợi ý từ khoá | `v2/Chip` | Không có kết quả | Chạm gợi ý | → S28 | |
+| S29 Mã giảm giá | Ô nhập mã, danh sách thẻ mã | TextField, Button/Secondary, radio | Chọn, hết hạn | Áp dụng; Dùng mã | → S05 | Mã hết hạn có icon lỗi và chữ |
+| S30 Mất kết nối | Illustration, thông báo, hai nút | Button, Button/Text | Lỗi mạng | Thử lại; Xem giỏ hàng | → S02; → S05 | Giỏ hàng lưu cục bộ (DP5) |
+| S02-LOADING | Khối xám thay cho nội dung | Skeleton | Đang tải | — | Tự chuyển sau 1,2 giây → S02 | Cùng kích thước nội dung thật |
+
+## 6. App người bán (K01–K13)
+
+Ứng dụng riêng cho nhân viên quầy, dùng cùng token và component ở mục 5. Đặc tả chi tiết và flow: [`design/kitchen-app.md`](../design/kitchen-app.md). Thanh dưới 4 tab (Đơn, Quét mã, Món, Quán) dùng `NavigationBar` như `v2/NavBar`.
+
+| Màn | Layout | Component | State | Tương tác | Điều hướng | Ràng buộc |
+|---|---|---|---|---|---|---|
+| K01 Đăng nhập | Logo, ô mã quầy, ô PIN, nút đăng nhập | TextField, Button | Mặc định | Nhập mã quầy và PIN | → K02-EMPTY | PIN ẩn ký tự |
+| K02 Danh sách đơn | Trạng thái quầy, chip 4 trạng thái, thẻ đơn 156 dp | `v2/Chip`, Card, Button/Secondary | Có đơn | Chạm thẻ; Nhận đơn; chuông | → K03; → K13 | Thanh toán hiện trên thẻ |
+| K02-EMPTY | Illustration, chú thích | — | Trống | Chờ đơn mới | Tự chuyển → K02 | |
+| K03 Chi tiết đơn | Thẻ giờ nhận, thẻ món, thanh toán | Card, Button, Button/Text | Mới | Nhận đơn; Từ chối | → K04; → K12 | Từ chối cần lý do |
+| K04 Đang chuẩn bị | Đếm ngược, thanh tiến độ, checklist | Checkbox, Button | Đang làm | Tick từng món; Xong; Báo thiếu | → K02; → K08 | Cả dòng là vùng bấm |
+| K05 Quét mã | Khung ngắm 280 dp, nhập tay | Camera, TextField, Button/Secondary | Chờ quét | Quét; Tìm đơn | → K06; → K05-ERR | Cần quyền camera |
+| K05-ERR | Khung ngắm viền lỗi, thông báo | — | Lỗi | Nhập tay | → K06-CASH | Lỗi có icon và chữ |
+| K06 Xác nhận giao | Mã hợp lệ, món, thanh toán | Card, Button | Đã thanh toán | Xác nhận đã giao | → K02 | Đổi trạng thái đơn thành Hoàn tất |
+| K06-CASH | Như K06, thẻ thu tiền nổi bật | Card, Button | Trả tại quầy | Đã thu tiền và giao | → K02 | Phải xác nhận đã thu tiền |
+| K08 Quản lý món | Chip lọc, hàng món kèm công tắc | `v2/Chip`, Switch | Còn, hết | Bật/tắt | → K09 | Công tắc bật có dấu tích |
+| K09 Hết món | Bottom sheet: lý do, giờ có lại | `v2/Chip`, Button | Overlay | Chọn; Xác nhận | → K08 | Khách thấy "Tạm hết" kèm giờ có lại |
+| K10 Quán | Thẻ trạng thái, cài đặt, liên kết | Switch, `v2/IconButton`, Button/Secondary | Đang nhận đơn | Bật/tắt; đổi số đơn tối đa | → K11; → K01 | Tắt nhận đơn: khách thấy S21 |
+| K11 Thống kê ca | Bốn thẻ số, biểu đồ cột | Card | Mặc định | — | Back → K10 | Cột cao nhất tô cam |
+| K12 Từ chối đơn | Dialog 320 dp: lý do, hai nút | radio, Button | Overlay | Chọn lý do; Từ chối | → K02 | Hoàn tiền tự động |
+| K13 Sự cố | Lý do, mô tả, ảnh khách, đơn liên quan | Card, Button | Mới | Hoàn tiền; Từ chối và giải thích | → K02 | Hoàn tiền cần xác nhận |

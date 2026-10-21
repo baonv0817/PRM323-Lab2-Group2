@@ -142,7 +142,7 @@ Quy trình thầy muốn thấy: **khảo sát thị trường → phỏng vấn
 | UX research em làm những gì? | Kể đúng phương pháp đã dùng: khảo sát Google Form, phỏng vấn mô phỏng AI để tạo giả thuyết, affinity map gom ý, journey map hiện tại (xếp hàng) so với tương lai (đặt trước) |
 | Từ research ra prompt Stitch thế nào? | Mỗi dòng trong prompt truy được về một phát hiện. Ví dụ: "phải vừa đi vừa bấm" → "touch target 48 dp"; "không biết quầy mở hay đóng" → trạng thái Kiosk trên Home |
 | Nếu chỉ mang sản phẩm cuối lên thì sao? | Đây là lý do thầy yêu cầu quy trình: sản phẩm đẹp nhưng không truy được về nhu cầu thật thì không chứng minh được là đúng người dùng cần |
-| App có những màn nào? Tab Cá nhân, lịch sử, thông báo đâu? | App có 25 màn (S01–S25). Luồng đặt món chính là S01–S08 gồm đặt nhanh, nhận tại quầy, phục hồi lỗi thanh toán; S09–S25 gồm sửa và huỷ đơn, lịch sử, tài khoản, thông báo, nhận món, quán đóng, đánh giá, hẹn giờ. Xem `design/screens-s09-s25.md` |
+| App có những màn nào? Tab Cá nhân, lịch sử, thông báo đâu? | App có 25 màn (S01–S25). Luồng đặt món chính là S01–S08 gồm đặt nhanh, nhận tại quầy, phục hồi lỗi thanh toán; S09–S25 gồm sửa và huỷ đơn, lịch sử, tài khoản, thông báo, nhận món, quán đóng, đánh giá, hẹn giờ. Xem `design/screens-s09-s30.md` |
 
 **Câu trả lời trung thực nếu phần research chưa làm:**
 > "Em đi thẳng từ persona giả định sang thiết kế, chưa có khảo sát thị trường và phỏng vấn. Đây là điểm yếu lớn nhất của bài. Nếu làm lại em sẽ…"

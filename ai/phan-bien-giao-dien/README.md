@@ -7,6 +7,7 @@ Bước theo đề Lab 2: AI tìm lỗi giao diện, sinh viên quyết định,
 | [`01-bao-cao-do-tu-dong.md`](01-bao-cao-do-tu-dong.md) | Báo cáo lỗi bằng số đo (Playwright + Figma API) và nhận xét bằng mắt; bảng quyết định để bạn điền. **Do Claude viết, không độc lập** |
 | [`02-prompt-cho-ai-khac.md`](02-prompt-cho-ai-khac.md) | Bộ ảnh cần đính kèm và prompt dán nguyên văn cho **một AI khác** (Gemini, ChatGPT…) |
 | [`03-ban-ve-lai-v2.md`](03-ban-ve-lai-v2.md) | 13 màn v2 đã vẽ lại trên Figma (bản cũ giữ nguyên để đối chiếu), vị trí, ánh xạ A01–A15, số đo, phần chưa làm |
+| [`04-bao-cao-tong-hop.md`](04-bao-cao-tong-hop.md) | Báo cáo một trang rưỡi: lỗi, quyết định đề xuất, kết quả v2, phần chưa làm. Dùng làm bản nháp để nộp |
 | [`anh/`](anh/) | 13 ảnh màn hình chụp từ prototype Figma ngày 21/10/2026 và ảnh tổng quan 8 màn lõi |
 
 Mã đo: `tests/audit/` (`capture.js` chụp, `figma-audit.js` đọc Figma, `measure.py` tính tỉ lệ màu và vùng bấm).

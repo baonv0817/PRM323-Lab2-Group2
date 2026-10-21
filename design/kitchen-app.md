@@ -19,6 +19,7 @@ App cho nhân viên quầy nhận đơn, làm món, quét mã giao món, báo h�
 | S20 mã QR | K05 quét mã → K06 xác nhận giao món |
 | S07-CASH "Trả tại quầy" | K06-CASH: thu tiền mặt rồi giao |
 | S03, S22 "Tạm hết" | K08 → K09: đánh dấu hết món |
+| S02, S03 danh sách món | K08 → K14: thêm món mới; K15: sửa hoặc xoá món |
 | S21 "Quán đóng" | K10: bật/tắt nhận đơn |
 | S07-DIALOG huỷ đơn | K03 → K12: từ chối đơn |
 | S24 báo sự cố | K13: hoàn tiền hoặc từ chối |
@@ -35,6 +36,7 @@ Thanh dưới 4 tab: **Đơn** (K02), **Quét mã** (K05), **Món** (K08), **Qu�
 | **Từ chối đơn** | Hết món hoặc quá tải | Khách được hoàn tiền tự động | K03 → K12 → K02 |
 | **Mã sai** | Khách đưa mã hết hạn | Nhập tay mã đơn để tra | K05 → K05-ERR → K06-CASH |
 | **Quản lý món** | Một món hết nguyên liệu | Món hiện "Tạm hết" bên khách | K08 → K09 → K08 |
+| **Thêm, sửa, xoá món** | Có món mới hoặc đổi giá | Món hiện trong thực đơn khách | K08 → K14 → (thiếu thông tin) K14-ERR → K08; K08 → K15 → K08 |
 | **Quản lý quán** | Cần tạm ngưng hoặc xem ca | Quán đóng/mở, thống kê ca | K10 → K11; K10 → K01 (đăng xuất) |
 | **Sự cố** | Khách báo thiếu món | Hoàn tiền hoặc từ chối kèm lý do | K02 chuông → K13 → K02 |
 
@@ -51,8 +53,11 @@ Thanh dưới 4 tab: **Đơn** (K02), **Quét mã** (K05), **Món** (K08), **Qu�
 | K05-ERR | Mã không hợp lệ | Khung ngắm viền lỗi, thông báo, nhập tay | Lỗi |
 | K06 | Xác nhận giao món | Mã hợp lệ, món, đã thanh toán; Xác nhận đã giao | Đã thanh toán |
 | K06-CASH | Giao món thu tiền mặt | Nhắc thu 54.000đ trước khi giao | Trả tại quầy |
-| K08 | Quản lý món | Chip lọc, hàng món kèm công tắc còn hàng | Có món hết |
+| K08 | Quản lý món | Chip lọc, hàng món kèm công tắc còn hàng, nút thêm món | Có món hết |
 | K09 | Đánh dấu hết món | Bottom sheet: lý do, giờ có lại | Overlay |
+| K14 | Thêm món mới | Ảnh (tuỳ chọn), tên, giá, danh mục, thời gian chuẩn bị, còn hàng; Lưu món | Mặc định |
+| K14-ERR | Thiếu thông tin món | Viền và chữ lỗi ở tên, giá | Lỗi |
+| K15 | Sửa món | Như K14 nhưng điền sẵn; Lưu thay đổi, Xoá món | Đã điền |
 | K10 | Quán | Bật/tắt nhận đơn, giờ hoạt động, số đơn tối đa mỗi 15 phút, âm báo | Đang nhận đơn |
 | K11 | Thống kê ca | Số đơn, doanh thu, thời gian làm trung bình, đơn huỷ, biểu đồ theo giờ | Mặc định |
 | K12 | Từ chối đơn | Dialog: lý do, hoàn tiền tự động | Overlay |
@@ -66,3 +71,5 @@ Thanh dưới 4 tab: **Đơn** (K02), **Quét mã** (K05), **Món** (K08), **Qu�
 - **Từ chối đơn luôn hoàn tiền tự động** (D04) và có lý do bắt buộc.
 - **Tên khách không hiện** trên thẻ đơn; quầy chỉ cần mã đơn.
 - Mã PIN và số liệu doanh thu trong Figma là dữ liệu mẫu.
+- Tên và giá món bắt buộc (K14-ERR); thời gian chuẩn bị quyết định giờ nhận khách có thể chọn ở S05, S25.
+- Xoá món ở K15 là nút chữ màu lỗi, nằm cuối màn, tách khỏi nút chính.

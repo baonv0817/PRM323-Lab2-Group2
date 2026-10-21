@@ -2029,6 +2029,15 @@
    "height": 800,
    "hotspots": [
     {
+     "x": 16,
+     "y": 132,
+     "w": 328,
+     "h": 80,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K15"
+    },
+    {
      "x": 270,
      "y": 148,
      "w": 64,
@@ -2036,6 +2045,42 @@
      "trigger": "click",
      "type": "nav",
      "dest": "K09"
+    },
+    {
+     "x": 16,
+     "y": 220,
+     "w": 328,
+     "h": 80,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K15"
+    },
+    {
+     "x": 16,
+     "y": 308,
+     "w": 328,
+     "h": 80,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K15"
+    },
+    {
+     "x": 16,
+     "y": 396,
+     "w": 328,
+     "h": 80,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K15"
+    },
+    {
+     "x": 16,
+     "y": 484,
+     "w": 328,
+     "h": 80,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K15"
     },
     {
      "x": 0,
@@ -2063,6 +2108,15 @@
      "trigger": "click",
      "type": "nav",
      "dest": "K10"
+    },
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K14"
     }
    ]
   },
@@ -2260,6 +2314,90 @@
      "trigger": "click",
      "type": "nav",
      "dest": "K02"
+    }
+   ]
+  },
+  "K14": {
+   "nodeId": "4029:1815",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K08"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K14-ERR"
+    }
+   ]
+  },
+  "K14-ERR": {
+   "nodeId": "4029:1856",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K08"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K08"
+    }
+   ]
+  },
+  "K15": {
+   "nodeId": "4029:1903",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K08"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K08"
+    },
+    {
+     "x": 16,
+     "y": 704,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "K08"
     }
    ]
   }

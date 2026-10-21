@@ -399,7 +399,7 @@ Khung 360 × 800 dp, lề 16 dp, thanh trên cao 56 dp, nút chính cao 56 dp �
 | S30 Mất kết nối | Illustration, thông báo, hai nút | Button, Button/Text | Lỗi mạng | Thử lại; Xem giỏ hàng | → S02; → S05 | Giỏ hàng lưu cục bộ (DP5) |
 | S02-LOADING | Khối xám thay cho nội dung | Skeleton | Đang tải | — | Tự chuyển sau 1,2 giây → S02 | Cùng kích thước nội dung thật |
 
-## 6. App người bán (K01–K13)
+## 6. App người bán (K01–K15)
 
 Ứng dụng riêng cho nhân viên quầy, dùng cùng token và component ở mục 5. Đặc tả chi tiết và flow: [`design/kitchen-app.md`](../design/kitchen-app.md). Thanh dưới 4 tab (Đơn, Quét mã, Món, Quán) dùng `NavigationBar` như `v2/NavBar`.
 
@@ -416,6 +416,9 @@ Khung 360 × 800 dp, lề 16 dp, thanh trên cao 56 dp, nút chính cao 56 dp �
 | K06-CASH | Như K06, thẻ thu tiền nổi bật | Card, Button | Trả tại quầy | Đã thu tiền và giao | → K02 | Phải xác nhận đã thu tiền |
 | K08 Quản lý món | Chip lọc, hàng món kèm công tắc | `v2/Chip`, Switch | Còn, hết | Bật/tắt | → K09 | Công tắc bật có dấu tích |
 | K09 Hết món | Bottom sheet: lý do, giờ có lại | `v2/Chip`, Button | Overlay | Chọn; Xác nhận | → K08 | Khách thấy "Tạm hết" kèm giờ có lại |
+| K14 Thêm món mới | Ảnh, tên, giá, danh mục, thời gian chuẩn bị, còn hàng | TextField, `v2/Chip`, Switch, Button | Trống | Nhập; Lưu món | → K14-ERR (thiếu thông tin) hoặc K08 | Tên và giá bắt buộc, giá > 0 |
+| K14-ERR | Như K14, viền và chữ lỗi | TextField, Button | Lỗi | Sửa; Lưu món | → K08 | Lỗi có icon và chữ |
+| K15 Sửa món | Như K14, điền sẵn | TextField, `v2/Chip`, Switch, Button, Button/Text | Đã điền | Lưu thay đổi; Xoá món | → K08 | Xoá cần xác nhận |
 | K10 Quán | Thẻ trạng thái, cài đặt, liên kết | Switch, `v2/IconButton`, Button/Secondary | Đang nhận đơn | Bật/tắt; đổi số đơn tối đa | → K11; → K01 | Tắt nhận đơn: khách thấy S21 |
 | K11 Thống kê ca | Bốn thẻ số, biểu đồ cột | Card | Mặc định | — | Back → K10 | Cột cao nhất tô cam |
 | K12 Từ chối đơn | Dialog 320 dp: lý do, hai nút | radio, Button | Overlay | Chọn lý do; Từ chối | → K02 | Hoàn tiền tự động |

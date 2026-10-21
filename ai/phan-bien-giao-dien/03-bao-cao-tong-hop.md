@@ -84,7 +84,7 @@ Page 03 của Figma [PRM323](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0
 | Sau khi nhận món | S23 Đánh giá món · S24 Báo sự cố |
 | Hẹn giờ | S25 Hẹn giờ theo slot |
 | Bổ sung | S26 Đăng nhập · S26-OTP · S27 Chọn Kiosk · S28 Kết quả tìm kiếm · S28-EMPTY · S29 Mã giảm giá · S30 Mất kết nối · S02-LOADING |
-| App người bán | K01 Đăng nhập · K02 Danh sách đơn · K02-EMPTY · K03 Chi tiết đơn · K04 Đang chuẩn bị · K05 Quét mã · K05-ERR · K06 Xác nhận giao · K06-CASH · K08 Quản lý món · K09 Hết món · K10 Quán · K11 Thống kê ca · K12 Từ chối đơn · K13 Sự cố ([`design/kitchen-app.md`](../../design/kitchen-app.md)) |
+| App người bán | K01 Đăng nhập · K02 Danh sách đơn · K02-EMPTY · K03 Chi tiết đơn · K04 Đang chuẩn bị · K05 Quét mã · K05-ERR · K06 Xác nhận giao · K06-CASH · K08 Quản lý món · K09 Hết món · K10 Quán · K11 Thống kê ca · K12 Từ chối đơn · K13 Sự cố · K14 Thêm món mới · K14-ERR · K15 Sửa món ([`design/kitchen-app.md`](../../design/kitchen-app.md)) |
 
 S02 và S21 có chuông thông báo dẫn tới S19. S23 dùng thang số 1–5 thay cho mặt cười.
 
@@ -102,7 +102,7 @@ S02 và S21 có chuông thông báo dẫn tới S19. S23 dùng thang số 1–5 
 
 ### Số đo sau khi vẽ lại
 
-Ảnh v2 xuất từ Figma: [`assets/figma/final-ui-v2/`](../../assets/figma/final-ui-v2/) (tổng quan: `contact-sheet-s01-s08.png`, `contact-sheet-s09-s25.png`). Đo bằng `python tests/audit/measure.py v2` và Figma Plugin API trên 108 khung (55 ở 360 dp, 53 ở 412 dp).
+Ảnh v2 xuất từ Figma: [`assets/figma/final-ui-v2/`](../../assets/figma/final-ui-v2/) (tổng quan: `contact-sheet-s01-s08.png`, `contact-sheet-s09-s25.png`). Đo bằng `python tests/audit/measure.py v2` và Figma Plugin API trên 114 khung (58 ở 360 dp, 56 ở 412 dp).
 
 | Chỉ số | Bản cũ | v2 |
 |---|---|---|
@@ -111,20 +111,20 @@ S02 và S21 có chuông thông báo dẫn tới S19. S23 dùng thang số 1–5 
 | Ký tự emoji | 98/366 chữ | 0 |
 | Chữ dưới 14 sp | 86 dòng ở 8 màn | 0, trừ nhãn thanh dưới 12 sp |
 | Chữ thiếu tương phản | 8 chỗ | 0 |
-| Vùng bấm dưới 48 dp | 20/39 | 0/204 |
+| Vùng bấm dưới 48 dp | 20/39 | 0/217 |
 | Chữ tràn khỏi khung 360 × 800 | — | 0 |
 
 ### Prototype và màn 412 dp
 
-- Prototype v2 nối ngay trên Page 03: 207 liên kết giữa 55 khung (gồm S06-LOADING, S02-LOADING, K02-EMPTY tự chuyển; S07-DIALOG, K12 dạng overlay), 12 điểm bắt đầu gồm cả luồng người bán. Vùng bấm đọc ra `tests/figma-proto/hotspots-v2.json`.
+- Prototype v2 nối ngay trên Page 03: 217 liên kết giữa 58 khung (gồm S06-LOADING, S02-LOADING, K02-EMPTY tự chuyển; S07-DIALOG, K12 dạng overlay), 12 điểm bắt đầu gồm cả luồng người bán. Vùng bấm đọc ra `tests/figma-proto/hotspots-v2.json`.
 - Kiểm đồ thị flow v2: `PROTO=v2 npx playwright test graph.spec.js` đạt 7/7 (không màn cụt, không màn mồ côi, đặt đơn S02 → S07 mất 3 chạm, F3 có lối về S07-CASH và S05).
-- 53 khung có bản 412 dp (" v2 · 412", dùng constraints), gồm toàn bộ màn khách và người bán trừ hai dialog. Ảnh S02, S05, S06, S07 ở `assets/figma/final-ui-v2/412/`.
+- 56 khung có bản 412 dp (" v2 · 412", dùng constraints), gồm toàn bộ màn khách và người bán trừ hai dialog. Ảnh S02, S05, S06, S07 ở `assets/figma/final-ui-v2/412/`.
 
 ## 5. Quyết định phạm vi mới
 
 | Mã | Quyết định | Lý do |
 |---|---|---|
-| D43 | Thêm app người bán K01–K13 và S26–S30 vào phạm vi (trước đây app phía quầy nằm ngoài phạm vi ở P0) | Đơn của khách cần quầy nhận, làm, giao; các màn S07, S20, S21, S22, S24 đã dựa vào thao tác phía quầy |
+| D43 | Thêm app người bán K01–K15 và S26–S30 vào phạm vi (trước đây app phía quầy nằm ngoài phạm vi ở P0) | Đơn của khách cần quầy nhận, làm, giao; các màn S07, S20, S21, S22, S24 đã dựa vào thao tác phía quầy |
 
 ## 6. Việc còn lại
 

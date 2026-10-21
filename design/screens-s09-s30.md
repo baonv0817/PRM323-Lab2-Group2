@@ -5,7 +5,7 @@
 
 ![S09–S25](../assets/figma/final-ui-s09-s25/contact-sheet.png)
 
-Cùng S01–S08 ([`screen-spec.md`](screen-spec.md)), S09–S30 tạo thành bộ 30 màn của app khách, đủ vòng đời một đơn hàng. Phía quầy có app riêng: [`kitchen-app.md`](kitchen-app.md). Wireframe nằm ở Page 02 (`ux/wireframe/`), user flow F4–F11 ở Page 01 (`ux/userflow/`).
+Cùng S01–S08 ([`screen-spec.md`](screen-spec.md)), S09–S30 tạo thành bộ 30 màn của app khách, đủ vòng đời một đơn hàng. Phía quầy có app riêng (K01–K15): [`kitchen-app.md`](kitchen-app.md). Wireframe nằm ở Page 02 (`ux/wireframe/`), user flow F4–F11 ở Page 01 (`ux/userflow/`).
 
 ## 1. Vì sao có các màn này
 
@@ -85,7 +85,7 @@ Mỗi flow trong Figma có dải **INPUT → OUTPUT** ở đầu.
 
 | Khoảng trống | Xử lý |
 |---|---|
-| Phía quầy: không có màn nào cho người bán | App người bán K01–K13 ([`kitchen-app.md`](kitchen-app.md)) |
+| Phía quầy: không có màn nào cho người bán | App người bán K01–K15 ([`kitchen-app.md`](kitchen-app.md)) |
 | Link đăng nhập ở S01 không dẫn tới đâu | S26, S26-OTP |
 | Địa điểm ở S02 không bấm được | S27 |
 | Ô tìm kiếm ở S02, S03 không dẫn tới đâu | S28, S28-EMPTY |

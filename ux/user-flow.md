@@ -13,7 +13,7 @@ Mỗi flow gồm:
 
 App có 13 flow của khách và các flow của người bán. **F1–F3** là ba flow bắt buộc của Lab 2 (có nhánh lỗi, đã nối prototype); **F4–F11** mô tả S09–S25; **F12–F13** là mất kết nối và đang tải ([`design/screens-s09-s30.md`](../design/screens-s09-s30.md)); flow người bán nằm ở [`design/kitchen-app.md`](../design/kitchen-app.md).
 
-Mã màn: **S01–S30** (khách) và **K01–K13** (người bán); biến thể gắn hậu tố (`S06-ERR`, `S05-EMPTY`…).
+Mã màn: **S01–S30** (khách) và **K01–K15** (người bán); biến thể gắn hậu tố (`S06-ERR`, `S05-EMPTY`…).
 
 ![3 flow lõi có Input/Output](userflow/flows-core-io.png)
 

@@ -58,7 +58,7 @@ Theo chuẩn của môn: **Fact** = Observed/Reported · **Hypothesis** = Inferr
 
 | Trong phạm vi | Ngoài phạm vi |
 |---|---|
-| App khách S01–S30 và app người bán K01–K13 · nhận tại quầy · QR / ví / tiền mặt · theo dõi đơn 4 bước · light theme · 360 × 800 dp, kiểm 412 dp | Giao hàng tận nơi · đăng nhập tích điểm · dark mode · thiết kế tablet · code Flutter |
+| App khách S01–S30 và app người bán K01–K15 · nhận tại quầy · QR / ví / tiền mặt · theo dõi đơn 4 bước · light theme · 360 × 800 dp, kiểm 412 dp | Giao hàng tận nơi · đăng nhập tích điểm · dark mode · thiết kế tablet · code Flutter |
 
 ## 6. AI phản biện và quyết định
 

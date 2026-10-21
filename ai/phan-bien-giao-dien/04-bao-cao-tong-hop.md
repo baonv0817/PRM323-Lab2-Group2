@@ -84,3 +84,61 @@ Bản cũ vẫn nguyên trong Figma để đối chiếu; v2 nằm cùng hàng, 
 3. Xuất 13 màn lõi v2 sang PNG, chạy lại `tests/audit/measure.py` để có số cam bản mới.
 4. Nối prototype v2, sửa `hotspots.json`, chạy lại `npm test`.
 5. Cập nhật handoff Flutter theo v2 rồi mới gọi là Final UI.
+
+---
+
+## 8. Phản biện UI (phần để nộp)
+
+### 8.1 Phản biện của Claude (không độc lập)
+
+Đã đo và nhận xét 15 lỗi (A01–A15, mục 3 và 4). Điểm chính: giao diện cũ **không sai ở độ lớn nút cam** (cam đậm chỉ 5,9%) mà sai ở chỗ **cả màn dùng một họ cam–be cho mọi vai trò**, trộn ba hệ icon, lặp bước chọn thanh toán giữa S05 và S06, và vi phạm hai tiêu chí nhóm tự đặt (vùng bấm 48 dp, chữ 14 sp). Bằng chứng: [`01-bao-cao-do-tu-dong.md`](01-bao-cao-do-tu-dong.md).
+
+### 8.2 Phản biện của AI khác (bắt buộc theo đề, **chưa có**)
+
+| Mục | Điền khi có |
+|---|---|
+| Công cụ, phiên bản, ngày | |
+| Nguyên văn câu trả lời | Ghi vào `ai/ai-design-log.md` thành phụ lục mới (ví dụ "Phụ lục H"), không sửa chữ |
+| Điểm trùng với A01–A15 | |
+| Điểm AI kia nêu mà Claude bỏ sót | |
+| Điểm AI kia nêu sai (Reject, kèm lý do) | |
+
+Cách làm: [`02-prompt-cho-ai-khac.md`](02-prompt-cho-ai-khac.md). Điểm hai bên cùng nêu thì đáng tin hơn; điểm chỉ một bên nêu thì kiểm lại bằng số đo.
+
+### 8.3 Quyết định cuối
+
+Dùng bảng ở mục 4. Sau khi có 8.2, đổi cột "Quyết định" nếu AI kia đưa ra lý do tốt hơn, và ghi lại vào `ai/ai-design-log.md`.
+
+## 9. Final UI
+
+**Trạng thái:** v2 là **ứng viên Final UI**. Chỉ gọi là Final UI sau khi (1) có phản biện của AI khác, (2) bạn chốt A09 và A13, (3) xuất ảnh và đo lại màu cam.
+
+### 9.1 Phạm vi
+
+| Nhóm | Màn | Ghi chú |
+|---|---|---|
+| Lõi (Lab 2) | S01–S08 | 8 màn bắt buộc |
+| Biến thể | S05-EMPTY, S05-VOUCHER-ERR, S06-ERR, S07-CASH, S08-EMPTY | Trạng thái rỗng và lỗi |
+| Mở rộng (Phase 2) | S09–S25 | Backlog đã thiết kế, nhãn Assumed, không thuộc bài nộp Lab 2 |
+
+Vị trí: Page 03 của bản sao Figma [PRM323 (Copy)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260), khung có hậu tố " v2", lệch phải 2000 px so với bản cũ.
+
+### 9.2 Hệ thiết kế v2
+
+| Thành phần | Quy tắc |
+|---|---|
+| Nền | `#FAF8F5`; thẻ trắng, viền `#E4DFD8` |
+| Cam | `#F69D39` chỉ cho **một nút chính mỗi màn** và trạng thái đang chọn; chữ cam dùng `#B45309` |
+| Chữ | Nâu `#622B14` cho nội dung, `#6B5F55` cho phụ; tối thiểu 14 sp, nhãn thanh dưới 12 sp (D36) |
+| Icon | 27 icon vector một nét, một màu; không emoji |
+| Vùng bấm | Tối thiểu 48 × 48 dp |
+| Trạng thái | Luôn có chữ hoặc icon đi kèm màu (ví dụ "Đã áp dụng" có dấu tích, lỗi có icon) |
+| Component | Chip, NavBar, Card/Food, IconButton, Button/Secondary, Button/Text (Page 05) |
+
+### 9.3 Việc còn lại trước khi gọi là Final
+
+1. Xuất PNG 2x của các màn lõi vào `assets/figma/final-ui-v2/`.
+2. Chạy lại `tests/audit/measure.py` trên ảnh v2 và ghi số cam vào mục 5.
+3. Nối prototype v2, cập nhật `hotspots.json`, chạy `npm test`.
+4. Cập nhật `handoff/flutter-handoff.md` (token mới, component mới, mã màn S01–S25).
+5. Kiểm thử với người dùng thật (G5); đến lúc đó mới có bằng chứng giao diện dễ dùng hơn.

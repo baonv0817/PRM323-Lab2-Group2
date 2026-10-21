@@ -41,5 +41,5 @@
 
 - Người dùng có hiểu và làm xong việc hay không, mất bao lâu: cần usability test với người thật (G5, chưa làm).
 - Thời gian "< 35 giây": test chỉ đếm chạm.
-- Màn mở rộng S09–S25: chưa nối prototype.
+- S09–S25: chưa nối prototype.
 - Màn loading trung gian: chỉ kiểm màn đích sau 1,2 giây.

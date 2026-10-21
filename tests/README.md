@@ -55,7 +55,7 @@ Ngoài test flow, `audit/` phục vụ bước phản biện giao diện: `captu
 
 ## Giới hạn
 
-- Chỉ kiểm F1–F3 và dialog huỷ. Màn mở rộng S09–S25 chưa nối prototype nên chưa test.
+- Chỉ kiểm F1–F3 và dialog huỷ. S09–S25 chưa nối prototype nên chưa test.
 - Không đo thời gian dưới 35 giây; số chạm tính từ đồ thị liên kết.
 - Không kiểm màn loading ở giữa (S06-LOADING tự chuyển sau 1,2 giây); test chỉ kiểm màn đích.
 - Phụ thuộc mạng và giao diện viewer của Figma; viewer đổi giao diện có thể làm ảnh chuẩn lệch.

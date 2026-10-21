@@ -6,34 +6,33 @@
 | | |
 |---|---|
 | **Nhóm** | Group 2 |
-| **Thành viên** | Nguyễn Viết Bảo — SE183398 *(lấy từ tên file trong thư mục môn học; xác nhận lại)* · `[Điền các thành viên còn lại]` |
+| **Thành viên** | Nguyễn Viết Bảo — SE183398 · `[Điền các thành viên còn lại]` |
 | **Lớp** | `[Điền mã lớp]` |
 | **Học kỳ** | Fall 2026 |
 | **Tên repo** | `PRM323-Lab2-Group2` |
-| **Cập nhật** | 20/10/2026 |
-| **Figma** | [PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) *(quyền xem công khai chưa kiểm lại; mở bằng tab ẩn danh trước khi nộp)* |
+| **Cập nhật** | 21/10/2026 |
+| **Figma** | [PRM323 (bản đầy đủ)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) · [PRM323 (bản gốc)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) |
 
 ## 1. Đề tài
 
 **FtaCode Mobile** là app đặt món trước cho quán trong trường: sinh viên đặt và trả tiền từ lớp, hẹn giờ, tới quầy lấy món theo mã, không xếp hàng trong giờ nghỉ chỉ khoảng 15 phút.
 
-- **Persona chính (proto-persona, giả định chưa kiểm chứng):** Nguyễn Minh Quân, 20 tuổi, sinh viên năm 2 ở ký túc xá, có ~15 phút giữa hai slot, dùng điện thoại một tay khi đi bộ.
-- **Tiêu chí thành công (mục tiêu kiểm thử, chưa phải kết quả):** đặt xong một đơn dưới 35 giây, tối đa 8 chạm từ Trang chủ.
-- **Phạm vi Lab 2:** 8 màn 360 × 800 dp, 3 user flow có nhánh lỗi, Design System bằng Figma Variables, component có variant, prototype Figma. **Không có mã nguồn Flutter** (đề: `Coding: None`).
-- **Ngoài phạm vi (backlog):** 17 màn và 8 flow mở rộng đã thiết kế sẵn, xem [`design/extended-screens.md`](design/extended-screens.md). Không tính vào bài nộp.
+- **Persona chính:** Nguyễn Minh Quân, 20 tuổi, sinh viên năm 2 ở ký túc xá, có khoảng 15 phút giữa hai slot, dùng điện thoại một tay khi đi bộ.
+- **Tiêu chí thành công:** đặt xong một đơn dưới 35 giây, tối đa 8 chạm từ Trang chủ.
+- **Phạm vi:** 25 màn 360 × 800 dp (S01–S25) cùng các biến thể, 11 user flow có nhánh lỗi, Design System bằng Figma Variables, component có variant, prototype Figma. Không có mã nguồn Flutter (đề: `Coding: None`).
 
 ## 2. Link thiết kế
 
 | Page Figma | Nội dung | Node |
 |---|---|---|
-| 01 User Flow | Sơ đồ 3 flow bắt buộc + 8 flow mở rộng, mỗi flow có **Input → Output** | `1:6` |
-| 02 Wireframe | Wireframe xám của toàn bộ màn, biến thể và màn mở rộng | `1:259` |
-| 03 Final UI | 8 màn hi-fi + 7 biến thể; 17 màn mở rộng ở cuối trang | `1:260` |
+| 01 User Flow | Sơ đồ 11 flow, mỗi flow có **Input → Output** | `1:6` |
+| 02 Wireframe | Wireframe xám của toàn bộ màn và biến thể | `1:259` |
+| 03 Final UI | 25 màn và biến thể. Bản cũ ở bên trái giữ để đối chiếu; **bản v2 (Final UI) lệch phải 2000 px**, tên khung có hậu tố " v2" | `1:260` |
 | 04 Design System | Token màu, chữ, khoảng cách (Figma Variables) | `1:261` |
-| 05 Components | 5 component set có variant (Button, TextField, Card/Food, NavBar, Dialog) | `1:262` |
-| 06 Prototype | 3 điểm bắt đầu: Flow 1 tại S01, Flow 2 tại S03, Flow 3 tại S06 | `1:263` |
+| 05 Components | Component set có variant (Button, TextField, Card/Food, NavBar, Dialog) và bộ v2 (Chip, NavBar, Card/Food, IconButton, Button) cùng 27 icon | `1:262` |
+| 06 Prototype | Flow 1 bắt đầu tại S01, Flow 2 tại S03, Flow 3 tại S06 | `1:263` |
 
-Link từng page: `https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=<node, đổi : thành ->`, ví dụ page 03: `node-id=1-260`.
+Link từng page: `https://www.figma.com/design/<file>/PRM323?node-id=<node, đổi : thành ->`, ví dụ page 03: `node-id=1-260`.
 
 ## 3. Cấu trúc thư mục
 
@@ -47,36 +46,38 @@ PRM323-Lab2-Group2/
 │   ├── persona.md · persona-mapping.xlsx
 │   ├── research.md · ai-interview-kit.md
 │   ├── user-flow.md              │  IA + 11 flow (Input / Output)
-│   ├── survey/                   │  câu hỏi khảo sát, script tạo Google Form, dữ liệu MÔ PHỎNG
+│   ├── survey/                   │  câu hỏi khảo sát, script tạo Google Form, dữ liệu mô phỏng
 │   ├── userflow/                 │  ảnh sơ đồ flow xuất từ Figma Page 01
 │   └── wireframe/                │  ảnh wireframe xuất từ Figma Page 02
 ├── design/                       ← THIẾT KẾ GIAO DIỆN (P3 → P4)
 │   ├── DESIGN.md                 │  design brief gửi AI + token
 │   ├── p3-ui-concept-style-guide.md
 │   ├── p4-detailed-ui-prototype.md
-│   ├── screen-spec.md · design-decisions.md
-│   └── extended-screens.md       │  backlog: màn S09–S25
+│   ├── screen-spec.md            │  đặc tả S01–S08
+│   ├── screens-s09-s25.md        │  đặc tả S09–S25
+│   └── design-decisions.md
 ├── ai/                           ← NHẬT KÝ AI & PHẢN BIỆN
 │   ├── ai-design-log.md          │  prompt nguyên văn, vòng lặp, phản biện, quyết định D01–D42
 │   ├── ai-evaluation-log.xlsx
-│   ├── phan-bien-giao-dien/      │  phản biện giao diện trước Final UI: báo cáo đo, prompt cho AI khác, ảnh
-│   └── ai-persona-interviews.md  │  phỏng vấn mô phỏng (Assumed)
+│   ├── phan-bien-giao-dien/      │  phản biện giao diện trước Final UI: báo cáo đo, prompt cho AI khác, báo cáo tổng hợp
+│   └── ai-persona-interviews.md  │  phỏng vấn mô phỏng
 ├── assets/                       ← ẢNH BẰNG CHỨNG
 │   ├── stitch/                   │  ảnh Google Stitch ban đầu + 3 vòng trước/sau
 │   ├── concepts/                 │  3 hướng visual cho P3
 │   └── figma/
-│       ├── final-ui/             │  8 màn lõi + 7 biến thể
-│       ├── final-ui-phase2/      │  17 màn mở rộng + ảnh tổng quan
+│       ├── final-ui/             │  S01–S08 và biến thể (bản cũ)
+│       ├── final-ui-s09-s25/     │  S09–S25 (bản cũ) và ảnh tổng quan
 │       └── design-system/        │  token và component
 ├── handoff/
 │   └── flutter-handoff.md        ← BÀN GIAO CHO LẬP TRÌNH VIÊN FLUTTER
 ├── tests/                        ← TEST TỰ ĐỘNG PROTOTYPE (Playwright, P4/P5)
 │   ├── figma-proto/              │  test bấm prototype Figma + test đồ thị flow, ảnh chuẩn
+│   ├── audit/                    │  chụp màn hình và đo lỗi thiết kế
 │   └── README.md                 │  cách cài và chạy
 ├── slides/                       ← TRÌNH BÀY
-│   ├── FtaCode_Lab2_Presentation.pptx   (38 trang, bản hiện hành)
+│   ├── FtaCode_Lab2_Presentation.pptx   (38 trang)
 │   └── kich-ban-*.md · phan-bien-hoi-dap.md
-├── docs/                         ← QUY TRÌNH & THEO DÕI TIẾN ĐỘ (không phải sản phẩm nộp)
+├── docs/                         ← QUY TRÌNH & THEO DÕI TIẾN ĐỘ
 │   ├── quy-trinh/                │  quy trình UI/UX, hướng dẫn, bảng mẫu
 │   ├── tien-do/                  │  TIEN-DO, checklist sửa
 │   └── test-reports/             │  báo cáo test Playwright
@@ -85,37 +86,37 @@ PRM323-Lab2-Group2/
     └── anh-cu-giong-stitch/
 ```
 
-**Quy tắc:** thư mục nào có README riêng thì xem README đó để biết từng file là gì. Ảnh trong `assets/figma/` là xuất từ Figma; ảnh flow và wireframe nằm trong `ux/` cạnh tài liệu nói về chúng.
+Thư mục nào có README riêng thì xem README đó để biết từng file là gì. Ảnh trong `assets/figma/` xuất từ Figma; ảnh flow và wireframe nằm trong `ux/` cạnh tài liệu nói về chúng.
 
 ## 4. Bàn giao theo quy trình (P0 → P5)
 
 | Phase | Gate | Tài liệu | Tình trạng |
 |---|---|---|---|
 | P0 · Xác định vấn đề | G0 | [`ux/p0-problem-framing.md`](ux/p0-problem-framing.md) | ✅ 6/6 |
-| P1 · Nghiên cứu | G1 | [`ux/p1-research.md`](ux/p1-research.md) · [`ux/survey/`](ux/survey/) | ⚠️ có điều kiện: chưa có phản hồi khảo sát thật |
+| P1 · Nghiên cứu | G1 | [`ux/p1-research.md`](ux/p1-research.md) · [`ux/survey/`](ux/survey/) | ⚠️ chưa có phản hồi khảo sát thật |
 | P2 · UX Design | G2 | [`ux/p2-ux-design.md`](ux/p2-ux-design.md) · [`ux/persona.md`](ux/persona.md) · [`ux/user-flow.md`](ux/user-flow.md) | ⚠️ 5/6: chưa walkthrough với người thật |
-| P3 · UI Concept & Style Guide | G3 | [`design/p3-ui-concept-style-guide.md`](design/p3-ui-concept-style-guide.md) · [`assets/concepts/`](assets/concepts/) | ❌ chưa qua: còn nút −/+ 48 dp, chữ ≥ 14 sp, màn 412 dp |
-| P4 · UI chi tiết & Prototype | G4 | [`design/p4-detailed-ui-prototype.md`](design/p4-detailed-ui-prototype.md) | ❌ chưa qua: chưa chạy thử Present, màn chưa dùng instance |
-| P5 · Kiểm thử & bàn giao | G5 | [`handoff/flutter-handoff.md`](handoff/flutter-handoff.md) · [`tests/`](tests/) · [`docs/test-reports/`](docs/test-reports/) | ⚠️ có handoff và test tự động prototype (13/13 đạt); chưa usability test với người |
+| P3 · UI Concept & Style Guide | G3 | [`design/p3-ui-concept-style-guide.md`](design/p3-ui-concept-style-guide.md) · [`assets/concepts/`](assets/concepts/) | ⚠️ còn màn 412 dp |
+| P4 · UI chi tiết & Prototype | G4 | [`design/p4-detailed-ui-prototype.md`](design/p4-detailed-ui-prototype.md) | ⚠️ prototype chưa nối bản v2 |
+| P5 · Kiểm thử & bàn giao | G5 | [`handoff/flutter-handoff.md`](handoff/flutter-handoff.md) · [`tests/`](tests/) · [`docs/test-reports/`](docs/test-reports/) | ⚠️ có handoff và test tự động; chưa usability test với người |
 
 Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluation-log.xlsx`](ai/ai-evaluation-log.xlsx). Trình bày: [`slides/`](slides/).
 
-## 5. Trạng thái thực tế (20/10/2026)
+## 5. Trạng thái (21/10/2026)
 
 | Hạng mục | Trạng thái | Bằng chứng |
 |---|---|---|
-| 8 màn lõi + 7 biến thể trong Figma | Đã dựng, màu đã gắn Figma Variables | `assets/figma/final-ui/` |
-| 3 flow bắt buộc | Đã vẽ, có Input/Output, đã nối prototype | `ux/user-flow.md` · `ux/userflow/` |
-| Wireframe | Đủ 8 màn lõi và biến thể | `ux/wireframe/` |
-| Component | 5 component set có variant; **màn chưa thay bằng instance** | `assets/figma/design-system/` |
-| Màn 412 dp | **Chưa dựng** | — |
-| Nghiên cứu người dùng | Khảo sát Google Form đã soạn; **kết quả hiện có là mô phỏng** (nhãn Assumed) | `ux/survey/` |
-| Test tự động prototype | 13/13 đạt (Playwright, 20/10); còn 2 điểm lệch giữa prototype và tài liệu | `tests/` · `docs/test-reports/playwright-prototype-2026-10-20.md` |
-| Usability test với người thật | **Chưa làm** | — |
-| Màn mở rộng S09–S25 | Đã thiết kế, **backlog**, chưa nối prototype | `design/extended-screens.md` |
+| Final UI v2 | 30 khung trong Figma (25 màn và biến thể), không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp | [`ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md`](ai/phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
+| Phản biện giao diện | Báo cáo đo A01–A15 và bảng quyết định; phản biện của AI khác chờ chạy | [`ai/phan-bien-giao-dien/`](ai/phan-bien-giao-dien/) |
+| 11 flow | Đã vẽ, có Input/Output; Flow 1–3 đã nối prototype | `ux/user-flow.md` · `ux/userflow/` |
+| Wireframe | Đủ các màn và biến thể | `ux/wireframe/` |
+| Component | Bộ cũ 5 component set; bộ v2 thêm Chip, NavBar, Card/Food, IconButton, Button | Figma Page 05 |
+| Màn 412 dp | Chưa dựng | — |
+| Nghiên cứu người dùng | Khảo sát Google Form đã soạn; kết quả hiện có là dữ liệu mô phỏng | `ux/survey/` |
+| Test tự động prototype | 13/13 đạt (Playwright, 20/10) | `tests/` · `docs/test-reports/playwright-prototype-2026-10-20.md` |
+| Usability test với người thật | Chưa làm | — |
 | Code Flutter | Không có (đề không yêu cầu) | — |
 
-**Về dữ liệu mô phỏng:** phỏng vấn SIM-A1…A5 và 20 phản hồi khảo sát SIM-S01…S20 do AI tạo để thử bộ câu hỏi và sheet phân tích. Chúng **không phải bằng chứng nghiên cứu**; file kết quả được đặt tên `…-MO-PHONG.xlsx` để không bị nhầm.
+Phỏng vấn SIM-A1…A5 và 20 phản hồi khảo sát SIM-S01…S20 do AI tạo để thử bộ câu hỏi và sheet phân tích; file kết quả đặt tên `…-MO-PHONG.xlsx`.
 
 ## 6. Công cụ AI đã dùng
 
@@ -124,17 +125,18 @@ Nhật ký AI: [`ai/ai-design-log.md`](ai/ai-design-log.md) · [`ai/ai-evaluatio
 | **Google Stitch** | Sinh giao diện ban đầu từ `design/DESIGN.md` | `assets/stitch/` · `ai/ai-design-log.md` |
 | **Gemini** | Phản biện UI theo 10 heuristics của Nielsen và WCAG | `ai/ai-design-log.md` |
 | **Claude Opus 5.5** (Claude Code) | Phỏng vấn mô phỏng; các vòng phản biện (có nguyên văn); soạn và sửa tài liệu; khảo sát mô phỏng | `ai/ai-persona-interviews.md` · `ai/ai-design-log.md` Phụ lục A–G |
-| **Claude Code + Figma MCP + Playwright** | Sửa file Figma: màu, Variables, component set, wireframe, sơ đồ flow, biến thể màn; viết và chạy test Playwright trên prototype | `design/p4-detailed-ui-prototype.md` · `docs/tien-do/figma-fix-checklist.md` |
+| **Claude Code + Figma MCP + Playwright** | Sửa và vẽ lại file Figma (màu, Variables, component, wireframe, sơ đồ flow, màn v2); viết và chạy test Playwright; đo lỗi thiết kế | `design/p4-detailed-ui-prototype.md` · `docs/tien-do/figma-fix-checklist.md` · `ai/phan-bien-giao-dien/` |
 | **Claude / Antigravity** | Phân tích IA, kịch bản Flutter handoff, plugin Design System | `ux/`, `design/`, `handoff/` |
 
-Mọi quyết định thiết kế đều ghi Accept / Modify / Reject trong `ai/ai-design-log.md`; sinh viên tự đo lại các con số AI đưa ra (ví dụ tương phản chữ trắng trên cam là 2,14:1, không phải mức AI nêu).
+Mọi quyết định thiết kế ghi Accept / Modify / Reject trong `ai/ai-design-log.md`; sinh viên tự đo lại các con số AI đưa ra (ví dụ tương phản chữ trắng trên cam là 2,14:1).
 
 ## 7. Việc còn lại trước khi nộp
 
 Danh sách đầy đủ: [`docs/tien-do/TIEN-DO.md`](docs/tien-do/TIEN-DO.md) và [`docs/tien-do/FIX-CHECKLIST.md`](docs/tien-do/FIX-CHECKLIST.md). Ưu tiên:
 
-1. Thu phản hồi khảo sát **thật** (Google Form) và viết lại mục kết quả ở P1.
-2. Figma: nút −/+ 48 dp, chữ nội dung ≥ 14 sp, thay nút/thẻ/nav bằng instance, dựng màn 412 dp, chạy Present cả 3 flow.
-3. Chụp ảnh Stitch trước/sau từ lịch sử Stitch; xuất ảnh Figma 2×.
-4. Điền họ tên và MSSV các thành viên, mã lớp.
-5. Mở link Figma bằng tab ẩn danh để chắc quyền xem công khai.
+1. Chạy phản biện bằng AI khác ([`prompt`](ai/phan-bien-giao-dien/02-prompt-cho-ai-khac.md)), ghi nguyên văn vào `ai/ai-design-log.md`, chốt bảng quyết định.
+2. Xuất ảnh Final UI v2 (PNG 2×) vào `assets/figma/`, đo lại tỉ lệ màu.
+3. Vẽ nốt S06-LOADING và S07-DIALOG bản v2; nối prototype v2; cập nhật handoff Flutter.
+4. Thu phản hồi khảo sát thật (Google Form) và viết lại mục kết quả ở P1.
+5. Dựng màn 412 dp, chạy Present cả 3 flow.
+6. Điền họ tên và MSSV các thành viên, mã lớp; mở link Figma bằng tab ẩn danh để chắc quyền xem công khai.

@@ -35,13 +35,13 @@ Thứ tự page đã sắp lại: 01 → 02 → 03 → 04 → 05 → 06.
 - [x] Flow 1 bỏ bước voucher, thay bằng "Giờ nhận: Lấy ngay" (D28).
 - [x] Flow 2 đổi tên "Customization & Voucher"; node cuối là "Nhập mã giảm giá · S05 · Mã sai → báo lỗi, nhập lại".
 - [x] Flow 3 bỏ "Mã lỗi: #PAY_402", thay bằng "Mạng yếu / hết thời gian".
-- [x] **Mọi flow (3 flow lõi + F4–F11) có dải INPUT → OUTPUT**: Input là người dùng cần gì, Output là nhận được gì. Ảnh flow lõi: `ux/userflow/flows-core-io.png`.
-- [x] Thêm sơ đồ Flow 4–F11 (Phase 2) dưới 3 flow bắt buộc, cùng kiểu nút/mũi tên; có nhánh lỗi. Ảnh: `ux/userflow/flows-F4-F7.png`, `flows-F8-F11.png`.
+- [x] **Mọi flow (F1–F11) có dải INPUT → OUTPUT**: Input là người dùng cần gì, Output là nhận được gì. Ảnh flow lõi: `ux/userflow/flows-core-io.png`.
+- [x] Thêm sơ đồ F4–F11 dưới 3 flow bắt buộc, cùng kiểu nút/mũi tên; có nhánh lỗi. Ảnh: `ux/userflow/flows-F4-F7.png`, `flows-F8-F11.png`.
 
 ## 3. Page 02 · Wireframe
 
 - [x] Đổi tên 4 khung: S01, S02, S04, S06-ERR.
-- [x] Đã thêm wireframe xám cho S03, S05, S06, S07, S08, các biến thể (S05-EMPTY, S05-VOUCHER-ERR, S06-LOADING, S07-DIALOG, S07-CASH, S08-EMPTY) và 17 màn Phase 2 (S09–S25). Nằm dưới khung wireframe cũ trên Page 02; mỗi khung có chú thích "CTA chính". Ảnh tổng quan: `ux/wireframe/wireframes-1.png`, `wireframes-2.png`.
+- [x] Đã thêm wireframe xám cho S03, S05, S06, S07, S08, các biến thể (S05-EMPTY, S05-VOUCHER-ERR, S06-LOADING, S07-DIALOG, S07-CASH, S08-EMPTY) và S09–S25. Nằm dưới khung wireframe cũ trên Page 02; mỗi khung có chú thích "CTA chính". Ảnh tổng quan: `ux/wireframe/wireframes-1.png`, `wireframes-2.png`.
 - [ ] S02 wireframe: thêm khối trạng thái quán (D33).
 
 ## 4. Page 03 · Final UI — từng frame
@@ -112,9 +112,9 @@ Thêm khung **"Components · Variants"** ngay dưới bảng cũ. Mọi màu, pa
 - [ ] Chạy **Present** cả 3 flow, quay màn hình làm minh chứng.
 - [ ] Share → **Anyone with the link can view**.
 
-## 7b. Màn mở rộng Phase 2
+## 7b. Màn S09–S25
 
-- 17 màn S09–S25 và sơ đồ IA mở rộng nằm ở **cuối Page 03** (gói Figma Starter chỉ cho 3 page nên không tạo được page 07). Chi tiết: `design/extended-screens.md`.
+- 17 màn S09–S25 và sơ đồ IA nằm ở **cuối Page 03** (gói Figma Starter chỉ cho 3 page nên không tạo được page 07). Chi tiết: `design/screens-s09-s25.md`.
 - [ ] Nối prototype cho S09–S25; thêm chuông thông báo vào app bar S02.
 
 ## 8. Sau khi làm xong phần còn lại

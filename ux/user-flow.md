@@ -2,7 +2,6 @@
 
 > FtaCode Mobile · PRM323 Lab 2 · Ngày cập nhật: 20/10/2026
 > Figma: [PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) · Sơ đồ flow: Page 01 · Wireframe: Page 02 · Màn hi-fi: Page 03 · Prototype: Page 06
-> Mọi flow dưới đây là **giả thuyết thiết kế (Assumed)**: chưa test với người dùng thật. Số chạm tính theo liên kết prototype, chưa đo bằng người thật.
 
 ## 0. Cách đọc
 
@@ -12,9 +11,9 @@ Mỗi flow gồm:
 - **Đường đi** — các màn theo thứ tự, và **nhánh lỗi / nhánh phụ**.
 - **Căn cứ** — insight hoặc quyết định thiết kế đứng sau.
 
-**3 flow bắt buộc của Lab 2** là F1–F3. **F4–F11 là Phase 2**: đã thiết kế trong Figma nhưng để backlog, không tính vào bài nộp (xem `design/extended-screens.md`).
+App có 11 flow: **F1–F3** là ba flow bắt buộc của Lab 2 (có nhánh lỗi, đã nối prototype); **F4–F11** mô tả các màn S09–S25 (xem `design/screens-s09-s25.md`).
 
-Mã màn: **S01–S08** là 8 màn lõi; biến thể gắn hậu tố (`S06-ERR`, `S05-EMPTY`…); **S09–S25** là màn Phase 2.
+Mã màn: **S01–S25**; biến thể gắn hậu tố (`S06-ERR`, `S05-EMPTY`…).
 
 ![3 flow lõi có Input/Output](userflow/flows-core-io.png)
 
@@ -29,11 +28,11 @@ Mã màn: **S01–S08** là 8 màn lõi; biến thể gắn hậu tố (`S06-ERR
 | Trang chủ | S02 | Trạng thái quán, món lấy nhanh |
 | Thực đơn | S03 | Danh mục, tìm kiếm |
 | Đơn hàng | S08 | Đơn đang xử lý và lịch sử; mở S07 để xem mã nhận |
-| Cá nhân | S15 *(Phase 2)* | Chưa có màn ở bản lõi |
+| Cá nhân | S15 | Hồ sơ, thanh toán, thông báo, món yêu thích |
 
 ### 1.1 Sơ đồ màn hình
 
-Nét liền = màn lõi Lab 2. Nét đứt = Phase 2.
+Nét liền = màn S01–S08. Nét đứt = màn S09–S25.
 
 ```mermaid
 graph TD
@@ -76,7 +75,7 @@ graph TD
     S15 -.-> S13[S13 Món yêu thích]
 ```
 
-### 1.2 Danh mục màn lõi
+### 1.2 Danh mục màn S01–S08
 
 | Mã | Màn | Cấp | Nội dung chính |
 |---|---|---|---|
@@ -114,7 +113,7 @@ flowchart TD
     G --> H([S07 Theo dõi đơn · #A-204 + QR])
 ```
 
-**Nhánh phụ:** quán đóng → S21 (Phase 2); giỏ trống → S05-EMPTY → S03; đơn cũ → S08 → Đặt lại → S05.
+**Nhánh phụ:** quán đóng → S21; giỏ trống → S05-EMPTY → S03; đơn cũ → S08 → Đặt lại → S05.
 
 ---
 
@@ -160,9 +159,7 @@ flowchart TD
 
 ---
 
-## 3. Tám flow mở rộng (Phase 2)
-
-> Ngoài phạm vi 3 flow bắt buộc. Toàn bộ là giả thuyết; xem rủi ro phạm vi ở `design/extended-screens.md`.
+## 3. Flow F4–F11
 
 ![F4–F7](userflow/flows-F4-F7.png)
 ![F8–F11](userflow/flows-F8-F11.png)
@@ -282,6 +279,4 @@ Mọi màn đều thuộc ít nhất một flow, không có màn mồ côi. ● 
 - **F3 trong prototype:** lỗi được kích hoạt khi chạm vào *thẻ MoMo* ở S06, còn nút "Tiến hành thanh toán" đi tới thành công (phát hiện bằng test Playwright, `docs/test-reports/playwright-prototype-2026-10-20.md`). Sơ đồ F3 ở mục 2 mô tả luồng thiết kế (loading rồi lỗi); cần sửa prototype hoặc tài liệu cho khớp.
 - **Dialog xác nhận đặt hàng:** sơ đồ Page 01 (Flow 1) vẫn ghi "Mở Overlay Dialog xác nhận", nhưng prototype hiện đi thẳng S06 → S06-LOADING → S07. Dialog duy nhất là S07-DIALOG (huỷ đơn). Cần chọn một: thêm dialog vào prototype hoặc bỏ dòng này khỏi sơ đồ.
 - **Số chạm và thời gian** (3 / 5 chạm, < 35 giây) là suy ra từ liên kết, chưa test với người dùng.
-- **Điểm vào S19:** S02 lõi chỉ có biểu tượng giỏ hàng; cần thêm chuông thông báo thì F8 mới đi được.
-- **Tab Cá nhân** chưa có màn ở bản lõi (S15 là Phase 2).
-- **Nguồn insight yếu:** INS-01…06 đến từ phỏng vấn mô phỏng AI (nhãn Assumed); chỉ INS-06 là một nguồn duy nhất.
+- **Nguồn insight:** INS-01…06 đến từ phỏng vấn mô phỏng AI (nhãn Assumed); INS-06 chỉ có một nguồn.

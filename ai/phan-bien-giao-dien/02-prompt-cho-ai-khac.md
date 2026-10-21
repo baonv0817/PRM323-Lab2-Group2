@@ -5,7 +5,7 @@ Mục đích theo đề Lab 2: **một AI khác với AI đã thiết kế** soi
 ## Cách làm
 
 1. Mở công cụ AI khác, bắt đầu cuộc trò chuyện mới.
-2. Đính kèm các ảnh trong [`anh/`](anh/): **S01 → S08** (8 màn lõi), cộng `S05-VOUCHER-ERR`, `S06-ERR`, `S07-CASH`. Có thể đính kèm thêm `_tong-quan-8-man.png`.
+2. Đính kèm các ảnh trong [`anh/`](anh/): **S01 → S08**, cộng `S05-VOUCHER-ERR`, `S06-ERR`, `S07-CASH`. Có thể đính kèm thêm `_tong-quan-8-man.png`.
 3. **Đừng đính kèm** [`01-bao-cao-do-tu-dong.md`](01-bao-cao-do-tu-dong.md) trước, để AI kia không bị dẫn dắt; so sánh sau.
 4. Dán nguyên văn prompt bên dưới.
 5. **Lưu nguyên văn câu trả lời** (không sửa chữ) vào `ai/ai-design-log.md` thành một phụ lục mới (ví dụ "Phụ lục H"), ghi rõ tên công cụ, phiên bản và ngày.

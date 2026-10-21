@@ -93,7 +93,7 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 
 | # | Bước | Tình trạng | Ghi chú | Ai làm tiếp |
 |---|---|---|---|---|
-| 39 | ≥ 8 màn Final UI dùng instance | 🟡 | Page 03 có 8 màn + biến thể; chưa áp quyết định D06, D13–D16 | **Bạn** |
+| 39 | ≥ 8 màn Final UI dùng instance | 🟡 | Page 03 có 25 màn và biến thể; bản v2 dùng component v2 | **Bạn** |
 | 40 | Kiểm 360 / 412 dp | ❌ | Chưa có ảnh | **Bạn** |
 | 41 | Prototype 3 flow, overlay, loading, Back | 🟡 | Page 06 có; chưa chạy thử được (cần đăng nhập) | **Bạn** |
 | 42 | UI checklist 20 tiêu chí, 3 bài test | 🟡 🔵 | Mức nền trên ảnh Stitch (S02 55 · S04 70 · S05 65 · S07 85 · S06-ERR 75); chấm lại trên Figma (D42) | Bạn |
@@ -105,6 +105,7 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 | # | Bước | Tình trạng | Ghi chú | Ai làm tiếp |
 |---|---|---|---|---|
 | 43 | **Usability test 3–5 người** | ❌ | **Critical của G5** (hoặc ghi lý do ngoại lệ) | **Bạn** |
+| 43a | Phản biện giao diện, vẽ lại Final UI v2 | 🟡 | Báo cáo đo A01–A15, v2 30 khung; chờ phản biện của AI khác · `ai/phan-bien-giao-dien/` | **Bạn** |
 | 43b | Test tự động prototype bằng Playwright | ✅ | 13/13 đạt (20/10); bắt được lỗi vùng bấm Figma đang màu cam (đã sửa); còn 2 điểm lệch tài liệu · `tests/` · `docs/test-reports/` | Chạy lại sau khi sửa Figma |
 | 44 | Handoff 6 mục/màn + 2 bảng mapping | ✅ | `handoff/flutter-handoff.md` | — |
 | 45a | README đủ | 🟡 | Thiếu họ tên, MSSV | Bạn |

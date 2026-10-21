@@ -5,7 +5,7 @@ Wireframe xám, không màu, mỗi khung có một nút chính và ghi chú "CTA
 | File | Nội dung |
 |---|---|
 | `wireframes-1.png` | Tổng quan 16 khung: S01–S08, các biến thể (S05-EMPTY, S05-VOUCHER-ERR, S06-LOADING, S06-ERR, S07-CASH, S07-DIALOG, S08-EMPTY) và S09 |
-| `wireframes-2.png` | Tổng quan 16 khung: S10–S25 (Phase 2) |
+| `wireframes-2.png` | Tổng quan 16 khung: S10–S25 |
 | `WF-S01.png` · `WF-S02.png` · `WF-S04.png` · `WF-S06-ERR.png` | Bốn wireframe đầu, ảnh riêng từng khung |
 | `wireframes-4-man-dau.png` | Bản chụp cũ của bốn wireframe đầu |
 

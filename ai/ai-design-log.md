@@ -3,6 +3,8 @@
 > **Ghi chú đổi tên (21/10/2026):** dự án tên cũ là FtaCode, đổi thành BreakBite. Tên trong file này đã được thay theo tên mới; prompt gốc gửi cho Google Stitch và Gemini dùng tên FtaCode, và dự án trên Google Stitch vẫn mang tên cũ.
 
 
+> **Bản đọc nhanh:** [`ai-prompt-log-chuan-hoa.md`](ai-prompt-log-chuan-hoa.md) viết lại các bước theo khung prompt chuẩn (không phải nguyên văn); file này giữ nguyên văn.
+>
 > **Tài liệu:** `ai/ai-design-log.md`  
 > **Dự án:** BreakBite App — Campus Quick Food Ordering  
 > **Môn học:** PRM323 — Lab 2  

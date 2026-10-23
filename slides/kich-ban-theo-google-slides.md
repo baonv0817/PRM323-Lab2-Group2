@@ -42,7 +42,7 @@ Thời lượng: **10 phút slide → 5 phút demo → 5 phút hỏi đáp**.
 > *Nếu bị hỏi "cơ sở đâu":* trả lời theo `phan-bien-hoi-dap.md` mục B1 — nói rõ đây là persona giả định, hoặc nêu kết quả khảo sát nếu bạn đã làm.
 
 **Slide 03 · Kiến trúc thông tin (50 giây)**
-> "App có 8 màn hình độc lập, chia 2 tầng. Onboarding là màn vào app, chỉ hiện lần đầu. Tầng cấp cao là 4 tab dưới đáy: Trang chủ, Thực đơn, Theo dõi đơn, Lịch sử. Tầng cấp con là Chi tiết món, Giỏ hàng và Thanh toán. Giỏ trống và lỗi thanh toán là biến thể trạng thái, không tính là màn riêng. Em dùng bottom navigation vì persona thao tác bằng ngón cái."
+> "App khách có 30 màn hình (S01–S30) và app người bán có 15 màn (K01–K15). Luồng đặt món chính gồm 8 màn, chia 2 tầng. Onboarding là màn vào app, chỉ hiện lần đầu. Tầng cấp cao là 4 tab dưới đáy: Trang chủ, Thực đơn, Theo dõi đơn, Lịch sử. Tầng cấp con là Chi tiết món, Giỏ hàng và Thanh toán. Giỏ trống và lỗi thanh toán là biến thể trạng thái, không tính là màn riêng. Em dùng bottom navigation vì persona thao tác bằng ngón cái."
 
 **Slide 04 · Ba luồng người dùng (60 giây)**
 > "Luồng 1 là luồng chính: từ Trang chủ chọn combo, thêm topping, vào giỏ, chọn giờ nhận, thanh toán, rồi nhận mã lấy đồ ở màn Theo dõi đơn. Luồng 2 bắt đầu từ Thực đơn: tuỳ chỉnh mức cay và topping, nhập voucher; nếu mã sai thì app báo rõ lý do để nhập lại. Luồng 3 là luồng lỗi bắt buộc: thanh toán MoMo bị timeout thì app giữ nguyên giỏ hàng và cho hai lối ra là Thử lại hoặc chuyển sang tiền mặt tại quầy. Không có ngõ cụt."
@@ -58,7 +58,7 @@ Thời lượng: **10 phút slide → 5 phút demo → 5 phút hỏi đáp**.
 > *(Chỉ nói câu sau nếu thật sự có trong log:)* "Từ chối: bản đồ 3D theo dõi đơn, vì sinh viên nhận đồ ngay tại quầy nên tiến trình 4 bước là đủ."
 
 **Slide 08 · Từ wireframe đến giao diện cuối (45 giây)**
-> "Ở Page 02 em chốt bố cục 8 màn bằng khung xám trước, để sửa luồng mà không bị màu làm phân tâm. Ở Page 03 mỗi màn chỉ có một nút hành động chính. Các biến thể giỏ trống và lỗi mạng được đặt ngay cạnh màn gốc. Nhãn tiếng Việt và Auto Layout thống nhất trên mọi màn."
+> "Ở Page 02 em chốt bố cục các màn chính bằng khung xám trước, để sửa luồng mà không bị màu làm phân tâm. Ở Page 03 mỗi màn chỉ có một nút hành động chính. Các biến thể giỏ trống và lỗi mạng được đặt ngay cạnh màn gốc. Nhãn tiếng Việt và Auto Layout thống nhất trên mọi màn."
 
 **Slide 09 · Hệ thống thiết kế & Component (50 giây)**
 > "Em có 5 nhóm token: màu, chữ, khoảng cách, bo góc, độ nổi, đều là Figma Variables. Ở Page 05 em có 5 component set có variant: Button, TextField, Card món, NavBar, Dialog, mỗi cái có các state như default, pressed, disabled, loading, error. Màu trên màn hình đã gắn vào biến, nên đổi một token thì màu cả app cập nhật. Phần còn thiếu em nói thật: các màn chưa thay bằng instance của component."
@@ -71,7 +71,7 @@ Thời lượng: **10 phút slide → 5 phút demo → 5 phút hỏi đáp**.
 > "Prototype có 3 điểm bắt đầu riêng, dialog overlay, chuyển cảnh loading sang kết quả và nút Back. Em xin demo trực tiếp."
 
 **Slide 12 · Bàn giao Flutter & Tổng kết (40 giây, nói sau demo)**
-> "Handoff có đủ 6 mục cho cả 8 màn: layout, component, state, tương tác, điều hướng và ràng buộc UI, kèm hai bảng ánh xạ token sang ThemeData và component sang widget. Điều em rút ra là không tin con số của AI mà phải tự đo lại. Hạn chế: persona chưa được kiểm chứng với nhiều người dùng thật. Em xin nhận câu hỏi."
+> "Handoff có đủ 6 mục cho S01–S30 và K01–K15: layout, component, state, tương tác, điều hướng và ràng buộc UI, kèm hai bảng ánh xạ token sang ThemeData và component sang widget. Điều em rút ra là không tin con số của AI mà phải tự đo lại. Hạn chế: persona chưa được kiểm chứng với nhiều người dùng thật. Em xin nhận câu hỏi."
 
 ---
 
@@ -82,7 +82,7 @@ Chuẩn bị: đăng nhập Figma, mở sẵn file và tab GitHub, phóng to mà
 | # | Làm gì | Nói gì | Thời gian |
 |---|---|---|---|
 | 1 | Mở sidebar, lần lượt bấm 6 page | "File có đúng 6 page theo thứ tự đề." | 15 giây |
-| 2 | Page 03, chỉ từng frame SCR-01 → SCR-08 | "8 màn khác nhau. Giỏ trống, lỗi thanh toán và dialog là biến thể." | 20 giây |
+| 2 | Page 03, các frame S01 → S08 bản v2 | "8 màn khác nhau. Giỏ trống, lỗi thanh toán và dialog là biến thể." | 20 giây |
 | 3 | Page 06 → **Present** → chọn flow **F1** | Đi theo: Home → thẻ Combo Tacos → tick topping (*"giá trên nút tự cộng"*) → Thêm vào giỏ → chọn giờ nhận → Tiến hành thanh toán → Tiền mặt → Xác nhận → **dialog overlay** → Đồng ý → **loading** → mã #A-204 | 70 giây |
 | 4 | Bấm **Back** | "Back về đúng màn trước, không có ngõ cụt." | 10 giây |
 | 5 | Chọn flow **F2** | Thực đơn → món mì → chọn mức cay và topping → giỏ → nhập mã sai (*"báo lỗi có icon và lý do"*) → nhập `BB20` → giảm giá → thanh toán | 45 giây |
@@ -107,3 +107,25 @@ Xem file `phan-bien-hoi-dap.md`. Ba câu bộ slide này dễ bị hỏi nhất:
 1. **"Slide ghi 5,2:1 / 7,4:1, em đo bằng gì?"** → Bằng công thức WCAG (hoặc WebAIM Contrast Checker). Nêu số đúng và kể chuyện đã sửa.
 2. **"Từ chối bản đồ 3D — AI đề xuất ở đâu?"** → Phải chỉ ra được trong log. Không có thì đừng đưa lên slide.
 3. **"0% giá trị gán cứng — chứng minh đi."** → Demo đổi biến (bước 8). Không chắc chắn thì bỏ con số này khỏi slide.
+
+
+---
+
+## Slide bổ sung cho bản v2 (deck 42 trang)
+
+Deck hiện hành có thêm 4 slide so với bản 38 trang. Số trang tính theo file `BreakBite_Lab2_Presentation.pptx`.
+
+**Slide 26 · Phản biện giao diện (40 giây)**
+> "Sau khi đo bản cũ bằng Playwright và Figma Plugin API, tụi em thấy giao diện không sai ở độ lớn nút cam, mà sai ở chỗ cả màn dùng một họ cam–be cho mọi vai trò. Họ cam–be chiếm 55% điểm ảnh, bản v2 còn 4%. Emoji từ 98 chỗ về 0, vùng bấm dưới 48 dp từ 20 trên 39 về 0 trên 217. Báo cáo đo do chính công cụ AI viết nên không độc lập; phản biện của AI khác tụi em chưa chạy."
+
+**Slide 29 · Final UI v2, 30 màn app khách (40 giây)**
+> "Bản v2 có ba nhóm: S01 đến S08 là luồng đặt món, S09 đến S25 là vòng đời đơn hàng như sửa, huỷ, lịch sử, thông báo, nhận món bằng QR, quán đóng và đánh giá, S26 đến S30 là đăng nhập không bắt buộc, chọn kiosk, tìm kiếm, mã giảm giá và mất kết nối."
+
+**Slide 30 · App người bán (40 giây)**
+> "Màn khách đã hứa nhiều thứ mà quầy phải làm được: nhận đơn, báo sẵn sàng, quét mã QR để giao món, thu tiền mặt, báo hết món, thêm hoặc sửa món, từ chối đơn và xử lý sự cố. Vì vậy tụi em thiết kế app người bán 15 màn K01 đến K15, cùng hệ thiết kế và cùng nguyên tắc một nút cam mỗi màn."
+
+**Slide 35 · Responsive (20 giây)**
+> "Mỗi màn có bản 360 dp và 412 dp, dựng bằng constraints trong Figma nên nội dung co giãn theo chiều rộng, không cuộn ngang."
+
+**Slide 40 · Chấm UX/UI theo Quality Gates (30 giây)**
+> "Để tự chấm, tụi em dùng sáu gate G0 đến G5 của môn, ngưỡng 80% và tiêu chí Critical. Cần nói rõ đây là rubric nội bộ của môn, không phải chuẩn quốc tế; riêng contrast dựa trên WCAG 2.2. Bộ 13 skill nằm trong thư mục skills của repo."

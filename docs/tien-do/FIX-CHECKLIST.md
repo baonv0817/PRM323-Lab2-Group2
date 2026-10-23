@@ -48,9 +48,9 @@ Giá trị mới lấy từ `design/DESIGN.md` mục 2.5.
 - [x] Ảnh bố cục 412 dp: `assets/figma/final-ui-v2/412/` (chưa chèn vào slide 32).
 - [ ] Dán nguyên văn câu trả lời AI critique vào `ai/ai-design-log.md` Phụ lục A.
 
-## 5. Slide (`slides/BreakBite_Lab2_Presentation.pptx`, 38 trang)
+## 5. Slide (`slides/BreakBite_Lab2_Presentation.pptx`, 42 trang)
 Bộ slide hiện hành đã dựng theo bài mẫu và dùng ảnh Figma thật. Bản 12 trang và 37 trang cũ nằm ở `archive/slides-cu/`.
-- [ ] Điền họ tên, MSSV (slide 1) và phần "Tồn tại" (slide 36).
+- [x] Họ tên, MSSV (slide 1); phần "Tồn tại" cập nhật ở slide 39.
 - [ ] Slide 18–20: chụp lại ảnh Stitch trước/sau từ lịch sử phiên bản Stitch (đang là khung trống).
-- [ ] Slide 32: dựng màn 412 dp trong Figma rồi chèn (đang ghi "chưa dựng").
+- [x] Slide 35: ảnh 412 dp đã chèn.
 - [ ] Slide 8: thay biểu đồ khảo sát mô phỏng bằng số liệu thật khi có phản hồi thật (đang ghi rõ là dữ liệu mô phỏng).

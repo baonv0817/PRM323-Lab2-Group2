@@ -19,7 +19,7 @@ Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút 
 > "Persona chính là Minh Quân, 20 tuổi, sinh viên năm 2. Bạn ấy đi bộ giữa các tòa nhà, cầm máy một tay, mạng chập chờn và hay dùng ngoài nắng. Từ đó em có ba yêu cầu thiết kế: nút chính ở nửa dưới màn hình, vùng chạm 48 dp, tương phản cao. Chỉ số thành công là đặt xong một đơn dưới 35 giây, tối đa 8 lần chạm, đếm theo Flow 1."
 
 **Slide 03 · Kiến trúc thông tin (45 giây)**
-> "App có 8 màn hình. SCR-01 là màn vào app. Thanh điều hướng dưới có 4 tab: Home, Menu, Theo dõi đơn, Lịch sử. Ba màn con là Chi tiết món, Giỏ hàng, Checkout. Màn lỗi thanh toán SCR-06-ERR là biến thể nên không tính là màn riêng. Em dùng bottom nav vì persona thao tác bằng ngón cái."
+> "App khách có 30 màn, app người bán có 15 màn; luồng đặt món chính gồm 8 màn. SCR-01 là màn vào app. Thanh điều hướng dưới có 4 tab: Home, Menu, Theo dõi đơn, Lịch sử. Ba màn con là Chi tiết món, Giỏ hàng, Checkout. Màn lỗi thanh toán SCR-06-ERR là biến thể nên không tính là màn riêng. Em dùng bottom nav vì persona thao tác bằng ngón cái."
 
 **Slide 04 · Ba user flow (50 giây)**
 > "Flow 1 là luồng chính: từ Home chọn món, vào giỏ, thanh toán và nhận mã lấy đồ ở SCR-07. Flow 2 bắt đầu từ Menu, tuỳ chỉnh topping và nhập voucher; nếu mã sai thì báo rõ lý do. Flow 3 là luồng lỗi bắt buộc: thanh toán MoMo bị timeout thì app giữ nguyên giỏ hàng và cho chọn Thử lại hoặc chuyển sang trả tiền mặt."
@@ -47,7 +47,7 @@ Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút 
 > "Em xin demo trực tiếp 3 flow trên Figma."
 
 **Slide 12 · Handoff (để sau demo, 40 giây)**
-> "Handoff có đủ 6 mục cho cả 8 màn: layout, component, state, tương tác, điều hướng và ràng buộc, kèm hai bảng ánh xạ token sang ThemeData và component sang widget. Điểm còn tồn tại là [..]."
+> "Handoff có đủ 6 mục cho S01–S30 và K01–K15: layout, component, state, tương tác, điều hướng và ràng buộc, kèm hai bảng ánh xạ token sang ThemeData và component sang widget. Điểm còn tồn tại là [..]."
 
 ---
 
@@ -56,7 +56,7 @@ Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút 
 Làm theo thứ tự trong hướng dẫn chấm.
 
 1. **Mở Figma, cho thấy 6 page** (15 giây): 01 User Flow → 02 Wireframe → 03 Final UI → 04 Design System → 05 Components → 06 Prototype.
-2. **Page 03: chỉ 8 màn khác nhau** (20 giây): SCR-01 → SCR-08, nói rõ giỏ trống, SCR-06-ERR và dialog là biến thể.
+2. **Page 03: các màn chính S01 → S08 bản v2** (20 giây), nói rõ giỏ trống, SCR-06-ERR và dialog là biến thể.
 3. **Page 06: bấm Present, chạy từng flow:**
 
    **F1 — Đặt nhanh (khoảng 60 giây)**

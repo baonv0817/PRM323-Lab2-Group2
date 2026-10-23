@@ -29,7 +29,7 @@
 | Nhóm | Ai | Phạm vi |
 |---|---|---|
 | Dùng trực tiếp | Sinh viên ở KTX, giờ nghỉ ngắn (P01, Primary) · sinh viên nhạy cảm về giá (P02, Secondary) | Trong phạm vi |
-| Hỗ trợ | Nhân viên quầy (P03, Supporting) · chủ quán | App phía quầy ngoài phạm vi |
+| Hỗ trợ | Nhân viên quầy (P03, Supporting) · chủ quán | App người bán K01–K15 trong phạm vi |
 | Ngoài phạm vi | Sinh viên ít lên trường / mang cơm · giảng viên · cổng thanh toán | — |
 | Dễ bị bỏ sót | Sinh viên không có tài khoản ngân hàng · sinh viên dùng trình đọc màn hình | Ghi vào backlog |
 

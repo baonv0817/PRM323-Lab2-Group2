@@ -2,7 +2,7 @@
 
 Chấm UX/UI của một hệ thống theo quy trình P0–P5 và các gate G0–G5 của môn PRM393/PRM323
 (nguồn: https://prm393-material.web.app/quality-gates, Guideline v1.0 ngày 13/10/2026).
-Giải thích chuẩn và nguồn: [`docs/quy-chuan-ux-ui.md`](../docs/quy-chuan-ux-ui.md).
+Giải thích chuẩn và nguồn: [`00-quy-trinh/04-quy-chuan-ux-ui.md`](../00-quy-trinh/04-quy-chuan-ux-ui.md).
 Ngưỡng 80%, thang điểm và mức tối thiểu là rubric nội bộ của môn, không phải chuẩn quốc tế.
 
 ## Gồm 13 skill

@@ -1,4 +1,4 @@
-"""Đo từ ảnh chụp prototype (ai/phan-bien-giao-dien/anh/) và hotspots.json.
+"""Đo từ ảnh chụp prototype (05-P4-ui-design/06-phan-bien-giao-dien/anh/) và hotspots.json.
 
 Chạy:  python tests/audit/measure.py   (cần Pillow)
        python tests/audit/measure.py v2   (đo ảnh Final UI v2 ở assets/figma/final-ui-v2/ và hotspots-v2.json)
@@ -11,7 +11,7 @@ from PIL import Image
 sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 V2 = len(sys.argv) > 1 and sys.argv[1] == "v2"
-SHOTS = os.path.join(HERE, "..", "..", "assets", "figma", "final-ui-v2") if V2 else os.path.join(HERE, "..", "..", "ai", "phan-bien-giao-dien", "anh")
+SHOTS = os.path.join(HERE, "..", "..", "assets", "figma", "final-ui-v2") if V2 else os.path.join(HERE, "..", "..", "05-P4-ui-design", "06-phan-bien-giao-dien", "anh")
 CORE = ("S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08")
 
 

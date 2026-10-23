@@ -51,7 +51,7 @@ Rồi nhờ agent: "Dùng playwright-cli mở prototype Figma của BreakBite v�
 
 ## Đo lỗi thiết kế (`audit/`)
 
-Ngoài test flow, `audit/` phục vụ bước phản biện giao diện: `capture.js` chụp từng màn từ prototype, `figma-audit.js` đọc chữ/màu từ Figma, `measure.py` tính tỉ lệ màu và vùng bấm. Kết quả và cách dùng: [`../ai/phan-bien-giao-dien/`](../ai/phan-bien-giao-dien/).
+Ngoài test flow, `audit/` phục vụ bước phản biện giao diện: `capture.js` chụp từng màn từ prototype, `figma-audit.js` đọc chữ/màu từ Figma, `measure.py` tính tỉ lệ màu và vùng bấm. Kết quả và cách dùng: [`../05-P4-ui-design/06-phan-bien-giao-dien/`](../05-P4-ui-design/06-phan-bien-giao-dien/).
 
 ## Prototype v2
 

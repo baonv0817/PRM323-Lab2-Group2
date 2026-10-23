@@ -29,7 +29,7 @@ Với 6 tiêu chí, 80% nghĩa là tối thiểu 5/6 tiêu chí `pass` (hoặc 4
   "system": "Tên hệ thống",
   "gates": {
     "G0": {"previous_approved": true, "criteria": [
-      {"id": "G0-1", "critical": true, "status": "pass", "evidence": "ux/p0-problem-framing.md mục 1"},
+      {"id": "G0-1", "critical": true, "status": "pass", "evidence": "01-P0-y-tuong/01-p0-problem-framing.md mục 1"},
       {"id": "G0-2", "critical": true, "status": "partial", "evidence": "..."}
     ]}
   }

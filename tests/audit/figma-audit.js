@@ -1,6 +1,6 @@
 // Mã đo chạy trong Figma (Plugin API, ví dụ qua use_figma của Figma MCP hoặc plugin console), CHỈ ĐỌC, không sửa gì.
 // Trên Page 06: liệt kê emoji/ký tự dùng làm icon, chữ < 14 px, và tỉ lệ tương phản WCAG của từng chữ
-// so với lớp tô nằm trên cùng phía sau nó. Kết quả ngày 20/10/2026 nằm ở ai/phan-bien-giao-dien/01-bao-cao-do-tu-dong.md.
+// so với lớp tô nằm trên cùng phía sau nó. Kết quả ngày 20/10/2026 nằm ở 05-P4-ui-design/06-phan-bien-giao-dien/01-bao-cao-do-tu-dong.md.
 const page = await figma.getNodeByIdAsync('1:263'); await figma.setCurrentPageAsync(page);
 const cols = await figma.variables.getLocalVariableCollectionsAsync();
 const V = {}; for (const c of cols) for (const id of c.variableIds) { const v = await figma.variables.getVariableByIdAsync(id); V[v.id] = v.valuesByMode[c.modes[0].modeId]; }

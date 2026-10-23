@@ -71,9 +71,9 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 | 24 | User story | ✅ 🔵 | US01–US12 (`ux/p2-ux-design.md` mục 3) | — |
 | 25 | ≥ 8 màn hình (IA) | ✅ | `ux/user-flow.md` mục 1 | — |
 | 26 | ≥ 3 luồng, có nhánh lỗi | ✅ | F1–F3 (Mermaid) | — |
-| 27 | Bảng luồng → màn hình | 🟡 | Có trong repo; **Figma Page 01 ghi mã màn khác repo** | Bạn |
+| 27 | Bảng luồng → màn hình | ✅ | Có trong repo; Figma Page 01 có bộ storyboard mới `UF · …` (F1–F13, đăng nhập, 3 flow người bán) dùng ảnh màn v2 thật, mỗi bước nối đúng liên kết prototype | — |
 | 28 | AI phản biện persona và flow | ✅ 🔵 | Persona (B5) + flow (`ux/p2-ux-design.md` mục 8, D28–D32) | — |
-| 29 | Wireframe (Figma Page 02) | ✅ | Có | — |
+| 29 | Wireframe (Figma Page 02) | ✅ | Bản gốc, cộng hai bảng `WF v2` xám cho S01–S30 và app người bán | — |
 | 30 | Đi thử luồng trên wireframe | 🟡 | Walkthrough do AI (mục 7); bảng đi thử ở mục 7 chờ bạn đi lại trên Figma | **Bạn** |
 
 ## Chặng 4 — UI bằng AI + phản biện (P3)
@@ -86,8 +86,8 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 | 34 | 3 vòng lặp có ảnh trước/sau | 🟡 | Prompt có; **ảnh trước/sau bị trùng file** | **Bạn** |
 | 35 | AI critique ≥ 5 phát hiện, nguyên văn | ✅ | Gemini (tóm tắt) + Claude (nguyên văn, Phụ lục A) | — |
 | 36 | Bảng quyết định (có Reject) | ✅ | D01–D27, 2 Reject · `ai/ai-evaluation-log.xlsx` | — |
-| 37 | Token bằng Variables (Page 04) | 🟡 | Page có; **chưa đổi màu theo DESIGN.md mục 2.5** | **Bạn** |
-| 38 | 9 component + đủ state (Page 05) | 🟡 | Page có; chưa kiểm được variant/instance | Bạn |
+| 37 | Token bằng Variables (Page 04) | ✅ | Bảng `DS v2` gắn biến màu "BreakBite Design Tokens", kèm chữ, khoảng cách, bo góc, đổ bóng, 27 icon | — |
+| 38 | Component + đủ state (Page 05) | ✅ | Bảng `CMP v2` dùng instance của 6 component v2 và mọi variant | — |
 
 ## Chặng 5 — Giao diện cuối + prototype (P4)
 

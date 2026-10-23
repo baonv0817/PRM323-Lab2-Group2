@@ -10,7 +10,7 @@
 ```text
 [VAI TRÒ]      Bạn là <chuyên gia nào>.
 [NHIỆM VỤ]     Hãy <làm gì, một việc cụ thể>.
-[BỐI CẢNH]     Sản phẩm: app đặt món trước cho sinh viên có 15 phút giữa hai slot, nhận tại kiosk bằng mã QR.
+[BỐI CẢNH]     Sản phẩm: app đặt món trước cho sinh viên có 15 phút giữa hai tiết, nhận tại kiosk bằng mã QR.
                Persona chính: Minh Quân, 20 tuổi, một tay, mạng chập chờn. Địa điểm: Campus Quận 9 (kiosk tầng 2, tầng 4).
 [RÀNG BUỘC]    Chuẩn 48 dp, chữ ≥ 14 sp, tương phản 4,5:1, một nút cam mỗi màn. Không bịa số liệu; điều chưa biết ghi "chưa biết".
 [ĐỊNH DẠNG]    <bảng / danh sách đánh số / JSON>, mỗi phát hiện có mức nghiêm trọng và đề xuất sửa.
@@ -58,7 +58,7 @@
 ```text
 [VAI TRÒ]    Bạn là người điều phối nghiên cứu người dùng.
 [NHIỆM VỤ]   Giả lập 5 sinh viên (A1–A5) trả lời 10 câu hỏi phỏng vấn về giờ nghỉ, ăn uống, thanh toán, đặt món qua app.
-[BỐI CẢNH]   Nhóm đối tượng: sinh viên có 3 slot mỗi ngày, nghỉ khoảng 15 phút. Mỗi người khác nhau về nơi ở, ngân sách, thiết bị.
+[BỐI CẢNH]   Nhóm đối tượng: sinh viên có 3 tiết mỗi ngày, nghỉ khoảng 15 phút. Mỗi người khác nhau về nơi ở, ngân sách, thiết bị.
 [RÀNG BUỘC]  Ghi rõ "AI giả lập" ở đầu file. Có người không cần app và người mâu thuẫn với nhau. Không dùng số liệu như thể đã đo thật.
 [ĐỊNH DẠNG]  Bản ghi từng người, rồi bảng mâu thuẫn, rồi giả thuyết cần kiểm chứng bằng khảo sát thật.
 ```

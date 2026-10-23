@@ -21,11 +21,11 @@
 
 | Mã | Loại | Mô tả ngắn | Ngày | Ghi chú |
 |---|---|---|---|---|
-| A1 Quân | AI giả lập (Claude Opus 5.5) | Năm 2 KTPM, ở KTX, nghỉ 15 phút, Android | 17/10/2026 | Nhóm mục tiêu |
+| A1 Quân | AI giả lập (Claude Opus 5.5) | Năm 2 KTPM, học cả ngày trên campus, nghỉ 15 phút, Android | 17/10/2026 | Nhóm mục tiêu |
 | A2 Linh | AI giả lập | Năm 1 Thiết kế, ở trọ, nhạy cảm về giá, iPhone cũ | 17/10/2026 | Nhóm phụ |
 | A3 Tuấn | AI giả lập | Năm 4, ít lên trường, không thích cài app | 17/10/2026 | Ngoài nhóm mục tiêu |
 | A4 Hà | AI giả lập | Năm 3, mang cơm từ nhà, trả tiền mặt | 17/10/2026 | Ngoài nhóm mục tiêu |
-| A5 Khang | AI giả lập | Năm 2 ATTT, KTX, trợ giảng lab, giờ nghỉ thất thường | 17/10/2026 | Nhóm mục tiêu |
+| A5 Khang | AI giả lập | Năm 2 ATTT, học cả ngày trên campus, trợ giảng lab, giờ nghỉ thất thường | 17/10/2026 | Nhóm mục tiêu |
 
 Toàn văn: [`02-P1-nghien-cuu/04-ai-persona-interviews.md`](04-ai-persona-interviews.md). Người thật: **chưa phỏng vấn** (xem mục 5).
 
@@ -47,7 +47,7 @@ Toàn văn: [`02-P1-nghien-cuu/04-ai-persona-interviews.md`](04-ai-persona-inter
 | Thanh toán | Muốn trả tiền mặt khi lấy | 2/5 | A2, A4 | Tiền mặt tại quầy là một lựa chọn |
 | Mạng | Mạng trong campus chập chờn | 1/5 | A1 | Có trạng thái loading và lỗi rõ ràng |
 
-**Mâu thuẫn:** A3 và A4 không cần app vì ít ăn ở trường. A4 muốn trả tiền mặt, trong khi A1 và A5 ưu tiên QR hoặc ví. → Nhóm mục tiêu là sinh viên ở KTX có giờ nghỉ ngắn; giữ nhiều phương thức thanh toán.
+**Mâu thuẫn:** A3 và A4 không cần app vì ít ăn ở trường. A4 muốn trả tiền mặt, trong khi A1 và A5 ưu tiên QR hoặc ví. → Nhóm mục tiêu là sinh viên học trên campus có giờ nghỉ ngắn; giữ nhiều phương thức thanh toán.
 
 ---
 
@@ -71,7 +71,7 @@ Toàn văn: [`02-P1-nghien-cuu/04-ai-persona-interviews.md`](04-ai-persona-inter
 ```mermaid
 flowchart LR
   subgraph Core[Người dùng trực tiếp của app]
-    P01[P01 SV ở KTX, giờ nghỉ ngắn — Primary]
+    P01[P01 SV học trên campus, giờ nghỉ ngắn — Primary]
     P02[P02 SV nhạy cảm về giá — Secondary]
   end
   subgraph Support[Người hỗ trợ]
@@ -110,7 +110,7 @@ flowchart LR
 
 | ID | Giả định | Nhãn hiện tại | Ảnh hưởng nếu sai | Cách kiểm chứng | Ưu tiên |
 |---|---|---|---|---|---|
-| H1 | Giờ nghỉ giữa slot ≤ 15 phút | Assumed (A1, A5) | Giảm giá trị của "đặt trước" | Khảo sát Google Form (Q5) | Cao |
+| H1 | Giờ nghỉ giữa tiết ≤ 15 phút | Assumed (A1, A5) | Giảm giá trị của "đặt trước" | Khảo sát Google Form (Q5) | Cao |
 | H2 | Hàng chờ giờ nghỉ làm SV bỏ mua | Assumed (A1, A2, A5) | Mất lý do tồn tại của app | Bấm giờ hàng chờ 2 khung giờ | Cao |
 | H3 | Biết trước thời gian chờ và trạng thái quán quyết định việc đặt | Assumed (4/5) | Badge Kiosk ít giá trị | Hỏi "bạn cần biết gì trước khi đặt?" | Vừa |
 | H4 | SV chấp nhận cài app riêng của quán | Assumed — A3 phản đối | Ít người cài | Hỏi trực tiếp; dự phòng hướng web đặt qua QR | Cao |

@@ -4,7 +4,7 @@
  * Câu hỏi và cách đọc kết quả: 02-P1-nghien-cuu/khao-sat/khao-sat-cau-hoi.md
  */
 function taoFormKhaoSat() {
-  var form = FormApp.create('Khảo sát: Ăn uống trong giờ nghỉ giữa các slot');
+  var form = FormApp.create('Khảo sát: Ăn uống trong giờ nghỉ giữa các tiết');
   form.setDescription(
     'Khảo sát ẩn danh khoảng 3 phút cho bài học môn PRM323. ' +
     'Câu hỏi về những lần bạn mua đồ ăn/uống ở trường gần đây. Không có câu trả lời đúng hay sai.'
@@ -23,12 +23,12 @@ function taoFormKhaoSat() {
   form.addPageBreakItem().setTitle('Phần 1 · Về bạn');
   mc(form, 'Bạn là sinh viên năm mấy?', ['Năm 1', 'Năm 2', 'Năm 3', 'Năm 4 trở lên']);
   mc(form, 'Bạn đang ở đâu?', ['Ký túc xá', 'Nhà trọ gần trường', 'Nhà riêng / người thân'], true);
-  mc(form, 'Một ngày học bình thường bạn có mấy slot trên trường?', ['1', '2', '3', '4 trở lên']);
+  mc(form, 'Một ngày học bình thường bạn có mấy tiết trên trường?', ['1', '2', '3', '4 trở lên']);
   mc(form, 'Bạn dùng điện thoại gì?', ['Android', 'iPhone'], true);
 
   // Phần 2 · Giờ nghỉ
-  form.addPageBreakItem().setTitle('Phần 2 · Giờ nghỉ giữa hai slot');
-  mc(form, 'Giữa hai slot gần nhất của bạn có bao nhiêu phút nghỉ?',
+  form.addPageBreakItem().setTitle('Phần 2 · Giờ nghỉ giữa hai tiết');
+  mc(form, 'Giữa hai tiết gần nhất của bạn có bao nhiêu phút nghỉ?',
      ['Dưới 10 phút', '10–15 phút', '16–20 phút', 'Trên 20 phút', 'Không nhớ']);
   mc(form, 'Đi từ phòng này sang phòng học tiếp theo thường mất bao lâu?',
      ['Dưới 2 phút', '2–5 phút', 'Trên 5 phút']);

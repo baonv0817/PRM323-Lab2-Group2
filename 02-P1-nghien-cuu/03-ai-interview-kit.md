@@ -11,7 +11,7 @@
 ```text
 Tôi đang làm nghiên cứu UX cho một app đặt đồ ăn trước và nhận tại quầy trong khuôn viên trường đại học ở Việt Nam.
 Hãy tạo 5 hồ sơ sinh viên GIẢ LẬP khác nhau rõ rệt, để tôi phỏng vấn từng người. Cần đa dạng về:
-năm học, ngành, lịch học (số slot/ngày, thời gian nghỉ giữa slot), nơi ở (ký túc xá / nhà trọ / nhà riêng),
+năm học, ngành, lịch học (số tiết/ngày, thời gian nghỉ giữa tiết), số ngày học trên campus mỗi tuần,
 ngân sách ăn uống mỗi ngày, thiết bị (Android/iOS, tầm giá), thói quen thanh toán, và mức độ hài lòng với căn tin.
 Có ít nhất 1 người KHÔNG thích đặt món qua app và 1 người ít khi ăn ở trường.
 Mỗi hồ sơ chỉ 5–6 dòng. Không bịa số liệu thống kê; đây là nhân vật hư cấu.

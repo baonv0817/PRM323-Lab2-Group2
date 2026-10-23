@@ -3,7 +3,7 @@
 - **Công cụ:** Claude Opus 5.5 (Anthropic), chạy trong Claude Code · **Ngày:** 17/10/2026
 - **Cách làm:** theo `02-P1-nghien-cuu/03-ai-interview-kit.md`. AI đóng vai từng nhân vật hư cấu, bị yêu cầu nói tự nhiên, được phép phàn nàn và không được khen để làm vừa lòng.
 - **Giới hạn:** đây là **dữ liệu giả lập**, chỉ dùng để tạo giả thuyết; không phải lời của người thật. Người dùng giả lập thường nông và dễ đồng thuận hơn người thật ([tổng hợp NN/g](https://radar.zurb.com/article/nielsen-norman-synthetic-users-were-too-shallow-to-be-useful-against-three-real-studies)).
-- Nội dung dưới đây được ghi nguyên văn, không chỉnh sửa sau khi sinh.
+- Nội dung ghi từ lần sinh ngày 17/10. Ngày 24/10 nhóm chỉnh hai chi tiết cho khớp phạm vi mới (sinh viên học trên campus): bỏ chi tiết ở ký túc xá, và đổi "slot" thành "tiết". Không sửa nội dung khác.
 
 ---
 
@@ -18,11 +18,11 @@ và 1 người ít khi ăn ở trường. Mỗi hồ sơ 5–6 dòng. Không b�
 
 **Câu trả lời của AI:**
 
-- **A1 — Quân, 20, năm 2 Kỹ thuật phần mềm.** Ở ký túc xá. 3 slot/ngày, nghỉ giữa slot khoảng 15 phút. Ngân sách ăn ~60.000đ/ngày. Samsung Galaxy A35 (Android). Trả bằng QR ngân hàng. Thấy căn tin "ngon nhưng đông".
+- **A1 — Quân, 20, năm 2 Kỹ thuật phần mềm.** Học cả ngày trên campus. 3 tiết/ngày, nghỉ giữa tiết khoảng 15 phút. Ngân sách ăn ~60.000đ/ngày. Samsung Galaxy A35 (Android). Trả bằng QR ngân hàng. Thấy căn tin "ngon nhưng đông".
 - **A2 — Linh, 19, năm 1 Thiết kế đồ hoạ.** Ở trọ cách trường 3 km, đi xe buýt. Lịch học dồn buổi sáng, hay đói lúc 10h. Ngân sách ~40.000đ/ngày, rất để ý giá. iPhone 11 cũ. Hay dùng ví MoMo. Ngại căn tin vì chen lấn.
 - **A3 — Tuấn, 22, năm 4 Quản trị kinh doanh.** Đang thực tập, chỉ lên trường 2 buổi/tuần. Ít ăn ở trường. Xiaomi tầm trung. Trả tiền mặt hoặc thẻ. Không thích app đặt món vì "nhiều app quá, cài rồi xoá".
 - **A4 — Hà, 21, năm 3 Ngôn ngữ Anh.** Ở nhà cùng gia đình, mang cơm từ nhà 3–4 ngày/tuần. Chỉ mua đồ uống và đồ ăn vặt ở trường. Oppo A-series. Trả tiền mặt là chính.
-- **A5 — Khang, 20, năm 2 An toàn thông tin.** Ở ký túc xá, làm trợ giảng lab buổi chiều nên giờ nghỉ thất thường. Hay đặt GrabFood về KTX buổi tối. Pixel cũ. Dùng thẻ và ví điện tử. Hay bị cầm điện thoại một tay vì tay kia cầm laptop.
+- **A5 — Khang, 20, năm 2 An toàn thông tin.** Học cả ngày trên campus, làm trợ giảng lab buổi chiều nên giờ nghỉ thất thường. Hay đặt GrabFood về nhà buổi tối. Pixel cũ. Dùng thẻ và ví điện tử. Hay bị cầm điện thoại một tay vì tay kia cầm laptop.
 
 ---
 
@@ -32,7 +32,7 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 
 ### A1 — Quân
 
-1. **Một ngày đi học?** — "Sáng mình học slot 1 từ 7 giờ, xong slot 2, nghỉ trưa rồi slot 3. Tối về KTX code bài tập. Bữa sáng thường bỏ, ăn bù lúc giải lao."
+1. **Một ngày đi học?** — "Sáng mình học tiết 1 từ 7 giờ, xong tiết 2, nghỉ trưa rồi tiết 3. Tối về nhà code bài tập. Bữa sáng thường bỏ, ăn bù lúc giải lao."
 2. **Giữa hai ca làm gì, bao lâu?** — "Khoảng 15 phút. Nếu phòng sau ở tòa khác thì mất 5 phút đi bộ, còn lại 10 phút để mua gì đó."
 3. **Lần gần nhất mua đồ ở trường?** — "Hôm qua, mua bánh mì với trà ở căn tin. Hàng dài, mình chờ chắc 8–10 phút, vào lớp trễ mấy phút."
 4. **Có bỏ ăn hay vào lớp muộn vì mua đồ?** — "Có, tuần nào cũng vài lần. Nhiều khi thấy hàng dài là bỏ luôn, nhịn tới trưa."
@@ -45,7 +45,7 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 
 ### A2 — Linh
 
-1. "Mình đi xe buýt 6 giờ rưỡi, học liền 2 slot buổi sáng. Chiều thường về nhà trọ làm đồ án."
+1. "Mình đi xe buýt 6 giờ rưỡi, học liền 2 tiết buổi sáng. Chiều thường về nhà trọ làm đồ án."
 2. "Nghỉ chừng 15–20 phút tuỳ lịch. Mình hay ra hành lang ngồi, đói thì mới đi mua."
 3. "Tuần trước, mua xôi. Chờ không lâu nhưng chen lấn quá, mình không thích."
 4. "Bỏ ăn thì có, vì đông quá ngại chen. Vào lớp muộn thì ít."
@@ -58,7 +58,7 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 
 ### A3 — Tuấn
 
-1. "Mình đang thực tập, tuần lên trường 2 buổi. Lên là học dồn 3 slot liên tục."
+1. "Mình đang thực tập, tuần lên trường 2 buổi. Lên là học dồn 3 tiết liên tục."
 2. "Nghỉ ngắn thôi, thường mình ở lại lớp nói chuyện hoặc trả lời mail công việc."
 3. "Lâu rồi mình không mua ở căn tin. Hay mua cà phê ngoài cổng trước khi vào."
 4. "Không, mình ít ăn ở trường nên không gặp chuyện đó."
@@ -80,7 +80,7 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 7. "Một tay khi đi, nhưng mình không bấm điện thoại khi đang đi bộ."
 8. "Nếu bắt trả online mới đặt được. Mình muốn được trả tiền mặt lúc lấy."
 9. "Có món mình thích không, có hết không."
-10. "Mình nghĩ app này hợp với mấy bạn ở KTX hơn là mình."
+10. "Mình nghĩ app này hợp với mấy bạn ở lại trường cả ngày hơn là mình."
 
 ### A5 — Khang
 
@@ -88,7 +88,7 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 2. "Không cố định. Có lúc chỉ 10 phút giữa hai việc."
 3. "Hôm qua mua nước ở quầy, chờ tầm 7 phút vì đúng giờ nghỉ của cả khu."
 4. "Có, hôm nào lab đông là mình nhịn tới tối."
-5. "Đặt Grab về KTX buổi tối thì ổn. Ban ngày ở trường thì không, vì không ai mang vào lab cho mình."
+5. "Đặt Grab về nhà buổi tối thì ổn. Ban ngày ở trường thì không, vì không ai mang vào lab cho mình."
 6. "Thẻ và ví. Từng bị lỗi cổng thanh toán, app báo 'thất bại' rồi mất luôn giỏ hàng, mình phải chọn lại từ đầu, bực lắm."
 7. "Một tay, tay kia cầm laptop. Nên mình rất ghét nút xác nhận nằm trên cao."
 8. "Nếu trạng thái đơn không rõ, mình không biết đã xong chưa để chạy xuống lấy."
@@ -117,10 +117,10 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 - A3 không muốn tải thêm app, chỉ chấp nhận web hoặc QR; những người khác không phản đối app.
 - A4 muốn trả tiền mặt; A1 và A5 ưu tiên QR, ví.
 
-**3. Persona chính đề xuất:** sinh viên ở ký túc xá, có lịch học dày và giờ nghỉ ngắn hoặc thất thường (A1, A5). Đây là nhóm đau nhất (bỏ bữa, trễ lớp) và có tần suất mua ở trường cao nhất. A2 là nhóm phụ nhạy cảm về giá. A3 và A4 nằm ngoài nhóm mục tiêu.
+**3. Persona chính đề xuất:** sinh viên học trên campus, có lịch học dày và giờ nghỉ ngắn hoặc thất thường (A1, A5). Đây là nhóm đau nhất (bỏ bữa, trễ lớp) và có tần suất mua ở trường cao nhất. A2 là nhóm phụ nhạy cảm về giá. A3 và A4 nằm ngoài nhóm mục tiêu.
 
 **4. Giả thuyết cần kiểm chứng với người thật**
-1. Đa số sinh viên ở KTX có giờ nghỉ giữa slot ≤ 15 phút. → *"Giữa hai slot gần nhất của bạn có bao nhiêu phút?"*
+1. Đa số sinh viên học trên campus có giờ nghỉ giữa tiết ≤ 15 phút. → *"Giữa hai tiết gần nhất của bạn có bao nhiêu phút?"*
 2. Hàng chờ giờ nghỉ đủ dài để làm sinh viên bỏ mua. → *"Tuần qua bạn bỏ mua ở căn tin mấy lần vì đông?"*
 3. Biết trước thời gian chờ và trạng thái quán là yếu tố quyết định có đặt hay không. → *"Bạn cần biết gì trước khi đặt?"*
 4. Sinh viên chấp nhận cài app riêng của quán. → *"Bạn có cài app chỉ để mua ở căn tin không? Vì sao?"*
@@ -136,7 +136,7 @@ Mỗi nhân vật một phiên riêng, cùng prompt nhập vai trong kit và cù
 1. **Không có dữ liệu chống lưng:** các con số "xếp hàng 12–18 phút", "giờ cao điểm 09:15–09:30" không có nguồn. Bản ghi giả lập chỉ cho thời gian chờ 5–10 phút, ngắn hơn nhiều.
 2. **Mâu thuẫn:** persona dùng iPhone 13, nhưng thiết kế lại theo Android Material 3, khung 360 dp. Các nhân vật đau nhất (A1, A5) dùng Android. Ngoài ra "Hòa Lạc / ĐH Quốc Gia" là hai nơi khác nhau.
 3. **Bỏ sót:** chưa nhắc rào cản "không muốn cài thêm app" (A3) và "ngại phí ẩn" (A2).
-4. **5 câu giảng viên sẽ hỏi:** (a) con số 12–18 phút lấy ở đâu; (b) vì sao chọn nhóm ở KTX chứ không phải toàn bộ sinh viên; (c) persona dùng iPhone sao lại thiết kế theo Android; (d) nếu sinh viên không muốn cài app thì sản phẩm có còn ý nghĩa không; (e) phỏng vấn AI khác người thật ở đâu.
+4. **5 câu giảng viên sẽ hỏi:** (a) con số 12–18 phút lấy ở đâu; (b) vì sao chọn nhóm học trên campus chứ không phải toàn bộ sinh viên; (c) persona dùng iPhone sao lại thiết kế theo Android; (d) nếu sinh viên không muốn cài app thì sản phẩm có còn ý nghĩa không; (e) phỏng vấn AI khác người thật ở đâu.
 
 **Quyết định với phản biện này** (ghi trong `08-ai-log/01-ai-design-log.md` mục 5, dòng 07–09):
 - (1) **Chấp nhận:** bỏ con số không có nguồn, ghi thời gian chờ là giả thuyết cần đo.

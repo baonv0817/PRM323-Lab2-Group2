@@ -1,4 +1,4 @@
-# Bộ câu hỏi khảo sát — Ăn uống trong giờ nghỉ giữa các slot
+# Bộ câu hỏi khảo sát — Ăn uống trong giờ nghỉ giữa các tiết
 
 > Dùng cho P1 · UX Research. Thu thập qua Google Form, tạo tự động bằng script `02-P1-nghien-cuu/khao-sat/tao-google-form.gs` (cách chạy ở cuối file).
 > Nguyên tắc: hỏi **việc đã xảy ra**, không hỏi ý kiến về app đang thiết kế. Không thu họ tên, MSSV, email.
@@ -11,7 +11,7 @@
 | Đối tượng | Sinh viên đang học trên trường |
 | Số phản hồi mục tiêu | ≥ 30 |
 | Thời gian làm | ~3 phút, 21 câu (2 câu không bắt buộc) |
-| Phân phối | Nhóm lớp, nhóm khoá, nhóm ký túc xá — ghi lại kênh đã gửi |
+| Phân phối | Nhóm lớp, nhóm khoá — ghi lại kênh đã gửi |
 | Ngoài phạm vi form | RQ6 (quầy, bếp) → hỏi trực tiếp nhân viên quầy |
 
 ## Câu hỏi
@@ -24,15 +24,15 @@
 | # | Câu hỏi | Kiểu | Lựa chọn | Dùng cho |
 |---|---|---|---|---|
 | Q1 | Bạn là sinh viên năm mấy? | 1 lựa chọn | Năm 1 · Năm 2 · Năm 3 · Năm 4 trở lên | Phân nhóm |
-| Q2 | Bạn đang ở đâu? | 1 lựa chọn | Ký túc xá · Nhà trọ gần trường · Nhà riêng / người thân · Khác | Phân nhóm P01/P02 |
-| Q3 | Một ngày học bình thường bạn có mấy slot trên trường? | 1 lựa chọn | 1 · 2 · 3 · 4 trở lên | RQ1 |
+| Q2 | Bạn đang ở đâu? | 1 lựa chọn | Ký túc xá · Nhà trọ gần trường · Nhà riêng / người thân · Khác | Mô tả mẫu, không dùng để chọn persona |
+| Q3 | Một ngày học bình thường bạn có mấy tiết trên trường? | 1 lựa chọn | 1 · 2 · 3 · 4 trở lên | RQ1 |
 | Q4 | Bạn dùng điện thoại gì? | 1 lựa chọn | Android · iPhone · Khác | Persona: thiết bị |
 
-**Phần 2 · Giờ nghỉ giữa hai slot**
+**Phần 2 · Giờ nghỉ giữa hai tiết**
 
 | # | Câu hỏi | Kiểu | Lựa chọn | Dùng cho |
 |---|---|---|---|---|
-| Q5 | Giữa hai slot **gần nhất** của bạn có bao nhiêu phút nghỉ? | 1 lựa chọn | Dưới 10 phút · 10–15 phút · 16–20 phút · Trên 20 phút · Không nhớ | RQ1 · H1 |
+| Q5 | Giữa hai tiết **gần nhất** của bạn có bao nhiêu phút nghỉ? | 1 lựa chọn | Dưới 10 phút · 10–15 phút · 16–20 phút · Trên 20 phút · Không nhớ | RQ1 · H1 |
 | Q6 | Đi từ phòng này sang phòng học tiếp theo thường mất bao lâu? | 1 lựa chọn | Dưới 2 phút · 2–5 phút · Trên 5 phút | RQ1 |
 | Q7 | Khi vừa đi vừa dùng điện thoại giữa các khu trong campus, bạn thường cầm máy thế nào? | 1 lựa chọn | Một tay · Hai tay · Không dùng khi đi bộ | Persona: thao tác một tay |
 | Q8 | Lần gần nhất bạn mua đồ ăn/uống **ở trường** (căn tin, quầy, kiosk) là khi nào? | 1 lựa chọn, **rẽ nhánh** | Hôm nay · Trong tuần này · Trong tháng này · Lâu hơn · Chưa bao giờ → *chuyển tới Phần 4* | RQ2 |
@@ -85,7 +85,7 @@
 
 - **Ngưỡng do nhóm đặt ra** để quyết định, không phải chuẩn thống kê.
 - Sau khi có dữ liệu: đổi nhãn các ý được xác nhận từ **Assumed → Reported**, ghi số phản hồi và ngày vào `02-P1-nghien-cuu/01-p1-research.md`.
-- So sánh nhóm ở KTX với nhóm ở trọ (Q2) để kiểm tra persona P01 và P02.
+- Dùng Q2 (nơi ở) để mô tả mẫu, không dùng để chọn persona.
 
 **Giới hạn cần ghi khi báo cáo:**
 - Mẫu thuận tiện (bạn bè, nhóm lớp), không đại diện cho toàn trường.

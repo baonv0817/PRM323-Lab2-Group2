@@ -4,7 +4,7 @@
 
 ## 1. Problem statement
 
-> **Sinh viên ở ký túc xá có lịch học dày thường không mua kịp đồ ăn trong giờ nghỉ ngắn giữa hai slot, khi hàng chờ ở căn tin dồn đúng giờ nghỉ chung, nên họ bỏ bữa hoặc vào lớp trễ.**
+> **Sinh viên học trên campus có lịch học dày thường không mua kịp đồ ăn trong 15 phút nghỉ giữa hai tiết, vì xếp hàng ở căn tin dồn đúng giờ nghỉ chung và tốn gần hết thời gian, nên họ bỏ bữa hoặc vào lớp trễ.**
 
 **How might we:** Làm sao để sinh viên có đồ ăn trong giờ nghỉ ngắn mà không phải xếp hàng?
 
@@ -28,7 +28,7 @@
 
 | Nhóm | Ai | Phạm vi |
 |---|---|---|
-| Dùng trực tiếp | Sinh viên ở KTX, giờ nghỉ ngắn (P01, Primary) · sinh viên nhạy cảm về giá (P02, Secondary) | Trong phạm vi |
+| Dùng trực tiếp | Sinh viên học trên campus, giờ nghỉ ngắn (P01, Primary) · sinh viên nhạy cảm về giá (P02, Secondary) | Trong phạm vi |
 | Hỗ trợ | Nhân viên quầy (P03, Supporting) · chủ quán | App người bán K01–K15 trong phạm vi |
 | Ngoài phạm vi | Sinh viên ít lên trường / mang cơm · giảng viên · cổng thanh toán | — |
 | Dễ bị bỏ sót | Sinh viên không có tài khoản ngân hàng · sinh viên dùng trình đọc màn hình | Ghi vào backlog |
@@ -39,7 +39,7 @@ Theo chuẩn của môn: **Fact** = Observed/Reported · **Hypothesis** = Inferr
 
 | ID | Nội dung | Loại | Kiểm bằng cách nào | Ưu tiên |
 |---|---|---|---|---|
-| H1 | Giờ nghỉ giữa hai slot ≤ 15 phút | Unknown | Khảo sát Google Form (Q5) | Cao |
+| H1 | Giờ nghỉ giữa hai tiết ≤ 15 phút | Unknown | Khảo sát Google Form (Q5) | Cao |
 | H2 | Hàng chờ giờ nghỉ làm sinh viên bỏ mua | Unknown | Khảo sát Google Form (Q9–Q10) | Cao |
 | H3 | Biết trước trạng thái quán quyết định việc đặt | Hypothesis | Khảo sát Google Form (Q12–Q13) | Vừa |
 | H4 | Sinh viên chấp nhận cài app riêng của quán | Unknown | Khảo sát Google Form (Q15–Q17) | Cao |

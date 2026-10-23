@@ -10,7 +10,7 @@
 
 | RQ | Câu hỏi | Kiểm giả định | Phương pháp | Trạng thái |
 |---|---|---|---|---|
-| RQ1 | Giữa hai slot có bao nhiêu phút, làm gì trong lúc đó? | H1 | Khảo sát Google Form (Q3, Q5–Q7) | Chưa làm |
+| RQ1 | Giữa hai tiết có bao nhiêu phút, làm gì trong lúc đó? | H1 | Khảo sát Google Form (Q3, Q5–Q7) | Chưa làm |
 | RQ2 | Hàng chờ giờ nghỉ dài bao lâu, có làm bỏ mua không? | H2 | Khảo sát Google Form (Q8–Q11) | Chưa làm |
 | RQ3 | Cần biết gì trước khi quyết định mua? | H3 | Khảo sát Google Form (Q12–Q13) | Chưa làm |
 | RQ4 | Có chịu cài app riêng của quán không? | H4 | Khảo sát Google Form (Q15–Q17) | Chưa làm |
@@ -19,7 +19,7 @@
 | — | Tạo giả thuyết về người dùng | — | Phỏng vấn mô phỏng AI (5 nhân vật) | ✅ 17/10/2026 |
 
 **Người tham gia dự kiến:**
-- Khảo sát online: ≥ 30 sinh viên, gửi qua nhóm lớp, nhóm khoá, nhóm ký túc xá. Câu Q2 (nơi ở) dùng để tách nhóm P01 / P02.
+- Khảo sát online: ≥ 30 sinh viên, gửi qua nhóm lớp, nhóm khoá. Câu Q2 (nơi ở) chỉ để mô tả mẫu.
 - 1 nhân viên quầy cho RQ6.
 - Mẫu thuận tiện, không đại diện cho toàn trường.
 
@@ -31,8 +31,8 @@
 
 | Phần | Nội dung | RQ |
 |---|---|---|
-| 0–1 | Đồng ý; năm học, nơi ở, số slot/ngày, loại điện thoại | Phân nhóm |
-| 2 | Số phút nghỉ giữa hai slot gần nhất, thời gian di chuyển, cách cầm máy | RQ1 |
+| 0–1 | Đồng ý; năm học, nơi ở, số tiết/ngày, loại điện thoại | Phân nhóm |
+| 2 | Số phút nghỉ giữa hai tiết gần nhất, thời gian di chuyển, cách cầm máy | RQ1 |
 | 3 | Lần mua gần nhất: thời gian chờ, số lần bỏ mua trong 7 ngày, làm gì thay thế | RQ2 |
 | 4 | Đã biết gì trước khi mua; mức quan trọng của từng thông tin (1–5) | RQ3 |
 | 5 | App đặt đồ ăn đang dùng; lần cài app gần nhất; khả năng cài, lý do không cài; cách trả tiền | RQ4, RQ5 |
@@ -64,7 +64,7 @@ Nguyên tắc: hỏi về **lần gần nhất / 7 ngày qua**, không hỏi "b�
 **Những điểm đáng chú ý nếu khảo sát thật cho ra kết quả tương tự:**
 - Không ai biết trước "phải chờ bao lâu" (0/20), và 35% không biết gì trước khi đi mua. Điều này củng cố khối trạng thái quán ở S02.
 - Lý do không cài app phổ biến nhất là **phải đăng ký tài khoản** (9/20), nên cần đăng nhập nhanh hoặc cho xem menu mà không cần tài khoản.
-- Nhóm ở nhà riêng gần như không cài app (0/4 chọn 4–5), trong khi KTX là 67% và trọ là 71%. Persona chính nên giữ là P01.
+- Nhóm ở nhà riêng gần như không cài app (0/4 chọn 4–5), trong khi nhóm ở KTX là 67% và ở trọ là 71% (dữ liệu mô phỏng). Nơi ở chỉ mô tả mẫu; persona chính P01 xác định theo việc học trên campus và giờ nghỉ ngắn.
 - 65% cầm máy một tay khi đi bộ, nên đặt nút chính ở nửa dưới màn hình.
 
 ## 3. Insight
@@ -84,7 +84,7 @@ Bảng gom ý (affinity) đầy đủ: `02-P1-nghien-cuu/02-research.md` mục 3
 
 ## 4. Hành trình hiện tại — P01 mua đồ ăn trong giờ nghỉ
 
-| Giai đoạn | Hết slot | Đi tới căn tin | Xếp hàng | Gọi món, trả tiền | Chờ món | Về lớp |
+| Giai đoạn | Hết tiết | Đi tới căn tin | Xếp hàng | Gọi món, trả tiền | Chờ món | Về lớp |
 |---|---|---|---|---|---|---|
 | Nỗi đau | Không biết tình trạng quán | Đi rồi mới biết đông / đóng | Chờ lâu nhất | Chờ quầy kiểm chuyển khoản | Không biết bao lâu xong | Vào lớp muộn |
 | Cơ hội | Xem trạng thái trước | Đặt trước từ lớp | Không phải xếp hàng | Thanh toán trong app | Tiến trình đơn + giờ hẹn | Lấy theo mã |

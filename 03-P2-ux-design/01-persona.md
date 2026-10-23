@@ -23,7 +23,7 @@
 
 | | P01 Quân (Primary) | P02 Linh (Secondary) | P03 Cô Hạnh (Supporting) |
 |---|---|---|---|
-| Vai trò | Sinh viên ở KTX, giờ nghỉ ngắn | Sinh viên ở trọ, nhạy cảm về giá | Nhân viên quầy Kiosk |
+| Vai trò | Sinh viên học trên campus, giờ nghỉ ngắn | Sinh viên nhạy cảm về giá | Nhân viên quầy Kiosk |
 | Ràng buộc chính | Thời gian (15 phút) | Ngân sách (~40.000đ/ngày) | Đông khách giờ nghỉ, phải xử lý đơn nhanh |
 | Hành vi quyết định | Bỏ mua khi thấy hàng dài | Bỏ app nếu có phí ẩn | Gọi số, kiểm tra chuyển khoản bằng tay |
 
@@ -35,16 +35,16 @@
 
 | # | Trường | Nội dung | Nhãn & nguồn |
 |---|---|---|---|
-| 1 | **Identity & Archetype** | 20 tuổi, sinh viên năm 2 Kỹ thuật phần mềm, ở ký túc xá. *Archetype: "Người chạy giữa hai slot".* | Assumed — A1 |
+| 1 | **Identity & Archetype** | 20 tuổi, sinh viên năm 2 Kỹ thuật phần mềm, học cả ngày trên campus. *Archetype: "Người chạy giữa hai tiết".* | Assumed — A1 |
 | 2 | **Persona Priority** | **Primary** — nhóm đau nhất và mua ở trường thường xuyên nhất | Inferred — affinity map (A1, A5) |
 | 3 | **Usage Context** | Mở app trên hành lang hoặc khi đi bộ giữa các khu trong campus, cầm máy một tay, mạng trong campus chập chờn, hay dùng ngoài nắng | Assumed — A1, A5 |
 | 4 | **Goals** | (1) Có đồ ăn trong giờ nghỉ mà không trễ lớp. (2) Biết chắc món đã xong trước khi xuống quầy. (3) Biết đúng số tiền phải trả ngay từ đầu. | Assumed — A1, A5 |
-| 5 | **Job to Be Done** | "Khi chỉ có 15 phút giữa hai slot, tôi muốn đặt trước và ghé quầy lấy ngay, để ăn kịp mà không phải xếp hàng." | Inferred |
+| 5 | **Job to Be Done** | "Khi chỉ có 15 phút giữa hai tiết, tôi muốn đặt trước và ghé quầy lấy ngay, để ăn kịp mà không phải xếp hàng." | Inferred |
 | 6 | **Current Behaviors** | Bỏ bữa sáng, mua bù lúc giải lao. Thấy hàng dài thì bỏ mua. Từng đặt GrabFood nhưng phải ra cổng nhận. Trả bằng QR ngân hàng. | Assumed — A1 |
 | 7 | **Pain Points** | (1) Hàng chờ đúng giờ nghỉ chung → bỏ bữa hoặc vào lớp trễ. (2) Không biết quán còn mở, còn món, bao lâu xong. (3) Nút nhỏ hoặc ở trên cao, khó bấm khi đi bộ. | Assumed — A1, A5 |
 | 8 | **Motivations** | Tiết kiệm thời gian; giữ điểm chuyên cần; không muốn nhịn đói tới trưa. | Assumed — A1 |
 | 9 | **Constraints** | 15 phút nghỉ, trong đó khoảng 5 phút đi bộ. Một tay. Mạng yếu. Không muốn đăng ký tài khoản chỉ để xem menu. | Assumed — A1, A3 |
-| 10 | **Key Scenarios** | **S1:** Cuối slot 1, Quân mở app trên đường ra hành lang, chọn combo, hẹn giờ nhận 09:20, thanh toán QR, đi thẳng tới quầy lấy món theo mã. **S2:** Thanh toán bị timeout vì mạng yếu; app giữ giỏ hàng, Quân chọn trả tiền mặt tại quầy. | Inferred — Flow 1, Flow 3 |
+| 10 | **Key Scenarios** | **S1:** Cuối tiết 1, Quân mở app trên đường ra hành lang, chọn combo, hẹn giờ nhận 09:20, thanh toán QR, đi thẳng tới quầy lấy món theo mã. **S2:** Thanh toán bị timeout vì mạng yếu; app giữ giỏ hàng, Quân chọn trả tiền mặt tại quầy. | Inferred — Flow 1, Flow 3 |
 | 11 | **Success Criteria** | Đặt xong một đơn **dưới 35 giây, tối đa 8 lần chạm** từ Trang chủ (Flow 1). | Assumed — chưa đo |
 | 12 | **Evidence & Status** | Proto-persona. Nguồn: A1, A5 (giả lập AI). Câu hỏi mở: giờ nghỉ thật là bao nhiêu? Hàng chờ thật bao lâu? | — |
 
@@ -56,9 +56,9 @@
 
 | # | Trường | Nội dung | Nhãn & nguồn |
 |---|---|---|---|
-| 1 | Identity & Archetype | 19 tuổi, năm 1 Thiết kế đồ hoạ, ở trọ, đi xe buýt. *Archetype: "Người đếm từng nghìn".* | Assumed — A2 |
+| 1 | Identity & Archetype | 19 tuổi, năm 1 Thiết kế đồ hoạ, đi xe buýt tới campus. *Archetype: "Người đếm từng nghìn".* | Assumed — A2 |
 | 2 | Persona Priority | **Secondary** — dùng cùng luồng đặt món nhưng quyết định dựa trên giá | Inferred |
-| 3 | Usage Context | Ngồi ở hành lang giữa hai slot buổi sáng, dùng hai tay, iPhone cũ, ví MoMo | Assumed — A2 |
+| 3 | Usage Context | Ngồi ở hành lang giữa hai tiết buổi sáng, dùng hai tay, iPhone cũ, ví MoMo | Assumed — A2 |
 | 4 | Goals | (1) Ăn trong ngân sách ~40.000đ/ngày. (2) Thấy tổng tiền thật trước khi đặt. | Assumed — A2 |
 | 5 | Job to Be Done | "Khi đói giữa buổi sáng, tôi muốn biết chính xác món nào vừa túi tiền, để không bị bất ngờ ở bước thanh toán." | Inferred |
 | 6 | Current Behaviors | Ít dùng app giao hàng vì phí. Ngại chen lấn ở căn tin nên đôi khi bỏ ăn. | Assumed — A2 |
@@ -92,7 +92,7 @@
 
 ## 4. Câu phát biểu vấn đề
 
-> **"Sinh viên ở ký túc xá có lịch học dày thường không mua kịp đồ ăn trong giờ nghỉ ngắn giữa hai slot, khi hàng chờ ở căn tin dồn đúng giờ nghỉ chung, nên họ bỏ bữa hoặc vào lớp trễ."**
+> **"Sinh viên học trên campus có lịch học dày thường không mua kịp đồ ăn trong 15 phút nghỉ giữa hai tiết, vì xếp hàng ở căn tin dồn đúng giờ nghỉ chung và tốn gần hết thời gian, nên họ bỏ bữa hoặc vào lớp trễ."**
 
 > **Cơ hội (How might we):** Làm sao để sinh viên có đồ ăn trong giờ nghỉ ngắn mà không phải xếp hàng?
 

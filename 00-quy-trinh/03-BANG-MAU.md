@@ -34,14 +34,14 @@ Mã định danh theo chuẩn của môn: **E** bằng chứng · **P** persona 
 ### 1. Danh sách giả định (bước 9)
 | ID | Nội dung | Loại | Nếu sai thì sao | Kiểm bằng cách nào | Ưu tiên |
 |---|---|---|---|---|---|
-| H1 | Giờ nghỉ giữa slot ≤ 15 phút | Đoán | "Đặt trước" ít giá trị | Khảo sát Google Form (Q5) | Cao |
+| H1 | Giờ nghỉ giữa tiết ≤ 15 phút | Đoán | "Đặt trước" ít giá trị | Khảo sát Google Form (Q5) | Cao |
 
 Cột **Loại**: *Biết chắc* (Fact) · *Đoán* (Hypothesis) · *Chưa biết* (Unknown).
 
 ### 2. Người liên quan (bước 10)
 | Nhóm | Ai | Liên quan thế nào | Trong phạm vi? |
 |---|---|---|---|
-| Dùng trực tiếp | SV ở KTX | Đặt món, nhận món | Có |
+| Dùng trực tiếp | SV học trên campus | Đặt món, nhận món | Có |
 | Hỗ trợ | Nhân viên quầy | Nhận đơn, trả món | Một phần |
 | Ngoài phạm vi | Cổng thanh toán | Xử lý tiền | Không |
 
@@ -52,7 +52,7 @@ Cột **Loại**: *Biết chắc* (Fact) · *Đoán* (Hypothesis) · *Chưa bi�
 ### 3. Ghi chép phỏng vấn (bước 14)
 | Mã | Người (ẩn danh) | Ngày | Câu hỏi | Trả lời (gần nguyên văn) | Nhãn |
 |---|---|---|---|---|---|
-| E01 | SV năm 2, ở KTX | 18/10 | Lần gần nhất mua ở căn tin chờ bao lâu? | "Khoảng 10 phút, vào lớp trễ" | Reported |
+| E01 | SV năm 2, học trên campus | 18/10 | Lần gần nhất mua ở căn tin chờ bao lâu? | "Khoảng 10 phút, vào lớp trễ" | Reported |
 
 ### 4. Phân tích đối thủ (bước 16)
 | Tiêu chí | Đối thủ A | Đối thủ B | Cách hiện tại | App của mình |
@@ -75,7 +75,7 @@ Mỗi persona một bảng:
 
 | # | Mục | Nội dung | Nhãn & nguồn |
 |---|---|---|---|
-| 1 | Là ai | 20 tuổi, SV năm 2, ở KTX | Reported — E01 |
+| 1 | Là ai | 20 tuổi, SV năm 2, học trên campus | Reported — E01 |
 | 2 | Mức ưu tiên | Primary | Inferred |
 | 3 | Dùng app ở đâu, lúc nào | Đi bộ giữa 2 tòa, một tay | Reported — E01, E03 |
 | 4 | Mục tiêu | Ăn kịp giờ nghỉ | |
@@ -84,7 +84,7 @@ Mỗi persona một bảng:
 | 7 | Khó chịu ở đâu | Hàng chờ, không biết quán mở hay đóng | |
 | 8 | Động lực | Tiết kiệm thời gian | |
 | 9 | Bị giới hạn bởi gì | 15 phút, một tay, mạng yếu | |
-| 10 | Tình huống cụ thể | Cuối slot đặt combo, hẹn giờ, xuống lấy | |
+| 10 | Tình huống cụ thể | Cuối tiết đặt combo, hẹn giờ, xuống lấy | |
 | 11 | Đo thành công | Đặt xong < 35 giây | |
 | 12 | Nguồn & trạng thái | Từ E01–E06; đã kiểm chứng một phần | |
 

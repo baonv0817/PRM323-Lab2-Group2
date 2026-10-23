@@ -11,7 +11,7 @@ Có 6 chặng, tổng cộng 45 bước. Gợi ý: mỗi chặng làm trong mộ
 
 1. **Chọn đề tài thật cụ thể** và hỏi thầy duyệt.
    - Sai: "app đặt đồ ăn".
-   - Đúng: "app đặt món trước cho sinh viên ở KTX chỉ có 15 phút nghỉ giữa hai slot".
+   - Đúng: "app đặt món trước cho sinh viên học trên campus chỉ có 15 phút nghỉ giữa hai tiết".
 2. **Tạo repo GitHub** tên `prm323-lab2-<MSSV>`, gồm các thư mục `ux/`, `design/`, `ai/`, `assets/stitch/`, `assets/figma/`, `handoff/` và file `README.md`.
 3. **Tạo file Figma** có đúng 6 page theo thứ tự: `01 User Flow`, `02 Wireframe`, `03 Final UI`, `04 Design System`, `05 Components`, `06 Prototype`. Bật chia sẻ "Anyone with the link can view".
 4. **Tạo file `08-ai-log/01-ai-design-log.md`.** Từ giờ mọi lần dùng AI đều ghi vào đây.
@@ -24,7 +24,7 @@ Có 6 chặng, tổng cộng 45 bước. Gợi ý: mỗi chặng làm trong mộ
 6. **Nghĩ 2–3 hướng giải pháp** cho cùng một vấn đề. Ví dụ: app đặt trước tại quầy · màn hình gọi số ở căn tin · đặt qua QR trên bàn.
 7. **Chọn 1 hướng**, ghi lý do: hướng nào giúp được nhiều người nhất, và có làm kịp không.
 8. **Viết problem statement một câu**, đủ 4 ý: *ai* – *gặp khó gì* – *trong bối cảnh nào* – *hậu quả gì*.
-   > "Sinh viên ở KTX có lịch học dày (ai) không mua kịp đồ ăn (khó gì) vì hàng chờ đúng giờ nghỉ chung (bối cảnh), nên bỏ bữa hoặc vào lớp trễ (hậu quả)."
+   > "Sinh viên học trên campus có lịch học dày (ai) không mua kịp đồ ăn (khó gì) vì hàng chờ đúng giờ nghỉ chung (bối cảnh), nên bỏ bữa hoặc vào lớp trễ (hậu quả)."
 9. **Liệt kê giả định**, chia 3 cột: *Biết chắc* · *Đoán* · *Chưa biết*.
 10. **Vẽ sơ đồ người liên quan:** ai dùng trực tiếp, ai hỗ trợ (ví dụ nhân viên quầy), ai liên quan nhưng ngoài phạm vi.
 11. **Cho AI phản biện:**

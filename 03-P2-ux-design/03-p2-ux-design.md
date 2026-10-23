@@ -10,7 +10,7 @@
 | Ưu tiên | **Primary** | Secondary | Supporting |
 | Khác biệt hành vi | Bỏ mua khi thấy hàng dài; cầm máy một tay | Bỏ app nếu có phí ẩn | Gọi số, kiểm chuyển khoản bằng tay |
 | Ràng buộc | 15 phút nghỉ | ~40.000đ/ngày | Đông khách, tay bận |
-| JTBD | Khi chỉ có 15 phút giữa hai slot, tôi muốn đặt trước và ghé quầy lấy ngay, để ăn kịp mà không xếp hàng | Khi đói giữa buổi sáng, tôi muốn biết món nào vừa túi tiền, để không bất ngờ khi trả | Khi nhiều sinh viên tới cùng lúc, tôi muốn biết đơn nào đã trả và tới giờ lấy, để trả nhanh không nhầm |
+| JTBD | Khi chỉ có 15 phút giữa hai tiết, tôi muốn đặt trước và ghé quầy lấy ngay, để ăn kịp mà không xếp hàng | Khi đói giữa buổi sáng, tôi muốn biết món nào vừa túi tiền, để không bất ngờ khi trả | Khi nhiều sinh viên tới cùng lúc, tôi muốn biết đơn nào đã trả và tới giờ lấy, để trả nhanh không nhầm |
 | Nguồn | SIM-A1, A5 | SIM-A2 | Assumed |
 | Nhãn | Assumed | Assumed | Assumed |
 
@@ -50,7 +50,7 @@
 
 ## 4. Hành trình tương lai — P01 với BreakBite
 
-| Giai đoạn | Cuối slot | Mở app | Chọn món | Thanh toán | Chờ món | Lấy món |
+| Giai đoạn | Cuối tiết | Mở app | Chọn món | Thanh toán | Chờ món | Lấy món |
 |---|---|---|---|---|---|---|
 | Hành động | Mở app | Xem badge quán, thời gian (S02) | Combo + topping, giá tự cộng (S04) | Giỏ → Lấy ngay → Tiền mặt / QR → Xác nhận (S05, S06) | Theo dõi tiến trình (S07) | Đưa mã #A-204 |
 | Nỗi đau đã gỡ | Không biết trước | Đi rồi mới biết đóng | Phí bất ngờ | Chờ kiểm chuyển khoản | Không biết bao lâu | Xếp hàng |

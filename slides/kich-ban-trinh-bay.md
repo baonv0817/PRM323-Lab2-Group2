@@ -59,12 +59,14 @@ Demo Figma Present cộng thêm 5 phút (xem cuối file); chạy trên Page 06,
 
 ## Demo Figma Present (5 phút)
 
-1. Page 06 (hoặc Page 03), các khung màn hình: chỉ ra S01–S08, rồi cuộn xuống app người bán (K01–K15).
-2. **Flow 1:** S02 → bấm combo → S04 → Thêm vào giỏ → S05 → Tiếp tục thanh toán → S06 → Xác nhận → màn đang tải tự chuyển → S07.
-3. **Flow 2:** S03 → S04 → S05 → bấm ô mã giảm giá (mã sai, S29) → nhập lại.
-4. **Flow 3:** bắt đầu từ S06-ERR → Tiền mặt tại Kiosk → S07-CASH.
-5. **Người bán:** K01 → K02 → K03 nhận đơn → K04 → K05 quét mã → K06 xác nhận giao.
-6. Dialog huỷ đơn ở S07 (overlay) và Back hoạt động.
+Địa điểm nhận trong demo: Kiosk Q9 · Tầng 2 (Campus Quận 9); kiosk tầng 4 và Nhà văn hóa sinh viên có ở màn Chọn Kiosk.
+
+1. Mở Page 06, bấm Present ở một khung màn hình, rồi đổi flow trong menu. Có 17 điểm bắt đầu: F1–F13, đăng nhập, ba flow người bán.
+2. **F1 (bắt đầu S02):** bấm combo → S04 → Thêm vào giỏ → S05 → Tiếp tục thanh toán → S06 → Xác nhận → màn đang tải tự chuyển → S07 mã nhận #A-204.
+3. **F2 (bắt đầu S03):** S04 → Thêm vào giỏ → S05 → bấm ô mã giảm giá → S29 chọn mã → chọn mã BB20 đã hết hạn → S05 báo lỗi ngay tại ô mã.
+4. **F3 (bắt đầu S06-ERR):** Tiền mặt tại Kiosk → S07-CASH → Huỷ đơn → hộp thoại xác nhận → S10 đơn đã huỷ.
+5. **Người bán (K1 bắt đầu K01):** Đăng nhập → danh sách đơn → chọn đơn K03 → Nhận đơn → K04 đang chuẩn bị. **K2 (bắt đầu K05):** mã không đọc được → thu tiền mặt K06-CASH.
+6. Back hoạt động, dialog ở S07 là overlay.
 
 Trước khi trình bày: thử link Figma bằng cửa sổ chưa đăng nhập.
 

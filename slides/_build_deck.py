@@ -1,4 +1,4 @@
-"""Sinh slides/BreakBite_Lab2_Presentation.pptx (30 slide) theo thứ tự quy trình thiết kế P0 → P5.
+"""Sinh slides/BreakBite_Lab2_Presentation.pptx (33 slide) theo thứ tự quy trình thiết kế P0 → P5.
 
 Chạy từ gốc repo:  python slides/_build_deck.py [đường dẫn file ra]      (cần python-pptx và Pillow)
 Ảnh lấy từ assets/figma/final-ui-v2/, assets/concepts/, ux/wireframe/. Màu theo token v2:
@@ -7,6 +7,7 @@ nền #FAF8F5, cam #F69D39, nâu #622B14, viền #E4DFD8. Các bản deck cũ n�
 import io
 import os
 import sys
+import tempfile
 from PIL import Image, ImageDraw
 from pptx import Presentation
 from pptx.dml.color import RGBColor
@@ -25,7 +26,7 @@ ORANGE, ORANGE_D, SELECT = "F69D39", "B45309", "FFF1DE"
 BROWN, MUTED, GREEN, RED = "622B14", "6B5F55", "15803D", "B91C1C"
 GREEN_BG, RED_BG = "E8F5EC", "FCE8E8"
 HEAD, BODY = "Trebuchet MS", "Calibri"
-TOTAL = 30
+TOTAL = 33
 
 prs = Presentation()
 prs.slide_width, prs.slide_height = Emu(12192000), Emu(6858000)
@@ -139,6 +140,51 @@ def pic(s, path, x, y, w=None, h=None):
 
 def sheet(s, name, x, y, h):
     return pic(s, os.path.join(IMG, name), x, y, h=h)
+
+
+def cover(s, path, x, y, w, h):
+    """Cắt ảnh theo tỉ lệ w:h, giữ phần trên trái, rồi đặt vào khung bo góc."""
+    im = Image.open(path).convert("RGB")
+    r = w / h
+    cw, ch = im.size
+    if cw / ch > r:
+        im = im.crop((0, 0, int(ch * r), ch))
+    else:
+        im = im.crop((0, 0, cw, int(cw / r)))
+    box(s, x, y, w, h, fill=CARD, line=BORDER, radius=0.04)
+    buf = io.BytesIO()
+    im.save(buf, "PNG")
+    buf.seek(0)
+    tmp = os.path.join(tempfile.gettempdir(), "bb_cover.png")
+    with open(tmp, "wb") as f:
+        f.write(buf.read())
+    s.shapes.add_picture(rounded_png(tmp, 0.03), E(x), E(y), E(w), E(h))
+
+
+def gray_phone(s, name, x, y, h):
+    """Wireframe xám: ảnh Figma v2 chuyển xám, giảm tương phản."""
+    im = Image.open(os.path.join(IMG, name)).convert("L").point(lambda v: int(255 - (255 - v) * 0.55)).convert("RGB")
+    tmp = os.path.join(tempfile.gettempdir(), "bb_gray_" + name.replace("/", "_"))
+    im.save(tmp)
+    iw, ih = im.size
+    w = h * iw / ih
+    box(s, x, y, w, h, fill=CARD, line="9A9A9A", radius=0.07)
+    s.shapes.add_picture(rounded_png(tmp), E(x), E(y), E(w), E(h))
+    return w
+
+
+def arrow_row(s, x, y, h, steps_, labels, gap=1.2, label_size=9):
+    """Hàng storyboard: ảnh màn hình, mũi tên và nhãn hành động giữa hai màn."""
+    for k, nm in enumerate(steps_):
+        w = phone(s, nm + ".png", x, y, h)
+        if k < len(steps_) - 1:
+            err = labels[k + 1].startswith("!")
+            lab = labels[k + 1].lstrip("!")
+            col = RED if err else ORANGE
+            text(s, x + w, y + h / 2 - 0.42, gap, 0.4, [(lab, label_size, True, RED if err else ORANGE_D)], anchor=MSO_ANCHOR.BOTTOM, align=PP_ALIGN.CENTER)
+            text(s, x + w, y + h / 2 - 0.2, gap, 0.4, [("→", 22, True, col)], anchor=MSO_ANCHOR.MIDDLE, align=PP_ALIGN.CENTER)
+            x += w + gap
+    return x
 
 
 def table(s, x, y, w, rows, col_w, row_h=0.42, size=13):
@@ -395,40 +441,35 @@ for i, (head, kids) in enumerate(tabs):
 band(s, 6.1, "App người bán (K01–K15): Đơn · Quét mã · Món · Quán, gồm nhận đơn, làm món, giao món, quản lý món và quán, thống kê ca, xử lý sự cố")
 
 # =============================================================== 12 · P2 ba flow chính
-s = content_slide("Ba flow chính", "Mỗi flow có đầu vào, đầu ra và nhánh lỗi", "cart", "ux/user-flow.md mục 2", "P2 · UX Design")
-flows = [("F1", "Đặt nhanh, nhận tại quầy",
-          ["S02 chọn combo", "S04 topping, giá tự cộng", "S05 giỏ hàng, hẹn giờ", "S06 thanh toán", "S07 mã nhận #A-204"],
-          "Có mã nhận đồ; dưới 35 giây, tối đa 8 chạm"),
-         ("F2", "Tuỳ chỉnh món và mã giảm giá",
-          ["S03 thực đơn", "S04 mức cay, topping", "S05 nhập mã", "Mã sai: báo lỗi, nhập lại", "S06 thanh toán"],
-          "Thấy giảm giá và tổng tiền trước khi trả"),
-         ("F3", "Lỗi thanh toán và phục hồi",
-          ["S06 thanh toán MoMo lỗi", "S06-ERR: giỏ hàng vẫn được giữ", "Thử lại VNPAY-QR hoặc tiền mặt", "S07 / S07-CASH"],
-          "Đơn được tạo, không phải đặt lại")]
-for i, (code, title, steps_, out) in enumerate(flows):
-    x = 0.6 + i * 4.1
-    box(s, x, 1.6, 3.95, 4.35)
-    chip(s, x + 0.25, 1.8, 0.6, code, size=12)
-    text(s, x + 1.0, 1.8, 2.8, 0.45, [(title, 14, True, BROWN)], anchor=MSO_ANCHOR.MIDDLE)
-    for k, st in enumerate(steps_):
-        y = 2.5 + k * 0.62
-        box(s, x + 0.25, y, 3.45, 0.5, fill=SELECT, line=None, radius=0.3)
-        text(s, x + 0.4, y, 3.2, 0.5, [(st, 12, k == len(steps_) - 1, BROWN)], anchor=MSO_ANCHOR.MIDDLE)
-    text(s, x + 0.25, 5.45, 3.5, 0.5, [(out, 11, True, ORANGE_D)])
-band(s, 6.1, "Flow khác F4–F13: sửa và huỷ đơn, lịch sử, yêu thích, tài khoản, thông báo, quán đóng, đánh giá, hẹn giờ, mất mạng · Flow người bán", h=0.72, size=12, bold=False)
+s = content_slide("Ba flow chính", "Mỗi flow có đầu vào, đầu ra và nhánh lỗi; ảnh là màn Figma thật", "cart", "ux/user-flow.md mục 2 · Figma Page 01 (UF · F1–F3)", "P2 · UX Design")
+flows = [("F1", "Đặt nhanh, nhận tại quầy", "Dưới 35 giây, tối đa 8 chạm",
+          ["S02", "S04", "S05", "S06", "S07"], ["", "Chạm combo", "Thêm vào giỏ", "Thanh toán", "Xác nhận"]),
+         ("F2", "Tuỳ chỉnh món và mã giảm giá", "Mã sai báo lỗi ngay tại giỏ hàng",
+          ["S03", "S04", "S05", "S29", "S05-VOUCHER-ERR"], ["", "Chọn món", "Thêm vào giỏ", "Nhập mã", "!Mã hết hạn"]),
+         ("F3", "Lỗi thanh toán và phục hồi", "Giỏ hàng được giữ, đơn vẫn được tạo",
+          ["S06-ERR", "S07-CASH", "S07-DIALOG", "S10"], ["", "!Tiền mặt", "Huỷ đơn", "Xác nhận huỷ"])]
+for i, (code, title, out, scr, labs) in enumerate(flows):
+    y = 1.55 + i * 1.52
+    box(s, 0.6, y, 12.15, 1.42)
+    chip(s, 0.8, y + 0.15, 0.6, code, size=12)
+    text(s, 0.8, y + 0.55, 2.5, 0.5, [(title, 13, True, BROWN)])
+    text(s, 0.8, y + 1.0, 2.5, 0.4, [(out, 10, True, ORANGE_D)])
+    arrow_row(s, 3.55, y + 0.07, 1.28, scr, labs, gap=1.3)
+band(s, 6.2, "Flow F4–F13, đăng nhập và ba flow người bán nằm ở Figma Page 01, mỗi flow có điểm chạm, nhánh lỗi, đầu vào và đầu ra.", h=0.6, size=12, bold=False)
 
 # =============================================================== 13 · P2 wireframe
-s = content_slide("Wireframe và flow mở rộng", "Chốt bố cục bằng khung xám trước khi chọn màu", "receipt", "ux/wireframe/ · Figma Page 01, 02", "P2 · UX Design")
-pic(s, os.path.join(ROOT, "ux", "wireframe", "wireframes-1.png"), 0.6, 1.6, w=7.6)
-box(s, 8.45, 1.6, 4.3, 4.25)
-text(s, 8.7, 1.75, 3.8, 4.0, [
-    ("WIREFRAME", 11, True, MUTED),
-    ("Khung xám, không màu, dùng thứ bậc khối và một nút chính", 13, False, BROWN),
-    ("Page 02 có wireframe cho mọi màn và biến thể", 13, False, BROWN),
-    ("FLOW MỞ RỘNG", 11, True, MUTED),
-    ("F4–F13 có đầu vào và đầu ra: sửa huỷ đơn, lịch sử, yêu thích, tài khoản, thông báo, quán đóng, đánh giá, hẹn giờ", 12, False, BROWN),
-], gap=8)
-band(s, 6.1, "Walkthrough hiện do AI thực hiện; nhóm chưa đi thử luồng với người thật.", h=0.6, size=12)
+s = content_slide("Wireframe và flow mở rộng", "Chốt bố cục bằng khung xám trước khi chọn màu", "receipt", "ux/wireframe/ · Figma Page 02 (WF v2)", "P2 · UX Design")
+x = 0.62
+for nm in ["S02", "S03", "S04", "S05", "S06", "S07", "S08", "S15"]:
+    w = gray_phone(s, nm + ".png", x, 1.55, 3.0)
+    x += w + 0.1
+box(s, 0.6, 4.75, 5.95, 1.3)
+text(s, 0.8, 4.85, 5.6, 1.15, [("WIREFRAME · FIGMA PAGE 02", 11, True, MUTED),
+                               ("Khung xám cho cả S01–S30 và app người bán, không màu, chỉ thứ bậc khối và một nút chính", 12, False, BROWN)], gap=4)
+box(s, 6.8, 4.75, 5.95, 1.3)
+text(s, 7.0, 4.85, 5.6, 1.15, [("FLOW MỞ RỘNG · FIGMA PAGE 01", 11, True, MUTED),
+                               ("F4–F13: sửa và huỷ đơn, lịch sử, yêu thích, hồ sơ, thông báo, quán đóng, món hết, đánh giá, mất mạng, đang tải", 12, False, BROWN)], gap=4)
+band(s, 6.2, "Walkthrough hiện do AI thực hiện; nhóm chưa đi thử luồng với người thật.", h=0.6, size=12)
 
 # =============================================================== 14 · P3 Stitch
 s = content_slide("Tạo giao diện với Google Stitch", "Brief có cấu trúc, không gõ prompt tự do", "restaurant", "design/DESIGN.md · ai/ai-design-log.md mục 2", "P3 · UI Concept")
@@ -576,7 +617,55 @@ text(s, 0.85, 4.95, 6.4, 1.7, [
     ("Bốn tab: Đơn, Quét mã, Món, Quán. Thống kê ca nằm trong tab Quán, xử lý sự cố mở từ tab Đơn.", 12, False, MUTED)], gap=8)
 sheet(s, "contact-sheet-kitchen.png", 7.8, 1.6, 4.9)
 
-# =============================================================== 24 · P4 component và responsive
+# =============================================================== 24–25 · P4 ánh xạ pain point → màn hình
+PAINS = [
+    ("P1", "Hàng chờ đúng giờ nghỉ", "Đặt từ lớp, hẹn giờ nhận, nhận bằng mã QR, không xếp hàng", ["S02", "S25", "S07", "S20"]),
+    ("P2", "Không biết quán còn mở, còn món, bao lâu xong", "Trạng thái quán và món hiện ngay, gợi ý món thay, giờ dự kiến sẵn sàng", ["S21", "S22", "S05", "S19"]),
+    ("P3", "Ngại phí ẩn, tổng tiền chỉ hiện ở bước cuối", "Giá cộng dồn trên nút, tổng chi tiết từ giỏ, mã giảm giá rõ ràng", ["S04", "S05", "S29", "S06"]),
+    ("P4", "Lỗi thanh toán làm mất giỏ hàng", "Giữ giỏ hàng, thử lại hoặc trả tiền mặt tại Kiosk, báo mất kết nối", ["S06-ERR", "S07-CASH", "S30", "S05"]),
+    ("P5", "Nút nhỏ, khó bấm một tay khi đi bộ", "Vùng bấm từ 48 dp, nút chính ở đáy màn, một nút cam mỗi màn", ["S02", "S04", "S05", "S08"]),
+    ("P6", "Người bán: khách đứng chờ kiểm tra chuyển khoản, huỷ khi món đã nấu", "Đơn đã thanh toán hiện sẵn, quét QR giao món, hộp thoại từ chối đơn", ["kitchen/K02", "kitchen/K03", "kitchen/K05", "kitchen/K12"]),
+]
+for part, (title, sub, rows_) in enumerate([("Ánh xạ pain point → màn hình (1/2)", "Pain point của khách và màn hình xử lý", PAINS[:3]),
+                                           ("Ánh xạ pain point → màn hình (2/2)", "Lỗi thanh toán, thao tác một tay và phía người bán", PAINS[3:])]):
+    s = content_slide(title, sub, "check", "ux/anh-xa-painpoint-man-hinh.md · Figma Page 01 (MAP)", "P4 · UI Design")
+    text(s, 0.75, 1.5, 3.2, 0.3, [("PAIN POINT", 11, True, MUTED)])
+    text(s, 4.2, 1.5, 3.2, 0.3, [("GIẢI PHÁP THIẾT KẾ", 11, True, MUTED)])
+    text(s, 7.75, 1.5, 3.2, 0.3, [("MÀN HÌNH GIẢI QUYẾT", 11, True, MUTED)])
+    for i, (code, pain, sol, scr) in enumerate(rows_):
+        y = 1.8 + i * 1.55
+        seller = code == "P6"
+        box(s, 0.6, y, 12.15, 1.45)
+        box(s, 0.75, y + 0.1, 3.25, 1.25, fill=BROWN if seller else SELECT, line=None, radius=0.1)
+        chip(s, 0.9, y + 0.18, 0.55, code, size=11, h=0.3)
+        text(s, 0.9, y + 0.52, 2.95, 0.8, [(pain, 12, True, CARD if seller else BROWN)])
+        text(s, 4.5, y + 0.1, 2.95, 1.25, [(sol, 12, False, BROWN)], anchor=MSO_ANCHOR.MIDDLE)
+        text(s, 4.1, y + 0.45, 0.35, 0.5, [("→", 18, True, ORANGE)])
+        x = 7.75
+        for nm in scr:
+            iw_, ih_ = Image.open(os.path.join(IMG, nm + ".png")).size
+            hh = min(1.1, 1.7 * ih_ / iw_)
+            w = phone(s, nm + ".png", x, y + 0.05 + (1.1 - hh) / 2, hh)
+            text(s, x - 0.15, y + 1.17, w + 0.3, 0.25, [(nm.split("/")[-1], 9, True, MUTED)], align=PP_ALIGN.CENTER)
+            x += w + 0.75
+    if part == 1:
+        band(s, 6.5, "Nguồn pain point: ux/persona.md và ux/research.md; dữ liệu persona là giả định, chờ khảo sát thật.", h=0.38, size=11, bold=False)
+
+# =============================================================== 26 · P4 sáu page Figma
+s = content_slide("Bản vẽ trong Figma", "Sáu page, từ user flow tới prototype chạy được", "location", "Figma PRM323 (bản copy) · assets/figma/boards/", "P4 · UI Design")
+BO = os.path.join(ROOT, "assets", "figma", "boards")
+cells = [("Page 01 · User flow", "Storyboard F1–F13, đăng nhập, người bán, bảng ánh xạ pain point", os.path.join(BO, "user-flow-f1.png")),
+         ("Page 02 · Wireframe", "Khung xám cho S01–S30 và K01–K15", os.path.join(BO, "wireframe-s01-s30.png")),
+         ("Page 03 · Final UI", "58 màn v2, bản 360 và 412 dp", os.path.join(IMG, "contact-sheet-s01-s08.png")),
+         ("Page 04 · Design system", "Token màu, chữ, khoảng cách, bo góc, 27 icon", os.path.join(BO, "design-system.png")),
+         ("Page 05 · Component", "Chip, NavBar, Card, nút; mọi variant", os.path.join(BO, "components.png")),
+         ("Page 06 · Prototype", "58 màn nối liên kết, 17 điểm bắt đầu để Present", os.path.join(BO, "prototype-index.png"))]
+for i, (head_, desc, path) in enumerate(cells):
+    x, y = 0.6 + (i % 3) * 4.1, 1.55 + (i // 3) * 2.62
+    cover(s, path, x, y, 3.95, 1.95)
+    text(s, x, y + 2.0, 3.95, 0.6, [(head_, 13, True, BROWN), (desc, 11, False, MUTED)], gap=0)
+
+# =============================================================== 27 · P4 component và responsive
 s = content_slide("Component và responsive", "Một thư viện component, bản 360 dp và 412 dp cho mỗi màn", "wallet", "Figma Page 05 · assets/figma/final-ui-v2/412/", "P4 · UI Design")
 box(s, 0.6, 1.6, 4.6, 5.2)
 text(s, 0.85, 1.75, 4.1, 5.0, [
@@ -597,14 +686,14 @@ for nm, hh in [("S02.png", 3.5), ("412/S02.png", 3.5), ("S05.png", 3.5), ("412/S
 text(s, 5.7, 5.85, 6.8, 0.9, [("S02 và S05 ở 360 dp rồi 412 dp. Bản 412 dp dựng bằng constraints nên nội dung co giãn, không cuộn ngang.", 12, False, MUTED)])
 
 # =============================================================== 25 · P4 prototype
-s = content_slide("Prototype Figma", "Nối cả hai app, chạy được từng flow bằng Present", "qr", "Figma Page 03 · tests/figma-proto/hotspots-v2.json", "P4 · UI Design")
-bullets_card(s, 0.6, 1.6, 5.9, 3.3, "PROTOTYPE BẢN V2", ["217 vùng bấm trên 58 khung, 12 điểm bắt đầu", "Dialog huỷ đơn và từ chối đơn dạng overlay",
+s = content_slide("Prototype Figma", "Nối cả hai app, chạy từng flow bằng Present trên Page 06", "qr", "Figma Page 03, 06 · tests/figma-proto/hotspots-v2.json", "P4 · UI Design")
+bullets_card(s, 0.6, 1.6, 5.9, 3.3, "PROTOTYPE BẢN V2", ["220 liên kết trên 58 khung, 17 điểm bắt đầu", "Dialog huỷ đơn và từ chối đơn dạng overlay",
                                                          "Màn đang tải tự chuyển sau 1,2 giây", "Back đúng, không màn cụt, không màn mồ côi"], size=13, gap=9)
 box(s, 6.75, 1.6, 6.0, 3.3)
 text(s, 7.0, 1.75, 5.5, 3.1, [("ĐIỂM BẮT ĐẦU KHI DEMO", 11, True, MUTED),
-                               ("F1 · S01 đặt nhanh", 13, False, BROWN), ("F2 · S03 tuỳ chỉnh và mã giảm giá", 13, False, BROWN),
-                               ("F3 · S06-ERR lỗi thanh toán", 13, False, BROWN), ("F4 · S07 sửa và huỷ đơn", 13, False, BROWN),
-                               ("K · K01 người bán nhận đơn, làm món, giao món", 13, False, BROWN)], gap=7)
+                               ("F1 · S02 đặt nhanh từ Trang chủ", 13, False, BROWN), ("F2 · S03 tuỳ chỉnh và mã giảm giá", 13, False, BROWN),
+                               ("F3 · S06-ERR lỗi thanh toán", 13, False, BROWN), ("F4 · S08 sửa và huỷ đơn", 13, False, BROWN),
+                               ("K1 · K01 người bán nhận đơn và chuẩn bị", 13, False, BROWN)], gap=7)
 band(s, 5.1, "Demo: bấm combo → thêm vào giỏ → thanh toán → đang tải → mã nhận #A-204; rồi mở app người bán nhận đơn đó.", h=0.8, size=13)
 band(s, 6.05, "Thử link Figma bằng cửa sổ chưa đăng nhập trước khi trình bày.", h=0.6, size=12, bold=False, fill=CARD)
 

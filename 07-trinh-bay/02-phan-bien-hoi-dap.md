@@ -18,7 +18,7 @@ Sửa hoặc chuẩn bị câu trả lời trước khi lên trình bày.
 | 1 | Persona dùng **iPhone 13**, nhưng thiết kế lại theo **Material 3, Android 360 dp** | iPhone 13 rộng 390 pt, chạy iOS. Thiết kế kiểu Android cho người dùng iPhone là mâu thuẫn | Đổi thiết bị của persona sang Android tầm trung (360–412 dp), **hoặc** giải thích: app Flutter đa nền tảng, frame chuẩn của lab là 360 × 800 nên lấy Android làm gốc |
 | 2 | "Campus **Hòa Lạc / ĐH Quốc Gia**" | Đó là hai nơi khác nhau, nghe như viết cho có | Chọn đúng một nơi bạn thật sự quan sát được |
 | 3 | Thời gian xếp hàng ghi **12–15 phút** (mindmap) và **12–18 phút** (pain point) | Hai con số trong cùng một file lệch nhau, lại không có nguồn | Đo thật (xem mục C) hoặc ghi rõ là ước lượng |
-| 4 | Giờ cao điểm **09:15–09:30, 11:30–12:00** | Thầy sẽ hỏi lấy từ đâu | Đối chiếu với lịch tiết thật của trường, hoặc tự quan sát 1–2 buổi |
+| 4 | Giờ cao điểm **09:15–09:30, 11:30–12:00** | Thầy sẽ hỏi lấy từ đâu | Đối chiếu với lịch slot thật của trường, hoặc tự quan sát 1–2 buổi |
 | 5 | Chỉ số thành công **dưới 35 giây** | Vì sao là 35 mà không phải 60? | Lập luận: 15 phút nghỉ, 5–7 phút đi lại, còn lại ~1 phút để đặt món. 35 giây là mục tiêu có dư. Tốt nhất là bấm giờ thử trên prototype |
 | 6 | Có màn **Onboarding** (SCR-01) dù persona luôn vội | Onboarding thêm bước, đi ngược mục tiêu "nhanh" | Nói rõ: chỉ hiện ở lần mở đầu tiên, có nút "Bỏ qua" (Stitch có nút này); từ lần sau vào thẳng Home |
 | 7 | App **không có giao hàng** | "Sao không giao tận nơi như Grab?" | Persona ở trong trường, không cần giao; shipper không vào được khu lớp học/phòng lab (SIM-A1, A5). Đây là quyết định **thu hẹp phạm vi** có chủ đích (MVP, `01-P0-y-tuong/01-p0-problem-framing.md` mục 5) |
@@ -32,7 +32,7 @@ Sửa hoặc chuẩn bị câu trả lời trước khi lên trình bày.
 ### 1. Persona — "Lấy cơ sở gì để có persona này?"
 
 **Câu trả lời trung thực (khi chưa có nghiên cứu):**
-> "Đây là **proto-persona**, tức persona giả định, xây từ quan sát của chính em và bạn cùng lớp: lịch học theo tiết, giờ nghỉ ngắn, hàng ở căn tin. Theo Nielsen Norman Group, proto-persona dùng được ở giai đoạn đầu nếu ghi rõ là giả định và kiểm chứng sau. Hạn chế là em chưa phỏng vấn đủ người, nên các con số như thời gian xếp hàng là ước lượng. Bước tiếp theo là phỏng vấn 5 bạn và bấm giờ hàng thật."
+> "Đây là **proto-persona**, tức persona giả định, xây từ quan sát của chính em và bạn cùng lớp: lịch học theo slot, giờ nghỉ ngắn, hàng ở căn tin. Theo Nielsen Norman Group, proto-persona dùng được ở giai đoạn đầu nếu ghi rõ là giả định và kiểm chứng sau. Hạn chế là em chưa phỏng vấn đủ người, nên các con số như thời gian xếp hàng là ước lượng. Bước tiếp theo là phỏng vấn 5 bạn và bấm giờ hàng thật."
 
 **Nếu đã làm mục C:**
 > "Em phỏng vấn [N] bạn và bấm giờ hàng [N] lần vào [ngày]. Thời gian chờ trung bình là [X] phút; [N/N] bạn nói từng bỏ bữa vì không kịp. Từ đó em ra hai pain point chính…"
@@ -102,7 +102,7 @@ Làm thật, ghi đúng kết quả (kể cả khi khác giả định), rồi t
 |---|---|---|---|---|
 
 ### C2. Phỏng vấn nhanh 5 bạn (mỗi bạn 5 phút)
-1. Giữa hai tiết bạn có bao nhiêu phút? Bạn thường ăn uống gì trong lúc đó?
+1. Giữa hai slot bạn có bao nhiêu phút? Bạn thường ăn uống gì trong lúc đó?
 2. Lần gần nhất mua đồ ở căn tin, bạn chờ bao lâu? Có lần nào bỏ ăn vì không kịp không?
 3. Bạn từng đặt món qua app nào? Điều gì làm bạn khó chịu nhất?
 4. Bạn trả tiền bằng gì: tiền mặt, QR ngân hàng hay ví?
@@ -111,7 +111,7 @@ Làm thật, ghi đúng kết quả (kể cả khi khác giả định), rồi t
 Ghi lại nguyên câu trả lời (ẩn danh), sau đó gom thành các nhóm ý giống nhau (affinity map).
 
 ### C3. Khảo sát online (tuỳ chọn, Google Form 6 câu)
-Số phút nghỉ giữa tiết · thời gian chờ thường gặp · tần suất bỏ bữa · phương thức trả tiền · hệ điều hành · có muốn đặt trước không (thang 1–5). Ghi rõ số người trả lời và ngày khảo sát.
+Số phút nghỉ giữa slot · thời gian chờ thường gặp · tần suất bỏ bữa · phương thức trả tiền · hệ điều hành · có muốn đặt trước không (thang 1–5). Ghi rõ số người trả lời và ngày khảo sát.
 
 ### C4. Kiểm thử nhanh prototype (15 phút)
 Nhờ 3 bạn làm Flow 1 trên Figma Present, bấm giờ và đếm số chạm. Đây là bằng chứng trực tiếp cho chỉ số "dưới 35 giây, 8 chạm" — câu thầy rất hay hỏi.

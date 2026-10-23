@@ -248,7 +248,7 @@ phone(s, "S02.png", 9.35, 1.35, 4.6)
 icon(s, "restaurant", 0.8, 0.8, 0.9)
 text(s, 0.8, 1.85, 6.6, 1.3, [("BreakBite", 72, True, BROWN, HEAD)])
 text(s, 0.8, 3.2, 6.4, 0.6, [("Đặt món trước, nhận tại quầy.", 28, True, ORANGE_D, HEAD)])
-text(s, 0.8, 3.85, 6.4, 0.8, [("Ăn kịp trong 15 phút giữa hai tiết, không phải xếp hàng.", 18, False, MUTED)])
+text(s, 0.8, 3.85, 6.4, 0.8, [("Ăn kịp trong 15 phút giữa hai slot, không phải xếp hàng.", 18, False, MUTED)])
 chip(s, 0.8, 4.75, 2.35, "App khách · 30 màn", size=13, h=0.4)
 chip(s, 3.3, 4.75, 2.6, "App người bán · 15 màn", size=13, h=0.4)
 text(s, 0.8, 5.45, 6.5, 1.5, [
@@ -285,7 +285,7 @@ s = content_slide("Vấn đề cần giải quyết", "Ai gặp khó khăn gì, 
 box(s, 0.6, 1.6, 12.15, 1.7)
 text(s, 0.85, 1.72, 11.65, 1.5, [
     ("PROBLEM STATEMENT", 11, True, MUTED),
-    ("Sinh viên học trên campus có lịch học dày thường không mua kịp đồ ăn trong 15 phút nghỉ giữa hai tiết, vì xếp hàng ở căn tin dồn "
+    ("Sinh viên học trên campus có lịch học dày thường không mua kịp đồ ăn trong 15 phút nghỉ giữa hai slot, vì xếp hàng ở căn tin dồn "
      "đúng giờ nghỉ chung và tốn gần hết thời gian, nên họ bỏ bữa hoặc vào lớp trễ.", 17, False, BROWN),
     ("Làm sao để sinh viên có đồ ăn trong giờ nghỉ ngắn mà không phải xếp hàng?", 14, True, ORANGE_D),
 ], gap=6)
@@ -324,7 +324,7 @@ s = content_slide("Giả định, rủi ro và phạm vi MVP", "Phân biệt d�
                   "01-P0-y-tuong/01-p0-problem-framing.md mục 3–5", "P0 · Ideas")
 box(s, 0.6, 1.6, 7.0, 5.2)
 table(s, 0.8, 1.75, 6.6, [["ID", "Giả định cần kiểm", "Kiểm bằng"],
-                          ["H1", "Giờ nghỉ giữa hai tiết ≤ 15 phút", "Khảo sát"],
+                          ["H1", "Giờ nghỉ giữa hai slot ≤ 15 phút", "Khảo sát"],
                           ["H2", "Hàng chờ làm sinh viên bỏ mua", "Khảo sát"],
                           ["H3", "Biết trước trạng thái quán quyết định việc đặt", "Khảo sát"],
                           ["H4", "Sinh viên chấp nhận cài app riêng của quán", "Khảo sát"],
@@ -338,7 +338,7 @@ bullets_card(s, 7.85, 4.35, 4.9, 2.45, "NGOÀI PHẠM VI", ["Giao hàng tận n�
 
 # =============================================================== 6 · P1 kế hoạch nghiên cứu
 s = content_slide("Kế hoạch nghiên cứu", "Sáu câu hỏi nghiên cứu và cách trả lời", "person", "02-P1-nghien-cuu/01-p1-research.md mục 1–2", "P1 · Research")
-rqs = ["RQ1 · Giữa hai tiết thật sự có bao nhiêu phút?", "RQ2 · Hàng chờ dài bao lâu, có làm bỏ mua không?", "RQ3 · Cần biết gì trước khi quyết định mua?",
+rqs = ["RQ1 · Giữa hai slot thật sự có bao nhiêu phút?", "RQ2 · Hàng chờ dài bao lâu, có làm bỏ mua không?", "RQ3 · Cần biết gì trước khi quyết định mua?",
        "RQ4 · Có chịu cài app riêng của quán không?", "RQ5 · Khi thanh toán lỗi, đã làm gì?", "RQ6 · Quầy có làm kịp đơn dồn giờ nghỉ không?"]
 box(s, 0.6, 1.6, 6.4, 5.2)
 text(s, 0.85, 1.75, 5.9, 0.3, [("06 CÂU HỎI NGHIÊN CỨU", 11, True, MUTED)])
@@ -395,7 +395,7 @@ band(s, 6.35, "Độ tin cậy thấp vì nguồn là mô phỏng; mỗi insight
 
 # =============================================================== 9 · P2 persona
 s = content_slide("Persona", "Một persona chính, hai persona phụ và một nhóm không nhắm tới", "person", "03-P2-ux-design/01-persona.md (12 trường lõi)", "P2 · UX Design")
-personas = [("Q", "Nguyễn Minh Quân", "20 tuổi · SV năm 2 · học trên campus", "PRIMARY", ["Học nhiều tiết liền, nghỉ 15 phút giữa hai tiết", "Android, cầm máy một tay, mạng chập chờn"], "Đặt xong dưới 35 giây, tối đa 8 chạm"),
+personas = [("Q", "Nguyễn Minh Quân", "20 tuổi · SV năm 2 · học trên campus", "PRIMARY", ["Học nhiều slot liền, nghỉ 15 phút giữa hai slot", "Android, cầm máy một tay, mạng chập chờn"], "Đặt xong dưới 35 giây, tối đa 8 chạm"),
             ("L", "Trần Mỹ Linh", "19 tuổi · SV năm 1 Thiết kế · đi xe buýt", "SECONDARY", ["Ngân sách khoảng 40.000đ mỗi ngày", "iPhone cũ, ví MoMo, dùng hai tay"], "Thấy tổng tiền thật trước khi trả"),
             ("H", "Cô Hạnh", "Khoảng 40 tuổi · nhân viên quầy Kiosk", "SUPPORTING", ["Vừa nấu vừa trả món, tay bận", "Không dùng app khách"], "Trả một món đặt trước trong khoảng 30 giây"),
             ("T", "Tuấn và Hà", "SV năm 3–4 · ít lên trường", "ANTI-PERSONA", ["Mua ở trường rất ít, mang cơm", "Không muốn tải thêm app"], "Không nhắm tới; ghi thành rủi ro R2")]

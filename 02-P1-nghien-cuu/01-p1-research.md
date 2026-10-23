@@ -10,7 +10,7 @@
 
 | RQ | Câu hỏi | Kiểm giả định | Phương pháp | Trạng thái |
 |---|---|---|---|---|
-| RQ1 | Giữa hai tiết có bao nhiêu phút, làm gì trong lúc đó? | H1 | Khảo sát Google Form (Q3, Q5–Q7) | Chưa làm |
+| RQ1 | Giữa hai slot có bao nhiêu phút, làm gì trong lúc đó? | H1 | Khảo sát Google Form (Q3, Q5–Q7) | Chưa làm |
 | RQ2 | Hàng chờ giờ nghỉ dài bao lâu, có làm bỏ mua không? | H2 | Khảo sát Google Form (Q8–Q11) | Chưa làm |
 | RQ3 | Cần biết gì trước khi quyết định mua? | H3 | Khảo sát Google Form (Q12–Q13) | Chưa làm |
 | RQ4 | Có chịu cài app riêng của quán không? | H4 | Khảo sát Google Form (Q15–Q17) | Chưa làm |
@@ -31,8 +31,8 @@
 
 | Phần | Nội dung | RQ |
 |---|---|---|
-| 0–1 | Đồng ý; năm học, nơi ở, số tiết/ngày, loại điện thoại | Phân nhóm |
-| 2 | Số phút nghỉ giữa hai tiết gần nhất, thời gian di chuyển, cách cầm máy | RQ1 |
+| 0–1 | Đồng ý; năm học, nơi ở, số slot/ngày, loại điện thoại | Phân nhóm |
+| 2 | Số phút nghỉ giữa hai slot gần nhất, thời gian di chuyển, cách cầm máy | RQ1 |
 | 3 | Lần mua gần nhất: thời gian chờ, số lần bỏ mua trong 7 ngày, làm gì thay thế | RQ2 |
 | 4 | Đã biết gì trước khi mua; mức quan trọng của từng thông tin (1–5) | RQ3 |
 | 5 | App đặt đồ ăn đang dùng; lần cài app gần nhất; khả năng cài, lý do không cài; cách trả tiền | RQ4, RQ5 |
@@ -84,7 +84,7 @@ Bảng gom ý (affinity) đầy đủ: `02-P1-nghien-cuu/02-research.md` mục 3
 
 ## 4. Hành trình hiện tại — P01 mua đồ ăn trong giờ nghỉ
 
-| Giai đoạn | Hết tiết | Đi tới căn tin | Xếp hàng | Gọi món, trả tiền | Chờ món | Về lớp |
+| Giai đoạn | Hết slot | Đi tới căn tin | Xếp hàng | Gọi món, trả tiền | Chờ món | Về lớp |
 |---|---|---|---|---|---|---|
 | Nỗi đau | Không biết tình trạng quán | Đi rồi mới biết đông / đóng | Chờ lâu nhất | Chờ quầy kiểm chuyển khoản | Không biết bao lâu xong | Vào lớp muộn |
 | Cơ hội | Xem trạng thái trước | Đặt trước từ lớp | Không phải xếp hàng | Thanh toán trong app | Tiến trình đơn + giờ hẹn | Lấy theo mã |

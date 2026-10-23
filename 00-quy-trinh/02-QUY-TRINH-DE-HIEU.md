@@ -11,7 +11,7 @@ Có 6 chặng, tổng cộng 45 bước. Gợi ý: mỗi chặng làm trong mộ
 
 1. **Chọn đề tài thật cụ thể** và hỏi thầy duyệt.
    - Sai: "app đặt đồ ăn".
-   - Đúng: "app đặt món trước cho sinh viên học trên campus chỉ có 15 phút nghỉ giữa hai tiết".
+   - Đúng: "app đặt món trước cho sinh viên học trên campus chỉ có 15 phút nghỉ giữa hai slot".
 2. **Tạo repo GitHub** tên `prm323-lab2-<MSSV>`, gồm các thư mục `ux/`, `design/`, `ai/`, `assets/stitch/`, `assets/figma/`, `handoff/` và file `README.md`.
 3. **Tạo file Figma** có đúng 6 page theo thứ tự: `01 User Flow`, `02 Wireframe`, `03 Final UI`, `04 Design System`, `05 Components`, `06 Prototype`. Bật chia sẻ "Anyone with the link can view".
 4. **Tạo file `08-ai-log/01-ai-design-log.md`.** Từ giờ mọi lần dùng AI đều ghi vào đây.

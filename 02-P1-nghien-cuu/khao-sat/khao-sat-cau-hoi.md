@@ -1,4 +1,4 @@
-# Bộ câu hỏi khảo sát — Ăn uống trong giờ nghỉ giữa các tiết
+# Bộ câu hỏi khảo sát — Ăn uống trong giờ nghỉ giữa các slot
 
 > Dùng cho P1 · UX Research. Thu thập qua Google Form, tạo tự động bằng script `02-P1-nghien-cuu/khao-sat/tao-google-form.gs` (cách chạy ở cuối file).
 > Nguyên tắc: hỏi **việc đã xảy ra**, không hỏi ý kiến về app đang thiết kế. Không thu họ tên, MSSV, email.
@@ -25,14 +25,14 @@
 |---|---|---|---|---|
 | Q1 | Bạn là sinh viên năm mấy? | 1 lựa chọn | Năm 1 · Năm 2 · Năm 3 · Năm 4 trở lên | Phân nhóm |
 | Q2 | Bạn đang ở đâu? | 1 lựa chọn | Ký túc xá · Nhà trọ gần trường · Nhà riêng / người thân · Khác | Mô tả mẫu, không dùng để chọn persona |
-| Q3 | Một ngày học bình thường bạn có mấy tiết trên trường? | 1 lựa chọn | 1 · 2 · 3 · 4 trở lên | RQ1 |
+| Q3 | Một ngày học bình thường bạn có mấy slot trên trường? | 1 lựa chọn | 1 · 2 · 3 · 4 trở lên | RQ1 |
 | Q4 | Bạn dùng điện thoại gì? | 1 lựa chọn | Android · iPhone · Khác | Persona: thiết bị |
 
-**Phần 2 · Giờ nghỉ giữa hai tiết**
+**Phần 2 · Giờ nghỉ giữa hai slot**
 
 | # | Câu hỏi | Kiểu | Lựa chọn | Dùng cho |
 |---|---|---|---|---|
-| Q5 | Giữa hai tiết **gần nhất** của bạn có bao nhiêu phút nghỉ? | 1 lựa chọn | Dưới 10 phút · 10–15 phút · 16–20 phút · Trên 20 phút · Không nhớ | RQ1 · H1 |
+| Q5 | Giữa hai slot **gần nhất** của bạn có bao nhiêu phút nghỉ? | 1 lựa chọn | Dưới 10 phút · 10–15 phút · 16–20 phút · Trên 20 phút · Không nhớ | RQ1 · H1 |
 | Q6 | Đi từ phòng này sang phòng học tiếp theo thường mất bao lâu? | 1 lựa chọn | Dưới 2 phút · 2–5 phút · Trên 5 phút | RQ1 |
 | Q7 | Khi vừa đi vừa dùng điện thoại giữa các khu trong campus, bạn thường cầm máy thế nào? | 1 lựa chọn | Một tay · Hai tay · Không dùng khi đi bộ | Persona: thao tác một tay |
 | Q8 | Lần gần nhất bạn mua đồ ăn/uống **ở trường** (căn tin, quầy, kiosk) là khi nào? | 1 lựa chọn, **rẽ nhánh** | Hôm nay · Trong tuần này · Trong tháng này · Lâu hơn · Chưa bao giờ → *chuyển tới Phần 4* | RQ2 |

@@ -96,7 +96,7 @@ graph TD
 
 ### F1 · Đặt nhanh, nhận tại quầy *(Happy path)*
 
-> **Input — người dùng cần:** Có khoảng 15 phút giữa hai tiết, cần có món ăn mà không phải xếp hàng.
+> **Input — người dùng cần:** Có khoảng 15 phút giữa hai slot, cần có món ăn mà không phải xếp hàng.
 > **Output — người dùng nhận được:** Mã nhận đồ #A-204 và giờ hẹn; ra quầy quét mã là nhận món.
 
 - **Bắt đầu:** S02 Trang chủ (S01 chỉ lần đầu mở app). **Kết thúc:** S07 Theo dõi đơn.

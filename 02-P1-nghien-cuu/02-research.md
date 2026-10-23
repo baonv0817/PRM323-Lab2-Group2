@@ -110,7 +110,7 @@ flowchart LR
 
 | ID | Giả định | Nhãn hiện tại | Ảnh hưởng nếu sai | Cách kiểm chứng | Ưu tiên |
 |---|---|---|---|---|---|
-| H1 | Giờ nghỉ giữa tiết ≤ 15 phút | Assumed (A1, A5) | Giảm giá trị của "đặt trước" | Khảo sát Google Form (Q5) | Cao |
+| H1 | Giờ nghỉ giữa slot ≤ 15 phút | Assumed (A1, A5) | Giảm giá trị của "đặt trước" | Khảo sát Google Form (Q5) | Cao |
 | H2 | Hàng chờ giờ nghỉ làm SV bỏ mua | Assumed (A1, A2, A5) | Mất lý do tồn tại của app | Bấm giờ hàng chờ 2 khung giờ | Cao |
 | H3 | Biết trước thời gian chờ và trạng thái quán quyết định việc đặt | Assumed (4/5) | Badge Kiosk ít giá trị | Hỏi "bạn cần biết gì trước khi đặt?" | Vừa |
 | H4 | SV chấp nhận cài app riêng của quán | Assumed — A3 phản đối | Ít người cài | Hỏi trực tiếp; dự phòng hướng web đặt qua QR | Cao |

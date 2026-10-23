@@ -43,7 +43,7 @@ Demo Figma Present cộng thêm 5 phút (xem cuối file); chạy trên Page 06,
 
 ## Lời nói gợi ý theo phase
 
-**P0 · Ideas (slide 3–5).** "Vấn đề: sinh viên chỉ có khoảng 15 phút giữa hai tiết mà hàng chờ căn tin dồn đúng giờ nghỉ. Nhóm cân nhắc bốn hướng, chấm Impact nhân Feasibility, chọn app đặt trước vì gỡ được cả thời gian lẫn thông tin. AI đề xuất chuyển sang web QR, nhóm từ chối vì đề bắt buộc app mobile, nhưng giữ làm phương án dự phòng. Giả định chưa biết được xếp vào danh sách kiểm chứng ở P1."
+**P0 · Ideas (slide 3–5).** "Vấn đề: sinh viên chỉ có khoảng 15 phút giữa hai slot mà hàng chờ căn tin dồn đúng giờ nghỉ. Nhóm cân nhắc bốn hướng, chấm Impact nhân Feasibility, chọn app đặt trước vì gỡ được cả thời gian lẫn thông tin. AI đề xuất chuyển sang web QR, nhóm từ chối vì đề bắt buộc app mobile, nhưng giữ làm phương án dự phòng. Giả định chưa biết được xếp vào danh sách kiểm chứng ở P1."
 
 **P1 · Research (slide 6–8).** "Kế hoạch có sáu câu hỏi nghiên cứu. Dữ liệu hiện có là phỏng vấn và khảo sát mô phỏng bằng AI, dùng để thử bộ câu hỏi, nên nhóm không coi là bằng chứng; khảo sát thật đang thu. Mỗi insight vẫn được nối tới một quyết định thiết kế, ví dụ hàng chờ dẫn tới hẹn giờ nhận."
 

@@ -34,7 +34,7 @@ Mã định danh theo chuẩn của môn: **E** bằng chứng · **P** persona 
 ### 1. Danh sách giả định (bước 9)
 | ID | Nội dung | Loại | Nếu sai thì sao | Kiểm bằng cách nào | Ưu tiên |
 |---|---|---|---|---|---|
-| H1 | Giờ nghỉ giữa tiết ≤ 15 phút | Đoán | "Đặt trước" ít giá trị | Khảo sát Google Form (Q5) | Cao |
+| H1 | Giờ nghỉ giữa slot ≤ 15 phút | Đoán | "Đặt trước" ít giá trị | Khảo sát Google Form (Q5) | Cao |
 
 Cột **Loại**: *Biết chắc* (Fact) · *Đoán* (Hypothesis) · *Chưa biết* (Unknown).
 
@@ -84,7 +84,7 @@ Mỗi persona một bảng:
 | 7 | Khó chịu ở đâu | Hàng chờ, không biết quán mở hay đóng | |
 | 8 | Động lực | Tiết kiệm thời gian | |
 | 9 | Bị giới hạn bởi gì | 15 phút, một tay, mạng yếu | |
-| 10 | Tình huống cụ thể | Cuối tiết đặt combo, hẹn giờ, xuống lấy | |
+| 10 | Tình huống cụ thể | Cuối slot đặt combo, hẹn giờ, xuống lấy | |
 | 11 | Đo thành công | Đặt xong < 35 giây | |
 | 12 | Nguồn & trạng thái | Từ E01–E06; đã kiểm chứng một phần | |
 

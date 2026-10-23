@@ -193,7 +193,7 @@
 ```
 
 **Nhóm quyết định:** tự chấm sáu gate; **gate 5 chưa qua** vì chưa có usability test với người thật.
-**Minh chứng:** `06-P5-kiem-thu-ban-giao/03-flutter-handoff.md`, `skills/`, `00-quy-trinh/04-quy-chuan-ux-ui.md`, `07-trinh-bay/`.
+**Minh chứng:** `06-P5-kiem-thu-ban-giao/03-flutter-handoff.md`, `skills/`, `00-quy-trinh/03-quy-chuan-ux-ui.md`, `07-trinh-bay/`.
 
 ---
 

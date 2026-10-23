@@ -1,6 +1,6 @@
 # Bố cục từng bảng trong quy trình
 
-Mỗi bảng ghi: **dùng ở bước nào** (theo `02-QUY-TRINH-DE-HIEU.md`), **đặt ở file nào**, **các cột**, và **1 dòng ví dụ** của BreakBite. Copy bảng trống về dùng.
+Mỗi bảng ghi: **dùng ở bước nào** (theo `01-QUY-TRINH-UIUX.md`), **đặt ở file nào**, **các cột**, và **1 dòng ví dụ** của BreakBite. Copy bảng trống về dùng.
 
 Mã định danh theo chuẩn của môn: **E** bằng chứng · **P** persona · **N** nhu cầu · **F** flow · **S** màn hình · **I** vòng lặp AI · **D** quyết định · **T** test.
 

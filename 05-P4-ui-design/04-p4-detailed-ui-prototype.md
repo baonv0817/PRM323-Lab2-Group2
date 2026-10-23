@@ -161,7 +161,7 @@ Claude Opus 5.5, 20/10/2026. Nguyên văn: `08-ai-log/01-ai-design-log.md` Phụ
 | Màn chính ≥ 80 điểm UI Simplicity | ❌ (mức nền 55–75) |
 | Có UI QA log, truy vết flow → màn, tồn đọng | ✅ |
 
-**Chưa qua.** Còn làm tay (chi tiết: `00-quy-trinh/05-TIEN-DO.md`):
+**Chưa qua.** Còn làm tay (chi tiết: `README.md mục 7`):
 1. Chạy Present cả 3 flow, quay màn hình.
 2. Nút −/+ 48 dp ở S04, S05; chữ nội dung ≥ 14 sp.
 3. Thay nút, thẻ món, nav bar trên màn bằng instance.

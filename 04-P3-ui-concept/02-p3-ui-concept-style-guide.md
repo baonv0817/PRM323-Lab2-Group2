@@ -163,4 +163,4 @@ Claude Opus 5.5, 20/10/2026. Nguyên văn: `08-ai-log/01-ai-design-log.md` Phụ
 | Token, component đặt tên dùng lại được | ✅ Variables + 5 Component Set có Variant |
 | Đã kiểm concept trên thiết bị chủ đạo và nội dung dài | ❌ |
 
-**Chưa qua.** Việc còn lại ở `00-quy-trinh/05-TIEN-DO.md`: nút −/+ 48 dp, chữ ≥ 14 sp, thu nhỏ banner S02, màn 412 dp.
+**Chưa qua.** Việc còn lại ở `README.md mục 7`: nút −/+ 48 dp, chữ ≥ 14 sp, thu nhỏ banner S02, màn 412 dp.

@@ -43,10 +43,10 @@ Mỗi thư mục đánh số là một bước của quy trình; file trong thư
 ```
 PRM323-Lab2-Group2/
 ├── README.md                        
-├── 00-quy-trinh/                      ← QUY TRÌNH, QUY CHUẨN, TIẾN ĐỘ
+├── 00-quy-trinh/                      ← QUY TRÌNH VÀ QUY CHUẨN
 │   ├── 01-QUY-TRINH-UIUX.md           │  quy trình P0 → P5 và cổng G0 → G5
 │   ├── 02-BANG-MAU.md                 │  bố cục từng bảng trong quy trình
-│   ├── 03-quy-chuan-ux-ui.md          │  quy chuẩn UX/UI dùng để chấm
+│   └── 03-quy-chuan-ux-ui.md          │  quy chuẩn UX/UI dùng để chấm
 ├── 01-P0-y-tuong/                     ← P0 · xác định vấn đề (G0)
 │   └── 01-p0-problem-framing.md
 ├── 02-P1-nghien-cuu/                  ← P1 · nghiên cứu người dùng (G1)

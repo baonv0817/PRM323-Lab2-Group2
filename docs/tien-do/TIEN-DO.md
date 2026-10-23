@@ -110,7 +110,7 @@ Cột "Ai làm tiếp": **Bạn** = cần tài khoản Figma/Stitch/GitHub hoặ
 | 44 | Handoff 6 mục/màn + 2 bảng mapping | ✅ | `handoff/flutter-handoff.md` (mục 5: v2, S01–S25) | — |
 | 45a | README đủ | ✅ | Có 5 thành viên, lớp SE1919 | — |
 | 45b | Link mở được ở cửa sổ ẩn danh | ❓ | Chưa kiểm | Bạn |
-| 45c | Slide + kịch bản + câu hỏi phản biện | ✅ | `slides/BreakBite_Lab2_Presentation.pptx` (42 trang, bản v2) · `kich-ban-*.md` · `phan-bien-hoi-dap.md` | — |
+| 45c | Slide + kịch bản + câu hỏi phản biện | ✅ | `slides/BreakBite_Lab2_Presentation.pptx` (16 trang, bản v2) · `kich-ban-*.md` · `phan-bien-hoi-dap.md` | — |
 | 45d | Push lên GitHub | ✅ | `main` đã push | — |
 
 ---

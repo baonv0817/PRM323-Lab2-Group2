@@ -1,94 +1,66 @@
-# Kịch bản trình bày Lab 2 — BreakBite
+# Kịch bản trình bày (deck 16 slide, khoảng 10 phút)
 
-Gợi ý thời lượng theo hướng dẫn chấm: **10 phút slide + 5 phút demo + 5 phút hỏi đáp**. Mỗi slide khoảng 45–50 giây. Lời thoại chỉ là gợi ý, hãy nói bằng lời của bạn và chỉ khẳng định những gì bạn đã thật sự làm.
+Deck: `BreakBite_Lab2_Presentation.pptx`. Mỗi slide ghi dòng "Minh chứng" ở chân slide để chỉ về file trong repo. Thời gian là gợi ý; demo Figma Present cộng thêm 5 phút.
 
-**Trước buổi chấm (bắt buộc):**
-- Xong các mục trong `FIX-CHECKLIST.md`, nhất là đổi token màu trong Figma và chụp lại ảnh trước/sau.
-- Mở link Figma và GitHub trong cửa sổ ẩn danh để chắc là người khác xem được.
-- Đăng nhập Figma, bấm Present ở Page 06 và chạy thử cả 3 flow một lượt.
-- Mở sẵn 4 tab: slide, Figma (Page 01), GitHub repo, `ai/ai-design-log.md`.
+| # | Slide | Thời gian | Ý chính |
+|---|---|---|---|
+| 1 | Bìa | 20 giây | Tên, nhóm, link |
+| 2 | Vấn đề và người dùng | 50 giây | Problem statement, 4 điểm đau, persona Quân |
+| 3 | Giải pháp | 40 giây | Đặt, trả trước, nhận bằng QR; 30 màn khách, 15 màn người bán |
+| 4 | Nghiên cứu và quyết định | 50 giây | Insight nào dẫn tới quyết định nào; phần nào là dữ liệu mô phỏng |
+| 5 | Kiến trúc thông tin | 40 giây | 4 tab khách, 4 tab người bán |
+| 6 | Ba flow chính | 60 giây | F1, F2, F3 và nhánh lỗi |
+| 7 | Thiết kế với AI | 50 giây | Stitch, phản biện, Accept/Modify/Reject |
+| 8 | Phản biện giao diện và v2 | 50 giây | Số đo trước và sau |
+| 9 | Final UI: luồng đặt món | 30 giây | S01–S08 |
+| 10 | Final UI: vòng đời đơn | 30 giây | S09–S30 |
+| 11 | App người bán | 40 giây | K01–K15 |
+| 12 | Design system | 30 giây | Màu, chữ, icon, component |
+| 13 | Accessibility và responsive | 30 giây | Số đo, 360 và 412 dp |
+| 14 | Prototype và kiểm thử | 30 giây | Prototype v2, Playwright |
+| 15 | Bàn giao và Quality Gates | 30 giây | Handoff Flutter, tự chấm G0–G5 |
+| 16 | Tổng kết | 30 giây | AI giúp gì, nhóm phải làm gì, còn lại gì |
 
----
+## Lời nói gợi ý
 
-## Phần 1 — Trình bày slide (10 phút)
+**Slide 2.** "Sinh viên có lịch học dày chỉ có khoảng 15 phút giữa hai slot, mà hàng chờ căn tin dồn đúng giờ nghỉ. Bốn điểm đau chính là hàng chờ, không biết trước quán còn món không, phí hiện ở bước cuối, và lỗi thanh toán làm mất giỏ. Persona chính là Minh Quân, hai mươi tuổi, cầm máy một tay khi đi bộ."
+*Nếu bị hỏi cơ sở:* nói thẳng đây là proto-persona, dữ liệu phỏng vấn là mô phỏng AI, khảo sát thật đang thu.
 
-**Slide 01 · Tổng quan (40 giây)**
-> "Nhóm em là Group 2, lớp SE1919, gồm Nguyễn Viết Bảo (SE183398), Đỗ Hoàng Gia Bảo (SE193119), Nguyễn Quốc Hoàng Pháp (SE190175), Nguyễn Hoàng An (SE193905) và Nguyễn Thành Danh (SE193274). Đề tài của nhóm là BreakBite, app đặt món trước và nhận tại quầy Kiosk trong trường. Vấn đề em giải quyết: sinh viên chỉ có 15 phút giải lao nhưng xếp hàng căn tin mất 12–18 phút. Link GitHub và Figma ở cuối slide."
+**Slide 3.** "BreakBite có ba bước: đặt từ lớp, trả trước, ra Kiosk quét mã nhận món. App khách có 30 màn, app người bán có 15 màn. Mục tiêu là đặt xong dưới 35 giây, tối đa 8 chạm; trên prototype là 3 chạm từ Trang chủ tới Theo dõi đơn."
 
-**Slide 02 · Persona (50 giây)**
-> "Persona chính là Minh Quân, 20 tuổi, sinh viên năm 2. Bạn ấy đi bộ giữa các tòa nhà, cầm máy một tay, mạng chập chờn và hay dùng ngoài nắng. Từ đó em có ba yêu cầu thiết kế: nút chính ở nửa dưới màn hình, vùng chạm 48 dp, tương phản cao. Chỉ số thành công là đặt xong một đơn dưới 35 giây, tối đa 8 lần chạm, đếm theo Flow 1."
+**Slide 4.** "Mỗi quyết định thiết kế nối về một insight. Ví dụ hàng chờ dẫn tới hẹn giờ nhận, ngại phí ẩn dẫn tới giá cộng dồn trên nút. Phỏng vấn và phản hồi đang có là mô phỏng để thử bộ câu hỏi, nên em không dùng chúng làm bằng chứng; khảo sát thật đang thu."
 
-**Slide 03 · Kiến trúc thông tin (45 giây)**
-> "App khách có 30 màn, app người bán có 15 màn; luồng đặt món chính gồm 8 màn. SCR-01 là màn vào app. Thanh điều hướng dưới có 4 tab: Home, Menu, Theo dõi đơn, Lịch sử. Ba màn con là Chi tiết món, Giỏ hàng, Checkout. Màn lỗi thanh toán SCR-06-ERR là biến thể nên không tính là màn riêng. Em dùng bottom nav vì persona thao tác bằng ngón cái."
+**Slide 5.** "App khách có bốn tab: Trang chủ, Thực đơn, Đơn hàng, Cá nhân. App người bán cũng có bốn tab: Đơn, Quét mã, Món, Quán."
 
-**Slide 04 · Ba user flow (50 giây)**
-> "Flow 1 là luồng chính: từ Home chọn món, vào giỏ, thanh toán và nhận mã lấy đồ ở SCR-07. Flow 2 bắt đầu từ Menu, tuỳ chỉnh topping và nhập voucher; nếu mã sai thì báo rõ lý do. Flow 3 là luồng lỗi bắt buộc: thanh toán MoMo bị timeout thì app giữ nguyên giỏ hàng và cho chọn Thử lại hoặc chuyển sang trả tiền mặt."
+**Slide 6.** "Flow 1 đặt nhanh, Flow 2 tuỳ chỉnh và mã giảm giá, Flow 3 là lỗi thanh toán: giỏ hàng vẫn được giữ và có thể thử lại hoặc trả tiền mặt."
 
-**Slide 05 · Tạo UI bằng Stitch (50 giây)**
-> "Em viết DESIGN.md trước, rồi dựa vào đó viết prompt cho Stitch. Prompt có đủ năm phần: persona, nhiệm vụ cho 4 màn hình, nền tảng 360×800 Material 3, ràng buộc 48 dp, và phong cách màu. Toàn văn prompt nằm trong ai-design-log mục 2.1. Đây là 4 màn Stitch sinh ra lần đầu."
+**Slide 7.** "AI sinh giao diện ban đầu và phản biện, nhóm quyết định. Ví dụ Accept giá cộng dồn, Modify chữ nút sang màu nâu, Reject việc bắt buộc đăng nhập. AI nêu một con số tương phản sai nên nhóm tự đo lại: chữ trắng trên cam chỉ 2,14:1."
 
-**Slide 06 · Ba vòng tinh chỉnh và critique (60 giây)**
-> "Mỗi vòng giải quyết một vấn đề khác nhau. Vòng 1 là nút CTA khó đọc và bị chìm. Vòng 2 là thiếu trạng thái giỏ trống và dễ xoá nhầm món. Vòng 3 là lỗi thanh toán thành ngõ cụt, mất cả giỏ hàng. Sau vòng 1 em đo lại thì chữ trắng trên nền cam chỉ đạt 2,14:1, vẫn chưa đạt, nên em sửa tiếp ở bước quyết định. Phần critique: em nhờ AI đánh giá theo 10 heuristic của Nielsen, WCAG và persona, được 5 phát hiện gắn với từng màn hình."
+**Slide 8.** "Sau khi đo bản cũ, lỗi lớn nhất là cả màn dùng một họ cam–be cho mọi vai trò. Họ màu này chiếm 55% điểm ảnh, bản v2 còn 4%. Emoji về 0, vùng bấm dưới 48 dp từ 20 trên 39 về 0. Báo cáo đo do công cụ AI viết nên không độc lập; phản biện của AI khác nhóm chưa chạy."
 
-**Slide 07 · Quyết định thiết kế (50 giây)**
-> "Em không nhận hết đề xuất của AI. Ví dụ AI đề xuất cho huỷ đơn bất kỳ lúc nào; em chỉ cho huỷ trong 60 giây đầu, vì sau đó bếp đã nấu và quán sẽ lỗ. Với chữ trên nút, em giữ màu cam thương hiệu cho nền nhưng đổi chữ sang nâu #622B14, đạt 5,23:1."
-> *(Chỉ nhắc tới đề xuất bị từ chối nếu nó thật sự có trong log.)*
+**Slide 9–10.** "Bản v2 có ba nhóm màn: đặt món S01 đến S08, vòng đời đơn và tài khoản S09 đến S30, và mỗi màn có trạng thái rỗng, lỗi, đang tải."
 
-**Slide 08 · Wireframe → Final UI (45 giây)**
-> "Đây là màn Chi tiết món và màn lỗi thanh toán, ở bản wireframe và bản cuối. Mỗi màn chỉ có một hành động chính ghim ở đáy. Các biến thể như giỏ trống, lỗi thanh toán và dialog được đặt ngay cạnh màn gốc ở Page 03."
+**Slide 11.** "Màn khách đã hứa nhiều việc mà quầy phải làm được: nhận đơn, báo sẵn sàng, quét mã giao món, thu tiền mặt, báo hết món, thêm hoặc sửa món, từ chối đơn, hoàn tiền. Vì vậy có app người bán 15 màn, dùng chung hệ thiết kế."
 
-**Slide 09 · Design system (45 giây)**
-> "Token gồm màu, chữ Nunito, spacing theo lưới 4 dp, bo góc và elevation, đều là Figma Variables. Em có đủ 9 nhóm component với các state theo đề. Khi đổi một biến màu thì mọi màn hình dùng component đó tự cập nhật."
+**Slide 12–13.** "Màu, chữ, khoảng cách là token; component có variant theo trạng thái. Tương phản chữ nút nâu trên cam là 5,23:1, vùng bấm từ 48 dp, chữ nội dung từ 14 sp. Mỗi màn có bản 360 dp và 412 dp."
 
-**Slide 10 · Accessibility (50 giây)**
-> "Em phải nói thật là lần đo đầu em ghi sai: chữ trắng trên cam ghi 3,08 nhưng thực tế là 2,14, và em cũng tưởng chữ nút 14sp đậm được tính là chữ lớn. Theo WCAG thì chữ lớn phải từ khoảng 18,7px đậm. Em đã đo lại và đổi bốn token. Giờ chữ nút đạt 5,23, chữ phụ đạt 5,2, viền ô nhập đạt 3,93. Bố cục em đã kiểm ở 360 và 412 dp." *(chỉ vào ảnh)*
+**Slide 14.** "Prototype v2 nối cả hai app. Playwright kiểm bản cũ 13 trên 13 test và đồ thị flow bản v2 7 trên 7. Kiểm thử tự động không thay usability test với người thật."
 
-**Slide 11 · Prototype (20 giây, rồi chuyển sang demo)**
-> "Em xin demo trực tiếp 3 flow trên Figma."
+**Slide 15.** "Handoff cho Flutter gồm bảng token sang ThemeData, bảng component sang widget và sáu mục cho mỗi màn. Nhóm tự chấm theo sáu gate của môn; đây là rubric nội bộ, không phải chuẩn quốc tế. Gate 5 chưa qua vì chưa có usability test."
 
-**Slide 12 · Handoff (để sau demo, 40 giây)**
-> "Handoff có đủ 6 mục cho S01–S30 và K01–K15: layout, component, state, tương tác, điều hướng và ràng buộc, kèm hai bảng ánh xạ token sang ThemeData và component sang widget. Điểm còn tồn tại là [..]."
+**Slide 16.** "AI giúp nhanh và phản biện; nhóm xác định vấn đề, tự đo lại và quyết định. Việc còn lại là phản biện độc lập bằng AI khác, khảo sát thật, usability test và chạy Present trên prototype v2."
 
----
+## Demo Figma Present (5 phút)
 
-## Phần 2 — Demo trực tiếp (5 phút)
+1. Page 03, các khung " v2": chỉ ra S01–S08, rồi cuộn xuống app người bán (K01–K15).
+2. **Flow 1:** S02 → bấm combo → S04 → Thêm vào giỏ → S05 → Tiếp tục thanh toán → S06 → Xác nhận → màn đang tải tự chuyển → S07.
+3. **Flow 2:** S03 → S04 → S05 → bấm ô mã giảm giá (mã sai, S29) → nhập lại.
+4. **Flow 3:** bắt đầu từ S06-ERR → Tiền mặt tại Kiosk → S07-CASH.
+5. **Người bán:** K01 → K02 → K03 nhận đơn → K04 → K05 quét mã → K06 xác nhận giao.
+6. Dialog huỷ đơn ở S07 (overlay) và Back hoạt động.
 
-Làm theo thứ tự trong hướng dẫn chấm.
+Trước khi trình bày: thử link Figma bằng cửa sổ chưa đăng nhập.
 
-1. **Mở Figma, cho thấy 6 page** (15 giây): 01 User Flow → 02 Wireframe → 03 Final UI → 04 Design System → 05 Components → 06 Prototype.
-2. **Page 03: các màn chính S01 → S08 bản v2** (20 giây), nói rõ giỏ trống, SCR-06-ERR và dialog là biến thể.
-3. **Page 06: bấm Present, chạy từng flow:**
+## Câu hỏi thầy có thể hỏi
 
-   **F1 — Đặt nhanh (khoảng 60 giây)**
-   SCR-02 Home → bấm thẻ *Combo Tacos Bò Phô Mai* → SCR-04 tick topping (giá trên nút tự tăng) → *Thêm vào giỏ* → SCR-05 chọn giờ nhận → *Tiến hành thanh toán* → SCR-06 chọn *Tiền mặt tại quầy* → *Xác nhận* → **dialog overlay** → *Đồng ý* → **loading** → SCR-07 mã nhận đồ #A-204.
-   Sau đó bấm **Back** để cho thấy quay về đúng màn trước.
-
-   **F2 — Tuỳ chỉnh & voucher (khoảng 45 giây)**
-   SCR-03 Menu → chọn món mì trộn → SCR-04 chọn mức cay và 2 topping → *Thêm vào giỏ* → SCR-05 nhập mã sai → **báo lỗi có icon và lý do** → nhập `BB20` → giảm giá thành công → thanh toán QR → SCR-07.
-
-   **F3 — Lỗi thanh toán & phục hồi (khoảng 45 giây)**
-   SCR-06 chọn MoMo → *Xác nhận thanh toán* → loading → **SCR-06-ERR** ("giỏ hàng vẫn được giữ") → bấm *Chuyển sang trả tiền mặt* → SCR-07. Nói thêm: nút *Thử lại* đưa về bước loading.
-
-4. **Page 05 Components** (30 giây): chọn Button và cho xem các variant default, pressed, disabled, loading cùng Auto Layout. Mở bảng Variables, đổi thử một biến màu rồi hoàn tác.
-5. **AI log** (30 giây): mở `ai/ai-design-log.md`, đi theo Vòng 1: prompt → ảnh trước/sau → kết quả đo lại → quyết định #06 → chỗ thay đổi trong Figma.
-6. **GitHub** (20 giây): cho thấy cấu trúc repo, `design/screen-spec.md` và hai bảng ánh xạ trong `handoff/flutter-handoff.md`.
-
-Nếu prototype hỏng giữa chừng: đừng sửa tại chỗ. Mở Page 03 và giải thích bằng frame, ghi lại lỗi để sửa sau.
-
----
-
-## Phần 3 — Chuẩn bị hỏi đáp (5 phút)
-
-| Câu thầy có thể hỏi | Ý trả lời |
-|---|---|
-| Persona cần gì mà em chọn kiểu điều hướng này? | Thao tác một tay khi di chuyển → bottom nav 4 tab trong vùng ngón cái, CTA ghim đáy. |
-| Flow nào dễ lỗi nhất, phục hồi thế nào? | F3, vì phụ thuộc cổng thanh toán và mạng. Giỏ hàng được giữ, có 2 lối ra là Thử lại và Tiền mặt, nên không có ngõ cụt. |
-| Đề xuất AI nào em từ chối hoặc sửa, vì sao? | Huỷ đơn bất kỳ lúc nào → chỉ cho huỷ trong 60 giây vì ràng buộc của bếp. Chữ trắng trên cam → đổi sang nâu vì đo chỉ 2,14:1. *(Nêu đề xuất bị từ chối chỉ khi có trong log.)* |
-| Ba vòng lặp giải quyết ba vấn đề gì? | Tương phản và phân cấp CTA · thiếu empty state và dễ xoá nhầm · lỗi thanh toán là ngõ cụt. |
-| Đổi primary color thì màn nào tự cập nhật? | Mọi màn dùng instance của Button, Navigation và badge, tức SCR-02 đến SCR-07. *(Demo đổi biến để chứng minh.)* |
-| Làm sao biết 412 dp không vỡ layout? | Đổi frame sang 412, Auto Layout chọn Fill container, lề vẫn 16 dp. Chỉ vào ảnh 360/412. |
-| Lập trình viên Flutter chưa biết dự án dựa vào đâu? | `handoff/flutter-handoff.md`: 6 mục mỗi màn và hai bảng ánh xạ; Figma chỉ để xem hình. |
-| Sao số tương phản trong bản trước khác bây giờ? | Em đo sai và hiểu sai định nghĩa chữ lớn; đã đo lại bằng công thức WCAG và ghi lịch sử thay đổi ở DESIGN.md mục 2.5. |
-| Sao ngày tạo Stitch trong log khác ngày commit? | Trả lời đúng sự thật về thời điểm bạn làm. Đừng đoán. |
-
-Đề có nói có thể hỏi riêng 5 phút: đi qua một flow trong prototype và giải thích hai quyết định trong log. Hãy chuẩn bị sẵn F3, quyết định #04 (huỷ trong 60 giây) và quyết định #06 (đổi chữ sang nâu).
+Xem [`phan-bien-hoi-dap.md`](phan-bien-hoi-dap.md).

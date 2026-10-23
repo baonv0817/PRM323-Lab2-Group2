@@ -2,10 +2,10 @@
 
 | File | Nội dung |
 |---|---|
-| `BreakBite_Lab2_Presentation.pptx` | **Bản hiện hành**, 42 trang, dùng ảnh Figma thật (bản v2, 30 màn khách và app người bán) |
-| `_build_deck.py` | Script cập nhật deck theo bản 30 màn và app người bán (cần python-pptx) |
-| `kich-ban-trinh-bay.md` | Kịch bản và flow trình bày với thầy |
-| `kich-ban-theo-google-slides.md` | Kịch bản bám theo từng slide |
+| `BreakBite_Lab2_Presentation.pptx` | **Bản hiện hành**, 16 trang, theme theo app BreakBite, ảnh Figma bản v2 |
+| `_build_deck.py` | Script sinh lại deck (cần python-pptx và Pillow) |
+| `kich-ban-trinh-bay.md` | Kịch bản 16 slide, lời nói gợi ý, demo Figma Present |
+| `kich-ban-theo-google-slides.md` | Trỏ về kịch bản chính |
 | `phan-bien-hoi-dap.md` | Câu hỏi thầy có thể hỏi và cách trả lời trung thực |
 
-Bản cũ (12 trang, 37 trang, slide research) nằm ở [`../archive/slides-cu/`](../archive/slides-cu/).
+Bản cũ (12, 37, 42 trang, slide research) nằm ở [`../archive/slides-cu/`](../archive/slides-cu/).

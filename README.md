@@ -80,7 +80,7 @@ PRM323-Lab2-Group2/
 │   └── README.md                 │  cách cài và chạy (có chế độ PROTO=v2)
 ├── skills/                       ← BỘ SKILL CHẤM UX/UI THEO QUALITY GATES G0–G5
 ├── slides/                       ← TRÌNH BÀY
-│   ├── BreakBite_Lab2_Presentation.pptx   (42 trang)
+│   ├── BreakBite_Lab2_Presentation.pptx   (16 trang)
 │   └── kich-ban-*.md · phan-bien-hoi-dap.md
 ├── docs/                         ← QUY TRÌNH & THEO DÕI TIẾN ĐỘ
 │   ├── quy-trinh/                │  quy trình UI/UX, hướng dẫn, bảng mẫu

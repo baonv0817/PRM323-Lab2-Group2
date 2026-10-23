@@ -2,6 +2,7 @@
 
 | File | Nội dung |
 |---|---|
+| `BreakBite_Lab2_Presentation.pdf` | Bản PDF dự phòng, đúng font, dùng khi máy trình bày không có Segoe UI |
 | `BreakBite_Lab2_Presentation.pptx` | **Bản hiện hành**, 33 trang theo thứ tự quy trình P0 → P5, theme theo app BreakBite, ảnh Figma bản v2 |
 | `_build_deck.py` | Script sinh lại deck (cần python-pptx và Pillow) |
 | `kich-ban-trinh-bay.md` | Kịch bản 33 slide (bản 10 phút đánh dấu ★), lời nói gợi ý, demo Figma Present |

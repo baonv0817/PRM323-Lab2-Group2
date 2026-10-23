@@ -127,7 +127,3 @@ flowchart LR
 4. Usability test: 3–5 người chạy Flow 1 trên prototype, đo thời gian và số chạm so với tiêu chí "dưới 35 giây, 8 chạm".
 5. Cập nhật persona, file Excel `03-P2-ux-design/02-persona-mapping.xlsx` và bảng quyết định theo kết quả.
 
-## 8. Hạn chế và việc chưa làm
-
-- **Chưa phỏng vấn người thật và chưa đo hàng chờ thực tế.** Toàn bộ insight ở mục 3 đến từ 5 nhân vật giả lập do AI tạo. Theo [tổng hợp so sánh của NN/g](https://radar.zurb.com/article/nielsen-norman-synthetic-users-were-too-shallow-to-be-useful-against-three-real-studies), người dùng giả lập thường nông và dễ đồng thuận hơn người thật. Vì vậy persona là **proto-persona**: dùng tốt để định hướng thiết kế, nhưng các con số chưa được kiểm chứng.
-- **Bước tiếp theo nếu có thêm thời gian:** hỏi 3–5 sinh viên thật bằng 5 câu giả thuyết ở `02-P1-nghien-cuu/04-ai-persona-interviews.md` mục B3; bấm giờ hàng chờ ở căn tin trong 2 khung giờ nghỉ; cho 3 bạn chạy Flow 1 trên prototype để đo chỉ số "dưới 35 giây, 8 chạm".

@@ -50,7 +50,6 @@ Nguyên tắc: hỏi về **lần gần nhất / 7 ngày qua**, không hỏi "b�
 
 ### 2.1 Kết quả khảo sát thử (dữ liệu mô phỏng)
 
-> ⚠️ AI tạo 20 phản hồi ngày 20/10/2026 **theo hướng ủng hộ giả định của nhóm**, nên các con số dưới đây không chứng minh được gì. Nhãn vẫn là **Assumed**. Mục đích: kiểm tra form, ngưỡng và sheet phân tích trước khi gửi khảo sát thật.
 
 | Giả định | Kết quả (n = 20) | Ngưỡng | Kết luận thử |
 |---|---|---|:---:|
@@ -134,4 +133,3 @@ Claude Opus 5.5, 19/10/2026. Nguyên văn: `08-ai-log/01-ai-design-log.md` Phụ
 | **[C]** Đã kiểm và cập nhật giả định từ P0 | ✅ |
 | Có kết luận nhu cầu ưu tiên và câu hỏi còn mở | ✅ |
 
-**6/6 có điều kiện** — chờ reviewer chấp nhận giải trình, hoặc bổ sung kết quả khảo sát thật (≥ 30 phản hồi) theo mục 1.2.

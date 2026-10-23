@@ -491,7 +491,7 @@ text(s, 0.85, 4.5, 11.65, 2.2, [
 
 # =============================================================== 15 · P3 ba hướng visual
 s = content_slide("Ba hướng visual cho màn Trang chủ", "So sánh cùng nội dung, cùng khung 360 × 800", "offer", "04-P3-ui-concept/02-p3-ui-concept-style-guide.md mục 1", "P3 · UI Concept")
-pic(s, os.path.join(ROOT, "assets", "concepts", "concept-board-breakbite.png"), 0.6, 1.6, w=7.7)
+pic(s, os.path.join(ROOT, "assets", "concepts", "concept-board-breakbite.png"), 1.6, 1.6, h=4.25)
 box(s, 8.55, 1.6, 4.2, 3.0)
 table(s, 8.7, 1.75, 3.9, [["Tiêu chí", "A", "B", "C"], ["Đọc ngoài nắng", "4", "5", "2"], ["Quét nhanh", "3", "5", "2"], ["Chọn bằng ảnh", "5", "1", "4"],
                           ["Trạng thái quán", "3", "5", "3"], ["Thương hiệu", "5", "2", "3"], ["Light theme", "5", "5", "1"], ["Tổng", "25", "23", "15"]],
@@ -756,7 +756,7 @@ text(s, 8.8, 4.55, 3.7, 2.2, [("LƯU Ý", 11, True, MUTED), ("Gate và ngưỡng
 s = content_slide("Tổng kết", "Ăn kịp giờ nghỉ, không phải xếp hàng", "restaurant", "README.md · 00-quy-trinh/05-TIEN-DO.md")
 cols = [("AI giúp", ["Sinh UI ban đầu nhanh (Stitch)", "Mô phỏng phỏng vấn để tạo giả thuyết", "Phản biện theo Nielsen và WCAG", "Ghi log, tổng hợp, soạn tài liệu"]),
         ("Nhóm vẫn phải", ["Xác định vấn đề, chọn persona có lý do", "Tự đo lại số liệu AI nêu", "Quyết định Accept, Modify, Reject", "Nói rõ phần nào là dữ liệu mô phỏng"]),
-        ("Còn lại", ["Phản biện độc lập bằng AI khác", "Khảo sát thật từ 30 sinh viên", "Usability test 3–5 người", "Chạy Present trên prototype v2"])]
+        ("Còn lại", ["Phản biện độc lập bằng AI khác", "Khảo sát thật từ 30 sinh viên", "Usability test 3–5 người", "Chạy Present trên prototype (Page 06)"])]
 for i, (head, items) in enumerate(cols):
     x = 0.6 + i * 4.1
     box(s, x, 1.6, 3.95, 3.7)

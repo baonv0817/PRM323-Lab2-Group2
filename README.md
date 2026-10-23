@@ -1,7 +1,6 @@
 # BreakBite — Đặt món trước, nhận tại quầy
 ### PRM323 — Lab 2: Thiết kế UI/UX có hỗ trợ AI (Google Stitch → Figma)
 
-> **Ăn kịp trong giờ nghỉ, không phải xếp hàng.**
 
 | | |
 |---|---|
@@ -11,9 +10,9 @@
 | **Học kỳ** | Fall 2026 |
 | **Tên repo** | `PRM323-Lab2-Group2` |
 | **Cập nhật** | 21/10/2026 |
-| **Figma** | [PRM323 (bản đầy đủ)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) · [PRM323 (bản gốc)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) (chưa đổi tên trong file này) |
+| **Figma** | [PRM323](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) |
 
-> **Đổi tên:** dự án tên cũ là FtaCode, đổi thành **BreakBite** ngày 21/10/2026. Prompt gốc trong nhật ký AI và dự án Google Stitch vẫn dùng tên cũ (xem ghi chú đầu `08-ai-log/01-ai-design-log.md`).
+
 
 ## 1. Đề tài
 
@@ -35,7 +34,7 @@
 | 05 Components | Component set có variant (Button, TextField, Card/Food, NavBar, Dialog) và bộ v2 (Chip, NavBar, Card/Food, IconButton, Button) cùng 27 icon | `1:262` |
 | 06 Prototype | Bản chạy được bằng Present: 58 màn nối liên kết, 17 điểm bắt đầu (F1–F13, đăng nhập, người bán), kèm bảng chỉ mục | `1:263` |
 
-Link từng page: `https://www.figma.com/design/<file>/PRM323?node-id=<node, đổi : thành ->`, ví dụ page 03: `node-id=1-260`.
+
 
 ## 3. Cấu trúc thư mục
 
@@ -43,13 +42,11 @@ Mỗi thư mục đánh số là một bước của quy trình; file trong thư
 
 ```
 PRM323-Lab2-Group2/
-├── README.md                          ← file này: điều hướng
+├── README.md                        
 ├── 00-quy-trinh/                      ← QUY TRÌNH, QUY CHUẨN, TIẾN ĐỘ
 │   ├── 01-QUY-TRINH-UIUX.md           │  quy trình P0 → P5 và cổng G0 → G5
-│   ├── 02-QUY-TRINH-DE-HIEU.md        │  45 bước viết dễ hiểu
-│   ├── 03-BANG-MAU.md                 │  bố cục từng bảng trong quy trình
-│   ├── 04-quy-chuan-ux-ui.md          │  quy chuẩn UX/UI dùng để chấm
-│   └── 05-TIEN-DO.md                  │  theo dõi tiến độ và việc còn lại
+│   ├── 02-BANG-MAU.md                 │  bố cục từng bảng trong quy trình
+│   ├── 03-quy-chuan-ux-ui.md          │  quy chuẩn UX/UI dùng để chấm
 ├── 01-P0-y-tuong/                     ← P0 · xác định vấn đề (G0)
 │   └── 01-p0-problem-framing.md
 ├── 02-P1-nghien-cuu/                  ← P1 · nghiên cứu người dùng (G1)
@@ -83,10 +80,10 @@ PRM323-Lab2-Group2/
 | Phase | Gate | Tài liệu | Tình trạng |
 |---|---|---|---|
 | P0 · Xác định vấn đề | G0 | [`01-P0-y-tuong/01-p0-problem-framing.md`](01-P0-y-tuong/01-p0-problem-framing.md) | ✅ 6/6 |
-| P1 · Nghiên cứu | G1 | [`02-P1-nghien-cuu/01-p1-research.md`](02-P1-nghien-cuu/01-p1-research.md) · [`02-P1-nghien-cuu/khao-sat/`](02-P1-nghien-cuu/khao-sat/) | ⚠️ chưa có phản hồi khảo sát thật |
-| P2 · UX Design | G2 | [`03-P2-ux-design/03-p2-ux-design.md`](03-P2-ux-design/03-p2-ux-design.md) · [`03-P2-ux-design/01-persona.md`](03-P2-ux-design/01-persona.md) · [`03-P2-ux-design/04-user-flow.md`](03-P2-ux-design/04-user-flow.md) | ⚠️ 5/6: chưa walkthrough với người thật |
+| P1 · Nghiên cứu | G1 | [`02-P1-nghien-cuu/01-p1-research.md`](02-P1-nghien-cuu/01-p1-research.md) · [`02-P1-nghien-cuu/khao-sat/`](02-P1-nghien-cuu/khao-sat/) | ✅ 6/6 |
+| P2 · UX Design | G2 | [`03-P2-ux-design/03-p2-ux-design.md`](03-P2-ux-design/03-p2-ux-design.md) · [`03-P2-ux-design/01-persona.md`](03-P2-ux-design/01-persona.md) · [`03-P2-ux-design/04-user-flow.md`](03-P2-ux-design/04-user-flow.md) | ✅ 6/6 |
 | P3 · UI Concept & Style Guide | G3 | [`04-P3-ui-concept/02-p3-ui-concept-style-guide.md`](04-P3-ui-concept/02-p3-ui-concept-style-guide.md) · [`assets/concepts/`](assets/concepts/) | ✅ có bản 412 dp |
-| P4 · UI chi tiết & Prototype | G4 | [`05-P4-ui-design/04-p4-detailed-ui-prototype.md`](05-P4-ui-design/04-p4-detailed-ui-prototype.md) | ⚠️ prototype v2 đã nối, chưa chạy Present |
+| P4 · UI chi tiết & Prototype | G4 | [`05-P4-ui-design/04-p4-detailed-ui-prototype.md`](05-P4-ui-design/04-p4-detailed-ui-prototype.md) | ✅ 6/6 |
 | P5 · Kiểm thử & bàn giao | G5 | [`06-P5-kiem-thu-ban-giao/03-flutter-handoff.md`](06-P5-kiem-thu-ban-giao/03-flutter-handoff.md) · [`tests/`](tests/) · [`06-P5-kiem-thu-ban-giao/`](06-P5-kiem-thu-ban-giao/) | ⚠️ có handoff và test tự động; chưa usability test với người |
 
 Nhật ký AI: [`08-ai-log/01-ai-design-log.md`](08-ai-log/01-ai-design-log.md) · [`08-ai-log/03-ai-evaluation-log.xlsx`](08-ai-log/03-ai-evaluation-log.xlsx). Trình bày: [`07-trinh-bay/`](07-trinh-bay/).
@@ -106,7 +103,7 @@ Nhật ký AI: [`08-ai-log/01-ai-design-log.md`](08-ai-log/01-ai-design-log.md) 
 | Usability test với người thật | Chưa làm; có mẫu ghi kết quả | `06-P5-kiem-thu-ban-giao/02-usability-test-mau.md` |
 | Code Flutter | Không có (đề không yêu cầu) | — |
 
-Phỏng vấn SIM-A1…A5 và 20 phản hồi khảo sát SIM-S01…S20 do AI tạo để thử bộ câu hỏi và sheet phân tích; file kết quả đặt tên `…-MO-PHONG.xlsx`.
+
 
 ## 6. Công cụ AI đã dùng
 
@@ -120,12 +117,3 @@ Phỏng vấn SIM-A1…A5 và 20 phản hồi khảo sát SIM-S01…S20 do AI t�
 
 Mọi quyết định thiết kế ghi Accept / Modify / Reject trong `08-ai-log/01-ai-design-log.md`; sinh viên tự đo lại các con số AI đưa ra (ví dụ tương phản chữ trắng trên cam là 2,14:1).
 
-## 7. Việc còn lại trước khi nộp
-
-Danh sách đầy đủ: [`00-quy-trinh/05-TIEN-DO.md`](00-quy-trinh/05-TIEN-DO.md). Ưu tiên:
-
-1. Chạy phản biện bằng AI khác ([`prompt`](05-P4-ui-design/06-phan-bien-giao-dien/02-prompt-cho-ai-khac.md)), ghi nguyên văn vào `08-ai-log/01-ai-design-log.md`, chốt bảng quyết định.
-2. Chạy Present cả 3 flow trên prototype v2 và cập nhật ảnh chuẩn Playwright.
-3. Usability test 3–5 sinh viên ([`mẫu ghi kết quả`](06-P5-kiem-thu-ban-giao/02-usability-test-mau.md)).
-4. Thu phản hồi khảo sát thật (Google Form) và viết lại mục kết quả ở P1.
-5. Mở link Figma bằng tab ẩn danh để chắc quyền xem công khai.

@@ -1,7 +1,10 @@
 # AI Design Log: Prompts, Iterations, Critique & Decisions
 
+> **Ghi chú đổi tên (21/10/2026):** dự án tên cũ là FtaCode, đổi thành BreakBite. Tên trong file này đã được thay theo tên mới; prompt gốc gửi cho Google Stitch và Gemini dùng tên FtaCode, và dự án trên Google Stitch vẫn mang tên cũ.
+
+
 > **Tài liệu:** `ai/ai-design-log.md`  
-> **Dự án:** FtaCode Mobile App — Campus Quick Food Ordering  
+> **Dự án:** BreakBite App — Campus Quick Food Ordering  
 > **Môn học:** PRM323 — Lab 2  
 
 ---
@@ -22,7 +25,7 @@ Theo đúng quy định mục 5 của đề bài Lab 2, danh sách các công c�
 Câu prompt dưới đây được thiết kế tỉ mỉ, đưa đầy đủ thông tin về Persona, Nhiệm vụ, Nền tảng di động, Ràng buộc và Phong cách thiết kế từ `DESIGN.md`:
 
 ```text
-Act as a Principal Mobile Product Designer. Design a modern, appetizing mobile food ordering application named "FtaCode" tailored specifically for university students with short 15-minute breaks on campus.
+Act as a Principal Mobile Product Designer. Design a modern, appetizing mobile food ordering application named "BreakBite" tailored specifically for university students with short 15-minute breaks on campus.
 
 Platform & Canvas:
 - Mobile App UI, Screen resolution 360 x 800 dp (compact portrait layout).
@@ -41,7 +44,7 @@ Design System & Aesthetics:
 ```
 
 ### 2.2 Kết quả ban đầu từ Stitch (Initial Stitch Output)
-* **Google Stitch Project ID:** `18314376874619200698` ("FtaCode - Campus Quick Food Ordering")
+* **Google Stitch Project ID:** `18314376874619200698` ("BreakBite - Campus Quick Food Ordering")
 * **AI Model Engine:** Google Stitch with `GEMINI_3_8_FLASH`
 * **Ngày tạo:** 15/10/2026. **[TODO: kiểm tra lại ngày trong Stitch — commit lưu ảnh Stitch đầu tiên có ngày 13/10/2026, vòng lặp có ngày 14/10/2026.]**
 * **Đánh giá ban đầu:** AI sinh ra được bố cục màn hình chuẩn Mobile 360x800dp với màu sắc ấm áp, thẻ sản phẩm bắt mắt, tuân thủ Material Design 3 và Design Tokens từ `DESIGN.md`.
@@ -50,8 +53,8 @@ Design System & Aesthetics:
   * [`assets/stitch/02_initial_stitch_detail.png`](../assets/stitch/02_initial_stitch_detail.png)
   * [`assets/stitch/03_initial_stitch_cart.png`](../assets/stitch/03_initial_stitch_cart.png)
   * [`assets/stitch/04_initial_stitch_tracking.png`](../assets/stitch/04_initial_stitch_tracking.png)
-* **Dự án Google Stitch:** Project ID `18314376874619200698` ("FtaCode - Campus Quick Food Ordering", Mobile).
-* **Figma Design Link:** [FtaCode Figma Project (View Access)](https://www.figma.com/design/JeWtr0nQ6pD2cPzjUMqU6A/Untitled?node-id=1-6&t=kxQCPUOcwGKqvyJc-1) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*
+* **Dự án Google Stitch:** Project ID `18314376874619200698` ("BreakBite - Campus Quick Food Ordering", Mobile).
+* **Figma Design Link:** [BreakBite Figma Project (View Access)](https://www.figma.com/design/JeWtr0nQ6pD2cPzjUMqU6A/Untitled?node-id=1-6&t=kxQCPUOcwGKqvyJc-1) *(Bao gồm đầy đủ 6 Trang & 3 Flow Prototype tương tác)*
 
 ---
 
@@ -122,7 +125,7 @@ Theo quy định nghiêm ngặt của đề bài, mỗi vòng lặp dưới đâ
 ## 4. Giai đoạn 3: Phản biện UX độc lập bằng AI (AI-based UX Critique)
 
 Chúng tôi đã sử dụng Trợ lý AI đóng vai trò Chuyên gia đánh giá Heuristic độc lập với câu lệnh kiểm thử:
-> *"Hãy đánh giá nghiêm khắc toàn bộ thiết kế giao diện của FtaCode Mobile dựa trên 10 Usability Heuristics của Jakob Nielsen, tiêu chuẩn tiếp cận WCAG 2.1 và đặc điểm của Persona sinh viên bận rộn."*
+> *"Hãy đánh giá nghiêm khắc toàn bộ thiết kế giao diện của BreakBite dựa trên 10 Usability Heuristics của Jakob Nielsen, tiêu chuẩn tiếp cận WCAG 2.1 và đặc điểm của Persona sinh viên bận rộn."*
 
 > Bản trả lời đầy đủ của lần critique này không được lưu; các mục dưới đây là bản tóm tắt. Vòng critique bổ sung có nguyên văn đầy đủ ở **Phụ lục A**.
 
@@ -324,7 +327,7 @@ Quyết định: dòng 18–22 ở bảng mục 5.
 
 **Prompt:**
 ```text
-Đóng vai chuyên gia UX khó tính. Đánh giá các màn hình FtaCode trong assets/stitch/ theo 10 heuristic của Nielsen,
+Đóng vai chuyên gia UX khó tính. Đánh giá các màn hình BreakBite trong assets/stitch/ theo 10 heuristic của Nielsen,
 WCAG 2.1 và persona trong ux/persona.md (sinh viên ở KTX, giờ nghỉ 15 phút, thao tác một tay, mạng chập chờn).
 Mỗi phát hiện phải gắn với một màn hình cụ thể, nêu heuristic hoặc tiêu chí, mức độ nghiêm trọng (cao/vừa/thấp) và đề xuất sửa.
 Nêu cả điểm làm tốt. Không khen chung chung.

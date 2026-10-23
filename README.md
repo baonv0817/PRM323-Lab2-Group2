@@ -13,7 +13,7 @@
 | **Cập nhật** | 21/10/2026 |
 | **Figma** | [PRM323 (bản đầy đủ)](https://www.figma.com/design/5vloc9G7UcEI9NYJGpTqN0/PRM323--Copy-?node-id=1-260) · [PRM323 (bản gốc)](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-6) (chưa đổi tên trong file này) |
 
-> **Đổi tên:** dự án tên cũ là FtaCode, đổi thành **BreakBite** ngày 21/10/2026. Nhật ký AI nguyên văn (`ai/ai-design-log.md`, `ai/ai-persona-interviews.md`), `archive/` và ảnh concept giữ tên cũ vì là bản ghi tại thời điểm đó.
+> **Đổi tên:** dự án tên cũ là FtaCode, đổi thành **BreakBite** ngày 21/10/2026. Prompt gốc trong nhật ký AI và dự án Google Stitch vẫn dùng tên cũ (xem ghi chú đầu `ai/ai-design-log.md`).
 
 ## 1. Đề tài
 

@@ -214,7 +214,7 @@
 ### Màn hình 6: SCR-06 — Checkout & Payment Method
 1. **Layout Hierarchy:**
    * `Scaffold` $\to$ `AppBar` (Tiêu đề "Xác nhận & Thanh toán") $\to$ `SingleChildScrollView` $\to$ `Column`:
-     * Section 1: Thẻ thông tin địa điểm nhận ("Kiosk Tòa Alpha - Giờ giải lao ca 1").
+     * Section 1: Thẻ thông tin địa điểm nhận ("Kiosk Q9 · Tầng 2 - Giờ giải lao ca 1").
      * Section 2: Tiêu đề "Phương thức thanh toán".
      * Section 3: Cụm lựa chọn hình thức (`RadioListTile` 3 phương thức: Ví MoMo, Chuyển khoản VietQR, Tiền mặt tại quầy Kiosk).
      * Section 4: Card tóm tắt hóa đơn cuối cùng (Tổng tiền in đậm 20sp).

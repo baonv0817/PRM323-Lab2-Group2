@@ -32,7 +32,7 @@ function taoFormKhaoSat() {
      ['Dưới 10 phút', '10–15 phút', '16–20 phút', 'Trên 20 phút', 'Không nhớ']);
   mc(form, 'Đi từ phòng này sang phòng học tiếp theo thường mất bao lâu?',
      ['Dưới 2 phút', '2–5 phút', 'Trên 5 phút']);
-  mc(form, 'Khi vừa đi vừa dùng điện thoại giữa các tòa nhà, bạn thường cầm máy thế nào?',
+  mc(form, 'Khi vừa đi vừa dùng điện thoại giữa các khu trong campus, bạn thường cầm máy thế nào?',
      ['Một tay', 'Hai tay', 'Không dùng khi đi bộ']);
   var q8 = form.addMultipleChoiceItem()
     .setTitle('Lần gần nhất bạn mua đồ ăn/uống ở trường (căn tin, quầy, kiosk) là khi nào?')

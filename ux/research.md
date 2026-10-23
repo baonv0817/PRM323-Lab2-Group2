@@ -39,13 +39,13 @@ Toàn văn: [`ai/ai-persona-interviews.md`](../ai/ai-persona-interviews.md). Ng�
 | Thời gian | Muốn biết trước bao lâu xong, quán mở hay đóng, còn món không | 4/5 | A1, A3, A4, A5 | Hiển thị thời gian chờ và trạng thái quán |
 | Thời gian | Muốn hẹn giờ lấy | 1/5 | A5 | Đưa vào, nhưng là tính năng phụ |
 | Thao tác | Cầm máy một tay, ghét nút ở trên cao | 2/5 | A1, A5 | CTA ở nửa dưới, vùng chạm 48 dp |
-| Giao hàng | App giao hàng không vào được tòa nhà hoặc lab | 2/5 | A1, A5 | Chứng minh ngách "nhận tại quầy" |
+| Giao hàng | App giao hàng không vào được khu lớp học hoặc lab | 2/5 | A1, A5 | Chứng minh ngách "nhận tại quầy" |
 | Giá | Ngại phí ẩn, muốn thấy tổng tiền sớm | 2/5 | A1, A2 | Giá động trên nút CTA, không có phí giao |
 | Rào cản | Không muốn đăng ký hay đăng nhập trước | 2/5 | A1, A3 | Xem menu không cần tài khoản |
 | Rào cản | Không muốn cài thêm app | 1/5 | A3 | Rủi ro; hướng web đặt qua QR là phương án dự phòng |
 | Thanh toán | Lỗi thanh toán từng làm mất giỏ hàng | 1/5 | A5 | Màn phục hồi lỗi, giữ giỏ hàng |
 | Thanh toán | Muốn trả tiền mặt khi lấy | 2/5 | A2, A4 | Tiền mặt tại quầy là một lựa chọn |
-| Mạng | Mạng trong tòa nhà chập chờn | 1/5 | A1 | Có trạng thái loading và lỗi rõ ràng |
+| Mạng | Mạng trong campus chập chờn | 1/5 | A1 | Có trạng thái loading và lỗi rõ ràng |
 
 **Mâu thuẫn:** A3 và A4 không cần app vì ít ăn ở trường. A4 muốn trả tiền mặt, trong khi A1 và A5 ưu tiên QR hoặc ví. → Nhóm mục tiêu là sinh viên ở KTX có giờ nghỉ ngắn; giữ nhiều phương thức thanh toán.
 

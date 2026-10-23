@@ -20,6 +20,7 @@
 **BreakBite** là app đặt món trước cho quán trong trường: sinh viên đặt và trả tiền từ lớp, hẹn giờ, tới quầy lấy món theo mã, không xếp hàng trong giờ nghỉ chỉ khoảng 15 phút.
 
 - **Persona chính:** Nguyễn Minh Quân, 20 tuổi, sinh viên năm 2 ở ký túc xá, có khoảng 15 phút giữa hai slot, dùng điện thoại một tay khi đi bộ.
+- **Điểm nhận món:** Campus Quận 9 (kiosk tầng 2 và tầng 4) và Nhà văn hóa sinh viên (tầng 1); tên quầy, giờ mở và thời gian chờ là dữ liệu mẫu.
 - **Tiêu chí thành công:** đặt xong một đơn dưới 35 giây, tối đa 8 chạm từ Trang chủ.
 - **Phạm vi:** app khách 30 màn 360 × 800 dp (S01–S30) và app người bán 15 màn (K01–K15) cùng các biến thể, user flow có nhánh lỗi, Design System bằng Figma Variables, component có variant, prototype Figma. Không có mã nguồn Flutter (đề: `Coding: None`).
 

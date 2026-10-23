@@ -5,7 +5,7 @@
 
 ## 1. Concept Exploration — 3 hướng trên màn S02 Trang chủ
 
-![Concept board](../assets/concepts/concept-board.png)
+![Concept board](../assets/concepts/concept-board-breakbite.png)
 
 | | A · Ấm, thẻ ảnh | B · Tối giản, danh sách | C · Tối, banner lớn |
 |---|---|---|---|

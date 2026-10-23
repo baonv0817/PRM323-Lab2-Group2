@@ -75,7 +75,7 @@ Bảng gom ý (affinity) đầy đủ: `ux/research.md` mục 3.
 |---|---|---|---|
 | INS-01 | Hàng chờ dồn đúng giờ nghỉ làm sinh viên bỏ mua hoặc vào lớp trễ | SIM-A1, A2, A5 | Thấp |
 | INS-02 | Trước khi đi mua, sinh viên muốn biết quán mở/đóng, còn món, bao lâu xong | SIM-A1, A3, A4, A5 | Thấp |
-| INS-03 | App giao hàng không giao vào được tòa nhà hay phòng lab | SIM-A1, A5 | Thấp |
+| INS-03 | App giao hàng không giao vào được khu lớp học hay phòng lab | SIM-A1, A5 | Thấp |
 | INS-04 | Sinh viên ngại phí phát sinh, muốn thấy tổng tiền sớm | SIM-A1, A2 | Thấp |
 | INS-05 | Không muốn đăng ký hay cài thêm app chỉ để mua ở trường | SIM-A1, A3 | Thấp |
 | INS-06 | Thanh toán lỗi mà mất giỏ hàng gây bực bội | SIM-A5 (1 nguồn) | Thấp |

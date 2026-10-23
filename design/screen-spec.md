@@ -28,7 +28,7 @@
 * **Mục đích thiết kế (Design Intent):** Tối ưu hóa tốc độ chọn món cho sinh viên đang vội bằng cách đưa các combo bữa phụ bán chạy nhất và thanh tìm kiếm lên vị trí nổi bật nhất.
 * **Thuộc luồng (Flow Association):** Điểm bắt đầu (Start) của **Flow 1 (Quick Campus Pickup)**.
 * **Nội dung hiển thị (Content Structure):**
-  * **Top App Bar:** Lời chào cá nhân hóa "Chào Quân 👋", ô chọn địa điểm nhận ("Kiosk Tòa Alpha"), biểu tượng Giỏ hàng có huy hiệu (Cart badge counter).
+  * **Top App Bar:** Lời chào cá nhân hóa "Chào Quân 👋", ô chọn địa điểm nhận ("Kiosk Q9 · Tầng 2"), biểu tượng Giỏ hàng có huy hiệu (Cart badge counter).
   * **Banner khẩn cấp / Ưu đãi:** Card trượt ngang hiển thị chương trình "Combo Giờ Vàng giải lao 09h - Giảm 15%".
   * **Thanh tìm kiếm nhanh (Search Field):** Ô tìm kiếm có icon kính lúp, placeholder "Tìm Tacos, Mì trộn, Trà sữa...".
   * **Danh mục cuộn ngang (Category Chips):** Chip "Tất cả", "⭐ Nổi bật", "Tacos giòn", "Mì trộn cay", "Trà & Đồ uống".
@@ -79,7 +79,7 @@
 * **Mục đích thiết kế (Design Intent):** Cung cấp các phương thức thanh toán quen thuộc nhất với sinh viên, hiển thị rõ ràng chính sách hoàn tiền/giữ đơn nếu giao dịch gặp sự cố.
 * **Thuộc luồng (Flow Association):** Màn hình then chốt trong **Flow 1, Flow 2** và là nơi phát sinh **Flow 3 (Error & Recovery)**.
 * **Nội dung hiển thị (Content Structure):**
-  * **Thông tin nhận đồ:** Tên người nhận (Quân - 0987xxx), Điểm nhận (Kiosk BreakBite - Tòa Alpha).
+  * **Thông tin nhận đồ:** Tên người nhận (Quân - 0987xxx), Điểm nhận (Kiosk BreakBite - Campus Q9, Tầng 2).
   * **Danh sách phương thức thanh toán (Radio Selection Cards):**
     1. Ví MoMo (Biểu tượng logo ví điện tử).
     2. Chuyển khoản VietQR sinh viên (Tự động mở app ngân hàng).

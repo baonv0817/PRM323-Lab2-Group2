@@ -37,7 +37,7 @@
 |---|---|---|---|
 | 1 | **Identity & Archetype** | 20 tuổi, sinh viên năm 2 Kỹ thuật phần mềm, ở ký túc xá. *Archetype: "Người chạy giữa hai slot".* | Assumed — A1 |
 | 2 | **Persona Priority** | **Primary** — nhóm đau nhất và mua ở trường thường xuyên nhất | Inferred — affinity map (A1, A5) |
-| 3 | **Usage Context** | Mở app trên hành lang hoặc khi đi bộ giữa hai tòa nhà, cầm máy một tay, mạng trong tòa nhà chập chờn, hay dùng ngoài nắng | Assumed — A1, A5 |
+| 3 | **Usage Context** | Mở app trên hành lang hoặc khi đi bộ giữa các khu trong campus, cầm máy một tay, mạng trong campus chập chờn, hay dùng ngoài nắng | Assumed — A1, A5 |
 | 4 | **Goals** | (1) Có đồ ăn trong giờ nghỉ mà không trễ lớp. (2) Biết chắc món đã xong trước khi xuống quầy. (3) Biết đúng số tiền phải trả ngay từ đầu. | Assumed — A1, A5 |
 | 5 | **Job to Be Done** | "Khi chỉ có 15 phút giữa hai slot, tôi muốn đặt trước và ghé quầy lấy ngay, để ăn kịp mà không phải xếp hàng." | Inferred |
 | 6 | **Current Behaviors** | Bỏ bữa sáng, mua bù lúc giải lao. Thấy hàng dài thì bỏ mua. Từng đặt GrabFood nhưng phải ra cổng nhận. Trả bằng QR ngân hàng. | Assumed — A1 |

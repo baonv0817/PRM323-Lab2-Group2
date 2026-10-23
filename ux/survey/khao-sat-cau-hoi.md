@@ -34,7 +34,7 @@
 |---|---|---|---|---|
 | Q5 | Giữa hai slot **gần nhất** của bạn có bao nhiêu phút nghỉ? | 1 lựa chọn | Dưới 10 phút · 10–15 phút · 16–20 phút · Trên 20 phút · Không nhớ | RQ1 · H1 |
 | Q6 | Đi từ phòng này sang phòng học tiếp theo thường mất bao lâu? | 1 lựa chọn | Dưới 2 phút · 2–5 phút · Trên 5 phút | RQ1 |
-| Q7 | Khi vừa đi vừa dùng điện thoại giữa các tòa nhà, bạn thường cầm máy thế nào? | 1 lựa chọn | Một tay · Hai tay · Không dùng khi đi bộ | Persona: thao tác một tay |
+| Q7 | Khi vừa đi vừa dùng điện thoại giữa các khu trong campus, bạn thường cầm máy thế nào? | 1 lựa chọn | Một tay · Hai tay · Không dùng khi đi bộ | Persona: thao tác một tay |
 | Q8 | Lần gần nhất bạn mua đồ ăn/uống **ở trường** (căn tin, quầy, kiosk) là khi nào? | 1 lựa chọn, **rẽ nhánh** | Hôm nay · Trong tuần này · Trong tháng này · Lâu hơn · Chưa bao giờ → *chuyển tới Phần 4* | RQ2 |
 
 **Phần 3 · Lần mua gần nhất ở trường**

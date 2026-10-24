@@ -734,7 +734,7 @@ box(s, 6.75, 4.9, 6.0, 1.9, fill=SELECT, line=None)
 text(s, 7.0, 5.05, 5.5, 1.7, [("HÀNH VI MÀN RỘNG", 11, True, MUTED), ("Từ 600 dp: NavigationRail, lưới 2–3 cột; từ 412 dp: Fill container", 13, False, BROWN)], gap=8)
 
 # =============================================================== 29 · P5 Quality Gates
-s = content_slide("Tự chấm theo Quality Gates", "Sáu gate của môn; kết quả tự chấm, chờ reviewer duyệt", "check", "00-quy-trinh/04-quy-chuan-ux-ui.md · skills/ · 00-quy-trinh/05-TIEN-DO.md", "P5 · Validation")
+s = content_slide("Tự chấm theo Quality Gates", "Sáu gate của môn; kết quả tự chấm, chờ reviewer duyệt", "check", "00-quy-trinh/03-quy-chuan-ux-ui.md · skills/ · README.md mục 7", "P5 · Validation")
 box(s, 0.6, 1.6, 7.7, 5.2)
 gates = [("G0", "Problem", "Đạt 6/6", GREEN, GREEN_BG, "Problem statement, giả định, kế hoạch kiểm chứng"),
          ("G1", "Research", "Có điều kiện", ORANGE_D, SELECT, "Chưa có phản hồi khảo sát thật"),
@@ -753,7 +753,7 @@ box(s, 8.55, 4.4, 4.2, 2.4, fill=SELECT, line=None)
 text(s, 8.8, 4.55, 3.7, 2.2, [("LƯU Ý", 11, True, MUTED), ("Gate và ngưỡng 80% là rubric nội bộ của môn, không phải chuẩn quốc tế. Contrast dựa trên WCAG 2.2. Bộ 13 skill trong thư mục skills/ chấm từng gate.", 12, False, BROWN)], gap=8)
 
 # =============================================================== 30 · tổng kết
-s = content_slide("Tổng kết", "Ăn kịp giờ nghỉ, không phải xếp hàng", "restaurant", "README.md · 00-quy-trinh/05-TIEN-DO.md")
+s = content_slide("Tổng kết", "Ăn kịp giờ nghỉ, không phải xếp hàng", "restaurant", "README.md · README.md mục 7")
 cols = [("AI giúp", ["Sinh UI ban đầu nhanh (Stitch)", "Mô phỏng phỏng vấn để tạo giả thuyết", "Phản biện theo Nielsen và WCAG", "Ghi log, tổng hợp, soạn tài liệu"]),
         ("Nhóm vẫn phải", ["Xác định vấn đề, chọn persona có lý do", "Tự đo lại số liệu AI nêu", "Quyết định Accept, Modify, Reject", "Nói rõ phần nào là dữ liệu mô phỏng"]),
         ("Còn lại", ["Phản biện độc lập bằng AI khác", "Khảo sát thật từ 30 sinh viên", "Usability test 3–5 người", "Chạy Present trên prototype (Page 06)"])]

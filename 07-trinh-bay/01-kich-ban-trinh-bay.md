@@ -224,7 +224,7 @@ Nhưng em muốn nói rõ, kiểm thử tự động chỉ chứng minh prototyp
 "Cuối cùng là phần tụi em tự chấm theo sáu gate của môn. G0 đạt 6 trên 6. G1 có điều kiện vì chưa có phản hồi khảo sát thật. G2 được 5 trên 6 vì chưa đi thử với người thật. G3 đạt. G4 có điều kiện vì chưa chạy Present hết trên prototype v2. Và G5 chưa qua, vì chưa có usability test.
 Em cũng xin nói thêm là thang điểm 80% này là rubric nội bộ của môn, không phải một chuẩn quốc tế; riêng phần tương phản dựa trên WCAG 2.2. Tụi em còn viết một bộ mười ba skill để chấm từng gate cho hệ thống của mình. Kết quả là tự chấm, và tụi em chờ thầy xem xét."
 
-**Slide 33 · Tổng kết** ★
+**Slide 33 · Tổng kết** ★ (file pptx hiện tại có 32 slide, thiếu slide này; nếu không thêm lại thì nói đoạn dưới ngay sau slide 32 và đóng bài)
 
 "Để tổng kết. AI giúp tụi em rất nhanh ở phần sinh giao diện nháp, mô phỏng phỏng vấn, phản biện theo Nielsen và WCAG, và ghi chép tài liệu. Còn những việc tụi em phải tự làm: xác định vấn đề, chọn persona, tự đo lại con số AI đưa ra, và quyết định Accept, Modify hay Reject.
 Việc còn lại tụi em nói thẳng: nhờ một AI khác phản biện độc lập, thu khảo sát thật từ ba mươi sinh viên, chạy usability test với ba đến năm người và chạy Present trọn vẹn trên prototype. Em xin cảm ơn thầy và các bạn đã lắng nghe. Nhóm em sẵn sàng nhận câu hỏi và có thể demo thêm trên Figma."

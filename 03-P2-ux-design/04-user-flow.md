@@ -100,7 +100,7 @@ graph TD
 > **Output — người dùng nhận được:** Mã nhận đồ #A-204 và giờ hẹn; ra quầy quét mã là nhận món.
 
 - **Bắt đầu:** S02 Trang chủ (S01 chỉ lần đầu mở app). **Kết thúc:** S07 Theo dõi đơn.
-- **Số chạm theo prototype:** đường nhanh **3 chạm** (+ trên thẻ món → Xác nhận thanh toán → Tiến hành thanh toán); đường có chọn topping qua S04 **5 chạm**. Mục tiêu bài là < 35 giây, ≤ 8 chạm; **chưa đo với người thật**.
+- **Số chạm theo prototype:** đường nhanh **5 chạm** (+ trên thẻ món → Xem giỏ → Tiếp tục thanh toán → Xác nhận đặt đơn → Xác nhận ở cổng thanh toán); đường vào chi tiết món để chọn cay, topping cũng **5 chạm**; đổi phương thức thanh toán (MoMo, VNPAY-QR, thẻ, tiền mặt) thêm 1 chạm. Mục tiêu bài là < 35 giây, ≤ 8 chạm; **chưa đo với người thật**.
 - **Căn cứ:** INS-01 (hàng chờ dồn giờ nghỉ), INS-04 (thấy tổng tiền sớm), D28 (mặc định "Lấy ngay").
 
 ```mermaid
@@ -277,8 +277,8 @@ Mọi màn đều thuộc ít nhất một flow, không có màn mồ côi. ● 
 
 ## 5. Chưa khớp và giới hạn
 
-- **Prototype F4–F11 chưa nối.** Chỉ F1–F3 có liên kết trong Figma Page 06; chưa chạy thử bằng Present.
-- **F3 trong prototype:** lỗi được kích hoạt khi chạm vào *thẻ MoMo* ở S06, còn nút "Tiến hành thanh toán" đi tới thành công (phát hiện bằng test Playwright, `06-P5-kiem-thu-ban-giao/01-playwright-prototype-2026-10-20.md`). Sơ đồ F3 ở mục 2 mô tả luồng thiết kế (loading rồi lỗi); cần sửa prototype hoặc tài liệu cho khớp.
-- **Dialog xác nhận đặt hàng:** sơ đồ Page 01 (Flow 1) vẫn ghi "Mở Overlay Dialog xác nhận", nhưng prototype hiện đi thẳng S06 → S06-LOADING → S07. Dialog duy nhất là S07-DIALOG (huỷ đơn). Cần chọn một: thêm dialog vào prototype hoặc bỏ dòng này khỏi sơ đồ.
-- **Số chạm và thời gian** (3 / 5 chạm, < 35 giây) là suy ra từ liên kết, chưa test với người dùng.
+- **Prototype đã nối đủ F1–F13, đăng nhập và app người bán** trên Figma Page 06 (19 điểm bắt đầu); chưa chạy thử bằng Present với người ngoài nhóm.
+- **F3 trong prototype:** lỗi đến từ cổng thanh toán. Màn Cổng thanh toán (mô phỏng bên thứ ba) có hai nút: Xác nhận đi tới thành công, Từ chối đi tới S06-ERR với giỏ hàng được giữ.
+- **Dialog xác nhận đặt hàng:** prototype không có dialog riêng; bước xác nhận cuối là Cổng thanh toán (S06-GATEWAY). Dialog duy nhất là S07-DIALOG (huỷ đơn) và K12 (từ chối đơn).
+- **Số chạm và thời gian** (5 chạm, < 35 giây) là suy ra từ liên kết, chưa test với người dùng.
 - **Nguồn insight:** INS-01…06 đến từ phỏng vấn mô phỏng AI (nhãn Assumed); INS-06 chỉ có một nguồn.

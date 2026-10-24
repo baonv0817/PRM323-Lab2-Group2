@@ -32,7 +32,7 @@
 | 03 Final UI | Bản cũ ở bên trái giữ để đối chiếu; **bản v2 (Final UI) lệch phải 2000 px**, tên khung có hậu tố " v2"; bản 412 dp lệch thêm 2400 px (" v2 · 412"); app người bán ở phía dưới (y ≥ 11000) | `1:260` |
 | 04 Design System | Token màu, chữ, khoảng cách (Figma Variables) | `1:261` |
 | 05 Components | Component set có variant (Button, TextField, Card/Food, NavBar, Dialog) và bộ v2 (Chip, NavBar, Card/Food, IconButton, Button) cùng 27 icon | `1:262` |
-| 06 Prototype | Bản chạy được bằng Present: 58 màn nối liên kết, 17 điểm bắt đầu (F1–F13, đăng nhập, người bán), kèm bảng chỉ mục | `1:263` |
+| 06 Prototype | Bản chạy được bằng Present: 64 màn nối liên kết, 19 điểm bắt đầu (F1–F14, đăng nhập, người bán), kèm bảng chỉ mục | `1:263` |
 
 
 
@@ -92,7 +92,7 @@ Nhật ký AI: [`08-ai-log/01-ai-design-log.md`](08-ai-log/01-ai-design-log.md) 
 
 | Hạng mục | Trạng thái | Bằng chứng |
 |---|---|---|
-| Final UI v2 | 58 khung 360 dp (30 màn khách, 15 màn người bán và biến thể) và 56 khung 412 dp; không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp; ảnh ở `assets/figma/final-ui-v2/` | [`05-P4-ui-design/06-phan-bien-giao-dien/03-bao-cao-tong-hop.md`](05-P4-ui-design/06-phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
+| Final UI v2 | 64 khung 360 dp (30 màn khách, 15 màn người bán và biến thể) và 56 khung 412 dp; không emoji, vùng bấm ≥ 48 dp, chữ ≥ 14 sp; ảnh ở `assets/figma/final-ui-v2/` | [`05-P4-ui-design/06-phan-bien-giao-dien/03-bao-cao-tong-hop.md`](05-P4-ui-design/06-phan-bien-giao-dien/03-bao-cao-tong-hop.md) |
 | Phản biện giao diện | Báo cáo đo A01–A15 và bảng quyết định; phản biện của AI khác chờ chạy | [`05-P4-ui-design/06-phan-bien-giao-dien/`](05-P4-ui-design/06-phan-bien-giao-dien/) |
 | Flow | F1–F11 đã vẽ, có Input/Output; Flow 1–3 đã nối prototype | `03-P2-ux-design/04-user-flow.md` · `03-P2-ux-design/anh/` · Figma Page 01 |
 | Wireframe | Đủ các màn và biến thể, bản xám trên Figma | Figma Page 02 · `assets/figma/boards/wireframe-s01-s30.png` |

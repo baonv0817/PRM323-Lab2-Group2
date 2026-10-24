@@ -55,7 +55,7 @@ Ngoài test flow, `audit/` phục vụ bước phản biện giao diện: `captu
 
 ## Prototype v2
 
-`figma-proto/hotspots-v2.json` là vùng bấm của prototype Final UI v2 (Page 03, 58 khung gồm app người bán, đọc từ Figma Plugin API). Kiểm đồ thị flow v2:
+`figma-proto/hotspots-v2.json` là vùng bấm của prototype Final UI v2 (Page 03, 64 khung gồm app người bán, đọc từ Figma Plugin API). Kiểm đồ thị flow v2:
 
 ```bash
 PROTO=v2 npx playwright test graph.spec.js          # bash

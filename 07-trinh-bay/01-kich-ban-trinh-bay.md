@@ -119,7 +119,7 @@ Persona phụ là Mỹ Linh, tính từng nghìn, cần thấy tổng tiền th�
 
 **Slide 12 · Ba flow chính** ★
 
-"Đây là ba flow bắt buộc, và ảnh trên slide là màn Figma thật. Flow một là đặt nhanh: chạm combo, thêm vào giỏ, thanh toán, xác nhận, rồi nhận mã. Flow hai là tuỳ chỉnh món và nhập mã giảm giá, trong đó mã hết hạn sẽ báo lỗi ngay tại ô nhập. Flow ba là lỗi thanh toán: giỏ hàng vẫn được giữ, khách chọn trả tiền mặt tại kiosk, và nếu đổi ý thì huỷ đơn có hộp thoại xác nhận.
+"Đây là ba flow bắt buộc, và ảnh trên slide là màn Figma thật. Flow một là đặt nhanh: chạm dấu cộng để thêm món, xem giỏ, tiếp tục thanh toán, xác nhận đặt đơn, rồi xác nhận ở cổng thanh toán và nhận mã. Flow hai là tuỳ chỉnh món và nhập mã giảm giá, trong đó mã hết hạn sẽ báo lỗi ngay tại ô nhập. Flow ba là lỗi thanh toán: giỏ hàng vẫn được giữ, khách chọn trả tiền mặt tại kiosk, và nếu đổi ý thì huỷ đơn có hộp thoại xác nhận.
 Cả ba flow đều có nhánh lỗi, và ngoài ba flow này, tụi em còn vẽ thêm từ F4 tới F13 và ba flow cho người bán."
 
 **Slide 13 · Wireframe và flow mở rộng**
@@ -192,11 +192,11 @@ Hàng chờ đúng giờ nghỉ thì giải bằng đặt từ lớp, hẹn gi�
 
 **Slide 28 · Prototype Figma và demo** ★
 
-"Prototype nối cả hai app, hiện có 220 liên kết trên 58 khung và 17 điểm bắt đầu. Hộp thoại huỷ đơn dạng overlay, màn đang tải tự chuyển sau 1,2 giây, nút Back đi đúng chỗ. Giờ tụi em xin chạy thử."
+"Prototype nối cả hai app, hiện có hơn 260 vùng bấm trên 64 khung và 19 điểm bắt đầu. Thêm món hiện thông báo và nút Xem giỏ, chọn được bốn phương thức thanh toán, cổng thanh toán có thể chấp nhận hoặc từ chối, hộp thoại huỷ đơn dạng overlay, nút Back quay đúng màn trước đó. Giờ tụi em xin chạy thử."
 
 > **Demo (4 đến 5 phút), mở Figma Page 06, bấm Present rồi đổi flow trong menu:**
 >
-> 1. **F1, bắt đầu ở Trang chủ.** "Em là Quân, đang ở lớp, còn 15 phút. Em chạm combo Tacos, thêm vào giỏ, thấy tổng tiền ngay. Tiếp tục thanh toán, xác nhận. Màn đang kết nối, rồi ra mã nhận #A-204." Đếm to số chạm: "tám chạm chưa tới".
+> 1. **F1, bắt đầu ở Trang chủ.** "Em là Quân, đang ở lớp, còn 15 phút. Em chạm dấu cộng ở combo Tacos, bấm Xem giỏ, thấy tổng tiền ngay. Tiếp tục thanh toán, chọn ví MoMo, xác nhận đặt đơn. Màn đang kết nối cổng, rồi tới cổng thanh toán, em xác nhận, ra mã nhận #A-204." Đếm to số chạm: "năm chạm, chưa tới tám". Nếu muốn cho thầy thấy cách chọn khác: ở màn Thanh toán chạm VNPAY-QR hoặc Tiền mặt tại Kiosk để đổi phương thức.
 > 2. **F2, bắt đầu ở Thực đơn.** Chọn món, vào giỏ, chạm ô mã giảm giá, chọn mã đã hết hạn. "Mã sai thì báo ngay tại ô nhập, không bị đẩy ra chỗ khác."
 > 3. **F3, bắt đầu ở màn lỗi thanh toán.** "Thanh toán MoMo lỗi nhưng giỏ hàng vẫn còn." Bấm Tiền mặt tại Kiosk, rồi thử huỷ đơn để cho thấy hộp thoại xác nhận.
 > 4. **Người bán, bắt đầu ở K01.** Đăng nhập, mở đơn, nhận đơn, qua màn đang chuẩn bị. Nếu còn thời gian, mở flow K2: mã QR không đọc được thì thu tiền mặt.
@@ -212,7 +212,7 @@ Phần tụi em chưa kiểm: trình đọc màn hình, cỡ chữ hệ thống 
 
 **Slide 30 · Kiểm thử**
 
-"Về kiểm thử, tụi em dùng Playwright mở prototype và bấm theo từng flow. Bản cũ chạy 13 trên 13 test đạt, còn đồ thị flow bản v2 là 7 trên 7. Một kết quả hữu ích: đặt đơn từ Trang chủ tới Theo dõi đơn chỉ cần 3 chạm.
+"Về kiểm thử, tụi em dùng Playwright mở prototype và bấm theo từng flow. Bản cũ chạy 13 trên 13 test đạt, còn đồ thị flow bản v2 là 10 trên 10. Một kết quả hữu ích: đặt đơn từ Trang chủ tới Theo dõi đơn, đi qua thêm món, giỏ hàng, chọn thanh toán và cổng thanh toán, tối thiểu 5 chạm.
 Nhưng em muốn nói rõ, kiểm thử tự động chỉ chứng minh prototype đi đúng đường tụi em đã vẽ, không biết người dùng có hiểu hay có vướng không. Vì vậy tụi em đã soạn sẵn kế hoạch usability test với năm nhiệm vụ cho ba đến năm sinh viên, nhưng chưa chạy, nên chưa dám nói app dễ dùng."
 
 **Slide 31 · Bàn giao cho Flutter**

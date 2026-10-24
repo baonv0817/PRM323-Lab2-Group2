@@ -1,5 +1,8 @@
 # Báo cáo test Playwright trên prototype Figma — 20/10/2026
 
+> **Cập nhật 24/10/2026:** báo cáo này là của prototype cũ ngày 20/10. Flow đặt món v2 đã đổi: nút + hiện thông báo Xem giỏ, chọn được bốn phương thức, có Cổng thanh toán (chấp nhận hoặc từ chối); đường đặt đơn từ Trang chủ nay tối thiểu 5 chạm. Kiểm đồ thị v2 đạt 10/10 (`PROTO=v2 npx playwright test figma-proto/graph.spec.js`).
+
+
 - **Đối tượng:** prototype Figma [PRM323](https://www.figma.com/design/VnryhnE4z3159vHoKvx6jL/PRM323?node-id=1-263), Page 06, 15 màn, 40 vùng bấm.
 - **Công cụ:** Playwright 1.64.1 + Microsoft Edge (headless, 2× DPR), Windows 11.
 - **Mã test:** [`tests/`](../tests/) · hướng dẫn chạy: [`tests/README.md`](../tests/README.md).

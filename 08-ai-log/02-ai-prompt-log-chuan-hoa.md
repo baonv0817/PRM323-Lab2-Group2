@@ -154,7 +154,7 @@
 [ĐỊNH DẠNG]  Báo cáo trước và sau; liệt kê điểm sai kèm vị trí.
 ```
 
-**Kết quả đo:** họ cam–be 55,3% → 4,4%; emoji 98 → 0; vùng bấm dưới 48 dp 20/39 → 0/217.
+**Kết quả đo:** họ cam–be 55,3% → 4,4%; emoji 98 → 0; vùng bấm dưới 48 dp 20/39 → 0/262.
 **Nhóm quyết định:** lỗi chính là dùng một họ màu cho mọi vai trò, không phải nút cam quá lớn; chọn vẽ lại v2. Báo cáo đo do AI viết nên không độc lập; phản biện bằng AI khác chưa chạy (`05-P4-ui-design/06-phan-bien-giao-dien/02-prompt-cho-ai-khac.md`).
 **Minh chứng:** `05-P4-ui-design/06-phan-bien-giao-dien/`, `tests/audit/`.
 
@@ -180,7 +180,7 @@
 [ĐỊNH DẠNG]  Khung Figma `UF · …`, `WF v2 · …`, `DS v2`, `CMP v2`, `PT v2`, `MAP`; xuất ảnh vào assets/figma/boards/.
 ```
 
-**Nhóm quyết định:** rà lại liên kết sai (voucher, lịch sử, huỷ đơn) và đặt lại 17 điểm bắt đầu cho khớp tên flow; duyệt danh sách pain point P1–P6.
+**Nhóm quyết định:** rà lại liên kết sai (voucher, lịch sử, huỷ đơn) và đặt lại 19 điểm bắt đầu cho khớp tên flow; duyệt danh sách pain point P1–P6.
 **Minh chứng:** `03-P2-ux-design/05-anh-xa-painpoint-man-hinh.md`, `assets/figma/boards/`.
 
 ## 12. P5: Handoff, bộ skill chấm, slide

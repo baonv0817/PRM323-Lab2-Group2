@@ -1,18 +1,25 @@
 {
- "_note": "Vùng bấm của prototype Final UI v2 (Figma Page 03, khung có hậu tố ' v2'), đọc từ Figma Plugin API ngày 21/10/2026. Toạ độ tính từ góc trên trái của khung.",
+ "_note": "Vùng bấm của prototype Final UI v2 (Figma Page 03, khung có hậu tố ' v2'), đọc từ Figma Plugin API; cập nhật 24/10/2026 sau khi sửa flow đặt món (thêm vào giỏ, chọn phương thức, cổng thanh toán, Back theo lịch sử). Toạ độ tính từ góc trên trái của khung. type 'back' = quay lại màn trước.",
  "startingPoints": {
-  "F1": "S01",
+  "F1": "S02",
   "F2": "S03",
   "F3": "S06-ERR",
-  "F4": "S07",
-  "F5": "S08",
-  "F6": "S15",
-  "F8": "S02",
+  "F4": "S08",
+  "F5": "S11",
+  "F6": "S13",
+  "F7": "S15",
+  "F8": "S19",
   "F9": "S21",
-  "F10": "S20",
+  "F10": "S22",
+  "F11": "S20",
   "F12": "S30",
   "F13": "S02-LOADING",
-  "K": "K01"
+  "AUTH": "S01",
+  "F14": "S08-EMPTY",
+  "K1": "K01",
+  "K2": "K05",
+  "K3": "K08",
+  "K0": "K02-EMPTY"
  },
  "frames": {
   "S01": {
@@ -97,7 +104,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S02-ADDED"
     },
     {
      "x": 16,
@@ -115,7 +122,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S02-ADDED"
     },
     {
      "x": 16,
@@ -133,7 +140,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S02-ADDED"
     },
     {
      "x": 90,
@@ -230,7 +237,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S03-ADDED"
     },
     {
      "x": 16,
@@ -248,7 +255,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S03-ADDED"
     },
     {
      "x": 16,
@@ -266,7 +273,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S03-ADDED"
     },
     {
      "x": 16,
@@ -317,8 +324,8 @@
      "w": 48,
      "h": 48,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S03"
+     "type": "back",
+     "dest": null
     },
     {
      "x": 148,
@@ -342,8 +349,8 @@
      "w": 48,
      "h": 48,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S03"
+     "type": "back",
+     "dest": null
     },
     {
      "x": 308,
@@ -371,6 +378,15 @@
      "trigger": "click",
      "type": "nav",
      "dest": "S06"
+    },
+    {
+     "x": 16,
+     "y": 68,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S25"
     }
    ]
   },
@@ -532,6 +548,33 @@
      "trigger": "click",
      "type": "nav",
      "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 288,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-VNPAY"
+    },
+    {
+     "x": 16,
+     "y": 368,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-CARD"
+    },
+    {
+     "x": 16,
+     "y": 448,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-CASH"
     },
     {
      "x": 16,
@@ -866,7 +909,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     },
     {
      "x": 283,
@@ -875,7 +918,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     },
     {
      "x": 283,
@@ -884,7 +927,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     },
     {
      "x": 0,
@@ -1226,7 +1269,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     },
     {
      "x": 283,
@@ -1235,7 +1278,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     }
    ]
   },
@@ -1309,8 +1352,8 @@
      "w": 48,
      "h": 48,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S02"
+     "type": "back",
+     "dest": null
     },
     {
      "x": 16,
@@ -1335,7 +1378,7 @@
      "h": 800,
      "trigger": "timeout",
      "type": "nav",
-     "dest": "S07"
+     "dest": "S06-GATEWAY"
     }
    ]
   },
@@ -1434,8 +1477,8 @@
      "w": 48,
      "h": 48,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S02"
+     "type": "back",
+     "dest": null
     },
     {
      "x": 16,
@@ -1443,8 +1486,8 @@
      "w": 328,
      "h": 56,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S02"
+     "type": "back",
+     "dest": null
     }
    ]
   },
@@ -1459,8 +1502,8 @@
      "w": 48,
      "h": 48,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S03"
+     "type": "back",
+     "dest": null
     },
     {
      "x": 56,
@@ -1487,7 +1530,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     },
     {
      "x": 16,
@@ -1505,7 +1548,7 @@
      "h": 48,
      "trigger": "click",
      "type": "nav",
-     "dest": "S05"
+     "dest": "S04"
     },
     {
      "x": 0,
@@ -1633,8 +1676,8 @@
      "w": 328,
      "h": 56,
      "trigger": "click",
-     "type": "nav",
-     "dest": "S02"
+     "type": "back",
+     "dest": null
     },
     {
      "x": 120,
@@ -1675,7 +1718,7 @@
      "h": 56,
      "trigger": "click",
      "type": "nav",
-     "dest": "K02-EMPTY"
+     "dest": "K02"
     }
    ]
   },
@@ -2398,6 +2441,435 @@
      "trigger": "click",
      "type": "nav",
      "dest": "K08"
+    }
+   ]
+  },
+  "S06-VNPAY": {
+   "nodeId": "4085:4015",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 208,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    },
+    {
+     "x": 16,
+     "y": 368,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-CARD"
+    },
+    {
+     "x": 16,
+     "y": 448,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-CASH"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-LOADING"
+    }
+   ]
+  },
+  "S06-CARD": {
+   "nodeId": "4085:4060",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 208,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    },
+    {
+     "x": 16,
+     "y": 288,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-VNPAY"
+    },
+    {
+     "x": 16,
+     "y": 448,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-CASH"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-LOADING"
+    }
+   ]
+  },
+  "S06-CASH": {
+   "nodeId": "4085:4105",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 208,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    },
+    {
+     "x": 16,
+     "y": 288,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-VNPAY"
+    },
+    {
+     "x": 16,
+     "y": 368,
+     "w": 328,
+     "h": 72,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-CARD"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07-CASH"
+    }
+   ]
+  },
+  "S06-GATEWAY": {
+   "nodeId": "4085:4150",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 4,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06"
+    },
+    {
+     "x": 16,
+     "y": 640,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S06-ERR"
+    },
+    {
+     "x": 16,
+     "y": 712,
+     "w": 328,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S07"
+    }
+   ]
+  },
+  "S02-ADDED": {
+   "nodeId": "4085:3807",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 360,
+     "h": 800,
+     "trigger": "timeout",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 72,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S28"
+    },
+    {
+     "x": 20,
+     "y": 178,
+     "w": 108,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 16,
+     "y": 340,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 16,
+     "y": 463,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 16,
+     "y": 586,
+     "w": 328,
+     "h": 98,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 90,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    },
+    {
+     "x": 256,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S19"
+    },
+    {
+     "x": 16,
+     "y": 688,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S14"
+    },
+    {
+     "x": 8,
+     "y": 4,
+     "w": 200,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S27"
+    },
+    {
+     "x": 248,
+     "y": 672,
+     "w": 92,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    }
+   ]
+  },
+  "S03-ADDED": {
+   "nodeId": "4085:3917",
+   "width": 360,
+   "height": 800,
+   "hotspots": [
+    {
+     "x": 0,
+     "y": 0,
+     "w": 360,
+     "h": 800,
+     "trigger": "timeout",
+     "type": "nav",
+     "dest": "S03"
+    },
+    {
+     "x": 308,
+     "y": 4,
+     "w": 48,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
+    },
+    {
+     "x": 16,
+     "y": 68,
+     "w": 328,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S28"
+    },
+    {
+     "x": 16,
+     "y": 192,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 16,
+     "y": 315,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 16,
+     "y": 438,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S04"
+    },
+    {
+     "x": 16,
+     "y": 561,
+     "w": 328,
+     "h": 115,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S22"
+    },
+    {
+     "x": 0,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S02"
+    },
+    {
+     "x": 180,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S08"
+    },
+    {
+     "x": 270,
+     "y": 741,
+     "w": 90,
+     "h": 56,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S15"
+    },
+    {
+     "x": 248,
+     "y": 672,
+     "w": 92,
+     "h": 48,
+     "trigger": "click",
+     "type": "nav",
+     "dest": "S05"
     }
    ]
   }

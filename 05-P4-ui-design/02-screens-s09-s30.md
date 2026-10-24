@@ -39,7 +39,7 @@ Mỗi flow trong Figma có dải **INPUT → OUTPUT** ở đầu.
 |---|---|---|---|
 | **F4 Sửa và huỷ đơn** | Muốn đổi giờ nhận, số lượng, ghi chú, hoặc huỷ khi bếp chưa làm (60 giây) | Đơn cập nhật, hoặc hoàn 54.000đ trong 30 giây | S07 → S09 → lưu → S07; S07 → dialog huỷ → S10 |
 | **F5 Lịch sử và chi tiêu** | Muốn xem lại đã mua gì, tiêu bao nhiêu | Lịch sử theo tuần/tháng kèm tổng chi; đặt lại đơn cũ bằng một chạm | S08 → S11 → S12 → Đặt lại → S05 |
-| **F6 Yêu thích và đặt lại** | Muốn đặt lại món hay mua | Món vào giỏ trong tối đa 3 chạm | S15 → S13 → + → S05; S02 → S14 → Thêm vào giỏ → S05 |
+| **F6 Yêu thích và đặt lại** | Muốn đặt lại món hay mua | Món vào giỏ trong tối đa 3 chạm | S15 → S13 → + → S04 → Thêm vào giỏ → S05; S02 → S14 → Thêm vào giỏ → S05 |
 | **F7 Tài khoản** | Muốn chỉnh hồ sơ, cách trả tiền, thông báo mà không bị ép đăng nhập | Thiết lập được lưu; vẫn đặt món được khi không có tài khoản | S15 → S16 / S17 / S18 |
 | **F8 Thông báo và nhận món** | Cần biết khi món xong và nhận món nhanh | Mã QR mở từ thông báo; nhận món tối đa 30 giây | S02 chuông → S19 → Xem mã → S20 → Tôi đã nhận món |
 | **F9 Quán đóng và món hết** | Quán đóng hoặc món hết nhưng vẫn muốn có đồ ăn trong giờ nghỉ | Biết giờ mở, hẹn nhận hoặc chọn món thay thế | S02 (đóng) → S21; S03 → món hết → S22 |

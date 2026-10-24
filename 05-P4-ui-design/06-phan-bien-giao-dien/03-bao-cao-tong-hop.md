@@ -111,13 +111,13 @@ S02 và S21 có chuông thông báo dẫn tới S19. S23 dùng thang số 1–5 
 | Ký tự emoji | 98/366 chữ | 0 |
 | Chữ dưới 14 sp | 86 dòng ở 8 màn | 0, trừ nhãn thanh dưới 12 sp |
 | Chữ thiếu tương phản | 8 chỗ | 0 |
-| Vùng bấm dưới 48 dp | 20/39 | 0/217 |
+| Vùng bấm dưới 48 dp | 20/39 | 0/262 |
 | Chữ tràn khỏi khung 360 × 800 | — | 0 |
 
 ### Prototype và màn 412 dp
 
-- Prototype v2 nối ngay trên Page 03: 217 liên kết giữa 58 khung (gồm S06-LOADING, S02-LOADING, K02-EMPTY tự chuyển; S07-DIALOG, K12 dạng overlay), 12 điểm bắt đầu gồm cả luồng người bán. Vùng bấm đọc ra `tests/figma-proto/hotspots-v2.json`.
-- Kiểm đồ thị flow v2: `PROTO=v2 npx playwright test graph.spec.js` đạt 7/7 (không màn cụt, không màn mồ côi, đặt đơn S02 → S07 mất 3 chạm, F3 có lối về S07-CASH và S05).
+- Prototype v2 nối ngay trên Page 03: hơn 260 vùng bấm giữa 64 khung (gồm S06-LOADING, S02-LOADING, K02-EMPTY, S02-ADDED, S03-ADDED tự chuyển; S06-GATEWAY là cổng thanh toán mô phỏng; S07-DIALOG, K12 dạng overlay), 19 điểm bắt đầu gồm cả luồng người bán. Vùng bấm đọc ra `tests/figma-proto/hotspots-v2.json`.
+- Kiểm đồ thị flow v2: `PROTO=v2 npx playwright test graph.spec.js` đạt 10/10 (không màn cụt, không màn mồ côi, đặt đơn S02 → S02-ADDED → S05 → S06 → cổng thanh toán → S07 mất 5 chạm, F3 có lối về S07-CASH và S05).
 - 56 khung có bản 412 dp (" v2 · 412", dùng constraints), gồm toàn bộ màn khách và người bán trừ hai dialog. Ảnh S02, S05, S06, S07 ở `assets/figma/final-ui-v2/412/`.
 
 ## 5. Quyết định phạm vi mới

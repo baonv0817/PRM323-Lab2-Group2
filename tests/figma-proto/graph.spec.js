@@ -22,7 +22,7 @@ function taps(from, to) { // đường ngắn nhất theo số chạm (0-1 BFS �
 }
 
 test('không có màn hình cụt: mọi màn đều có đường đi tiếp', () => {
-  const dead = frames.filter((f) => !edges.some(([a]) => a === f));
+  const dead = frames.filter((f) => !edges.some(([a]) => a === f) && !data.frames[f].hotspots.some((h) => h.type === 'back'));
   expect(dead, `Màn không có lối ra: ${dead.join(', ')}`).toEqual([]);
 });
 
@@ -53,13 +53,52 @@ test('mọi liên kết trỏ tới một màn có thật', () => {
   expect(bad).toEqual([]);
 });
 
-// Đặt đơn phải đi qua Thanh toán (S06); đường S02 → S08 → S07 chỉ là xem lại đơn cũ nên không tính.
+// Đặt đơn thật phải thêm món (S02 → "+" → S02-ADDED → Xem giỏ), qua giỏ hàng, chọn phương thức và xác nhận ở cổng thanh toán.
+// Đường tắt bằng biểu tượng giỏ trên Trang chủ hoặc xem lại đơn cũ (S02 → S08 → S07) không tính là đặt đơn.
+const ORDER_PATH = V2 ? ['S02', 'S02-ADDED', 'S05', 'S06', 'S06-LOADING', 'S06-GATEWAY', 'S07'] : null;
 const orderTaps = (from) => taps(from, 'S06') + taps('S06', 'S07');
+function pathTaps(path) {
+  return path.slice(1).reduce((sum, to, i) => {
+    const e = edges.filter(([a, b]) => a === path[i] && b === to);
+    return sum + (e.length ? Math.min(...e.map((x) => x[2])) : Infinity);
+  }, 0);
+}
 
-test('F1: đặt đơn từ Trang chủ tới Theo dõi đơn (qua Thanh toán) ≤ 8 chạm (tiêu chí thành công)', () => {
+test('F1: đặt đơn từ Trang chủ tới Theo dõi đơn (qua thêm món, giỏ, thanh toán, cổng) ≤ 8 chạm (tiêu chí thành công)', () => {
+  if (V2) {
+    const n = pathTaps(ORDER_PATH);
+    console.log(`Đặt đơn ${ORDER_PATH.join(' → ')} = ${n} chạm (Loading tự chuyển, không tính)`);
+    expect(Number.isFinite(n), 'đường đặt đơn có liên kết đứt').toBe(true);
+    expect(n).toBeGreaterThanOrEqual(5);
+    expect(n).toBeLessThanOrEqual(8);
+    return;
+  }
   const n = orderTaps('S02');
   console.log(`Đặt đơn S02 → S06 → S07 = ${n} chạm; tính cả S01 = ${n + taps('S01', 'S02')} chạm; (đường xem lại đơn cũ S02 → S08 → S07 = ${taps('S02', 'S07')} chạm, không phải đặt đơn)`);
   expect(n).toBeLessThanOrEqual(8);
+});
+
+test('v2: nút "+" thêm vào giỏ không nhảy thẳng vào giỏ hàng', () => {
+  if (!V2) return;
+  const plus = data.frames['S02'].hotspots.filter((h) => h.w === 48 && h.h === 48 && h.x === 283);
+  expect(plus.length).toBeGreaterThan(0);
+  for (const h of plus) expect(h.dest).toBe('S02-ADDED');
+});
+
+test('v2: chọn được 4 phương thức thanh toán, tiền mặt đi thẳng tới đơn trả tại quầy', () => {
+  if (!V2) return;
+  const keys = ['S06', 'S06-VNPAY', 'S06-CARD', 'S06-CASH'];
+  for (const a of keys) for (const b of keys) if (a !== b) expect(edges.some(([x, y]) => x === a && y === b), `${a} → ${b}`).toBe(true);
+  expect(edges.some(([x, y]) => x === 'S06-CASH' && y === 'S07-CASH')).toBe(true);
+  for (const k of ['S06', 'S06-VNPAY', 'S06-CARD']) expect(edges.some(([x, y]) => x === k && y === 'S06-LOADING')).toBe(true);
+});
+
+test('v2: cổng thanh toán có hai kết quả, thành công tới Theo dõi đơn, từ chối tới màn lỗi giữ giỏ', () => {
+  if (!V2) return;
+  const out = edges.filter(([a]) => a === 'S06-GATEWAY').map(([, b]) => b);
+  expect(out).toContain('S07');
+  expect(out).toContain('S06-ERR');
+  expect(edges.some(([a, b]) => a === 'S06-LOADING' && b === 'S06-GATEWAY')).toBe(true);
 });
 
 test('F2: từ Thực đơn tới Thanh toán ≤ 8 chạm', () => {

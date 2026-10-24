@@ -561,7 +561,7 @@ table(s, 0.85, 1.85, 6.5, [["Chỉ số", "Bản cũ", "Bản v2"],
                            ["Emoji trong chữ", "98 / 366", "0"],
                            ["Chữ dưới 14 sp", "86 dòng", "0*"],
                            ["Chữ thiếu tương phản", "8 chỗ", "0"],
-                           ["Vùng bấm dưới 48 dp", "20 / 39", "0 / 217"]],
+                           ["Vùng bấm dưới 48 dp", "20 / 39", "0 / 262"]],
       [3.5, 1.5, 1.5], row_h=0.55, size=14)
 text(s, 0.85, 5.9, 6.5, 0.5, [("* trừ nhãn thanh dưới 12 sp. Nền v2 là #FAF8F5 nên không còn tính vào họ cam–be.", 10, False, MUTED)])
 bullets_card(s, 7.85, 1.6, 4.9, 4.95, "LỖI CHÍNH ĐÃ SỬA", ["Quá cam: nền kem trung tính, cam chỉ cho một nút chính", "Icon lộn xộn: bỏ emoji, dùng một bộ 27 icon vector",
@@ -656,10 +656,10 @@ s = content_slide("Bản vẽ trong Figma", "Sáu page, từ user flow tới pro
 BO = os.path.join(ROOT, "assets", "figma", "boards")
 cells = [("Page 01 · User flow", "Storyboard F1–F13, đăng nhập, người bán, bảng ánh xạ pain point", os.path.join(BO, "user-flow-f1.png")),
          ("Page 02 · Wireframe", "Khung xám cho S01–S30 và K01–K15", os.path.join(BO, "wireframe-s01-s30.png")),
-         ("Page 03 · Final UI", "58 màn v2, bản 360 và 412 dp", os.path.join(IMG, "contact-sheet-s01-s08.png")),
+         ("Page 03 · Final UI", "64 màn v2, bản 360 và 412 dp", os.path.join(IMG, "contact-sheet-s01-s08.png")),
          ("Page 04 · Design system", "Token màu, chữ, khoảng cách, bo góc, 27 icon", os.path.join(BO, "design-system.png")),
          ("Page 05 · Component", "Chip, NavBar, Card, nút; mọi variant", os.path.join(BO, "components.png")),
-         ("Page 06 · Prototype", "58 màn nối liên kết, 17 điểm bắt đầu để Present", os.path.join(BO, "prototype-index.png"))]
+         ("Page 06 · Prototype", "64 màn nối liên kết, 19 điểm bắt đầu để Present", os.path.join(BO, "prototype-index.png"))]
 for i, (head_, desc, path) in enumerate(cells):
     x, y = 0.6 + (i % 3) * 4.1, 1.55 + (i // 3) * 2.62
     cover(s, path, x, y, 3.95, 1.95)
@@ -687,19 +687,19 @@ text(s, 5.7, 5.85, 6.8, 0.9, [("S02 và S05 ở 360 dp rồi 412 dp. Bản 412 d
 
 # =============================================================== 25 · P4 prototype
 s = content_slide("Prototype Figma", "Nối cả hai app, chạy từng flow bằng Present trên Page 06", "qr", "Figma Page 03, 06 · tests/figma-proto/hotspots-v2.json", "P4 · UI Design")
-bullets_card(s, 0.6, 1.6, 5.9, 3.3, "PROTOTYPE BẢN V2", ["220 liên kết trên 58 khung, 17 điểm bắt đầu", "Dialog huỷ đơn và từ chối đơn dạng overlay",
-                                                         "Màn đang tải tự chuyển sau 1,2 giây", "Back đúng, không màn cụt, không màn mồ côi"], size=13, gap=9)
+bullets_card(s, 0.6, 1.6, 5.9, 3.3, "PROTOTYPE BẢN V2", ["Hơn 260 vùng bấm trên 64 khung, 19 điểm bắt đầu", "Dialog huỷ đơn và từ chối đơn dạng overlay",
+                                                         "Thêm vào giỏ, chọn phương thức, cổng thanh toán thành công hoặc bị từ chối", "Back đúng, không màn cụt, không màn mồ côi"], size=13, gap=9)
 box(s, 6.75, 1.6, 6.0, 3.3)
 text(s, 7.0, 1.75, 5.5, 3.1, [("ĐIỂM BẮT ĐẦU KHI DEMO", 11, True, MUTED),
                                ("F1 · S02 đặt nhanh từ Trang chủ", 13, False, BROWN), ("F2 · S03 tuỳ chỉnh và mã giảm giá", 13, False, BROWN),
                                ("F3 · S06-ERR lỗi thanh toán", 13, False, BROWN), ("F4 · S08 sửa và huỷ đơn", 13, False, BROWN),
                                ("K1 · K01 người bán nhận đơn và chuẩn bị", 13, False, BROWN)], gap=7)
-band(s, 5.1, "Demo: bấm combo → thêm vào giỏ → thanh toán → đang tải → mã nhận #A-204; rồi mở app người bán nhận đơn đó.", h=0.8, size=13)
+band(s, 5.1, "Demo: chạm + → Xem giỏ → Tiếp tục thanh toán → chọn phương thức → xác nhận → cổng thanh toán → mã nhận #A-204; rồi mở app người bán nhận đơn đó.", h=0.8, size=13)
 band(s, 6.05, "Thử link Figma bằng cửa sổ chưa đăng nhập trước khi trình bày.", h=0.6, size=12, bold=False, fill=CARD)
 
 # =============================================================== 26 · P5 accessibility
 s = content_slide("Accessibility", "Đo bằng công cụ, không ước lượng bằng mắt", "check", "05-P4-ui-design/05-design-decisions.md · tests/audit/", "P5 · Validation")
-stats = [("5,23:1", "chữ nút nâu trên cam", "ngưỡng WCAG 4,5:1"), ("48 dp", "vùng bấm nhỏ nhất", "0 / 217 vùng dưới 48 dp"),
+stats = [("5,23:1", "chữ nút nâu trên cam", "ngưỡng WCAG 4,5:1"), ("48 dp", "vùng bấm nhỏ nhất", "0 / 262 vùng dưới 48 dp"),
          ("14 sp", "chữ nội dung nhỏ nhất", "nhãn thanh dưới 12 sp"), ("0", "emoji trong giao diện", "một bộ 27 icon vector")]
 for i, (big, label, sub) in enumerate(stats):
     x = 0.6 + i * 3.07
@@ -713,8 +713,8 @@ text(s, 8.5, 4.0, 4.0, 2.7, [("CHƯA KIỂM", 11, True, MUTED), ("Trình đọc 
 
 # =============================================================== 27 · P5 kiểm thử
 s = content_slide("Kiểm thử", "Playwright cho prototype; usability test với người thật đã có kế hoạch", "receipt", "tests/ · 06-P5-kiem-thu-ban-giao/", "P5 · Validation")
-bullets_card(s, 0.6, 1.6, 5.9, 3.5, "KIỂM THỬ TỰ ĐỘNG · PLAYWRIGHT", ["Bản cũ: 13 / 13 test đạt, bấm theo toạ độ vùng bấm", "Đồ thị flow bản v2: 7 / 7 test đạt",
-                                                                   "Đặt đơn từ Trang chủ tới Theo dõi đơn: 3 chạm", "Flow 3 có lối phục hồi về giỏ hàng"], size=13, gap=9)
+bullets_card(s, 0.6, 1.6, 5.9, 3.5, "KIỂM THỬ TỰ ĐỘNG · PLAYWRIGHT", ["Bản cũ: 13 / 13 test đạt, bấm theo toạ độ vùng bấm", "Đồ thị flow bản v2: 10 / 10 test đạt",
+                                                                   "Đặt đơn từ Trang chủ tới Theo dõi đơn: 5 chạm, qua giỏ và cổng thanh toán", "Flow 3 có lối phục hồi về giỏ hàng"], size=13, gap=9)
 box(s, 6.75, 1.6, 6.0, 3.5)
 text(s, 7.0, 1.75, 5.5, 3.3, [("USABILITY TEST · KẾ HOẠCH (CHƯA CHẠY)", 11, True, MUTED),
                                ("T1 Đặt Combo Tacos, lấy sau 10 phút", 12, False, BROWN), ("T2 Chọn cay, topping, nhập mã giảm giá", 12, False, BROWN),
